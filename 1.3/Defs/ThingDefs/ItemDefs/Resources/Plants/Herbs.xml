@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+ <ThingDef ParentName="RoughPlantBase">
+    <defName>GuamLeaves</defName>
+    <label>guam leaves</label>
+    <description>Raw cut leaves of a guam plant.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Herbs/GuamLeaves</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.02</Nutrition>
+      <MarketValue>1.4</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>
+  
+ <ThingDef ParentName="RoughPlantBase">
+    <defName>HarralanderLeaves</defName>
+    <label>harralander leaves</label>
+    <description>Raw cut leaves of a harralander plant.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Herbs/HarralanderLeaves</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.02</Nutrition>
+      <MarketValue>1.4</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>  
+  
+ <ThingDef ParentName="RoughPlantBase">
+    <defName>LantadymeLeaves</defName>
+    <label>lantadyme leaves</label>
+    <description>Raw cut leaves of a lantadyme plant.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Herbs/LantadymeLeaves</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.02</Nutrition>
+      <MarketValue>1.4</MarketValue>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>    
+
+ <ThingDef ParentName="RoughPlantBase">
+    <defName>DwarfWeedLeaves</defName>
+    <label>dwarf weed leaves</label>
+    <description>Raw cut leaves of a dwarf weed plant.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Herbs/DwarfWeedLeaves</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.02</Nutrition>
+      <MarketValue>1.7</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>  
+
+ <ThingDef ParentName="RoughPlantBase">
+    <defName>RannarLeaves</defName>
+    <label>rannar leaves</label>
+    <description>Raw cut leaves of a rannar plant.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Herbs/RannarLeaves</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.02</Nutrition>
+      <MarketValue>1.4</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>  
+
+ <ThingDef ParentName="RoughPlantBase">
+    <defName>TorstolLeaves</defName>
+    <label>torstol leaves</label>
+    <description>Raw cut leaves of a torstol plant.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Herbs/TorstolLeaves</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.02</Nutrition>
+      <MarketValue>1.4</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>  
+
+ <ThingDef ParentName="RoughPlantBase">
+    <defName>ToadflaxLeaves</defName>
+    <label>toadflax leaves</label>
+    <description>Raw cut leaves of a toadflax plant.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Herbs/ToadflaxLeaves</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.02</Nutrition>
+      <MarketValue>1.4</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>  
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>MixedHerbs</defName>
+    <label>mixed herbs</label>
+    <description>Fewer than 11 herbs and spices, but they still add a nice flavor to any meal.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Herbs/MixedHerbLeaves</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.4</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+	  <specialThoughtAsIngredient>HerbMeal</specialThoughtAsIngredient>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+    <ThoughtDef>
+    <defName>HerbMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate meal with herbs</label>
+        <description>Those herbs really improved the meal.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</Defs>

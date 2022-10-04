@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>CyberFrog</defName>
+    <label>Cyber Frog</label>
+    <description>This frog looks to be cybernetically enhanced. It must have escaped from the lab of some kind of mad scientist.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>400</MarketValue>
+      <ComfyTemperatureMin>-600</ComfyTemperatureMin>
+      <ComfyTemperatureMax>600</ComfyTemperatureMax>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>CyberToadEggUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>CyberToadEggFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>20</eggLayIntervalDays>
+        <eggCountRange>1</eggCountRange>
+      </li>
+		<li Class="AnimalBehaviours.CompProperties_Draftable">
+			<makeNonFleeingToo>true</makeNonFleeingToo>
+		</li>
+    </comps>
+    <tools>
+      <li>
+        <label>frog power claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>frog power claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <wildBiomes>
+			<BorealForest>0.005</BorealForest>
+			<IceSheet>0.005</IceSheet>
+			<Tundra>0.005</Tundra>
+			<ColdBog>0.05</ColdBog>
+			<SeaIce>0.005</SeaIce>
+			<TemperateSwamp>0.05</TemperateSwamp>
+			<TropicalSwamp>0.05</TropicalSwamp>
+			<TemperateForest>0.01</TemperateForest>
+			<TropicalRainforest>0.01</TropicalRainforest>
+			<AridShrubland>0.0005</AridShrubland>
+			<Desert>0.0005</Desert>
+			<ExtremeDesert>0.0005</ExtremeDesert>
+	  </wildBiomes>
+      <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+      <nameGenerator>FrogNamerMale</nameGenerator>
+      <nameGeneratorFemale>FrogNamerFemale</nameGeneratorFemale>
+      <baseBodySize>0.3</baseBodySize>
+      <baseHealthScale>0.75</baseHealthScale>
+      <baseHungerRate>0.1</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <leatherDef>Steel</leatherDef>
+      <wildness>0.8</wildness>
+      <trainability>Advanced</trainability>
+      <useMeatFrom>Toad</useMeatFrom>
+      <petness>1</petness>
+      <lifeExpectancy>80</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.09</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Frog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>ST_FrogRole</li>
+					<li>ST_FrogRoleSecondary</li>					
+					<li>ST_FrogRarity</li>					
+				</statToAdd>
+				<statValues>
+					<li>ST_FrogIntelligent</li>
+					<li>ST_MeleeTank</li>	
+					<li>ST_FrogRare</li>					
+				</statValues>
+				<statDescriptions>
+					<li>ST_FrogIntelligentDesc</li>
+					<li>ST_MeleeTankDesc</li>	
+					<li>ST_FrogRareDesc</li>
+				</statDescriptions>
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/CyberFrogLore</ImageToShowInInfoCard>						
+			</li>
+		</modExtensions>
+  </ThingDef>
+  
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>CyberFrog</defName>
+    <label>Cyber Frog</label>
+    <race>CyberFrog</race>
+    <combatPower>60</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Cyber_Frog/CyberFrog</texPath>
+          <drawSize>0.6</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Cyber_Frog/CyberFrog</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Cyber_Frog/CyberFrog</texPath>
+          <drawSize>1</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.35, 0.3)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

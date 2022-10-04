@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>advancedCooking</defName>
+		<label>advanced cooking</label>
+		<description>Acquire the advanced knowledge to cook yummy food.</description>
+		<tab>StoryTime</tab>
+		<baseCost>750</baseCost>
+		<techLevel>Medieval</techLevel>
+ 		<researchViewX>0</researchViewX>
+		<researchViewY>0.75</researchViewY>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>STAlchemy</defName>
+		<label>alchemy</label>
+		<description>Acquire the advanced knowledge to make potions.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>advancedCooking</li>
+		</prerequisites>
+ 		<researchViewX>1</researchViewX>
+		<researchViewY>1.5</researchViewY>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>cabbageCultivation</defName>
+		<label>cabbage cultivation</label>
+		<description>Learn how to plant cabbages.</description>
+		<tab>StoryTime</tab>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+ 		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>cabbageCrafting</defName>
+		<label>cabbage crafting</label>
+		<description>Learn how to utilize cabbages.</description>
+		<tab>StoryTime</tab>
+		<baseCost>3000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>cabbageCultivation</li>
+		</prerequisites>
+ 		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+ 
+ 	<ResearchProjectDef>
+		<defName>gnomeCulture</defName>
+		<label>gnome knowledge</label>
+		<description>Learn the ways of the gnome people.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+ 		<researchViewX>0</researchViewX>
+		<researchViewY>2.25</researchViewY>
+    </ResearchProjectDef>
+ 
+  	<ResearchProjectDef>
+		<defName>gnomeCooking</defName>
+		<label>gnome cooking</label>
+		<description>Learn how to make gnome food.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>gnomeCulture</li>
+			<li>advancedCooking</li>
+		</prerequisites>
+ 		<researchViewX>1</researchViewX>
+		<researchViewY>2.25</researchViewY>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>gnomeCocktails</defName>
+		<label>gnome cocktails</label>
+		<description>Learn how to make gnome cocktails.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>gnomeCooking</li>
+		</prerequisites>
+ 		<researchViewX>2</researchViewX>
+		<researchViewY>2.25</researchViewY>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>advancedBrewing</defName>
+		<label>powerful brews</label>
+		<description>Learn how to make more powerful brews.</description>
+		<tab>StoryTime</tab>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+ 		<researchViewX>0</researchViewX>
+		<researchViewY>3.75</researchViewY>
+		<prerequisites>
+			<li>Brewing</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>pizzaTime</defName>
+		<label>pizza cooking</label>
+		<description>Make it pizza time, all the time.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+ 		<researchViewX>1</researchViewX>
+		<researchViewY>0.75</researchViewY>
+		<prerequisites>
+			<li>advancedCooking</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>nogAlchemy</defName>
+		<label>nog brewing</label>
+		<description>Learn to craft both mundane and exotic nogs at the brewery.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+ 		<researchViewX>1</researchViewX>
+		<researchViewY>3.75</researchViewY>
+		<prerequisites>
+			<li>advancedBrewing</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>beetCulture</defName>
+		<label>wood beet 'culture'</label>
+		<description>Learn how to make wood beet weapons.</description>
+		<tab>StoryTime</tab>
+		<baseCost>250</baseCost>
+		<techLevel>Medieval</techLevel>
+ 		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>pirateCrafting</defName>
+		<label>pirate crafting</label>
+		<description>Learn how to make basic pirate stuff.</description>
+		<tab>StoryTime</tab>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+ 		<researchViewX>0</researchViewX>
+		<researchViewY>4.5</researchViewY>
+		<prerequisites>
+			<li>LongBlades</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>pirateGunsmithing</defName>
+		<label>pirate gunsmithing</label>
+		<description>Learn how to make pirate guns.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+ 		<researchViewX>1</researchViewX>
+		<researchViewY>4.5</researchViewY>
+		<prerequisites>
+			<li>Machining</li>
+			<li>pirateCrafting</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>magicPirateCrafting</defName>
+		<label>cursed pirate crafting</label>
+		<description>Learn how to make powerful magic artifacts using cursed pirate coins.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+ 		<researchViewX>2</researchViewX>
+		<researchViewY>4.5</researchViewY>
+		<prerequisites>
+			<li>TM_ArcaneCrafting</li>
+			<li>pirateGunsmithing</li>
+		</prerequisites>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>alloyCrafting</defName>
+		<label>alloying</label>
+		<description>Learn how to mix metals into stronger forms.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+ 		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>beanManCrafting</defName>
+		<label>bean man creation</label>
+		<description>Learn how to create a man from beans.</description>
+		<tab>StoryTime</tab>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+ 		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>Machining</li>
+		</prerequisites>
+    </ResearchProjectDef>
+
+</Defs>

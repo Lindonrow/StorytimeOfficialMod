@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>ST_AnalyzeTree</defName>
+		<customPower>
+			<forFighter>true</forFighter>
+			<abilityDefs>
+				<li>ST_AnalyzeTree</li>
+				<li>ST_AnalyzeTreeI</li>
+				<li>ST_AnalyzeTreeII</li>
+				<li>ST_AnalyzeTreeIII</li>
+			</abilityDefs>
+			<costToLevel>2</costToLevel>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax>4</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+
+
+
+
+ <HediffDef>
+    	<defName>HedAnalyzeTreeI</defName>
+    	<label>Analyzing Trees</label>
+		<description>The woodcutter is analyzing all nearby trees for optimal chopping strategies.</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(20,150,80)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>10000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+      <stages>
+		<li>
+         <statOffsets>
+               <PlantWorkSpeed>0.20</PlantWorkSpeed>
+         </statOffsets>
+		</li>	 
+      </stages>
+  </HediffDef>
+
+ <HediffDef>
+    	<defName>HedAnalyzeTreeII</defName>
+    	<label>Analyzing Trees (II)</label>
+		<description>The woodcutter is analyzing all nearby trees for optimal chopping strategies.</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(20,150,80)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>15000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+      <stages>
+		<li>
+         <statOffsets>
+               <PlantWorkSpeed>0.30</PlantWorkSpeed>
+         </statOffsets>
+		</li>	 
+      </stages>
+  </HediffDef>
+
+ <HediffDef>
+    	<defName>HedAnalyzeTreeIII</defName>
+    	<label>Analyzing Trees (III)</label>
+		<description>The woodcutter is analyzing all nearby trees for optimal chopping strategies.</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(20,150,80)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>20000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+      <stages>
+		<li>
+         <statOffsets>
+               <PlantWorkSpeed>0.40</PlantWorkSpeed>
+         </statOffsets>
+		</li>	 
+      </stages>
+  </HediffDef>
+
+ <HediffDef>
+    	<defName>HedAnalyzeTreeIV</defName>
+    	<label>Analyzing Trees (IV)</label>
+		<description>The woodcutter is analyzing all nearby trees for optimal chopping strategies.</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(20,150,80)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>30000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+      <stages>
+		<li>
+         <statOffsets>
+               <PlantWorkSpeed>0.50</PlantWorkSpeed>
+         </statOffsets>
+		</li>	 
+      </stages>
+  </HediffDef>
+
+
+
+
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+    <defName>ST_AnalyzeTree</defName>
+    <label>Analyze Trees</label>
+    <uiIconPath>Skills/Woodcutter/AnalyzeTrees</uiIconPath>
+    <description>The Woodcutter analyzes nearby trees and plants, greatly increasing their speed at plant work.</description>
+    <staminaCost>0.25</staminaCost>
+	<canCopy>true</canCopy>
+    <MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+		<abilityDef>ST_AnalyzeTree</abilityDef>
+		<isViolent>false</isViolent>
+        <defaultProjectile>Projectile_Default</defaultProjectile>
+            <warmupTime>0.00001</warmupTime>
+        <SecondsToRecharge>160</SecondsToRecharge>
+        <range>0</range>
+        <soundCast>MeleeHit_Wood</soundCast>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+   	    <AbilityTargetCategory>TargetSelf</AbilityTargetCategory>
+		<targetParams>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>true</canTargetSelf>
+		  <canTargetLocations>false</canTargetLocations>
+		</targetParams>
+	    <hediffsToApply>
+                <li>
+                    <hediffDef>HedAnalyzeTreeI</hediffDef>
+                    <applyChance>1</applyChance>
+		    <severity>1</severity>
+                </li>
+            </hediffsToApply>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+    <defName>ST_AnalyzeTreeI</defName>
+    <label>Analyze Trees (II)</label>
+    <uiIconPath>Skills/Woodcutter/AnalyzeTrees</uiIconPath>
+    <description>The Woodcutter analyzes nearby trees and plants, greatly increasing their speed at plant work.
+
+Leveling this increases the duration and strength of the analysis and decreases cooldown. Requires 2 points to level.</description>
+    <staminaCost>0.25</staminaCost>
+	<canCopy>true</canCopy>
+        <shouldInitialize>false</shouldInitialize>
+    <MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+		<abilityDef>ST_AnalyzeTreeI</abilityDef>
+		<isViolent>false</isViolent>
+        <defaultProjectile>Projectile_Default</defaultProjectile>
+            <warmupTime>0.00001</warmupTime>
+        <SecondsToRecharge>140</SecondsToRecharge>
+        <range>0</range>
+        <soundCast>MeleeHit_Wood</soundCast>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+   	    <AbilityTargetCategory>TargetSelf</AbilityTargetCategory>
+		<targetParams>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>true</canTargetSelf>
+		  <canTargetLocations>false</canTargetLocations>
+		</targetParams>
+	    <hediffsToApply>
+                <li>
+                    <hediffDef>HedAnalyzeTreeII</hediffDef>
+                    <applyChance>1</applyChance>
+		    <severity>1</severity>
+                </li>
+            </hediffsToApply>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+    <defName>ST_AnalyzeTreeII</defName>
+    <label>Analyze Trees (III)</label>
+    <uiIconPath>Skills/Woodcutter/AnalyzeTrees</uiIconPath>
+    <description>The Woodcutter analyzes nearby trees and plants, greatly increasing their speed at plant work.
+
+Leveling this increases the duration of stealth and the strength of the regeneration effect and decreases the cooldown. Requires 2 points to level.</description>
+    <staminaCost>0.25</staminaCost>
+	<canCopy>true</canCopy>
+        <shouldInitialize>false</shouldInitialize>
+    <MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+		<abilityDef>ST_AnalyzeTreeII</abilityDef>
+		<isViolent>false</isViolent>
+        <defaultProjectile>Projectile_Default</defaultProjectile>
+            <warmupTime>0.00001</warmupTime>
+        <SecondsToRecharge>115</SecondsToRecharge>
+        <range>0</range>
+        <soundCast>MeleeHit_Wood</soundCast>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+   	    <AbilityTargetCategory>TargetSelf</AbilityTargetCategory>
+		<targetParams>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>true</canTargetSelf>
+		  <canTargetLocations>false</canTargetLocations>
+		</targetParams>
+	    <hediffsToApply>
+                <li>
+                    <hediffDef>HedAnalyzeTreeIII</hediffDef>
+                    <applyChance>1</applyChance>
+		    <severity>1</severity>
+                </li>
+            </hediffsToApply>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+    <defName>ST_AnalyzeTreeIII</defName>
+    <label>Analyze Trees (IV)</label>
+    <uiIconPath>Skills/Woodcutter/AnalyzeTrees</uiIconPath>
+    <description>The Woodcutter analyzes nearby trees and plants, greatly increasing their speed at plant work.</description>
+    <staminaCost>0.25</staminaCost>
+	<canCopy>true</canCopy>
+     <shouldInitialize>false</shouldInitialize>
+    <MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+		<abilityDef>ST_AnalyzeTreeIII</abilityDef>
+		<isViolent>false</isViolent>
+        <defaultProjectile>Projectile_Default</defaultProjectile>
+            <warmupTime>0.00001</warmupTime>
+        <SecondsToRecharge>90</SecondsToRecharge>
+        <range>0</range>
+        <soundCast>MeleeHit_Wood</soundCast>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+   	    <AbilityTargetCategory>TargetSelf</AbilityTargetCategory>
+		<targetParams>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>true</canTargetSelf>
+		  <canTargetLocations>false</canTargetLocations>
+		</targetParams>
+	    <hediffsToApply>
+                <li>
+                    <hediffDef>HedAnalyzeTreeIV</hediffDef>
+                    <applyChance>1</applyChance>
+		    <severity>1</severity>
+                </li>
+            </hediffsToApply>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+</Defs>

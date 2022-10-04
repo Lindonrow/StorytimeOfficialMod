@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PotionBase">
+		<defName>AntifirePotion</defName>
+		<label>antifire potion</label>
+		<description>A potion of antifire.</description>
+		<graphicData>
+		<texPath>Things/Items/Resources/Potions/AntifirePotion</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>200</MarketValue>
+		<Mass>0.3</Mass>
+		<WorkToMake>900</WorkToMake>
+		<Nutrition>0</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>NeverForNutrition</preferability>
+        <ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>HedAntifirePotion</hediffDef>
+			<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	
+ <HediffDef>
+    	<defName>HedAntifirePotion</defName>
+    	<label>Consumed Antifire Potion</label>
+		<description>Drank an antifire potion!</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(200,80,80)</defaultLabelColor>      	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>8000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+          <label>Antifire Potion</label>
+			<statOffsets>
+				<Flammability>-0.7</Flammability>
+			</statOffsets>	
+        </li>
+      </stages>
+  </HediffDef>	
+	
+
+
+
+</Defs>

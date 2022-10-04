@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>ST_Quarterstaff</defName>
+    <label>quarterstaff</label>
+    <description>A long wooden staff</description>
+    <graphicData>
+      <texPath>Things/Items/Weapons/Quarterstaff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>1.25</Mass>
+    </statBases>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

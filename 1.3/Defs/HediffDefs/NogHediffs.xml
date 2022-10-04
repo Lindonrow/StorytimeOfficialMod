@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   
+
+
+   <ThoughtDef>
+    <defName>FrogNogThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>HedFrogNog</hediff>
+    <stages>
+      <li>
+        <label>Drank frog nog</label>
+        <description>Frogs are good...nogs are good... frog nog? I'm not sure...</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  
+   <HediffDef>
+    	<defName>HedFrogNog</defName>
+    	<label>Drank Frog Nog</label>
+		<description>Drank frog nog!</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0,128,128)</defaultLabelColor>      	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>75000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+          <label>Strange Nog</label>
+            <capMods>
+              <li>
+                <capacity>Consciousness</capacity>
+                <offset>0.25</offset>
+              </li>
+            </capMods>
+        </li>
+		
+      </stages>
+  </HediffDef>
+  
+   <ThoughtDef>
+    <defName>ProfaneNogThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>HedProfaneNog</hediff>
+    <stages>
+      <li>
+        <label>Drank profane nog</label>
+        <description>No...no...NO..MAKE IT STOP</description>
+        <baseMoodEffect>-75</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  
+   <HediffDef>
+    	<defName>HedProfaneNog</defName>
+    	<label>Drank Profane Nog</label>
+		<description>Drank profane nog!</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0,128,128)</defaultLabelColor>      	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>75000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+          <label>Unnatural Nog</label>
+            <capMods>
+              <li>
+                <capacity>Consciousness</capacity>
+                <offset>1.5</offset>
+              </li>
+
+            </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+	<HediffDef>
+		<defName>HedFireNog</defName>
+		<label>Drank Fire Nog</label>
+		<description>Feel the fire of nog flow through you...</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(255,36,0)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		  <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<accuracyTouch>1</accuracyTouch>
+								<accuracyShort>0.8</accuracyShort>
+								<accuracyMedium>0.7</accuracyMedium>
+								<accuracyLong>0.5</accuracyLong>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>NogFire</defaultProjectile>
+								<warmupTime>2</warmupTime>				
+								<burstShotCount>5</burstShotCount>
+								<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+								<soundCast>TM_FireWooshSD</soundCast>
+								<minRange>1</minRange>
+								<range>20</range>
+								<label>fireball</label>	
+								<muzzleFlashScale>0</muzzleFlashScale>				
+								<commonality>1</commonality>
+							</li>
+						</verbs>
+						<verbProps>
+							<li>
+								<label>fireball</label>
+								<draw>false</draw>
+								<canBeToggled>true</canBeToggled>
+							</li>
+						</verbProps>
+					</li>
+		</comps>
+	  </HediffDef>
+</Defs>

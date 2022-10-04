@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Pearl Ring -->
+
+  <ThingDef ParentName="STRingBase">
+    <defName>ST_PearlRing</defName>
+    <label>Pearl ring</label>
+    <description>A silver ring with a pearl embedded in it. Looks pretty and can potentially be enchanted.</description>
+    <graphicData>
+      <texPath>Things/Items/Rings/PearlRing</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.025</ArmorRating_Blunt>
+    </statBases>
+    <generateCommonality>0.01</generateCommonality>
+    <costList>
+      <ST_SilverRing>1</ST_SilverRing>
+      <Pearl>1</Pearl>
+    </costList>
+    <recipeMaker>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+    <equippedStatOffsets>
+      <SocialImpact>0.2</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+		  <tags>
+			<li>IndustrialAdvanced</li>
+			<li>MedievalAdvanced</li>
+		  </tags>
+    </apparel>
+  </ThingDef>  
+
+<!-- Ring of Fishing -->
+  
+</Defs>

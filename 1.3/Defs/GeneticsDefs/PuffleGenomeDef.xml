@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>ST_TierOnePuffleList</defName>
+		<tier>1</tier>
+		<itemProduced>ST_PuffleGenetic</itemProduced>
+		<extractableAnimals>
+			<li>BluePuffle</li>
+			<li>BlackPuffle</li>			
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	
+	<ThingDef ParentName="GR_GeneticsBase">
+		<defName>ST_PuffleGenetic</defName>
+		<graphicData>
+			<texPath>Things/Items/Resources/Genomes/GenomePuffle</texPath>
+		</graphicData>
+		<label>puffle genome</label>
+		<description>A payload of puffle genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.</description>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>ST_ExtractGenesPuffle</defName>
+		<label>extract genes from a puffle</label>
+		<description>Extract genetic material from an puffle corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+
+					<thingDefs>
+						<li>Corpse_BluePuffle</li>
+						<li>Corpse_BlackPuffle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>Corpse_BluePuffle</li>
+				<li>Corpse_BlackPuffle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ST_PuffleGenetic>1</ST_PuffleGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

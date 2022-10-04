@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <InteractionDef>
+    <defName>Chitchat_Storytime</defName>
+    <label>lore conversation</label>
+    <workerClass>InteractionWorker_DeepTalk</workerClass>
+    <symbol>Things/Motes/LoreMote</symbol>
+    <initiatorThought>Loreytime</initiatorThought>
+    <initiatorXpGainSkill>Intellectual</initiatorXpGainSkill>
+    <initiatorXpGainAmount>16</initiatorXpGainAmount>
+    <recipientThought>Loreytime</recipientThought>
+    <logRulesInitiator>
+      <rulesFiles>
+        <li>LoreCharacters->LoreConcepts/LoreCharacters</li>
+        <li>LoreItems->LoreConcepts/LoreItems</li>
+        <li>LoreSpecies->LoreConcepts/LoreSpecies</li>
+        <li>LoreLocations->LoreConcepts/LoreLocations</li>
+      </rulesFiles>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] the [Color] [LoreSpecies] of [LoreLocations].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [LoreCharacters]'s [BodyPart] with [RECIPIENT_nameDef].</li>
+        <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [talkedabout] [LoreItems] to [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [AdjectiveBadass] [LoreSpecies].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [LoreCharacters]'s [Color] [Animal] with [RECIPIENT_nameDef].</li>
+        <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [talkedabout] [LoreCharacters] to [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] the [LoreLocations] law concerning [AdjectiveLarge] [LoreSpecies].</li>		
+        <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] the [LoreLocations] law concerning [AdjectiveFriendly] [LoreSpecies].</li>		
+        <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] the [TerrainFeature] of [LoreLocations].</li>
+		
+        <li>talkedabout(p=4)->chatted about</li>
+        <li>talkedabout->shared a word about</li>
+        <li>talkedabout->spoke about</li>
+        <li>talkedabout->gabbed about</li>
+        <li>talkedabout->considered the future lore possibilities of</li>
+        <li>talkedabout->discussed</li>
+        <li>talkedabout->pondered</li>
+        <li>talkedabout->said something about</li>
+        <li>talkedabout->said a word about</li>
+        <li>talkedabout->made a comment about</li>
+        <li>talkedabout->commented about</li>
+        <li>talkedabout->told a joke about</li>	
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <ThoughtDef>
+    <defName>Loreytime</defName>
+    <thoughtClass>Thought_MemorySocialCumulative</thoughtClass>
+    <stackLimit>300</stackLimit>
+    <maxCumulatedOpinionOffset>15</maxCumulatedOpinionOffset>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>loreytime</label>
+        <description>That deep lore discussion really got me thinking.</description>
+        <baseOpinionOffset>1</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+
+</Defs>

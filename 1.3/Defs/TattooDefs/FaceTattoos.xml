@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TattooDef>
+    <defName>Face_Sauron</defName>
+    <label>Eye of Sauron</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/Sauron/Sauron</texPath>
+    <tattooType>Face</tattooType>
+    <category>Misc</category>
+    <visibleNorth>false</visibleNorth>
+    <styleTags>
+      <li>TattooFaceMisc</li>
+    </styleTags>
+  </TattooDef>
+  
+  <TattooDef>
+    <defName>Face_Harry</defName>
+    <label>Harry</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/HarryPotter/HarryPotter</texPath>
+    <tattooType>Face</tattooType>
+    <category>Misc</category>
+    <visibleNorth>false</visibleNorth>
+    <styleTags>
+      <li>TattooFaceMisc</li>
+    </styleTags>
+  </TattooDef>
+  
+</Defs>

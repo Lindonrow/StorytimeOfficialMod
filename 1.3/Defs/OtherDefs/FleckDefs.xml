@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>StinkyMote</defName>
+    <graphicData>
+      <texPath>Things/Motes/StinkyMote</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.04</fadeInTime>
+    <solidTime>0.03</solidTime>
+    <fadeOutTime>1</fadeOutTime>
+  </FleckDef>
+  
+</Defs>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>GreenBlob</defName>
+    <label>Green Blob</label>
+    <description>A blob of green.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+      <MarketValue>200</MarketValue>
+      <ComfyTemperatureMin>-150</ComfyTemperatureMin>
+      <ComfyTemperatureMax>150</ComfyTemperatureMax>
+      <MeatAmount>0</MeatAmount>
+    </statBases>
+    <tools>
+      <li>
+        <label>left tentacle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>SlimeLeftTentacle</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right tentacle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>SlimeRightTentacle</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>4</cooldownTime>
+        <linkedBodyPartsGroup>SlimeBody</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>	
+	<comps>		
+		<li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
+			<reproductionIntervalDays>15</reproductionIntervalDays>
+			<customString>Splitting in: </customString>
+			<isGreenGoo>true</isGreenGoo>
+			<GreenGooLimit>5</GreenGooLimit>
+			<GreenGooTarget>GreenBlob</GreenGooTarget>
+		</li>		
+		<li Class="AnimalBehaviours.CompProperties_Regeneration">
+			<rateInTicks>250</rateInTicks>
+		</li>
+		<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+			<resourceDef>GreenOoze</resourceDef>
+			<gatheringIntervalDays>2</gatheringIntervalDays>
+			<resourceAmount>10</resourceAmount>
+			<customResourceString>GreenOozeDesc</customResourceString>
+			<isRandom>false</isRandom>
+		</li>
+	</comps>
+    <race>
+	  <wildBiomes>
+			<TemperateSwamp>0.3</TemperateSwamp>
+			<TropicalSwamp>0.3</TropicalSwamp>
+			<TemperateForest>0.1</TemperateForest>
+			<TropicalRainforest>0.1</TropicalRainforest>
+	  </wildBiomes>
+      <body>Slime</body>
+      <leatherDef>GreenOoze</leatherDef>
+      <bloodDef>Filth_GreenBlood</bloodDef>
+      <baseBodySize>1.3</baseBodySize>
+      <baseHealthScale>3.5</baseHealthScale>
+      <baseHungerRate>1</baseHungerRate>
+	  <needsRest>false</needsRest>
+	  <hasGenders>false</hasGenders>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <wildness>0.95</wildness>
+      <trainability>Advanced</trainability>
+      <petness>0</petness>
+      <lifeExpectancy>200</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.09</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>GreenBlob</defName>
+    <label>Green Blob</label>
+    <race>GreenBlob</race> 
+    <combatPower>60</combatPower>
+    <ecoSystemWeight>0.3</ecoSystemWeight>
+    <wildGroupSize>1~1</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/GreenBlob/GreenBlob</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SlimeTypes/DessicatedSlime</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/GreenBlob/GreenBlob</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SlimeTypes/DessicatedSlime</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/GreenBlob/GreenBlob</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SlimeTypes/DessicatedSlime</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

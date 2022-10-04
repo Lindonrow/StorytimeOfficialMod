@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ApparelBase">
+    <defName>BigHat</defName>
+    <label>big hat</label>
+    <description>Once worn by a detective in Kaineng City who exclusively investigated cases involving the theft of Ramen Noodles. His name was Detective Ramen, and he was a great man.</description>
+    <recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Tailor</effectWorking>
+		  <soundWorking>Recipe_Tailor</soundWorking>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/BigHat/BigHat_ground</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>7</Mass>
+      <Flammability>0.6</Flammability>
+      <Insulation_Heat>9</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <generateCommonality>0.025</generateCommonality>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>MedievalBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BigHat/BigHat</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+</Defs>

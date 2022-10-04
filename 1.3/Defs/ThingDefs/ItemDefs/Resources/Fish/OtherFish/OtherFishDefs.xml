@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Gobul</defName>
+		<label>gobul</label>
+		<description>Gobul is a uniquely-evolved Leviathan reminiscent of angler and puffer fish, along with traits which are calling cards of Catfish (the tentacles below its mouth). Its body is covered in purple scales, and a bright, bio-luminescent lure dangles from its forehead. It possesses a gargantuan mouth filled with equally formidable teeth. Its back features an array of retractable spines, and its tail is tipped with quills which are capable of inflicting paralysis if touched.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Gobul</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>15</Mass>
+			<Nutrition>0.8</Nutrition>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Nibelsnarf</defName>
+		<label>nibelsnarf</label>
+		<description>Nibelsnarf will devour bombs placed along its movement trail. Once it swallows the said bomb, it will be stunned by the bomb when it explodes inside the monster. While staggered, it can be fished out to give more time to attack. Failure to pull it out from the ground after a certain period of time will allow it to spin, striking nearby hunters and doing considerable damage in the process.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Nibelsnarf</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>15</Mass>
+			<Nutrition>0.8</Nutrition>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Clam</defName>
+		<label>clam</label>
+		<description>Good for making clam sauce.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Clam</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>15</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.01</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+</Defs>

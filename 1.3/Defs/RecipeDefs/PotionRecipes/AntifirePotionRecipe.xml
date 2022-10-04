@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeAntifirePotion</defName>
+    <label>Make Antifire Potion</label>
+    <description>Extract antifire essence from lantadyme to make a potion.</description>    
+	<jobString>Craft antifire potion.</jobString>
+    <workAmount>1300</workAmount>
+    <skillRequirements>
+      <Alchemy>5</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>LantadymeLeaves</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>LantadymeLeaves</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<AntifirePotion>1</AntifirePotion>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>
+  

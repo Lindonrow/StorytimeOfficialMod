@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ApparelBase">
+    <defName>SantaHat</defName>
+    <label>santa hat</label>
+    <description>It's said that Santa is repeatedly reborn to be broken again and again on the wheel of suffering that is the universe. Ho ho ho.</description>
+    <recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Tailor</effectWorking>
+		  <soundWorking>Recipe_Tailor</soundWorking>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/SantaHat/SantaHat_ground</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>4</Mass>
+      <Flammability>0.6</Flammability>
+      <Insulation_Cold>8</Insulation_Cold>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <generateCommonality>0.01</generateCommonality>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <costList>
+      <Cloth>25</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>MedievalBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SantaHat/SantaHat</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+</Defs>

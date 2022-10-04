@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Jeub</defName>
+    <label>Jeub Leather</label>
+	<description>JEUB SKIN???</description>
+    <graphicData>
+      <color>(159,159,159)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(169,169,169)</color>
+      <commonality>0.08</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Cartographer</defName>
+    <label>Cartographer Skin</label>
+	<description>I can feel the speed even now...</description>
+    <graphicData>
+      <color>(189,189,189)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>4</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(189,189,189)</color>
+      <commonality>0.06</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Gnome</defName>
+    <label>Gnome Leather</label>
+	<description>Skin of a gnome.</description>
+    <graphicData>
+      <color>(234,192,134)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(234,192,134)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Beet</defName>
+    <label>Beet Leather</label>
+	<description>Skin of a beet.</description>
+    <graphicData>
+      <color>(210,170,110)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(210,170,110)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Gnome_Cloth</defName>
+    <label>Gnome Fiber</label>
+	<description>Fibers spun from the fruit of a gnomeroot plant.</description>
+    <graphicData>
+      <color>(34,139,34)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(34,139,34)</color>
+      <commonality>0.04</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Frog</defName>
+    <label>Frog Leather</label>
+	<description>Poor little guy...</description>
+    <graphicData>
+      <color>(0,100,0)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+      <StuffPower_Armor_Lick>1.12</StuffPower_Armor_Lick>
+    </statBases>
+    <stuffProps>
+      <color>(0,100,0)</color>
+      <commonality>0.08</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_NightFrog</defName>
+    <label>Night Frog Leather</label>
+	<description>Honestly, this one had it coming.</description>
+    <graphicData>
+      <color>(40,40,40)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>3</MarketValue>
+      <StuffPower_Armor_Lick>1.2</StuffPower_Armor_Lick>
+      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt>
+    </statBases>
+    <stuffProps>
+      <color>(40,40,40)</color>
+      <commonality>0.04</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Salamander</defName>
+    <label>Salamander Leather</label>
+	<description>Poor little guy...</description>
+    <graphicData>
+      <color>(75,75,75)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+      <StuffPower_Armor_Lick>1.12</StuffPower_Armor_Lick>
+    </statBases>
+    <stuffProps>
+      <color>(75,75,75)</color>
+      <commonality>0.04</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_FrogMan</defName>
+    <label>Frog Person Leather</label>
+	<description>Poor little guy...</description>
+    <graphicData>
+      <color>(0,100,0)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1.2</MarketValue>
+      <StuffPower_Armor_Lick>1.15</StuffPower_Armor_Lick>
+    </statBases>
+    <stuffProps>
+      <color>(0,100,0)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>  
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_BeanMan</defName>
+    <label>Bean Man Leather</label>
+	<description>Smells like beans...</description>
+    <graphicData>
+      <color>(141,75,55)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(141,75,55)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Bulborb</defName>
+    <label>Bulborb Leather</label>
+	<description>Smells like pikmin...</description>
+    <graphicData>
+      <color>(141,75,55)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(141,75,55)</color>
+      <commonality>0.06</commonality>
+    </stuffProps>
+  </ThingDef>
+
+
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Gibbon</defName>
+    <label>Gibbon Leather</label>
+	<description>You monster.</description>
+    <graphicData>
+      <color>(196,166,138)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(196,166,138)</color>
+      <commonality>0.06</commonality>
+    </stuffProps>
+  </ThingDef>
+ 
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Bug</defName>
+    <label>Bug Leather</label>
+	<description>Curiously lacking in tattoos.</description>
+    <graphicData>
+      <color>(127, 103, 76)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>2.5</MarketValue>
+      <StuffPower_Armor_Sharp>1.15</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+    </statBases>
+    <stuffProps>
+      <color>(168, 147, 125)</color>
+      <commonality>0.07</commonality>
+      <statFactors>
+        <Beauty>-1</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Puffle</defName>
+    <label>Puffleskin</label>
+	<description>Tanned, scraped puffle skin. Kinda fucked up.</description>
+    <graphicData>
+      <color>(196,166,138)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(223, 196, 189)</color>
+      <commonality>0.09</commonality>
+    </stuffProps>
+  </ThingDef> 
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Goblin</defName>
+    <label>Goblin Leather</label>
+	<description>The skin-covered goblin.</description>
+    <graphicData>
+      <color>(110,100,30)</color>
+    </graphicData>
+	<statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(0,100,0)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+ 
+</Defs>

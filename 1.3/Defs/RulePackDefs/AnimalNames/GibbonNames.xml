@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>MaleGibbonNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[MaleGibbon]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>MaleGibbon</keyword>
+          <path>AnimalNames/GibbonNamesMale</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>FemaleGibbonNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[FemaleGibbon]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>FemaleGibbon</keyword>
+          <path>AnimalNames/GibbonNamesFemale</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>

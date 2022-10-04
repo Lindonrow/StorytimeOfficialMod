@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<LetterDef>
+		<defName>ST_CabbageLetter</defName>
+		<color>(100, 200, 100)</color>
+		<flashColor>(100, 200, 100)</flashColor>
+		<flashInterval>3</flashInterval>
+		<bounce>false</bounce>
+		<arriveSound>Bones2Bananas</arriveSound>
+	</LetterDef>
+
+  <HediffDef>
+    <defName>Hed_Bones2Cabbages</defName>
+    <label>Bones To Cabbages</label>
+    <description>Through one form of magic or another, this pawn is slowly being transmuted into a cabbage. \nIf the magic reaches critical levels or if the pawn dies while suffering from this effect, the transformation will be complete.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(100, 200, 100)</defaultLabelColor>
+    <lethalSeverity>1</lethalSeverity>
+    <makesSickThought>true</makesSickThought>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>-0.5</severityPerDayNotImmune>
+      </li>
+      <li Class="StoryTime.HediffCompProperties_Polymorph">
+		<targetPolymorph>Cabbage</targetPolymorph>
+		<polymorphLetterLabel>ST_LetterLabelBones2Cabbages</polymorphLetterLabel>
+		<polymorphLetter>ST_LetterBones2Cabbages</polymorphLetter>
+		<polymorphLetterDef>ST_CabbageLetter</polymorphLetterDef>
+	  </li>
+    </comps>
+    <stages>
+      <li>
+        <label>initial</label>
+      </li>
+      <li>
+        <painOffset>0.05</painOffset>	  
+        <label>initial</label>
+        <minSeverity>0.08</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <painOffset>0.1</painOffset>	
+        <label>minor</label>
+        <minSeverity>0.2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <painOffset>0.2</painOffset>	
+        <label>moderate</label>
+        <minSeverity>0.4</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <painOffset>0.3</painOffset>	
+        <label>serious</label>
+        <minSeverity>0.6</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.30</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <painOffset>0.4</painOffset>	
+        <label>extreme</label>
+        <minSeverity>0.8</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.40</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

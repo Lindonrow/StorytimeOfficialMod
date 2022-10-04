@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>JeubCaller</defName>
+    <label>jeubcaller</label>
+    <description>doot doot</description>
+    <statBases>
+      <MoveSpeed>9.0</MoveSpeed>
+      <MarketValue>650</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+    </statBases>
+	<comps>
+		<li Class="AnimalBehaviours.CompProperties_CauseIncident">				
+			<checkingInterval>100000</checkingInterval>
+			<requiresTamed>false</requiresTamed>
+			<incidentToCause>Jeub_Swarm</incidentToCause>
+		</li>
+	</comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>4.2</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <wildBiomes>
+			<BorealForest>0.005</BorealForest>
+			<IceSheet>0.005</IceSheet>
+			<Tundra>0.005</Tundra>
+			<ColdBog>0.05</ColdBog>
+			<SeaIce>0.005</SeaIce>
+			<TemperateSwamp>0.01</TemperateSwamp>
+			<TropicalSwamp>0.01</TropicalSwamp>
+			<TemperateForest>0.01</TemperateForest>
+			<TropicalRainforest>0.009</TropicalRainforest>
+			<AridShrubland>0.005</AridShrubland>
+			<Desert>0.005</Desert>
+			<ExtremeDesert>0.005</ExtremeDesert>
+	  </wildBiomes>
+      <body>Human</body>
+      <nameGenerator>AnimalMaleJeubNamer</nameGenerator>
+      <nameGeneratorFemale>AnimalFemaleJeubNamer</nameGeneratorFemale>
+      <petness>0.2</petness>
+	  <predator>true</predator>
+      <maxPreyBodySize>1</maxPreyBodySize>
+      <baseBodySize>0.5</baseBodySize>
+      <baseHungerRate>0.5</baseHungerRate>
+      <baseHealthScale>0.7</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>Leather_Jeub</leatherDef>
+      <gestationPeriodDays>1</gestationPeriodDays>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <useMeatFrom>Jeub</useMeatFrom>
+      <wildness>0.8</wildness>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(3, 0.7)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>60</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>JeubCaller</defName>
+    <label>jeubcaller</label>
+    <race>JeubCaller</race>
+    <combatPower>35</combatPower>
+    <ecoSystemWeight>0.7</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>jeubcaller</label>
+        <labelPlural>jeubcallers</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jeub_Types/Jeubcaller/Jeubcaller</texPath>
+          <drawSize>0.95</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jeub_Types/Feral_Jeub/JeubCorpse</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jeub_Types/Jeubcaller/Jeubcaller</texPath>
+          <drawSize>1.35</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jeub_Types/Jeubcaller/Jeubcaller</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jeub_Types/Jeubcaller/Jeubcaller</texPath>
+          <drawSize>1.6</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jeub_Types/Feral_Jeub/JeubCorpse</texPath>
+          <drawSize>0.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+
+		<defName>ST_Katana</defName>
+		<label>Katana</label>
+		<description>SUPERIOR. NIPPON. STEEL.</description>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Katana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<costStuffCount>100</costStuffCount>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>1.8</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18</power>
+				<armorPenetration>0.35</armorPenetration>
+				<cooldownTime>1.8</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<armorPenetration>0.10</armorPenetration>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+		</tools>
+		<equippedStatOffsets>
+			<MeleeHitChance>0.2</MeleeHitChance>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+		  <li>
+			<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

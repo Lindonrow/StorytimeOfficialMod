@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Poison</defName>
+    <label>poison</label>
+    <description>A standard poison synthesized from toxic plant matter. Certain groups apply this stuff to weapons or ammunition for use against their enemies. Or you can drink it, if you really think that's a good idea.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Poison</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ST_Poison</li>
+    </thingCategories>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <tickerType>Rare</tickerType>
+    <burnableByRecipe>false</burnableByRecipe>
+    <allowedArchonexusCount>1000</allowedArchonexusCount>
+	<ingestible>
+		<preferability>NeverForNutrition</preferability>
+		<foodType>Meal</foodType>
+		<ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>ToxicBuildup</hediffDef>
+			<severity>0.5</severity>
+			<divideByBodySize>true</divideByBodySize>
+			</li>
+		</outcomeDoers>
+	</ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BasePeeled">
+    <defName>PeeledBeast</defName>
+    <label>Peeled Beast</label>
+    <description>HHHHHHHHHHHHHHHHHHHH</description>
+    <statBases>
+      <MoveSpeed>6.0</MoveSpeed>
+      <MarketValue>350</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Peeler</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Peeler</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Peeler</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>Human</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>1.5</baseHealthScale>
+      <lifeExpectancy>60</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>PeeledScreech</soundWounded>
+          <soundDeath>PeeledScreech</soundDeath>
+          <soundCall>PeeledScreech</soundCall>
+          <soundAngry>PeeledScreech</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BasePeeledKind">
+    <defName>PeeledBeast</defName>
+    <label>Peeled Beast</label>
+    <race>PeeledBeast</race>
+    <combatPower>135</combatPower>
+    <lifeStages>
+      <li>
+        <label>Peeled Beast</label>
+        <labelPlural>Peeled Beasts</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Other/PeeledClown/PeeledBeast/PeeledBeast</texPath>
+          <drawSize>3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/GuineaPig/Dessicated_GuineaPig</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

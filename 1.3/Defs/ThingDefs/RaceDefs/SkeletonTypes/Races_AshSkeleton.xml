@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseSkeleton">
+    <defName>ST_AshSkeleton</defName>
+    <label>Ash Skeleton Pirate</label>
+    <description>Once a pirate, now this poor soul haunts the rim in search of treasure. Looks to have been burned in some horrible fire, making it difficult to burn again.</description>
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+      <MarketValue>250</MarketValue>
+	  <Flammability>0</Flammability>
+	  <ArmorRating_Heat>5.00</ArmorRating_Heat>
+    </statBases>
+    <tools>
+      <li>
+        <label>left hand</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hand</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <intelligence>ToolUser</intelligence>
+      <body>TM_Skeletal</body>
+	  <deathActionWorkerClass>TorannMagic.DeathWorker_Skeletal</deathActionWorkerClass>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>0.7</baseHealthScale>
+      <useMeatFrom>ST_Skeleton</useMeatFrom>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseSkeletonKind">
+    <defName>ST_AshSkeleton</defName>
+    <label>Ash Skeleton Pirate</label>
+    <race>ST_AshSkeleton</race>
+    <combatPower>50</combatPower>
+    <lifeStages>
+      <li>
+        <label>Ash Skeleton Pirate</label>
+        <labelPlural>Ash Skeleton Pirates</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Other/Skeletons/AshSkeleton/AshSkeleton</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jeub_Types/Feral_Jeub/JeubCorpse</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<weaponMoney>300~600</weaponMoney>
+	<weaponTags>
+      <li>SkeletonMelee</li>
+    </weaponTags>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>CursedCoin</thingDef>
+          <countRange>1~4</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_STGems</defName>
+    <label>storytime gem tile</label>
+  </DesignatorDropdownGroupDef>
+  
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="TileStorytimeGemBase">
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <designatorDropdown>Floor_STGems</designatorDropdown>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TileStorytimeGemBase">
+    <defName>PearlTile</defName>
+    <label>pearl tile</label>
+    <renderPrecedence>235</renderPrecedence>
+    <description>Beautiful tiles of pure pearl.</description>
+    <color>(255,224,255)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>9</Beauty>
+    </statBases>
+    <costList>
+      <Pearl>4</Pearl>
+    </costList>
+    <designationHotKey>Misc6</designationHotKey>
+  </TerrainDef>      
+
+</Defs> 

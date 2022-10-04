@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>MakeNogStarter</defName>
+    <label>crush eggs to make nog starter</label>
+    <description>Crushing eggs.</description>
+    <jobString>Crushing.</jobString>
+    <workAmount>200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+			<li>EggsFertilized</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<categories>
+            <li>EggsUnfertilized</li>
+			<li>EggsFertilized</li>
+		</categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+		<categories>
+            <li>EggsUnfertilized</li>
+			<li>EggsFertilized</li>
+		</categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>Brewery</li>
+	</recipeUsers>
+	<researchPrerequisite>nogAlchemy</researchPrerequisite>
+	<products>
+		<NogStarter>10</NogStarter>
+	</products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeEggNog</defName>
+    <label>Make egg nog.</label>
+    <description>Make egg nog.</description>
+    <jobString>Mixing.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>RawNog</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>Milk</li>
+						<li>Green_Milk</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>Milk</li>
+						<li>Green_Milk</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>Milk</li>
+						<li>Green_Milk</li>
+					</thingDefs>
+    </defaultIngredientFilter>
+	<recipeUsers>
+			<li>Brewery</li>
+	</recipeUsers>
+	<researchPrerequisite>nogAlchemy</researchPrerequisite>
+	<products>
+		<EggNog>1</EggNog>
+	</products>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeFrogNog</defName>
+    <label>Make frog nog.</label>
+    <description>Make frog nog.</description>
+    <jobString>Mixing.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>RawNog</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>ToadLegs</li>
+					</thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>ToadLegs</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>ToadLegs</li>
+					</thingDefs>
+    </defaultIngredientFilter>
+	<recipeUsers>
+			<li>Brewery</li>
+	</recipeUsers>
+	<researchPrerequisite>nogAlchemy</researchPrerequisite>
+	<products>
+		<FrogNog>1</FrogNog>
+	</products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeFogNog</defName>
+    <label>Make fog nog.</label>
+    <description>Make fog nog.</description>
+    <jobString>Mixing.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>RawNog</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>Beer</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>Beer</li>
+					</thingDefs>
+    </defaultIngredientFilter>
+	<recipeUsers>
+			<li>Brewery</li>
+	</recipeUsers>
+	<researchPrerequisite>nogAlchemy</researchPrerequisite>
+	<products>
+		<FogNog>1</FogNog>
+	</products>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeProfaneNog</defName>
+    <label>Make profane nog.</label>
+    <description>Make profane nog.</description>
+    <jobString>Mixing.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>RawNog</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>Kraken</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>Kraken</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>Kraken</li>
+					</thingDefs>
+    </defaultIngredientFilter>
+	<recipeUsers>
+			<li>Brewery</li>
+	</recipeUsers>
+	<researchPrerequisite>nogAlchemy</researchPrerequisite>
+	<products>
+		<ProfaneNog>1</ProfaneNog>
+	</products>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeFireNog</defName>
+    <label>Make fire nog.</label>
+    <description>Make fire nog.</description>
+    <jobString>Mixing.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>RawNog</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>Chemfuel</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+					<thingDefs>
+						<li>RawNog</li>
+						<li>Chemfuel</li>
+					</thingDefs>
+    </defaultIngredientFilter>
+	<recipeUsers>
+			<li>Brewery</li>
+	</recipeUsers>
+	<researchPrerequisite>nogAlchemy</researchPrerequisite>
+	<products>
+		<FieryNog>1</FieryNog>
+	</products>
+  </RecipeDef>
+
+
+
+
+
+
+
+
+</Defs>

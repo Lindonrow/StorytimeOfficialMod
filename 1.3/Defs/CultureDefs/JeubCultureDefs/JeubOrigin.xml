@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<MemeDef>
+		<defName>STJeubOrigin</defName>
+		<label>Jeubish origin</label>
+		<description>Descended from a race once enslaved by the skelk before being freed by Snaff</description>
+		<iconPath>World/Jeubscalon/JeubFactionLogo</iconPath>
+		<deityCount>2</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+		</requiredRituals>
+		<consumableBuildings>
+		</consumableBuildings>
+		<requireAnyRitualSeat>
+		</requireAnyRitualSeat>
+		   <descriptionMaker>
+			 <patterns>
+			   <li><def>TheistMyth</def></li>
+			   <li><def>TheistFounder</def></li>
+			 </patterns>
+			 <constants>
+			   <li><key>structure_theist</key><value>true</value></li>
+			 </constants>
+		   </descriptionMaker>
+	   <symbolPacks>
+		  <li><ideoName>Jeub Belief</ideoName><adjective>Jeub</adjective><member>Jeub</member><prefix>true</prefix></li>
+		  <li><ideoName>Jeub Way</ideoName><adjective>Jeub</adjective><member>Jeub</member><prefix>true</prefix></li>
+		</symbolPacks>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeCreed->sect</li>
+			<li>memeCreed->cult</li>
+			<li>memeCreed->temple</li>
+			<li>memeCreed->faith</li>
+			<li>memeLeaderNoun->high king</li>
+			<li>memeLeaderAdjective->high king</li>
+			<li>memeMoralist->priest</li>
+			<li>memeMoralist->cleric</li>
+		  </rulesStrings>
+		</generalRules>
+		<fixedDeityNameTypes>
+		  <li><name>Colin</name><type>Eternal Alchemy</type></li>
+		  <li><name>Snaff</name><type>Jeub Moses</type></li>
+		  <li><name>Zroxxa</name><type>High Queen</type></li>
+		  <li><name>Jeubadiah</name><type>Bad Jumper</type></li>
+		  <li><name>Jeubert</name><type>High King</type></li>
+		  <li><name>Allah</name><type>Evil One</type></li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+		  <li>
+			<category>Totemic</category>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<category>Rustic</category>
+			<priority>2</priority>
+		  </li>
+		  <li>
+			<category>Animalist</category>
+			<priority>4</priority>
+		  </li>
+		</thingStyleCategories>
+	</MemeDef>
+
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <VBE.BackgroundImageDef>
+        <label>Official Storytime Background</label>
+        <description>The only good background on this list, prove me wrong.</description>
+        <defName>OST_Background</defName>
+        <path>UI/SpaceGibbon</path>
+        <iconPath>UI/SpaceGibbon</iconPath>
+    </VBE.BackgroundImageDef>
+	
+</Defs>	

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef Name="BloodExplosion">
+    <defName>BloodExplosion</defName>
+    <label>blood explosion</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>1</defaultDamage>
+    <defaultStoppingPower>0</defaultStoppingPower>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>0</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>0</buildingDamageFactorPassable>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>true</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(0.54, 0.01, 0.01)</explosionColorCenter>
+    <explosionColorEdge>(0.84, 0.02, 0.02)</explosionColorEdge>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+    <soundExplosion>FrogPop</soundExplosion>
+  </DamageDef>
+ 
+   <ThingDef ParentName="AnimalThingBase">
+    <defName>BloodFrog</defName>
+    <label>Blood Frog</label>
+    <description>This frog looks like an over-full water balloon, except for instead of water, it's blood and instead of a balloon, it's a frog. There's no telling what might happen if something popped it.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>70</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <LeatherAmount>5</LeatherAmount>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>BloodFrogUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>BloodFrogEggFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>5</eggLayIntervalDays>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <wildBiomes>
+			<BorealForest>0.01</BorealForest>
+			<IceSheet>0.01</IceSheet>
+			<Tundra>0.01</Tundra>
+			<ColdBog>0.1</ColdBog>
+			<SeaIce>0.01</SeaIce>
+			<TemperateSwamp>0.25</TemperateSwamp>
+			<TropicalSwamp>0.2</TropicalSwamp>
+			<TemperateForest>0.04</TemperateForest>
+			<TropicalRainforest>0.04</TropicalRainforest>
+			<AridShrubland>0.01</AridShrubland>
+			<Desert>0.01</Desert>
+			<ExtremeDesert>0.01</ExtremeDesert>
+	  </wildBiomes>	
+      <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+      <nameGenerator>FrogNamerMale</nameGenerator>
+      <nameGeneratorFemale>FrogNamerFemale</nameGeneratorFemale>
+	  <deathActionWorkerClass>StoryTime.DeathActionWorker_BloodExplosion</deathActionWorkerClass>
+      <baseBodySize>0.2</baseBodySize>
+      <baseHealthScale>0.005</baseHealthScale>
+      <baseHungerRate>0.2</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <leatherDef>Leather_Frog</leatherDef>
+      <wildness>0.2</wildness>
+      <trainability>Advanced</trainability>
+      <useMeatFrom>Toad</useMeatFrom>
+	  <manhunterOnDamageChance>0</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <petness>0.5</petness>
+      <lifeExpectancy>8</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.09</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Frog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>ST_FrogRole</li>
+					<li>ST_FrogRarity</li>					
+				</statToAdd>
+				<statValues>
+					<li>ST_FrogExplosive</li>
+					<li>ST_FrogRare</li>					
+				</statValues>
+				<statDescriptions>
+					<li>ST_FrogExplosiveDesc</li>
+					<li>ST_FrogRareDesc</li>
+				</statDescriptions>				
+			</li>
+		</modExtensions>
+  </ThingDef>
+  
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BloodFrog</defName>
+    <label>Blood Frog</label>
+    <race>BloodFrog</race>
+    <combatPower>10</combatPower>
+    <ecoSystemWeight>0.1</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Blood_Frog/BloodFrog</texPath>
+          <drawSize>0.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Blood_Frog/BloodFrog</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Blood_Frog/BloodFrog</texPath>
+          <drawSize>0.9</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.2, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

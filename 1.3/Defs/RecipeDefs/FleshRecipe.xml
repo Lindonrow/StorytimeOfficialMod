@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_FleshBricks</defName>
+    <label>make flesh bricks</label>
+    <description>Shape meat into bricks.</description>
+    <jobString>Shaping.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+		<li>TableButcher</li>
+	</recipeUsers>
+	<researchPrerequisite>Stonecutting</researchPrerequisite>
+	<products>
+		<Flesh_Brick>20</Flesh_Brick>
+	</products>
+  </RecipeDef>
+
+</Defs>

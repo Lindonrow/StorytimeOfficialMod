@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Coconut</defName>
+		<label>coconut</label>
+		<description>cocko nut.</description>
+			<graphicData>
+			<texPath>Things/Items/Resources/Coconut</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>0.25</DeteriorationRate>
+			<MarketValue>75</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<stackLimit>75</stackLimit>
+		<tickerType>Rare</tickerType>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>60</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<thingCategories>
+		  <li>PlantMatter</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

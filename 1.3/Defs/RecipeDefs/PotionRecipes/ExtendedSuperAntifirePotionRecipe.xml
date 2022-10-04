@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeExtendedSuperAntifirePotion</defName>
+    <label>Make Extended Super Antifire Potion</label>
+    <description>Extract antifire essence from lantadyme and chemfuel to make a powerful potion.</description>    
+	<jobString>Craft extended super antifire potion.</jobString>
+    <workAmount>1600</workAmount>
+    <skillRequirements>
+      <Alchemy>8</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>LantadymeLeaves</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>LantadymeLeaves</li>
+						<li>Chemfuel</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<ExtendedSuperAntifirePotion>1</ExtendedSuperAntifirePotion>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>
+  

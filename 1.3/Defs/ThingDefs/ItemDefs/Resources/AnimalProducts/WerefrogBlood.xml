@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>WerefrogBlood</defName>
+		<label>werefrog blood</label>
+		<description>Blood extracted from the dead body of a werefrog. It still contains active werefrog DNA which could probably be utilized in some way by a talented alchemist.</description>
+			<graphicData>
+			<texPath>Things/Items/Resources/WerefrogBlood</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>0.25</DeteriorationRate>
+			<MarketValue>135</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<tickerType>Rare</tickerType>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>5</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+	</ThingDef>
+
+</Defs>

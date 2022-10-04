@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseSkeleton">
+    <defName>ST_SkeletonCaptain</defName>
+    <label>Skeleton Captain</label>
+    <description>A captain in life, now he serves in the army of the damned.</description>
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+      <MarketValue>600</MarketValue>
+	  <Flammability>0.1</Flammability>
+	  <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+    </statBases>
+    <tools>
+      <li>
+        <label>left hand</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hand</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+    </tools>
+	<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>0.9</accuracyShort>
+				<accuracyMedium>0.8</accuracyMedium>
+				<accuracyLong>0.7</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SkeletonBlast</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<burstShotCount>3</burstShotCount>
+				<minRange>1</minRange>
+				<range>25</range>				
+				<soundCast>TM_FireWooshSD</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>ethereal blast</label>
+				<commonality>1</commonality>
+			</li>
+	</verbs>
+    <race>
+	  <intelligence>ToolUser</intelligence>
+      <body>TM_Skeletal</body>
+	  <deathActionWorkerClass>TorannMagic.DeathWorker_Skeletal</deathActionWorkerClass>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>1.7</baseHealthScale>
+      <useMeatFrom>ST_Skeleton</useMeatFrom>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseSkeletonKind">
+    <defName>ST_SkeletonCaptain</defName>
+    <label>Skeleton Captain</label>
+    <race>ST_SkeletonCaptain</race>
+    <combatPower>100</combatPower>
+    <lifeStages>
+      <li>
+        <label>Skeleton Captain</label>
+        <labelPlural>Skeleton Captain</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Other/Skeletons/SkeletonCaptain/SkeletonCaptain</texPath>
+          <drawSize>2.1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jeub_Types/Feral_Jeub/JeubCorpse</texPath>
+          <drawSize>2.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<weaponMoney>300~1200</weaponMoney>
+	<weaponTags>
+      <li>SkeletonMelee</li>
+    </weaponTags>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>CursedCoin</thingDef>
+          <countRange>10~15</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  
+  
+  
+  
+   <ThingDef ParentName="BaseBullet">
+    <defName>SkeletonBlast</defName>
+    <label>ethereal blast</label>
+    <graphicData>
+      <texPath>Spells/spite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>35</speed>
+    </projectile>
+  </ThingDef>
+  
+</Defs>

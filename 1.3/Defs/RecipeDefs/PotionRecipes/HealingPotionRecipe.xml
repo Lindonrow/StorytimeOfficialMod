@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeHealingPotion</defName>
+    <label>Make Healing Potion</label>
+    <description>Extract healing essence from healroot to make a potion.</description>    
+	<jobString>Craft healing potion.</jobString>
+    <workAmount>1200</workAmount>
+    <skillRequirements>
+      <Alchemy>4</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<HealingPotion>1</HealingPotion>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>
+  

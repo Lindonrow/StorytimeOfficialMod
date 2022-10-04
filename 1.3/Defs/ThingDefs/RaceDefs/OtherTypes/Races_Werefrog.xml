@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef ParentName="Bite">
+		<defName>WerefrogBite</defName>
+		<label>werefrog bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>FroggyFate</hediff>
+				<severityPerDamageDealt>0.0001</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>Werefrog</defName>
+		<label>werefrog</label>
+		<description>Half man, half frog, all evil. Watch out for its bite.</description>		
+		<statBases>
+			<MoveSpeed>7</MoveSpeed>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<MarketValue>450</MarketValue>
+			<ArmorRating_Blunt>.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>.3</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>WerefrogBite</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>60</rateInTicks>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>Werefrogs</factionToReturnTo>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee">
+		
+			</li>
+		</comps>
+
+		<race>
+			<body>Human</body>
+			<baseBodySize>1.25</baseBodySize>
+			<baseHealthScale>5.25</baseHealthScale>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<needsRest>false</needsRest>
+			<leatherDef>Leather_Frog</leatherDef>
+			<useMeatFrom>Human</useMeatFrom>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<lifeExpectancy>85</lifeExpectancy>
+			<foodType>OmnivoreHuman</foodType>
+			<baseHungerRate>0.10</baseHungerRate>
+			<wildness>1</wildness>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					  <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+					  <soundDeath>Pawn_Iguana_Death</soundDeath>
+					  <soundCall>Pawn_Iguana_Call</soundCall>
+					  <soundAngry>Frog_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>		
+		</race>
+		<butcherProducts>
+			<WerefrogBlood>3</WerefrogBlood>
+		</butcherProducts>
+	</ThingDef>
+	
+	
+	<PawnKindDef>
+		<defName>Werefrog</defName>
+		<label>werefrog</label>
+		<race>Werefrog</race>
+		<combatPower>180</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<defaultFactionType>Werefrogs</defaultFactionType>
+		<wildGroupSize>
+			<min>1</min>
+			<max>2</max>
+		</wildGroupSize>
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Other/Werefrog/Werefrog</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					  <texPath>Things/Pawn/Animal/Jeub_Types/Feral_Jeub/JeubCorpse</texPath>
+					  <drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

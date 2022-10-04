@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<MemeDef>
+		<defName>STFrogPersonOrigin</defName>
+		<label>Frog person origin</label>
+		<description>They're descended from frogs, I think.</description>
+		<iconPath>World/FrogPeople/FrogPeopleFactionLogo</iconPath>
+		<deityCount>2</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+		</requiredRituals>
+		<consumableBuildings>
+		</consumableBuildings>
+		<requireAnyRitualSeat>
+		</requireAnyRitualSeat>
+		<requireOne>
+			<li>
+				<li>InsectMeatEating_Loved</li>
+			</li>
+		</requireOne>
+	   <descriptionMaker>
+		 <patterns>
+		   <li><def>TheistMyth</def></li>
+		   <li><def>TheistFounder</def></li>
+		 </patterns>
+		 <constants>
+		   <li><key>structure_theist</key><value>true</value></li>
+		 </constants>
+	   </descriptionMaker>
+	   <symbolPacks>
+		  <li><ideoName>Frogism</ideoName><adjective>Frog Person</adjective><member>Frog Person</member><prefix>true</prefix></li>
+		  <li><ideoName>Amphibious Way</ideoName><adjective>Frog Person</adjective><member>Frog Person</member><prefix>true</prefix></li>
+		  <li><ideoName>Frog Belief</ideoName><adjective>Frog Person</adjective><member>Frog Person</member><prefix>true</prefix></li>
+		  <li><ideoName>Frog Person Belief</ideoName><adjective>Frog Person</adjective><member>Frog Person</member><prefix>true</prefix></li>
+		  <li><ideoName>Frog Worship</ideoName><adjective>Frog Person</adjective><member>Frog Person</member><prefix>true</prefix></li>
+		  <li><ideoName>Amphibious Belief</ideoName><adjective>Frog Person</adjective><member>Frog Person</member><prefix>true</prefix></li>
+		</symbolPacks>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeCreed->tribe</li>
+			<li>memeCreed->faith</li>
+			<li>memeLeaderNoun->high chief</li>
+			<li>memeLeaderAdjective->high chief</li>
+			<li>memeMoralist->shaman</li>
+			<li>memeMoralist->wise one</li>
+		  </rulesStrings>
+		</generalRules>
+		<fixedDeityNameTypes>
+		  <li><name>Kermit</name><type>Frog</type></li>
+		  <li><name>Rodney Castleman</name><type>Druid</type></li>
+		  <li><name>Zintl</name><type>Sun God</type></li>
+		  <li><name>Heqet</name><type>Frog God</type></li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+		  <li>
+			<category>Totemic</category>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<category>Animalist</category>
+			<priority>4</priority>
+		  </li>
+		</thingStyleCategories>
+	</MemeDef>
+
+</Defs>

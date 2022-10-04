@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>StorytimeBarrel</defName>
+        <label>Greater Fermenting Barrel</label>
+		<description>Barrel.</description>
+	    <thingClass>UniversalFermenter.Building_ColorCoded</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/UF_Barrel/UF_Barrel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+    	<minifiedDef>MinifiedThing</minifiedDef>
+    	<thingCategories>
+      		<li>BuildingsProduction</li>
+    	</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<rotatable>true</rotatable>
+     		<size>(1,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Rare</tickerType>
+	    <statBases>
+			<Cleanliness>-15</Cleanliness>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>30</Mass>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+    	</statBases>
+		<designationCategory>Production</designationCategory>
+    	<researchPrerequisites>
+			<li>advancedBrewing</li>
+		</researchPrerequisites>
+    <comps>
+		<li Class="UniversalFermenter.CompProperties_UniversalFermenter">
+			<showProductIcon>true</showProductIcon>
+			<barOffset>(0.0, 0.25)</barOffset>
+			<barScale>(1.0, 1.0)</barScale>
+			<processes>
+                <li>
+                  <thingDef>GnomeBeer</thingDef>
+                  <ingredientFilter>
+                    <thingDefs>
+                      <li>GnomeWort</li>
+                    </thingDefs>
+                  </ingredientFilter>
+                  <maxCapacity>75</maxCapacity>
+				  <usesTemperature>true</usesTemperature>
+				  <temperatureSafe>-1.0~32.0</temperatureSafe>
+				  <temperatureIdeal>7.0~32.0</temperatureIdeal>
+				  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+                  <speedBelowSafe>0.1</speedBelowSafe>
+				  <speedAboveSafe>1.0</speedAboveSafe>
+                  <processDays>4</processDays>
+                </li>
+				<li>
+                  <thingDef>RawNog</thingDef>
+                  <ingredientFilter>
+                    <thingDefs>
+                      <li>NogStarter</li>
+                    </thingDefs>
+                  </ingredientFilter>
+                  <maxCapacity>75</maxCapacity>
+				  <usesTemperature>true</usesTemperature>
+				  <temperatureSafe>-24.0~12.0</temperatureSafe>
+				  <temperatureIdeal>-24.0~12.0</temperatureIdeal>
+				  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> 
+                  <speedBelowSafe>0.1</speedBelowSafe>
+				  <speedAboveSafe>1.0</speedAboveSafe>
+                  <processDays>1</processDays>
+                </li>
+				<li>
+                  <thingDef>Kraken</thingDef>
+                  <ingredientFilter>
+                    <thingDefs>
+                      <li>Sugar</li>
+                    </thingDefs>
+                  </ingredientFilter>
+                  <maxCapacity>75</maxCapacity>
+				  <usesTemperature>true</usesTemperature>
+				  <temperatureSafe>-1.0~32.0</temperatureSafe>
+				  <temperatureIdeal>7.0~32.0</temperatureIdeal>
+				  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+                  <speedBelowSafe>0.1</speedBelowSafe>
+				  <speedAboveSafe>1.0</speedAboveSafe>
+                  <processDays>5</processDays>
+                </li>
+			</processes>
+			</li>
+		<li Class="CompProperties_Forbiddable"/>
+    </comps>
+    </ThingDef>
+
+</Defs>

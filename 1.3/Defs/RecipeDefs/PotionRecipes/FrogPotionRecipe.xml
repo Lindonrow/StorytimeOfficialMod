@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeFrogPotion</defName>
+    <label>Make Frog Potion</label>
+    <description>Extract froganthropy essence from werefrog blood to make a potion.</description>    
+	<jobString>Craft frog potion.</jobString>
+    <workAmount>1600</workAmount>
+    <skillRequirements>
+      <Alchemy>6</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>WerefrogBlood</li>
+					</thingDefs>
+        </filter>
+        <count>9</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>WerefrogBlood</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<FrogPotion>1</FrogPotion>
+	</products>
+  </RecipeDef> 
+  
+</Defs>

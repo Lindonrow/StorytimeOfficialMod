@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>ST_Cleave</defName>
+		<customPower>
+			<forFighter>true</forFighter>
+			<abilityDefs>
+				<li>ST_Cleave</li>
+				<li>ST_Cleave_I</li>
+				<li>ST_Cleave_II</li>
+				<li>ST_Cleave_III</li>
+			</abilityDefs>
+			<costToLevel>2</costToLevel>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax>4</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+
+
+
+
+
+
+
+
+
+
+
+
+ <ThingDef Class="AbilityUser.ProjectileDef_Ability" ParentName="BaseBullet">
+    <defName>Projectile_HeavyCleave</defName>
+	<thingClass>TorannMagic.Projectile_Spinning</thingClass>
+    <label>Hatchet</label>
+	<graphicData>
+      <texPath>Spells/cleave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+	  <flyOverhead>false</flyOverhead>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+
+
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+    <defName>ST_Cleave</defName>
+    <label>Heavy Cleave</label>
+    <description>Delivers a heavy blow with a hatchet, cutting deep into the victim's body.</description>
+	<uiIconPath>Skills/Woodcutter/HeavyCleave</uiIconPath>
+    <staminaCost>0.35</staminaCost>
+		<canCopy>true</canCopy>
+	<requiredWeaponsOrCategories>
+	  <li>BronzeHatchet</li>
+	  <li>BlackHatchet</li>
+	  <li>SteelHatchet</li>
+	  <li>MithrilHatchet</li>
+ 	  <li>AdamantiumHatchet</li>
+      <li>RuneHatchet</li>
+	  <li>DragonHatchet</li>
+	</requiredWeaponsOrCategories>
+	<weaponDamageFactor>1.0</weaponDamageFactor>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_HeavyCleave</defaultProjectile>
+		<abilityDef>ST_Cleave</abilityDef>
+            <warmupTime>0.00001</warmupTime>
+        <SecondsToRecharge>40.0</SecondsToRecharge>
+        <range>1.42</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <isPrimary>true</isPrimary>
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetLocations>false</canTargetLocations>
+		</targetParams>
+	    <hediffsToApply>
+                <li>
+                    <hediffDef>TM_RendHD</hediffDef>
+                    <applyChance>1</applyChance>
+		    <severity>1.5</severity>
+                </li>
+            </hediffsToApply>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+    <defName>ST_Cleave_I</defName>
+    <label>Heavy Cleave (II)</label>
+    <description>Delivers a heavy blow with a hatchet, cutting deep into the victim's body.
+Leveling this decreases the cost and cooldown, and increases the severity of the wound. Requires 2 points to level.</description>
+	<uiIconPath>Skills/Woodcutter/HeavyCleave</uiIconPath>
+    <staminaCost>0.3</staminaCost>
+		<canCopy>true</canCopy>
+	<requiredWeaponsOrCategories>
+	  <li>BronzeHatchet</li>
+	  <li>BlackHatchet</li>
+	  <li>SteelHatchet</li>
+	  <li>MithrilHatchet</li>
+ 	  <li>AdamantiumHatchet</li>
+      <li>RuneHatchet</li>
+	  <li>DragonHatchet</li>
+	</requiredWeaponsOrCategories>
+        <shouldInitialize>false</shouldInitialize>
+	<weaponDamageFactor>1.1</weaponDamageFactor>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_HeavyCleave</defaultProjectile>
+		<abilityDef>ST_Cleave_I</abilityDef>
+            <warmupTime>0.00001</warmupTime>
+        <SecondsToRecharge>30.0</SecondsToRecharge>
+        <range>1.42</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <isPrimary>true</isPrimary>
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetLocations>false</canTargetLocations>
+		</targetParams>
+	    <hediffsToApply>
+                <li>
+                    <hediffDef>TM_RendHD</hediffDef>
+                    <applyChance>1</applyChance>
+		    <severity>2.0</severity>
+                </li>
+            </hediffsToApply>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+    <defName>ST_Cleave_II</defName>
+    <label>Heavy Cleave (III)</label>
+    <description>Delivers a heavy blow with a hatchet, cutting deep into the victim's body.
+Leveling this decreases the cost and cooldown, and increases the severity of the wound. Requires 2 points to level.</description>
+	<uiIconPath>Skills/Woodcutter/HeavyCleave</uiIconPath>
+    <staminaCost>0.25</staminaCost>
+		<canCopy>true</canCopy>
+	<requiredWeaponsOrCategories>
+	  <li>BronzeHatchet</li>
+	  <li>BlackHatchet</li>
+	  <li>SteelHatchet</li>
+	  <li>MithrilHatchet</li>
+ 	  <li>AdamantiumHatchet</li>
+      <li>RuneHatchet</li>
+	  <li>DragonHatchet</li>
+	</requiredWeaponsOrCategories>
+	<weaponDamageFactor>1.2</weaponDamageFactor>
+        <shouldInitialize>false</shouldInitialize>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_HeavyCleave</defaultProjectile>
+		<abilityDef>ST_Cleave_II</abilityDef>
+            <warmupTime>0.00001</warmupTime>
+        <SecondsToRecharge>20.0</SecondsToRecharge>
+        <range>1.42</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <isPrimary>true</isPrimary>
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetLocations>false</canTargetLocations>
+		</targetParams>
+	    <hediffsToApply>
+                <li>
+                    <hediffDef>TM_RendHD</hediffDef>
+                    <applyChance>1</applyChance>
+		    <severity>2.5</severity>
+                </li>
+            </hediffsToApply>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+    <defName>ST_Cleave_III</defName>
+    <label>Heavy Cleave (IV)</label>
+    <description>Delivers a heavy blow with a hatchet, cutting deep into the victim's body.</description>
+	<uiIconPath>Skills/Woodcutter/HeavyCleave</uiIconPath>
+    <staminaCost>0.2</staminaCost>
+		<canCopy>true</canCopy>
+	<requiredWeaponsOrCategories>
+	  <li>BronzeHatchet</li>
+	  <li>BlackHatchet</li>
+	  <li>SteelHatchet</li>
+	  <li>MithrilHatchet</li>
+ 	  <li>AdamantiumHatchet</li>
+      <li>RuneHatchet</li>
+	  <li>DragonHatchet</li>
+	</requiredWeaponsOrCategories>
+        <shouldInitialize>false</shouldInitialize>
+	<weaponDamageFactor>1.3</weaponDamageFactor>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_HeavyCleave</defaultProjectile>
+		<abilityDef>ST_Cleave_III</abilityDef>
+            <warmupTime>0.00001</warmupTime>
+        <SecondsToRecharge>10.0</SecondsToRecharge>
+        <range>1.42</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <isPrimary>true</isPrimary>
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetLocations>false</canTargetLocations>
+		</targetParams>
+	    <hediffsToApply>
+                <li>
+                    <hediffDef>TM_RendHD</hediffDef>
+                    <applyChance>1</applyChance>
+		    <severity>3.0</severity>
+                </li>
+            </hediffsToApply>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Defs>

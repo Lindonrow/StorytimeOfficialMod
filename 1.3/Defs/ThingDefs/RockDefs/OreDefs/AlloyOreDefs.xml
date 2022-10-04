@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="RockBase">
+    <defName>ST_CopperOre</defName>
+    <label>copper ore</label>
+    <description>This needs refining.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(150, 80, 9)</color>
+      <colorTwo>(194, 92, 9)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ST_Copper</mineableThing>
+      <mineableYield>45</mineableYield>
+      <mineableScatterCommonality>0.5</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>10~30</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+  <ThingDef ParentName="RockBase">
+    <defName>ST_TinOre</defName>
+    <label>tin ore</label>
+    <description>This needs refining.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(111, 85, 85)</color>
+      <colorTwo>(114, 105, 105)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ST_Tin</mineableThing>
+      <mineableYield>45</mineableYield>
+      <mineableScatterCommonality>0.5</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>10~30</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+  <ThingDef ParentName="RockBase">
+    <defName>ST_CoalOre</defName>
+    <label>coal ore</label>
+    <description>It's black.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(50, 50, 50)</color>
+      <colorTwo>(30, 30, 30)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1600</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ST_Coal</mineableThing>
+      <mineableYield>45</mineableYield>
+      <mineableScatterCommonality>0.33</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>8~20</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+
+</Defs>

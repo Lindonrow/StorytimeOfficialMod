@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>SlimeBody</defName>
+    <label>body</label>
+    <listOrder>1</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>SlimeLeftTentacle</defName>
+    <label>left tentacle</label>
+    <listOrder>1</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>SlimeRightTentacle</defName>
+    <label>right tentacle</label>
+    <listOrder>1</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartDef>
+    <defName>SlimeCore</defName>
+    <label>core</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>0.1</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>false</solid>
+    <alive>false</alive>
+    <bleedRate>15</bleedRate>
+    <tags>
+      <li>ConsciousnessSource</li>
+      <li>MovingLimbCore</li>
+      <li>BreathingSource</li>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+      <li>MetabolismSource</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>SlimeTentacle</defName>
+    <label>tentacle</label>
+    <hitPoints>5</hitPoints>
+    <frostbiteVulnerability>0.1</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>false</solid>
+    <alive>false</alive>
+    <bleedRate>7</bleedRate>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+
+
+  <BodyDef>
+    <defName>Slime</defName>
+    <label>body</label>
+    <corePart>
+      <def>SlimeCore</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+          <li>SlimeBody</li>
+      </groups>
+	  <parts>
+        <li>
+          <def>SlimeTentacle</def>
+          <customLabel>left tentacle</customLabel>
+          <coverage>0.2</coverage>
+          <height>Middle</height>
+		  <depth>Outside</depth>  
+		  <groups>
+			  <li>SlimeLeftTentacle</li>
+		  </groups>
+        </li>
+        <li>
+          <def>SlimeTentacle</def>
+          <customLabel>right tentacle</customLabel>
+          <coverage>0.2</coverage>
+          <height>Middle</height>
+		  <depth>Outside</depth> 
+		  <groups>
+			  <li>SlimeRightTentacle</li>
+		  </groups>
+        </li>	
+	  </parts>		
+    </corePart>
+  </BodyDef>
+  
+</Defs>

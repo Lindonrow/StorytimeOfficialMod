@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+ <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>ST_Guandao</defName>
+    <label>guandao</label>
+    <description>Basically a sword on a stick.</description>
+    <graphicData>
+      <texPath>Things/Items/Weapons/Guandao</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.6</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <costStuffCount>100</costStuffCount>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-30</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <armorPenetration>0.10</armorPenetration>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<comps>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

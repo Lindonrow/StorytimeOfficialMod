@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PotionBase">
+		<defName>ExtendedSuperAntifirePotion</defName>
+		<label>extended super antifire potion</label>
+		<description>An extended super potion of antifire.</description>
+		<graphicData>
+		<texPath>Things/Items/Resources/Potions/ExtendedSuperAntifirePotion</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>275</MarketValue>
+		<Mass>0.3</Mass>
+		<WorkToMake>900</WorkToMake>
+		<Nutrition>0</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>NeverForNutrition</preferability>
+        <ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>HedExtendedSuperAntifirePotion</hediffDef>
+			<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	
+ <HediffDef>
+    	<defName>HedExtendedSuperAntifirePotion</defName>
+    	<label>Consumed Extended Super Antifire Potion</label>
+		<description>Drank an antifire potion!</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(200,80,80)</defaultLabelColor>      	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>16000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+          <label>Extended Super Antifire Potion</label>
+			<statOffsets>
+				<Flammability>-1</Flammability>
+			</statOffsets>	
+        </li>
+      </stages>
+  </HediffDef>	
+	
+
+
+
+</Defs>

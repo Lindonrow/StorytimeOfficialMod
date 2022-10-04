@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ApparelBase">
+    <defName>BowlHat</defName>
+    <label>bowl hat</label>
+    <description>A bowl that just so happens to be the perfect size to wear as a hat. Wearing bowls like this is generally considered to be cute</description>
+    <recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Tailor</effectWorking>
+		  <soundWorking>Recipe_Tailor</soundWorking>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/BowlHat/BowlHat_ground</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>4</Mass>
+      <Flammability>1</Flammability>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <generateCommonality>0.25</generateCommonality>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>Neolithic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BowlHat/BowlHat</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+</Defs>

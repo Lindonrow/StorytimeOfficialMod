@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="runeEssenceMine"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~1</rockCount>
+							<allowedRockDefs>
+								<li>runeEssence</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

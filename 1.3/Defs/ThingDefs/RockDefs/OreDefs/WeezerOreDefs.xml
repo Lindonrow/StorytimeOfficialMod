@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="RockBase">
+    <defName>WeezerOre</defName>
+    <label>weezer ore</label>
+    <description>weezer</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(0, 89, 133)</color>
+      <colorTwo>(0, 182, 213)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Weezer</mineableThing>
+      <mineableYield>60</mineableYield>
+      <mineableScatterCommonality>0.2</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>5~10</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+</Defs>

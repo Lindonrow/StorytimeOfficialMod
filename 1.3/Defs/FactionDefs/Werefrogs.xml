@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef>
+    <defName>Werefrogs</defName>
+    <label>Werefrogs</label>
+    <description>Vile chimeras of frog and human, they spread their curse with their bite.</description>
+    <pawnsPlural>Werefrogs</pawnsPlural>
+    <fixedName>Werefrogs</fixedName>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <Werefrog>60</Werefrog>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 0.5)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <techLevel>Neolithic</techLevel>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+</Defs>

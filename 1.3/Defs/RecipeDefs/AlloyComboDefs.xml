@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ItemProcessor.CombinationDef>
+		<defName>ST_Bronze_Combo</defName>
+		<building>BlastFurnace</building>
+		<items>
+			<li>ST_Copper</li>
+		</items>	
+		<secondItems>
+			<li>ST_Tin</li>
+		</secondItems>
+		<amount>
+			<li>30</li>
+			<li>30</li>
+		</amount>
+		<result>ST_Bronze</result>	
+		<yield>50</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.25</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>ST_BlackSteel_Combo</defName>
+		<building>BlastFurnace</building>
+		<items>
+			<li>Steel</li>
+		</items>	
+		<secondItems>
+			<li>ST_Coal</li>
+		</secondItems>
+		<amount>
+			<li>30</li>
+			<li>30</li>
+		</amount>
+		<result>ST_BlackSteel</result>	
+		<yield>50</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.5</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>	
+
+	<ItemProcessor.CombinationDef>
+		<defName>ST_Mithril_Combo</defName>
+		<building>BlastFurnace</building>
+		<items>
+			<li>Steel</li>
+		</items>	
+		<secondItems>
+			<li>Silver</li>
+		</secondItems>
+		<amount>
+			<li>30</li>
+			<li>300</li>
+		</amount>
+		<result>ST_Mithril</result>	
+		<yield>50</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>1</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>	
+
+	<ItemProcessor.CombinationDef>
+		<defName>ST_Orichalcum_Combo</defName>
+		<building>BlastFurnace</building>
+		<items>
+			<li>ST_Copper</li>
+		</items>	
+		<secondItems>
+			<li>Gold</li>
+		</secondItems>
+		<amount>
+			<li>30</li>
+			<li>60</li>
+		</amount>
+		<result>ST_Orichalcum</result>	
+		<yield>50</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>1.25</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>	
+
+	<ItemProcessor.CombinationDef>
+		<defName>ST_Adamantium_Combo</defName>
+		<building>BlastFurnace</building>
+		<items>
+			<li>Steel</li>
+		</items>	
+		<secondItems>
+			<li>Mordor_Brick</li>
+		</secondItems>
+		<amount>
+			<li>15</li>
+			<li>40</li>
+		</amount>
+		<result>ST_Adamantium</result>	
+		<yield>50</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>1.5</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>	
+
+	<ItemProcessor.CombinationDef>
+		<defName>ST_Runite_Combo</defName>
+		<building>BlastFurnace</building>
+		<items>
+			<li>ST_Mithril</li>
+		</items>	
+		<secondItems>
+			<li>TM_Arcalleum</li>
+		</secondItems>
+		<amount>
+			<li>25</li>
+			<li>35</li>
+		</amount>
+		<result>ST_Runite</result>	
+		<yield>50</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>	
+
+	<ItemProcessor.CombinationDef>
+		<defName>ST_Dragonite_Combo</defName>
+		<building>BlastFurnace</building>
+		<items>
+			<li>ST_Adamantium</li>
+		</items>	
+		<secondItems>
+			<li>TM_Demonscale</li>
+		</secondItems>
+		<amount>
+			<li>25</li>
+			<li>25</li>
+		</amount>
+		<result>ST_Dragonite</result>	
+		<yield>50</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>	
+
+
+
+
+
+
+	
+</Defs>

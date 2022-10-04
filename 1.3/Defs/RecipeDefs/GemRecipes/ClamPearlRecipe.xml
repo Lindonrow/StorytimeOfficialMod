@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Extract_Pearl</defName>
+    <label>search for pearls</label>
+    <description>Search clams for high-quality pearls.</description>
+    <jobString>Searching.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+			<thingDefs>
+				<li>ST_Clam</li>
+			</thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<thingDefs>
+			<li>ST_Clam</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+		<thingDefs>
+			<li>ST_Clam</li>
+		</thingDefs>
+    </defaultIngredientFilter>
+	<recipeUsers>
+		<li>TableButcher</li>
+	</recipeUsers>
+	<products>
+		<Pearl>1</Pearl>
+	</products>
+  </RecipeDef>
+
+</Defs>

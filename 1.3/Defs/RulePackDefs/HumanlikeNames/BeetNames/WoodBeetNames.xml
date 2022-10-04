@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerWoodBeetUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>WoodBeetNouns->BeetNames/WoodBeetNames/WoodBeetNouns</li>
+	    <li>WoodBeetAdjectives->BeetNames/WoodBeetNames/WoodBeetAdjectives</li>
+	    <li>WoodBeetVerbs->BeetNames/WoodBeetNames/WoodBeetVerbs</li>
+		<li>WoodBeetNames->BeetNames/BeetnikhNames</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerPersonWoodBeet</defName>
+	<include>
+      <li>NamerWoodBeetUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+			<li>r_name->[WoodBeetNames] '[WoodBeetVerbs][WoodBeetAdjectives][WoodBeetNouns]' [WoodBeetNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+		
+  <RulePackDef>
+    <defName>WoodBeetSettlementName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>BeetNames/BeetSettlement</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+	
+</Defs>

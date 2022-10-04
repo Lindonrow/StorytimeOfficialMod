@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>GoblinName</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[FirstName_Goblin] 'The [Verb_Goblin] Goblin' [LastName_Goblin]</li>
+				<li>name->[FirstName_Goblin] 'The [Adjective_Goblin] Goblin' [LastName_Goblin]</li>
+				<li>name->[FirstName_Goblin] 'The [Adverb_Goblin] [Verb_Goblin] Goblin' [LastName_Goblin]</li>
+				<li>name->[FirstName_Goblin] 'The [Adjective_Goblin] [Verb_Goblin] Goblin' [LastName_Goblin]</li>
+				<li>name->[FirstName_Goblin] 'The [Adjective_Goblin] [Adjective_Goblin] Goblin' [LastName_Goblin]</li>
+				<li>name->[FirstName_Goblin] 'The [Adverb_Goblin] [Adjective_Goblin] Goblin' [LastName_Goblin]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Adjective_Goblin</keyword>
+					<path>GoblinNames/GoblinAdjectives</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Adverb_Goblin</keyword>
+					<path>GoblinNames/GoblinAdverbs</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Verb_Goblin</keyword>
+					<path>GoblinNames/GoblinVerbs</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FirstName_Goblin</keyword>
+					<path>GoblinNames/GoblinFirstNames</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>LastName_Goblin</keyword>
+					<path>GoblinNames/GoblinLastNames</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+
+  <RulePackDef>
+    <defName>NamerFactionGoblinTribes</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [Adjective_Goblin] Goblins</li>
+        <li>r_name->The [Verb_Goblin] Goblins</li>
+        <li>r_name->The [Adjective_Goblin] Goblin Tribes</li>
+        <li>r_name->The [Verb_Goblin] Goblin Tribes</li>
+        <li>r_name->The [Adverb_Goblin] [Verb_Goblin] Goblins</li>
+        <li>r_name->[Adjective_Goblin] Goblin Town</li>
+        <li>r_name->[Verb_Goblin] Goblin Town</li>
+      </rulesStrings>
+		<rulesRaw>
+			<li Class="Rule_File">
+				<keyword>Adjective_Goblin</keyword>
+				<path>GoblinNames/GoblinAdjectives</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>Adverb_Goblin</keyword>
+				<path>GoblinNames/GoblinAdverbs</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>Verb_Goblin</keyword>
+				<path>GoblinNames/GoblinVerbs</path>
+			</li>
+		</rulesRaw>	  
+    </rulePack>
+  </RulePackDef>	
+	
+  <RulePackDef>
+    <defName>GoblinSettlementName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>GoblinNames/GoblinSettlement</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</Defs>

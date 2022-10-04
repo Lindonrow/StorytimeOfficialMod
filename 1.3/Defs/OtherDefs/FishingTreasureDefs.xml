@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VCE_Fishing.FishDef>
+		<defName>Fish_BlurberrySpecial</defName>
+		<thingDef>BlurberrySpecial</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>
+			<li>Cold</li>
+			<li>Hot</li>
+		</allowedBiomes>  	
+		<commonality>0.25</commonality>		
+		<baseFishingYield>3</baseFishingYield>		
+	</VCE_Fishing.FishDef>	
+	
+	<VCE_Fishing.FishDef>
+		<defName>Fish_SapientBeanMatrix</defName>
+		<thingDef>SapientBeanMatrix</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>
+			<li>Cold</li>
+			<li>Hot</li>
+		</allowedBiomes>  	
+		<commonality>0.025</commonality>		
+		<baseFishingYield>1</baseFishingYield>		
+	</VCE_Fishing.FishDef>	
+	
+	<VCE_Fishing.FishDef>
+		<defName>Fish_FatManAngreal</defName>
+		<thingDef>FatManAngreal</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>
+			<li>Cold</li>
+			<li>Hot</li>
+		</allowedBiomes>  	
+		<commonality>0.025</commonality>		
+		<baseFishingYield>1</baseFishingYield>		
+	</VCE_Fishing.FishDef>	
+	
+	<VCE_Fishing.FishDef>
+		<defName>Fish_Runite</defName>
+		<thingDef>ST_Runite</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>
+			<li>Cold</li>
+			<li>Hot</li>
+		</allowedBiomes>  	
+		<commonality>0.05</commonality>		
+		<baseFishingYield>25</baseFishingYield>		
+	</VCE_Fishing.FishDef>	
+	
+	<VCE_Fishing.FishDef>
+		<defName>Fish_CheesePizza</defName>
+		<thingDef>CheesePizza</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>
+			<li>Cold</li>
+			<li>Hot</li>
+		</allowedBiomes>  	
+		<commonality>0.1</commonality>		
+		<baseFishingYield>5</baseFishingYield>		
+	</VCE_Fishing.FishDef>	
+
+	<VCE_Fishing.FishDef>
+		<defName>Fish_Pearl</defName>
+		<thingDef>Pearl</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>
+			<li>Cold</li>
+			<li>Hot</li>
+		</allowedBiomes>  	
+		<commonality>0.05</commonality>		
+		<baseFishingYield>1</baseFishingYield>		
+	</VCE_Fishing.FishDef>	
+	
+	<VCE_Fishing.FishDef>
+		<defName>Fish_GoldRing</defName>
+		<thingDef>ST_GoldRing</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>
+			<li>Cold</li>
+			<li>Hot</li>
+		</allowedBiomes>  	
+		<commonality>0.02</commonality>		
+		<baseFishingYield>1</baseFishingYield>		
+	</VCE_Fishing.FishDef>	
+</Defs>

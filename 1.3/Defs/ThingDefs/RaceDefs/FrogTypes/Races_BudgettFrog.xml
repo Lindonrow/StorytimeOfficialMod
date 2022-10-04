@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>FrogBlast</defName>
+    <label>sonic</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been screeched to death.</deathMessage>
+    <hediff>Blasted</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  
+  <HediffDef ParentName="InjuryBase">
+    <defName>Blasted</defName>
+    <label>blasted</label>
+    <labelNoun>loud sound has caused damage.</labelNoun>
+    <description>A wound from being blasted with sound.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.3</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>mangled scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.01</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.05</averagePainPerSeverityPermanent>
+      <bleedRate>0</bleedRate>
+      <canMerge>true</canMerge>
+      <destroyedLabel>Blasted away</destroyedLabel>
+    </injuryProps>
+  </HediffDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Sonic_Attack</defName>
+    <label>screech</label>
+    <graphicData>
+      <texPath>Projectiles/SonicWave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>FrogBlast</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <speed>25</speed>
+    </projectile>
+  </ThingDef>
+
+ 
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BudgettFrog</defName>
+    <label>Budgett's Frog</label>
+    <description>REEEEEEEEEEEEEEEE</description>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <MarketValue>100</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>BudgettFrogEggUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>BudgettFrogEggFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>5</eggLayIntervalDays>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Sonic_Attack</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>5</burstShotCount>
+				<minRange>1</minRange>
+				<range>25</range>				
+				<soundCast>Frog_Angry</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>sonic blast</label>
+				<commonality>1</commonality>
+			</li>
+		</verbs>
+    <race>
+	  <wildBiomes>
+			<BorealForest>0.01</BorealForest>
+			<IceSheet>0.01</IceSheet>
+			<Tundra>0.01</Tundra>
+			<ColdBog>0.1</ColdBog>
+			<SeaIce>0.01</SeaIce>
+			<TemperateSwamp>0.2</TemperateSwamp>
+			<TropicalSwamp>0.2</TropicalSwamp>
+			<TemperateForest>0.06</TemperateForest>
+			<TropicalRainforest>0.08</TropicalRainforest>
+			<AridShrubland>0.01</AridShrubland>
+			<Desert>0.01</Desert>
+			<ExtremeDesert>0.01</ExtremeDesert>
+	  </wildBiomes>	
+      <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+      <nameGenerator>FrogNamerMale</nameGenerator>
+      <nameGeneratorFemale>FrogNamerFemale</nameGeneratorFemale>
+      <baseBodySize>0.35</baseBodySize>
+      <baseHealthScale>0.4</baseHealthScale>
+      <baseHungerRate>0.35</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <leatherDef>Leather_Frog</leatherDef>
+      <wildness>0.2</wildness>
+      <nuzzleMtbHours>16</nuzzleMtbHours>
+      <trainability>Intermediate</trainability>
+      <useMeatFrom>Toad</useMeatFrom>
+      <petness>0.8</petness>
+      <lifeExpectancy>4</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.09</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Frog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>ST_FrogRole</li>
+					<li>ST_FrogRarity</li>					
+				</statToAdd>
+				<statValues>
+					<li>ST_FrogRanged</li>
+					<li>ST_FrogCommon</li>					
+				</statValues>
+				<statDescriptions>
+					<li>ST_FrogRangedDesc</li>
+					<li>ST_FrogCommonDesc</li>
+				</statDescriptions>
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/BudgettFrogLore</ImageToShowInInfoCard>					
+			</li>
+		</modExtensions>
+  </ThingDef>
+  
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BudgettFrog</defName>
+    <label>Budgett's Frog</label>
+    <race>BudgettFrog</race>
+    <combatPower>35</combatPower>
+    <ecoSystemWeight>0.1</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Budgett_Frog/BudgettFrog</texPath>
+          <drawSize>0.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Budgett_Frog/BudgettFrog</texPath>
+          <drawSize>0.7</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Budgett_Frog/BudgettFrog</texPath>
+          <drawSize>1.1</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.2, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

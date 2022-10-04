@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>Insanity_of_Hat</defName>
+    <workerClass>StoryTime.ThoughtWorker_InsanityHat</workerClass>
+    <stages>
+      <li>
+        <label>Insanity</label>
+		<description>Yee haw!</description>
+        <baseMoodEffect>-100</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   <ThoughtDef>
+    <defName>GibbonMoonThought</defName>
+    <workerClass>ThoughtWorker_Aurora</workerClass>
+    <gameCondition>GibbonousMoon</gameCondition>
+    <stages>
+      <li>
+        <label>beautiful gibbon moon</label>
+        <description>The moon looks awfully gibbon-like tonight... it's amazing!</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+   <ThoughtDef>
+    <defName>MoonGibbonThought</defName>
+	<durationDays>0.33</durationDays>
+	<stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>saw moon gibbon</label>
+        <description>I saw a moon gibbon. It was strange... but cute.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+ 
+   <ThoughtDef>
+    <defName>GainerThought</defName>
+	<durationDays>0.25</durationDays>
+	<stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>witnessed frog gainer</label>
+        <description>Duude, that little guy just did a badass gainer!</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

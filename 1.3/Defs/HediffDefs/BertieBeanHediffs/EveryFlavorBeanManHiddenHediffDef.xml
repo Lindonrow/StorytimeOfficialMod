@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>Hediff_BertieBottBeanManBuildup</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>The bean juice has built up to a critical level. Why are you seeing this, anyway?</description>
+		<label>critical bean buildup</label>
+		<stages>
+		  <li>
+			<label>critical</label>
+			<becomeVisible>false</becomeVisible>
+		  </li>
+		</stages>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_HediffRandom">
+				<hediffPool>
+					<!--Common 10-->
+					<li>Bean_Dirt</li>	
+					<li>Bean_Blueberry</li>	
+					<li>Bean_Earwax</li>	
+					<li>Bean_Soap</li>	
+					<li>Bean_Bogey</li>	
+					<li>Bean_TuttiFrutti</li>	
+					<li>Bean_Sausage</li>
+					<li>Bean_Marshmallow</li>	
+					<li>Bean_EggNog_Utility</li>
+					<li>Bean_Vinegar</li>
+					
+					<!--Uncommon 7-->
+					<li>Bean_Burrito_Utility</li>
+					<li>Bean_PadCandy_Utility</li>
+					<li>Bean_Pepsi_Utility</li>			
+					<li>Bean_Grass</li>	
+					<li>Bean_Worm</li>
+					<li>Bean_Vomit</li>
+					<li>Bean_Banana</li>	
+					<li>Bean_Gold</li>
+					
+					<!--Rare 5-->					
+					<li>Bean_Tongue</li>
+					<li>Bean_Antibiotic</li>
+					<li>Bean_InsanityHat</li>
+					
+					<!--Ultra-Rare 3-->					
+					<li>Bean_HeartAttack</li>	
+					<li>Bean_Bean</li>
+				
+				</hediffPool>
+				<weights>
+					<!--Common 10-->
+					<li>10</li>
+					<li>10</li>
+					<li>10</li>					
+					<li>10</li>					
+					<li>10</li>
+					<li>10</li>
+					<li>10</li>		
+					<li>10</li>
+					<li>10</li>		
+					<li>10</li>	
+					
+					<!--Uncommon 7-->
+					<li>7</li>
+					<li>7</li>
+					<li>7</li>	
+					<li>7</li>	
+					<li>7</li>
+					<li>7</li>
+					<li>7</li>
+					<li>7</li>
+					
+					<!--Rare 5-->					
+					<li>5</li>
+					<li>5</li>
+					<li>5</li>
+					
+					<!--Ultra-Rare 3-->
+					<li>3</li>		
+					<li>3</li>	
+					
+					<!--Legendary 1-->
+					
+				</weights>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

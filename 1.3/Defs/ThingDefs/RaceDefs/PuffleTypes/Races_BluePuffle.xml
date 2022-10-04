@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
+    <defName>BluePuffle</defName>
+    <label>blue puffle</label>
+    <description>A blue puffle.</description>
+    <statBases>
+      <MoveSpeed>3</MoveSpeed>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <MarketValue>300</MarketValue>
+    </statBases>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Shearable">
+        <woolDef>WoolBluePuffle</woolDef>
+        <shearIntervalDays>10</shearIntervalDays>
+        <woolAmount>25</woolAmount>
+      </li>
+    </comps>
+    <race>
+	  <wildBiomes>
+			<BorealForest>0.1</BorealForest>
+			<TemperateForest>0.03</TemperateForest>
+			<Tundra>0.15</Tundra>
+			<IceSheet>0.1</IceSheet>
+			<SeaIce>0.05</SeaIce>
+			<ColdBog>0.05</ColdBog>
+	  </wildBiomes>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <nameGenerator>PuffleNamer</nameGenerator>
+      <nameGeneratorFemale>PuffleNamer</nameGeneratorFemale>
+      <petness>1</petness>
+      <herdAnimal>false</herdAnimal>
+      <baseBodySize>0.25</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>1.0</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>Leather_Puffle</leatherDef>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <meatLabel>puffle meat</meatLabel>
+      <wildness>0</wildness>
+      <nuzzleMtbHours>9</nuzzleMtbHours>
+      <litterSizeCurve>
+        <points>
+          <li>(.3, 0)</li>
+          <li>(4, 1)</li>
+          <li>(4.5, 1.7)</li>
+          <li>(5, 0.7)</li>
+          <li>(10, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>14</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+	  <li>AnimalPet</li>
+    </tradeTags>
+  </ThingDef>
+ 
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BluePuffle</defName>
+    <label>blue puffle</label>
+	<labelPlural>blue puffles</labelPlural>
+    <race>BluePuffle</race>
+    <combatPower>25</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+    <wildGroupSize>2~6</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Puffle_Types/BluePuffle/BluePuffle</texPath>
+          <drawSize>0.85</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Puffle_Types/DeadPuffle</texPath>
+          <drawSize>0.85</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+	  <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Puffle_Types/BluePuffle/BluePuffle</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Puffle_Types/DeadPuffle</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Puffle_Types/BluePuffle/BluePuffle</texPath>
+          <drawSize>1.15</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.2, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Puffle_Types/DeadPuffle</texPath>
+          <drawSize>1.15</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>  
+
+</Defs>

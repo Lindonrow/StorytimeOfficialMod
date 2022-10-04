@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>Cheese</defName>
+    <label>cheese</label>
+    <description>Ah, American Cheese. The highest form of cheese, you know.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Cheeses/Cheese</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>3.2</MarketValue>
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.06</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct</foodType>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <RecipeDef>
+    <defName>Make_Cheese</defName>
+    <label>make cheese square</label>
+    <description>make cheese.</description>
+    <jobString>making.</jobString>
+    <workAmount>750</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>ST_Milk</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<categories>
+					  <li>ST_Milk</li>
+					</categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+					<categories>
+					  <li>ST_Milk</li>
+					</categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<researchPrerequisite>advancedCooking</researchPrerequisite>
+	<products>
+		<Cheese>20</Cheese>
+	</products>
+  </RecipeDef>
+  
+</Defs>

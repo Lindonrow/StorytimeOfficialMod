@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Herb_Guam</defName>
+    <label>guam bush</label>
+    <description>A bitter green herb.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Herbs/Guam</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.1, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.5</fertilitySensitivity>
+      <growDays>8</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>GuamLeaves</harvestedThingDef>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildClusterWeight>250</wildClusterWeight>
+      <visualSizeRange>0.95~1.7</visualSizeRange>
+      <wildOrder>2</wildOrder>
+		<wildBiomes>
+		  <TemperateForest>0.01</TemperateForest>
+		  <TemperateSwamp>0.005</TemperateSwamp>
+		  <BorealForest>0.005</BorealForest>
+		  <ColdBog>0.005</ColdBog>
+		  <AridShrubland>0.005</AridShrubland>
+		</wildBiomes>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>Herb_Harralander</defName>
+    <label>harralander bush</label>
+    <description>A useful herb.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Herbs/Harralander</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.1, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.5</fertilitySensitivity>
+      <growDays>8</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>HarralanderLeaves</harvestedThingDef>
+      <wildClusterRadius>3</wildClusterRadius>
+      <wildClusterWeight>125</wildClusterWeight>
+      <visualSizeRange>0.95~1.7</visualSizeRange>
+      <wildOrder>2</wildOrder>
+		<wildBiomes>
+		  <TemperateForest>0.005</TemperateForest>
+		  <TemperateSwamp>0.0025</TemperateSwamp>
+		  <BorealForest>0.01</BorealForest>
+		  <ColdBog>0.005</ColdBog>
+		</wildBiomes>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Herb_Lantadyme</defName>
+    <label>lantadyme bush</label>
+    <description>A powerful herb.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Herbs/Lantadyme</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.1, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+      <fertilityMin>0.6</fertilityMin>
+      <fertilitySensitivity>0.7</fertilitySensitivity>
+      <growDays>12</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>LantadymeLeaves</harvestedThingDef>
+      <wildClusterRadius>6</wildClusterRadius>
+      <wildClusterWeight>50</wildClusterWeight>
+      <visualSizeRange>0.95~1.7</visualSizeRange>
+      <wildOrder>2</wildOrder>
+		<wildBiomes>
+		  <TemperateForest>0.004</TemperateForest>
+		  <TemperateSwamp>0.002</TemperateSwamp>
+		  <AridShrubland>0.005</AridShrubland>
+		  <TropicalRainforest>0.01</TropicalRainforest>
+		</wildBiomes>
+    </plant>
+  </ThingDef>  
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>Herb_Rannar</defName>
+    <label>rannar bush</label>
+    <description>Just a herb.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Herbs/Rannar</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.1, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+      <fertilityMin>0.6</fertilityMin>
+      <fertilitySensitivity>0.7</fertilitySensitivity>
+      <growDays>12</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>RannarLeaves</harvestedThingDef>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildClusterWeight>150</wildClusterWeight>
+      <visualSizeRange>0.95~1.7</visualSizeRange>
+      <wildOrder>2</wildOrder>
+		<wildBiomes>
+		  <TemperateForest>0.005</TemperateForest>
+		  <TemperateSwamp>0.005</TemperateSwamp>
+		  <BorealForest>0.0005</BorealForest>
+		  <ColdBog>0.005</ColdBog>
+		  <AridShrubland>0.005</AridShrubland>
+		  <TropicalRainforest>0.001</TropicalRainforest>
+		</wildBiomes>
+    </plant>
+  </ThingDef>    
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>Herb_Toadflax</defName>
+    <label>toadflax bush</label>
+    <description>A toady herb.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Herbs/Toadflax</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.1, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+      <fertilityMin>0.6</fertilityMin>
+      <fertilitySensitivity>0.7</fertilitySensitivity>
+      <growDays>12</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>ToadflaxLeaves</harvestedThingDef>
+      <wildClusterRadius>1</wildClusterRadius>
+      <wildClusterWeight>150</wildClusterWeight>
+      <visualSizeRange>0.95~1.7</visualSizeRange>
+      <wildOrder>2</wildOrder>
+		<wildBiomes>
+		  <TropicalSwamp>0.005</TropicalSwamp>
+		  <TemperateSwamp>0.005</TemperateSwamp>
+		  <ColdBog>0.005</ColdBog>
+		  <TropicalRainforest>0.001</TropicalRainforest>
+		</wildBiomes>
+    </plant>
+  </ThingDef>      
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>Herb_DwarfWeed</defName>
+    <label>dwarf weed bush</label>
+    <description>A weed.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Herbs/DwarfWeed</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.1, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+      <fertilityMin>0.6</fertilityMin>
+      <fertilitySensitivity>0.7</fertilitySensitivity>
+      <growDays>12</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>DwarfWeedLeaves</harvestedThingDef>
+      <wildClusterRadius>3</wildClusterRadius>
+      <wildClusterWeight>60</wildClusterWeight>
+      <visualSizeRange>0.95~1.7</visualSizeRange>
+      <wildOrder>2</wildOrder>
+		<wildBiomes>
+		  <BorealForest>0.006</BorealForest>
+		  <TemperateForest>0.003</TemperateForest>
+		  <ColdBog>0.006</ColdBog>
+		</wildBiomes>
+    </plant>
+  </ThingDef>        
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>Herb_Torstol</defName>
+    <label>torstol bush</label>
+    <description>A bigly powerful herb.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Herbs/Torstol</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.1, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+      <fertilityMin>0.6</fertilityMin>
+      <fertilitySensitivity>0.7</fertilitySensitivity>
+      <growDays>12</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>TorstolLeaves</harvestedThingDef>
+      <wildClusterRadius>3</wildClusterRadius>
+      <wildClusterWeight>60</wildClusterWeight>
+      <visualSizeRange>0.95~1.7</visualSizeRange>
+      <wildOrder>2</wildOrder>
+		<wildBiomes>
+		  <TemperateForest>0.003</TemperateForest>
+		  <TemperateSwamp>0.005</TemperateSwamp>
+		</wildBiomes>
+    </plant>
+  </ThingDef>        
+  
+</Defs>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>BeanMaleName</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[BeanList][Suffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>BeanList</keyword>
+					<path>BeanManNames/BeanNames</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Suffix</keyword>
+					<path>BeanManNames/BeanSuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>BeanFemaleName</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[BeanList][Suffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>BeanList</keyword>
+					<path>BeanManNames/BeanNames</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Suffix</keyword>
+					<path>BeanManNames/BeanSuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+    <defName>BeanSettlementName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>BeanManNames/BeanSettlement</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+	
+
+  <RulePackDef>
+    <defName>NamerFactionBeanMan</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Republic of [BeanCity]</li>
+		<li>r_name->People's Republic of [BeanCity]</li>
+		<li>r_name->Kingdom of [BeanCity]</li>
+		<li>r_name->Empire of [BeanCity]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>BeanCity->BeanManNames/BeanSettlement</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFactionBeanGuardians</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Bean Guardians of [BeanCity]</li>
+		<li>r_name->[BeanCity] Bean Guardians</li>
+		<li>r_name->Guardians of [BeanCity]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>BeanCity->BeanManNames/BeanSettlement</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+</Defs>

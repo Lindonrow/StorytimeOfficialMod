@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StatDef>
+    <defName>PolymorphSensitivity</defName>
+    <label>polymorph sensitivity</label>
+    <description>Multiplier on the impact of transformation effects on this creature.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>1.0</defaultBaseValue>
+    <minValue>0</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <displayPriorityInCategory>3499</displayPriorityInCategory>
+  </StatDef>
+
+</Defs>

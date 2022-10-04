@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<MemeDef>
+		<defName>STBeetnikhOrigin</defName>
+		<label>Beetnikh origin</label>
+		<description>Island of Beets</description>
+		<iconPath>World/Beetnikh/BeetnikhSettlements</iconPath>
+		<deityCount>1</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+		</requiredRituals>
+		<consumableBuildings>
+		</consumableBuildings>
+		<requireAnyRitualSeat>
+		</requireAnyRitualSeat>
+		   <descriptionMaker>
+			 <patterns>
+			   <li><def>TheistMyth</def></li>
+			   <li><def>TheistFounder</def></li>
+			 </patterns>
+			 <constants>
+			   <li><key>structure_theist</key><value>true</value></li>
+			 </constants>
+		   </descriptionMaker>
+	   <symbolPacks>
+		  <li><ideoName>Beetnikh Culture</ideoName><adjective>Beet</adjective><member>Beet</member><prefix>true</prefix></li>
+		  <li><ideoName>Beetnikh Lifestyle</ideoName><adjective>Beet</adjective><member>Beet</member><prefix>true</prefix></li>
+		</symbolPacks>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeCreed->sect</li>
+			<li>memeCreed->temple</li>
+			<li>memeCreed->faith</li>
+			<li>memeLeaderNoun->chieftain</li>
+			<li>memeLeaderAdjective->chieftain</li>
+			<li>memeMoralist->shaman</li>
+			<li>memeMoralist->cleric</li>
+		  </rulesStrings>
+		</generalRules>
+		<fixedDeityNameTypes>
+		  <li><name>Grub Nub</name><type>Dark Emperor</type></li>
+		  <li><name>Uragg Gro-Shub</name><type>Divine Librarian</type></li>
+		  <li><name>Winston Chapelslope</name><type>God's Chancellor</type></li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+		  <li>
+			<category>Rustic</category>
+			<priority>2</priority>
+		  </li>
+		</thingStyleCategories>
+	</MemeDef>
+
+</Defs>

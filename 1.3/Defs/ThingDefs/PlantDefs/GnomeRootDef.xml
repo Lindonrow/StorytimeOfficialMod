@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="PlantBase">
+    <defName>Plant_Gnome</defName>
+    <label>Gnome Root Plant</label>
+    <description>Gnome Root plant.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/GnomeRoot</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible/>
+    <plant>
+      <growDays>15</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>GnomeRoot</harvestedThingDef>
+      <harvestYield>25</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+        <li>gnomeCulture</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.1</topWindExposure>
+      <immatureGraphicPath>Things/Plants/GnomeRootImmature</immatureGraphicPath>
+      <visualSizeRange>0.6~1.2</visualSizeRange>
+      <wildOrder>2</wildOrder>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>GnomeRoot</defName>
+    <label>gnome root</label>
+    <description>A gnome root</description>
+    <graphicData>
+      <texPath>Things/Items/GnomeFood/GnomeRoot/GnomeRoot</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Flammability>1.3</Flammability>
+	  <Nutrition>0.02</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+</Defs>

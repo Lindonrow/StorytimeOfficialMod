@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Caravan_Storytime_Gnome</defName>
+    <label>gnome merchant</label>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>750~1200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GnomeHat</thingDef>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GnomeGoggles</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GnomeShirt</thingDef>
+        <countRange>0~3</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GnomePants</thingDef>
+        <countRange>0~3</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GnomeBeer</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ShortGreenGuy</thingDef>
+        <countRange>-5~5</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ChocSaturday</thingDef>
+        <countRange>-5~5</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>BlurberrySpecial</thingDef>
+        <totalPriceRange>-5~5</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Worm</thingDef>
+        <totalPriceRange>12~25</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>FruitBatta</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>VegetableBatta</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>WormBatta</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>ToadBatta</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>WormCrunchies</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>ChocchipCrunchies</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>ToadCrunchies</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>VegBall</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>ChocolateBomb</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>TangledToadLegs</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>WormHole</thingDef>
+        <totalPriceRange>0~10</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Toad</thingDef>
+        <totalPriceRange>0~2</totalPriceRange>
+      </li>
+	  
+	  <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

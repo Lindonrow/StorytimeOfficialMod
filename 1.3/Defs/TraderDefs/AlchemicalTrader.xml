@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Caravan_Storytime_Alchemy</defName>
+    <label>alchemical trader</label>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>750~1200</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>ST_Potions</categoryDef>
+        <thingDefCountRange>2~6</thingDefCountRange>
+        <totalPriceRange>500~1500</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>HerbaLeaves</thingDef>
+        <countRange>40~80</countRange>
+      </li>	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GuamLeaves</thingDef>
+        <countRange>20~40</countRange>
+      </li>	  	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>HarralanderLeaves</thingDef>
+        <countRange>20~40</countRange>
+      </li>	  	 	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>LantadymeLeaves</thingDef>
+        <countRange>20~40</countRange>
+      </li>	  	 	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>DwarfWeedLeaves</thingDef>
+        <countRange>20~40</countRange>
+      </li>	  	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RannarLeaves</thingDef>
+        <countRange>20~40</countRange>
+      </li>	  	 	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>TorstolLeaves</thingDef>
+        <countRange>20~40</countRange>
+      </li>	  	 	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ToadflaxLeaves</thingDef>
+        <countRange>20~40</countRange>
+      </li>	  	 	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MixedHerbs</thingDef>
+        <countRange>40~80</countRange>
+      </li>	  	 		  	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>AlchemyTable</thingDef>
+        <countRange>-2~2</countRange>
+      </li>	  	  
+	  
+	  <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

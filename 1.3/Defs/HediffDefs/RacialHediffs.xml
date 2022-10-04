@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <HediffDef>
+    <defName>HedBeet</defName>
+    <label>Racial Trait: Beet Toughness</label>
+	<description>Beets are known for their strength and resistance to pain.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <painFactor>0.85</painFactor>
+		<painOffset>-0.1</painOffset>
+		<statOffsets>
+			<CarryingCapacity>20</CarryingCapacity>
+			<MeleeHitChance>5</MeleeHitChance>
+		</statOffsets>		
+      </li>
+    </stages>
+  </HediffDef>
+  
+ <HediffDef>
+    <defName>HedJeub</defName>
+    <label>Racial Trait: Vile Little Creature</label>
+	<description>Jeubs are known for being vile little creatures.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<statOffsets>
+			  <MoveSpeed>0.1</MoveSpeed>
+			  <SocialImpact>-0.30</SocialImpact>
+		      <MeleeDodgeChance>15</MeleeDodgeChance>
+			  <ResearchSpeed>-0.5</ResearchSpeed> 			  
+		</statOffsets>		
+      </li>
+    </stages>
+  </HediffDef>  
+
+ <HediffDef>
+    <defName>HedGnome</defName>
+    <label>Racial Trait: Gnome Cooking</label>
+	<description>Gnomes are known for their skill in cooking.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<statOffsets>
+			  <CookSpeed>10</CookSpeed>
+			  <FoodPoisonChance>-0.80</FoodPoisonChance>
+			  <EatingSpeed>-0.25</EatingSpeed>
+		</statOffsets>		
+      </li>
+    </stages>
+  </HediffDef>    
+  
+ <HediffDef>
+    <defName>HedFrogMan</defName>
+    <label>Racial Trait: Swampy Resiliance</label>
+	<description>Frog people are known for their resistance to disease gained from living in the swamp.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<statOffsets>
+			  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+			  <ToxicSensitivity>-0.35</ToxicSensitivity>
+			  <ComfyTemperatureMax>15</ComfyTemperatureMax>
+			  <ComfyTemperatureMin>15</ComfyTemperatureMin>
+		</statOffsets>		
+      </li>
+    </stages>
+  </HediffDef>
+
+ <HediffDef>
+    <defName>HedHuman</defName>
+    <label>Racial Trait: Versatility</label>
+	<description>Humans learn good.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<statOffsets>
+			<GlobalLearningFactor>0.15</GlobalLearningFactor>
+		</statOffsets>	
+      </li>
+    </stages>
+  </HediffDef>  
+
+ <HediffDef>
+    <defName>HedGoblin</defName>
+    <label>Racial Trait: Real Goblin</label>
+	<description>Goblins are real, but many don't know this because of how stealthy they can be. They are also talented foragers.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<statOffsets>
+		      <MeleeDodgeChance>10</MeleeDodgeChance>
+		      <HuntingStealth>1.5</HuntingStealth>
+			  <ForagedNutritionPerDay>0.35</ForagedNutritionPerDay>
+			  <SocialImpact>-0.25</SocialImpact>	  
+			  <PawnBeauty>-1</PawnBeauty>	  
+		</statOffsets>		
+      </li>
+    </stages>
+  </HediffDef>  
+
+</Defs>

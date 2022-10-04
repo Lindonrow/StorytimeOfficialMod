@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--Stat-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/StatDef[defName = "DrugSynthesisSpeed"]/skillNeedFactors</xpath>
+		<value>
+			<skillNeedFactors>
+			  <li Class="SkillNeed_BaseBonus">
+				<skill>Alchemy</skill>
+				<baseValue>0.3</baseValue>
+				<bonusPerLevel>0.0875</bonusPerLevel>
+			  </li>
+			</skillNeedFactors>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/StatDef[defName = "PlantHarvestYield"]/maxValue</xpath>
+		<value>
+			<maxValue>2.5</maxValue>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/StatDef[defName = "DrugHarvestYield"]/maxValue</xpath>
+		<value>
+			<maxValue>2.5</maxValue>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/StatDef[defName = "PlantHarvestYield"]/skillNeedFactors</xpath>
+		<value>
+			<skillNeedFactors>
+			  <li Class="SkillNeed_Direct">
+				<skill>Plants</skill>
+				<valuesPerLevel>
+				  <li>0.6</li>
+				  <li>0.7</li>
+				  <li>0.75</li>
+				  <li>0.8</li>
+				  <li>0.85</li>
+				  <li>0.90</li>
+				  <li>0.95</li>
+				  <li>0.975</li>
+				  <li>1</li>
+				  <li>1.01</li>
+				  <li>1.02</li>
+				  <li>1.03</li>
+				  <li>1.04</li>
+				  <li>1.05</li>
+				  <li>1.06</li>
+				  <li>1.07</li>
+				  <li>1.08</li>
+				  <li>1.09</li>
+				  <li>1.10</li>
+				  <li>1.12</li>
+				  <li>1.13</li>
+				</valuesPerLevel>
+			  </li>
+			  <li Class="SkillNeed_BaseBonus">
+				<skill>Alchemy</skill>
+				<baseValue>1</baseValue>
+				<bonusPerLevel>0.025</bonusPerLevel>
+			  </li>
+			</skillNeedFactors>
+		</value>
+	</Operation>
+	
+<!--Vanilla Recipes-->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="MakeableDrugBase"]/recipeMaker/workSkill</xpath>
+		<value>
+			<workSkill>Alchemy</workSkill>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsProduceDrugs"]/workType</xpath>
+		<value>
+			<workType>Alchemy</workType>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "MedicineIndustrial"]/recipeMaker/workSkill</xpath>
+		<value>
+			<workSkill>Alchemy</workSkill>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "MedicineIndustrial"]/recipeMaker/skillRequirements</xpath>
+		<value>
+			<skillRequirements>
+				<Alchemy>6</Alchemy>			
+			</skillRequirements>
+		</value>
+	</Operation>	
+	
+<!--RWoM-->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "ManaPotion"]/recipeMaker/skillRequirements</xpath>
+		<value>
+			<skillRequirements>
+				<Alchemy>7</Alchemy>			
+			</skillRequirements>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "ManaPotion"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			  <recipeUsers>
+				<li>AlchemyTable</li>
+			  </recipeUsers>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "ManaPotion"]/recipeMaker</xpath>
+		<value>
+				<researchPrerequisite>STAlchemy</researchPrerequisite>
+		</value>
+	</Operation>
+
+
+
+	
+</Patch>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Parrot-->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>ParrotEggUnfertilized</defName>
+    <label>parrot egg (unfert.)</label>
+    <description>An unfertilized parrot egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(225,220,200)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+    <ThingDef ParentName="EggFertBase">
+    <defName>ParrotEggFertilized</defName>
+    <label>parrot egg (fert.)</label>
+    <description>A fertilized parrot egg. If all goes well, it should hatch into a parrot. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(225,220,200)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>8.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>ST_Parrot</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!--Chinese Salamander-->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>ChineseSalamanderEggUnfertilized</defName>
+    <label>giant chinese salamander egg (unfert.)</label>
+    <description>An unfertilized giant chinese salamander egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(225,220,200)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+    <ThingDef ParentName="EggFertBase">
+    <defName>ChineseSalamanderEggFertilized</defName>
+    <label>giant chinese salamander egg (fert.)</label>
+    <description>A fertilized giant chinese salamander egg. If all goes well, it should hatch into a giant chinese salamander. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(225,220,200)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>8.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>10</hatcherDaystoHatch>
+        <hatcherPawn>GiantChineseSalamander</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- Gecko -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EngorgedGeckoEggUnfertilized</defName>
+    <label>gecko egg (unfert.)</label>
+    <description>An unfertilized leopard gecko egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(190,200,170)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+    <ThingDef ParentName="EggFertBase">
+    <defName>EngorgedGeckoEggFertilized</defName>
+    <label>gecko egg (fert.)</label>
+    <description>A fertilized gecko egg. If all goes well, it should hatch into a gecko. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(190,200,170)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>4</hatcherDaystoHatch>
+        <hatcherPawn>Engorged_Gecko</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+
+
+
+
+  
+</Defs>

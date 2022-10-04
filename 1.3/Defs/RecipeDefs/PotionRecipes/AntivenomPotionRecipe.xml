@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeAntivenomPotion</defName>
+    <label>Make Antivenom Potion</label>
+    <description>Extract antivenom essence from toadflax to make a potion.</description>    
+	<jobString>Craft antivenom potion.</jobString>
+    <workAmount>1300</workAmount>
+    <skillRequirements>
+      <Alchemy>5</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>ToadflaxLeaves</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>ToadflaxLeaves</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<AntivenomPotion>1</AntivenomPotion>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>
+  

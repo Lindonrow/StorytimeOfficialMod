@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_STMetals</defName>
+    <label>storytime metal tile</label>
+  </DesignatorDropdownGroupDef>
+  
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="TileStorytimeBase">
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <designatorDropdown>Floor_STMetals</designatorDropdown>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TileStorytimeBase">
+    <defName>CopperTile</defName>
+    <label>copper tile</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Tiles of true copper.</description>
+    <color>(30, 120, 110)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>1</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <ST_Copper>7</ST_Copper>
+    </costList>
+    <designationHotKey>Misc1</designationHotKey>
+  </TerrainDef>  
+  
+  <TerrainDef ParentName="TileStorytimeBase">
+    <defName>TinTile</defName>
+    <label>tin tile</label>
+    <renderPrecedence>239</renderPrecedence>
+    <description>Tiles of true tin.</description>
+    <color>(145, 145, 145)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>1</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <ST_Tin>7</ST_Tin>
+    </costList>
+    <designationHotKey>Misc2</designationHotKey>
+  </TerrainDef>    
+  
+  <TerrainDef ParentName="TileStorytimeBase">
+    <defName>BronzeTile</defName>
+    <label>bronze tile</label>
+    <renderPrecedence>238</renderPrecedence>
+    <description>Tiles of true bronze.</description>
+    <color>(90, 70, 40)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>2</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <ST_Bronze>7</ST_Bronze>
+    </costList>
+    <designationHotKey>Misc3</designationHotKey>
+  </TerrainDef>        
+  
+  <TerrainDef ParentName="TileStorytimeBase">
+    <defName>BlackTile</defName>
+    <label>black steel tile</label>
+    <renderPrecedence>236</renderPrecedence>
+    <description>Tiles of true black steel.</description>
+    <color>(50, 50, 50)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>3</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <ST_BlackSteel>7</ST_BlackSteel>
+    </costList>
+    <designationHotKey>Misc5</designationHotKey>
+  </TerrainDef>      
+
+  <TerrainDef ParentName="TileStorytimeBase">
+    <defName>WeezerTile</defName>
+    <label>weezer tile</label>
+    <renderPrecedence>235</renderPrecedence>
+    <description>Tiles of pure weezer.</description>
+    <color>(0, 182, 213)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>5</Beauty>
+    </statBases>
+    <costList>
+      <Weezer>7</Weezer>
+    </costList>
+    <designationHotKey>Misc6</designationHotKey>
+  </TerrainDef>  
+  
+  <TerrainDef ParentName="TileStorytimeBase">
+    <defName>MithrilTile</defName>
+    <label>mithril tile</label>
+    <renderPrecedence>235</renderPrecedence>
+    <description>Tiles of true mithril.</description>
+    <color>(100, 125, 145)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>5</Beauty>
+      <Cleanliness>0.3</Cleanliness>
+    </statBases>
+    <costList>
+      <ST_Mithril>7</ST_Mithril>
+    </costList>
+    <designationHotKey>Misc6</designationHotKey>
+  </TerrainDef>      
+
+  <TerrainDef ParentName="TileStorytimeBase">
+    <defName>AdamantiumTile</defName>
+    <label>adamantium tile</label>
+    <renderPrecedence>234</renderPrecedence>
+    <description>Tiles of true adamantium.</description>
+    <color>(37, 66, 28)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>6</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <ST_Adamantium>7</ST_Adamantium>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+  </TerrainDef>      
+
+  <TerrainDef ParentName="TileStorytimeBase">
+    <defName>RuniteTile</defName>
+    <label>runite tile</label>
+    <renderPrecedence>233</renderPrecedence>
+    <description>Tiles of true runite.</description>
+    <color>(25, 100, 125)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>9</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <ST_Runite>7</ST_Runite>
+    </costList>
+    <designationHotKey>Misc8</designationHotKey>
+  </TerrainDef>    
+
+  <TerrainDef ParentName="TileStorytimeBase">
+    <defName>DragoniteTile</defName>
+    <label>dragonite tile</label>
+    <renderPrecedence>232</renderPrecedence>
+    <description>Tiles of true dragonite.</description>
+    <color>(115,1,0)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>12</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <ST_Dragonite>7</ST_Dragonite>
+    </costList>
+    <designationHotKey>Misc9</designationHotKey>
+  </TerrainDef>    
+
+
+
+  
+</Defs> 

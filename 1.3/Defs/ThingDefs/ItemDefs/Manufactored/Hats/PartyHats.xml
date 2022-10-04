@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="PartyHatBase" ParentName="ApparelBase" Abstract="True">
+	<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Tailor</effectWorking>
+		  <soundWorking>Recipe_Tailor</soundWorking>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PartyHat/PartyHat_ground</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>4</Mass>
+      <Flammability>0.6</Flammability>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <generateCommonality>0.005</generateCommonality>
+    <equippedStatOffsets>
+		<SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <costList>
+      <Cloth>25</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>MedievalBasic</li>		
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PartyHat/PartyHat</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="PartyHatBase">
+    <defName>BluePartyHat</defName>
+    <label>blue party hat</label>
+    <description>A nice blue hat from a cracker.</description>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0,0,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>  
+
+  <ThingDef ParentName="PartyHatBase">
+    <defName>YellowPartyHat</defName>
+    <label>yellow party hat</label>
+    <description>A nice yellow hat from a cracker.</description>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(255,255,0)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>  
+
+  <ThingDef ParentName="PartyHatBase">
+    <defName>RedPartyHat</defName>
+    <label>red party hat</label>
+    <description>A nice red hat from a cracker.</description>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(200,0,0)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>  
+
+  <ThingDef ParentName="PartyHatBase">
+    <defName>WhitePartyHat</defName>
+    <label>white party hat</label>
+    <description>A nice white hat from a cracker.</description>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(240,240,240)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>  
+
+  <ThingDef ParentName="PartyHatBase">
+    <defName>PurplePartyHat</defName>
+    <label>purple party hat</label>
+    <description>A nice purple hat from a cracker.</description>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(200,0,200)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>  
+
+  <ThingDef ParentName="PartyHatBase">
+    <defName>BlackPartyHat</defName>
+    <label>black party hat</label>
+    <description>A nice black hat from a cracker.</description>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(20,20,20)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>  
+  
+  <ThingDef ParentName="PartyHatBase">
+    <defName>GreenPartyHat</defName>
+    <label>green party hat</label>
+    <description>A nice green hat from a cracker.</description>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0,255,0)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>  
+  
+  
+
+</Defs>

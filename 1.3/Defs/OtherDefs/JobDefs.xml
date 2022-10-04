@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<JobDef>
+		<defName>FrogLegRipping</defName>
+		<driverClass>StoryTime.JobDriver_Legs</driverClass>
+		<reportString>gathering animal resource from TargetA.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>TomatoCutting</defName>
+		<driverClass>StoryTime.JobDriver_Tomato</driverClass>
+		<reportString>gathering animal resource from TargetA.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>woodFrogHarvesting</defName>
+		<driverClass>StoryTime.JobDriver_FrogWood</driverClass>
+		<reportString>gathering animal resource from TargetA.</reportString>
+	</JobDef>	
+	
+  <JobDef>
+    <defName>TP_TradeWith</defName>
+    <driverClass>StoryTime.JobDriver_TradeWith</driverClass>
+    <reportString>trading with TargetA.</reportString>
+  </JobDef>
+</Defs>

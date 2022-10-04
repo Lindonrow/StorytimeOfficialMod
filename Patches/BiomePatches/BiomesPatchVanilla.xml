@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+	<!--
+	Vanilla stones:
+	Granite
+	Limestone
+	Sandstone
+	Slate
+	Marble
+	-->
+
+<!-- Warm Biomes -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="TropicalRainforest"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Granite</li>
+								<li>Limestone</li>
+								<li>Slate</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="TropicalSwamp"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Granite</li>
+								<li>Limestone</li>
+								<li>Slate</li>
+								<li>mudstone</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+<!-- Arid Biomes -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="AridShrubland"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Granite</li>
+								<li>Sandstone</li>
+								<li>Slate</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="Desert"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~2</rockCount>
+							<allowedRockDefs>
+								<li>Granite</li>
+								<li>Sandstone</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="ExtremeDesert"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~1</rockCount>
+							<allowedRockDefs>
+								<li>Sandstone</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+<!-- Temperate Biomes -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="TemperateForest"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Granite</li>
+								<li>Limestone</li>
+								<li>Slate</li>
+								<li>Sandstone</li>
+								<li>Marble</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="TemperateSwamp"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Limestone</li>
+								<li>Slate</li>
+								<li>Sandstone</li>
+								<li>Marble</li>
+								<li>mudstone</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+<!-- Cold Biomes -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="BorealForest"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Slate</li>
+								<li>Granite</li>
+								<li>Marble</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="Tundra"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Slate</li>
+								<li>Granite</li>
+								<li>Marble</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="ColdBog"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Limestone</li>
+								<li>Slate</li>
+								<li>Marble</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="IceSheet"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Limestone</li>
+								<li>Slate</li>
+								<li>Marble</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/BiomeDef[defName="SeaIce"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="RockSettings.DefModExtension_BiomeSettings">
+							<rockCount>1~3</rockCount>
+							<allowedRockDefs>
+								<li>Limestone</li>
+								<li>Slate</li>
+								<li>Marble</li>
+							</allowedRockDefs>
+						</li>
+					</modExtensions>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

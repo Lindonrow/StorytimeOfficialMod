@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--Removals-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Megascarab"]/statBases/LeatherAmount</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Spelopede"]/statBases/LeatherAmount</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Megaspider"]/statBases/LeatherAmount</xpath>
+	</Operation>
+	
+<!--Additions-->	
+	<Operation Class="PatchOperationInsert">
+		<xpath>/Defs/ThingDef[defName = "Megascarab"]/race/lifeExpectancy</xpath>
+		<value>
+		      <leatherDef>Leather_Bug</leatherDef>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>/Defs/ThingDef[defName = "Spelopede"]/race/lifeExpectancy</xpath>
+		<value>
+		      <leatherDef>Leather_Bug</leatherDef>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>/Defs/ThingDef[defName = "Megaspider"]/race/lifeExpectancy</xpath>
+		<value>
+		      <leatherDef>Leather_Bug</leatherDef>
+		</value>
+	</Operation>	
+
+
+
+
+	
+</Patch>

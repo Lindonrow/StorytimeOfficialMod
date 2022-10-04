@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+ 
+ <!--Tongue-->  
+  
+	<HediffDef>
+		<defName>Bean_Tongue</defName>
+		<label>Every Flavor Bean: Tongue Flavor</label>
+		<description>Ate a tongue flavor jelly bean! How... weird...\n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Allows the use of a tongue attack.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(209,144,142)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>120000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		  <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<accuracyTouch>1</accuracyTouch>
+								<accuracyShort>0.8</accuracyShort>
+								<accuracyMedium>0.7</accuracyMedium>
+								<accuracyLong>0.65</accuracyLong>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Lick</defaultProjectile>
+								<warmupTime>1</warmupTime>
+								<range>12</range>				
+								<soundCast>Lick</soundCast>
+								<muzzleFlashScale>0</muzzleFlashScale>
+								<label>lick</label>
+								<commonality>1</commonality>
+							</li>
+						</verbs>
+						<verbProps>
+							<li>
+								<label>lick</label>
+								<draw>false</draw>
+								<canBeToggled>true</canBeToggled>
+							</li>
+						</verbProps>
+					</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Rare</label>
+				<minSeverity>0</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>   
+
+<!--Antibiotic-->  
+
+	<HediffDef>
+		<defName>Bean_Antibiotic</defName>
+		<label>Every Flavor Bean: Antibiotic Flavor</label>
+		<description>Ate an antibiotic flavor jelly bean! I don't think the germs will like it. \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Greatly increases immunity gain speed.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(0,200,150)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Rare</label>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+				</statOffsets>	
+			</li>
+		</stages>
+	</HediffDef>    
+
+<!--Insanity Hat-->
+
+	<HediffDef>
+		<defName>Bean_InsanityHat</defName>
+		<label>Every Flavor Bean: Cowboy Hat of Insanity Flavor</label>
+		<description>Ate a cowboy hat of insanity flavor jelly bean! AHHHHHHHHHHHHHHHHHHHHHHH. \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Causes insanity.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(75,75,200)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Rare</label>
+				<minSeverity>0</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>
+
+    <ThoughtDef>
+		<defName>BeanThought_InsanityHat</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Bean_InsanityHat</hediff>
+		<stages>
+		  <li>
+			<label>Jellybean of Insanity</label>
+			<description>YEE HAW!</description>
+			<baseMoodEffect>-100</baseMoodEffect>
+		  </li>
+		</stages>
+  </ThoughtDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</Defs> 

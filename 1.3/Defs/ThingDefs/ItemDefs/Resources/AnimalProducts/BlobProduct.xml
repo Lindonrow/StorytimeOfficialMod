@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>AteOoze</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>drank raw ooze</label>
+        <description>Vile.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>GreenOoze</defName>
+    <label>Green Ooze</label>
+    <description>Liquid from a green ooze. Vile when raw, but healthy</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Slimes/Green_Ooze</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>3.2</MarketValue>
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>MealAwful</preferability>
+      <foodType>AnimalProduct, Fluid</foodType>
+      <tasteThought>AteOoze</tasteThought>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

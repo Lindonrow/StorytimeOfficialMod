@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[@Name="ChunkRockBase"]</xpath>
+    <value>
+    	<thingClass>ThingWithComps</thingClass>
+    	<comps> 
+        <li Class="StoryTime.CompProperties_GemDropper">
+	    <commonGemDropRate>0.016</commonGemDropRate>
+        <uncommonGemDropRate>0.008</uncommonGemDropRate>
+        <rareGemDropRate>0.004</rareGemDropRate>
+        </li>       
+      </comps>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[@Name="RockBase"]</xpath>
+    <value>
+      <comps> 
+        <li Class="StoryTime.CompProperties_GemDropper">
+	    <commonGemDropRate>0.016</commonGemDropRate>
+        <uncommonGemDropRate>0.008</uncommonGemDropRate>
+        <rareGemDropRate>0.004</rareGemDropRate>
+        </li>       
+      </comps>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="DeepDrill"]/comps</xpath>
+    <value>
+      <li Class="StoryTime.CompProperties_GemDropper">
+	    <commonGemDropRate>0.024</commonGemDropRate>
+        <uncommonGemDropRate>0.012</uncommonGemDropRate>
+        <rareGemDropRate>0.006</rareGemDropRate>
+      </li> 
+    </value>
+  </Operation>
+</Patch>

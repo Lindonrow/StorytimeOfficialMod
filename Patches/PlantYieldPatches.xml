@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_SaguaroCactus"]/plant</xpath>
+		<value>
+			<harvestedThingDef>CactusWood</harvestedThingDef>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeBamboo"]/plant</xpath>
+		<value>
+			<harvestedThingDef>BambooWood</harvestedThingDef>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_Strawberry"]/plant/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>Strawberry</harvestedThingDef>
+		</value>
+	</Operation>	
+	
+</Patch>

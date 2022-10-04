@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>  
+  <ThingDef ParentName="WoolBase">
+    <defName>WoolBluePuffle</defName>
+    <label>blue puffle wool</label>
+    <description>Blue puffle wool. Puffles are native to the south pole, so their fur provides very good insulation.</description>
+    <statBases>
+      <StuffPower_Insulation_Cold>35</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(47,204,255)</color>
+      <commonality>0.12</commonality>
+    </stuffProps>
+    <graphicData>
+      <color>(47,204,255)</color>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="WoolBase">
+    <defName>WoolBlackPuffle</defName>
+    <label>black puffle wool</label>
+    <description>Black puffle wool. Puffles are native to the south pole, so their fur provides very good insulation.</description>
+    <statBases>
+      <StuffPower_Insulation_Cold>35</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(102,102,102)</color>
+      <commonality>0.12</commonality>
+    </stuffProps>
+    <graphicData>
+      <color>(102,102,102)</color>
+    </graphicData>
+  </ThingDef>  
+
+  <ThingDef ParentName="WoolBase">
+    <defName>WoolRedPuffle</defName>
+    <label>red puffle wool</label>
+    <description>Red puffle wool. Puffles are native to the south pole, so their fur provides very good insulation.</description>
+    <statBases>
+      <StuffPower_Insulation_Cold>35</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(238,69,69)</color>
+      <commonality>0.12</commonality>
+    </stuffProps>
+    <graphicData>
+      <color>(238,69,69)</color>
+    </graphicData>
+  </ThingDef>  
+
+
+</Defs>

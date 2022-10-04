@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Categories -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Milk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+			  <li>ST_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>	
+
+<!-- Genetics -->	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "GR_WeirdMilk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+			  <li>ST_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "GR_BearffaloMilk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+			  <li>ST_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "GR_MuffalochickenMilk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+			  <li>ST_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "GR_ChickenffaloMilk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+			  <li>ST_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "GR_MuffalobearMilk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+			  <li>ST_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "GR_WolffaloMilk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+			  <li>ST_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "GR_RatMilk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+			  <li>ST_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>			
+	
+	
+<!-- Generic Milk Rename -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Milk"]/label</xpath>
+		<value>
+		      <label>bovine milk</label>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Milk"]/description</xpath>
+		<value>
+		      <description>Milk from an cow or cow-like animal.</description>
+		</value>
+	</Operation>	
+
+<!-- New Milks Addition -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Goat"]/comps</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_Milkable">
+				<milkDef>Goat_Milk</milkDef>
+				<milkIntervalDays>3</milkIntervalDays>
+				<milkAmount>12</milkAmount>
+			  </li>
+			</comps>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Dromedary"]/comps</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_Milkable">
+				<milkDef>Dromedary_Milk</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>18</milkAmount>
+			  </li>
+			</comps>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Caribou"]/comps</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_Milkable">
+				<milkDef>Deer_Milk</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>10</milkAmount>
+			  </li>
+			</comps>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Elk"]/comps</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_Milkable">
+				<milkDef>Deer_Milk</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>11</milkAmount>
+			  </li>
+			</comps>
+		</value>
+	</Operation>			
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Horse"]</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_Milkable">
+				<milkDef>Mare_Milk</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>16</milkAmount>
+			  </li>
+			</comps>
+		</value>
+	</Operation>			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Patch>

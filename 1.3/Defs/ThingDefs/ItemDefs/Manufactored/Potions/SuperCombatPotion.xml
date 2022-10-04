@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PotionBase">
+		<defName>SuperCombatPotion</defName>
+		<label>super combat potion</label>
+		<description>A potion of super combat.</description>
+		<graphicData>
+		<texPath>Things/Items/Resources/Potions/SuperCombatPotion</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>300</MarketValue>
+		<Mass>0.3</Mass>
+		<WorkToMake>1200</WorkToMake>
+		<Nutrition>0</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>NeverForNutrition</preferability>
+        <ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>HedSuperCombatPotion</hediffDef>
+				<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	
+ <HediffDef>
+    	<defName>HedSuperCombatPotion</defName>
+    	<label>Consumed Super Combat Potion</label>
+		<description>Drank a super combat potion!</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(200,80,80)</defaultLabelColor>      	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>20000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<statOffsets>
+				<MeleeHitChance>20</MeleeHitChance>
+				<MeleeArmorPenetration>0.5</MeleeArmorPenetration>
+		    	<PainShockThreshold>0.30</PainShockThreshold>
+			    <MeleeDodgeChance>20</MeleeDodgeChance>
+		</statOffsets>		
+      </li>
+    </stages>
+  </HediffDef>	
+	
+
+
+
+</Defs>

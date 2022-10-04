@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <KCSG.SymbolDef>
+    <defName>Bean</defName>
+    <thing>Bean</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>BertieBottBean</defName>
+    <thing>BertieBottBean</thing>
+  </KCSG.SymbolDef>
+</Defs>

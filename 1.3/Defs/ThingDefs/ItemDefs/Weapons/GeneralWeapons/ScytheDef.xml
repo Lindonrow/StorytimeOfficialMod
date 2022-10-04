@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>ST_Scythe</defName>
+    <label>scythe</label>
+    <description>Rip and tear.</description>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>100</costStuffCount>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>5</Mass>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>4</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>GreataxeCleave</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>0.9</cooldownTime>
+      </li>
+    </tools>
+    <equippedAngleOffset>-15</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Items/Weapons/Scythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.35</drawSize>
+    </graphicData>
+	<comps>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeSuperCombatPotion</defName>
+    <label>Make Super Combat Potion</label>
+    <description>Extract fighting essence from harralander and torstol to make a potion.</description>    
+	<jobString>Craft combat potion.</jobString>
+    <workAmount>1300</workAmount>
+    <skillRequirements>
+      <Alchemy>10</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>HarralanderLeaves</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>TorstolLeaves</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>HarralanderLeaves</li>
+						<li>TorstolLeaves</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<SuperCombatPotion>1</SuperCombatPotion>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>
+  

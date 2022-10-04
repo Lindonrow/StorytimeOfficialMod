@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=========================== Fruit Trees ==============================-->
+
+	<ThingDef ParentName="TreeBase">
+		<defName>ST_CookingAppleTree</defName>
+		<label>apple tree</label>
+		<description>A tree with little green apples on it.</description>
+		<graphicData>
+			<texPath>Things/Plants/AppleTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>25</growDays>
+			<visualSizeRange>1~2.2</visualSizeRange>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.71</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plants/AppleTreeImmature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
+			<harvestWork>500</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>30</harvestYield>
+			<harvestedThingDef>CookingApple</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+		    <wildBiomes>
+			  <TemperateForest>0.06</TemperateForest>
+			  <TemperateSwamp>0.01</TemperateSwamp>
+			  <BorealForest>0.01</BorealForest>
+			  <ColdBog>0.01</ColdBog>
+			  <AridShrubland>0.01</AridShrubland>
+		    </wildBiomes>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>ST_OrangeTree</defName>
+		<label>orange tree</label>
+		<description>A tree with oranges on it.</description>
+		<graphicData>
+			<texPath>Things/Plants/OrangeTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>35</growDays>
+			<visualSizeRange>1~2.2</visualSizeRange>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.71</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plants/OrangeTreeImmature</immatureGraphicPath>
+			<harvestWork>500</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>35</harvestYield>
+			<harvestedThingDef>Orange</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			  <wildBiomes>
+				<TemperateForest>0.009</TemperateForest>
+				<TemperateSwamp>0.004</TemperateSwamp>
+				<TropicalRainforest>0.03</TropicalRainforest>
+				<TropicalSwamp>0.01</TropicalSwamp>
+				<AridShrubland>0.008</AridShrubland>
+				<Desert>0.005</Desert>
+			  </wildBiomes>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>ST_LemonTree</defName>
+		<label>lemon tree</label>
+		<description>A tree with lemons on it.</description>
+		<graphicData>
+			<texPath>Things/Plants/LemonTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>30</growDays>
+			<visualSizeRange>1~2.2</visualSizeRange>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.71</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plants/LemonTreeImmature</immatureGraphicPath>
+			<harvestWork>500</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>32</harvestYield>
+			<harvestedThingDef>Lemon</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			  <wildBiomes>
+				<TemperateForest>0.009</TemperateForest>
+				<TemperateSwamp>0.005</TemperateSwamp>
+				<TropicalRainforest>0.02</TropicalRainforest>
+				<TropicalSwamp>0.008</TropicalSwamp>
+				<AridShrubland>0.009</AridShrubland>
+				<Desert>0.006</Desert>
+			  </wildBiomes>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>ST_BananaTree</defName>
+		<label>banana tree</label>
+		<description>Grows weird yellow fruit.</description>
+		<graphicData>
+			<texPath>Things/Plants/BananaTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>35</growDays>
+			<visualSizeRange>1~2.2</visualSizeRange>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.71</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plants/BananaTreeImmature</immatureGraphicPath>
+			<harvestWork>500</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>35</harvestYield>
+			<harvestedThingDef>Banana</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			  <wildBiomes>
+				<TropicalRainforest>0.03</TropicalRainforest>
+			  </wildBiomes>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>ST_WeezerTree</defName>
+		<label>weezer tree</label>
+		<description>A tree with little weezers on it.</description>
+		<graphicData>
+			<texPath>Things/Plants/WeezerTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>3</Beauty>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>60</growDays>
+			<visualSizeRange>1~2.2</visualSizeRange>
+			<sowMinSkill>7</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.71</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plants/WeezerTreeImmature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
+			<harvestWork>500</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>25</harvestYield>
+			<harvestedThingDef>Weezer</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+		    <wildBiomes>
+			  <TemperateForest>0.01</TemperateForest>
+			  <TemperateSwamp>0.001</TemperateSwamp>
+			  <BorealForest>0.001</BorealForest>
+			  <ColdBog>0.001</ColdBog>
+			  <AridShrubland>0.001</AridShrubland>
+		    </wildBiomes>
+		</plant>
+	</ThingDef>
+
+</Defs>

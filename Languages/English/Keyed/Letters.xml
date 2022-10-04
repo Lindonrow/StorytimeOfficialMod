@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <LetterLabelJeubSwarm>Jeub Swarm</LetterLabelJeubSwarm>
+  <JeubSwarm>A swarm of hungry jeubs has been spotted approaching the colony. FLEE FOR YOUR LIVES!!!</JeubSwarm>
+
+  <LetterLabelWanderingCartographer>The Cartographer Approaches</LetterLabelWanderingCartographer>
+  <WanderingCartographer>A cartographer has been spotted. It is said these creatures possess great speed. Speed that perhaps we could harness?</WanderingCartographer>
+
+  <legGrowth>Leg Growth</legGrowth>
+  <tomatoGrowth>Tomato Growth</tomatoGrowth>
+  <woodGrowth>Wood Growth</woodGrowth>
+  <GreenOozeDesc>Ooze Growth</GreenOozeDesc>
+  <PoisonGather>Poison Accumulation</PoisonGather>
+  
+  <BeanSpawned>Bean man birthed!</BeanSpawned>
+  
+  <ST_WoodFrog_CommandLabel>Command Metamorphosis</ST_WoodFrog_CommandLabel>
+  <ST_WoodFrog_CommandDesc>Command the wood frog to undergo metamorphosis to finally reach its final form- a tree.</ST_WoodFrog_CommandDesc>
+
+  <ST_FoundGem>{0} has found an {1}</ST_FoundGem>  
+  
+  <ST_LetterLabelBones2Bananas>Bananatization Completed</ST_LetterLabelBones2Bananas>
+  <ST_LetterBones2Bananas>{0} has been converted into a banana, effectively resulting in {0_possessive} death.</ST_LetterBones2Bananas>
+  <ST_LetterLabelBones2Cabbages>Cabbage Transformation Completed</ST_LetterLabelBones2Cabbages>
+  <ST_LetterBones2Cabbages>{0} has been converted into a cabbage, effectively resulting in {0_possessive} death.</ST_LetterBones2Cabbages>
+  
+  <LetterLabelNightFrogsArrived>Night Frogs Approach...</LetterLabelNightFrogsArrived>
+  <NightFrogsArrived>A group of night frogs has entered the area. These predatory, venomous frogs can be a danger to your colonists- or an asset, if tamed.</NightFrogsArrived>
+</LanguageData>

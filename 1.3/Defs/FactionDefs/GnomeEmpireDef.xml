@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef>
+    <defName>TreeGnomeEmpire</defName>
+    <label>gnome empire</label>
+    <description>Many gnomes dwell in these lands, some of them children.</description>
+    <pawnsPlural>gnomes</pawnsPlural>
+    <settlementGenerationWeight>0.5</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/TreeGnomeEmpire/GnomeLogo</factionIconPath>
+    <colorSpectrum>
+      <li>(0.1, 0.4, 0.1)</li>
+    </colorSpectrum>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </disallowedMemes>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+    </requiredMemes>
+    <allowedCultures><li>STGnome</li></allowedCultures>
+    <structureMemeWeights>
+      <STGnomeOrigin MayRequire="Ludeon.RimWorld.Ideology">0.5</STGnomeOrigin>
+    </structureMemeWeights>
+    <fixedName>Tree Gnome Empire</fixedName>
+    <settlementNameMaker>GnomeSettlementName</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+    <backstoryCategories>
+      <li>GnomeBackstory</li>
+    </backstoryCategories>
+    <geneticVariance>0.8</geneticVariance>
+    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Storytime_Gnome</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GnomeWarrior>100</GnomeWarrior>
+		  <GnomeArcher>200</GnomeArcher>
+          <Toad>10</Toad>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <GnomeArcher>200</GnomeArcher>
+          <GnomeWarrior>100</GnomeWarrior>
+          <Toad>10</Toad>
+		  <GnomeKing>1</GnomeKing>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <GnomeTrader>1</GnomeTrader>
+        </traders>
+        <carriers>
+          <Muffalo>100</Muffalo>
+        </carriers>
+        <guards>
+          <GnomeArcher>200</GnomeArcher>
+		  <GnomeWarrior>100</GnomeWarrior>
+          <Toad>10</Toad>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <GnomeArcher>200</GnomeArcher>
+		  <GnomeWarrior>100</GnomeWarrior>
+          <Toad>10</Toad>
+		  <GnomeKing>1</GnomeKing>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<modExtensions>
+		<li Class="VFECore.FactionDefExtension">			
+			<disallowedBiomes>
+				<li>Desert</li>
+				<li>ExtremeDesert</li>
+				<li>Tundra</li>
+				<li>IceSheet</li>
+				<li>SeaIce</li>
+			</disallowedBiomes>			
+		</li>
+      <li Class="FactionSounds.FactionSound">
+        <soundDef>Gnome_Theme</soundDef>
+      </li>
+	</modExtensions>
+  </FactionDef> 
+
+
+
+
+</Defs>

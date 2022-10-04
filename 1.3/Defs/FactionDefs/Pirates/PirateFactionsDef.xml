@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef>
+    <defName>NicePirates</defName>
+    <label>gentleman corsairs</label>
+    <description>Yar Har Fiddle Dee Dee.</description>
+    <pawnsPlural>pirates</pawnsPlural>
+    <settlementGenerationWeight>0.6</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>captain</leaderTitle>
+    <factionIconPath>World/Pirates/MeanPirates</factionIconPath>
+	<backstoryCategories>
+      <li>PirateBackstory</li>
+    </backstoryCategories>
+    <colorSpectrum>
+      <li>(0.2, 0.2, 0.8)</li>
+    </colorSpectrum>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+    </requiredMemes>
+    <allowedCultures><li>STPirate</li></allowedCultures>
+    <structureMemeWeights>
+      <STPirateOrigin MayRequire="Ludeon.RimWorld.Ideology">1</STPirateOrigin>
+    </structureMemeWeights>
+    <factionNameMaker>NamerFactionStorytimePirate</factionNameMaker>
+    <settlementNameMaker>PirateSettlementName</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+    <geneticVariance>0.8</geneticVariance>
+    <caravanTraderKinds>
+      <li>Caravan_Storytime_Pirate</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(10000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+          <Monkey>5</Monkey>
+		  <ST_Parrot>5</ST_Parrot>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+          <Monkey>5</Monkey>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+		  <ST_Parrot>5</ST_Parrot>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <PirateCaptain>1</PirateCaptain>
+        </traders>
+        <carriers>
+          <Muffalo>100</Muffalo>
+        </carriers>
+        <guards>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+          <Monkey>5</Monkey>
+		  <ST_Parrot>5</ST_Parrot>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <PirateSwabbie>25</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>15</PirateJuggernaut>
+          <Monkey>5</Monkey>
+		  <ST_Parrot>5</ST_Parrot>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<modExtensions>
+      <li Class="FactionSounds.FactionSound">
+        <soundDef>Jack_Sparrow</soundDef>
+        <combatSoundDef>Pirate_Theme</combatSoundDef>
+      </li>
+    </modExtensions>
+	
+	
+  </FactionDef>
+    <FactionDef>
+    <defName>MeanPirates</defName>
+    <label>barbarous brigands</label>
+    <description>Assholes.</description>
+    <pawnsPlural>pirates</pawnsPlural>
+    <settlementGenerationWeight>0.6</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>captain</leaderTitle>
+    <factionIconPath>World/Pirates/MeanPirates</factionIconPath>
+    <permanentEnemy>true</permanentEnemy>
+    <backstoryCategories>
+      <li>PirateBackstory</li>
+    </backstoryCategories>
+    <colorSpectrum>
+      <li>(0.8, 0.2, 0.2)</li>
+    </colorSpectrum>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+    </requiredMemes>
+    <allowedCultures><li>STPirate</li></allowedCultures>
+    <structureMemeWeights>
+      <STPirateOrigin MayRequire="Ludeon.RimWorld.Ideology">1</STPirateOrigin>
+    </structureMemeWeights>
+    <factionNameMaker>NamerFactionStorytimePirate</factionNameMaker>
+    <settlementNameMaker>PirateSettlementName</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+    <geneticVariance>0.8</geneticVariance>
+    <caravanTraderKinds>
+      <li>Caravan_Storytime_Pirate</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(10000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+          <Monkey>5</Monkey>
+		  <ST_Parrot>5</ST_Parrot>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+          <Monkey>5</Monkey>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+		  <ST_Parrot>5</ST_Parrot>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <PirateCaptain>1</PirateCaptain>
+        </traders>
+        <carriers>
+          <Muffalo>100</Muffalo>
+        </carriers>
+        <guards>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+          <Monkey>5</Monkey>
+		  <ST_Parrot>5</ST_Parrot>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <PirateSwabbie>25</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>15</PirateJuggernaut>
+          <Monkey>5</Monkey>
+		  <ST_Parrot>5</ST_Parrot>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<modExtensions>
+      <li Class="FactionSounds.FactionSound">
+        <soundDef>Jack_Sparrow</soundDef>
+        <combatSoundDef>Pirate_Theme</combatSoundDef>
+      </li>
+    </modExtensions>
+  </FactionDef>
+
+</Defs>

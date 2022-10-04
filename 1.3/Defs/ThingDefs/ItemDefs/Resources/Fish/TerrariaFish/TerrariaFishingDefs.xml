@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- All vanilla biomes for copy pasting
+
+			<li>BorealForest</li>
+			<li>Tundra</li>
+			<li>ColdBog</li>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+			<li>AridShrubland</li>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+-->
+
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_ArmoredCavefishFish</defName>
+		<thingDef>ST_ArmoredCavefish</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
+		<defName>ST_BlueJellyfishFish</defName>
+		<thingDef>ST_BlueJellyfish</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_ChaosFishFish</defName>
+		<thingDef>ST_ChaosFish</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_CrimsonTigerfishFish</defName>
+		<thingDef>ST_ArmoredCavefish</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>10</baseFishingYield> 		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_DamselfishFish</defName>
+		<thingDef>ST_Damselfish</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+		</allowedBiomes>
+		<baseFishingYield>25</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
+		<defName>ST_EbonkoiFish</defName>
+		<thingDef>ST_Ebonkoi</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+		</allowedBiomes>
+		<baseFishingYield>25</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_FlarefinKoiFish</defName>
+		<thingDef>ST_FlarefinKoi</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Hot</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_FlounderFish</defName>
+		<thingDef>ST_Flounder</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Hot</li>
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_FrostMinnowFish</defName>
+		<thingDef>ST_FrostMinnow</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_GoldenCarpFish</defName>
+		<thingDef>ST_GoldenCarp</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>
+			<li>Hot</li>
+		</allowedBiomes>
+		<baseFishingYield>5</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_GreenJellyfishFish</defName>
+		<thingDef>ST_GreenJellyfish</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_HemopiranhaFish</defName>
+		<thingDef>ST_Hemopiranha</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_NeonTetraFish</defName>
+		<thingDef>ST_NeonTetra</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>TemperateSwamp</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+		</allowedBiomes>
+		<baseFishingYield>25</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_ObsidifishFish</defName>
+		<thingDef>ST_Obsidifish</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_PinkJellyfishFish</defName>
+		<thingDef>ST_PinkJellyfish</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_PrincessFishFish</defName>
+		<thingDef>ST_PrincessFish</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>25</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_PrismiteFish</defName>
+		<thingDef>ST_Prismite</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>20</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_RedSnapperFish</defName>
+		<thingDef>ST_RedSnapper</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>25</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_SpecularFishFish</defName>
+		<thingDef>ST_SpecularFish</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>	
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_StinkfishFish</defName>
+		<thingDef>ST_Stinkfish</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>	
+			<li>Hot</li>	
+		</allowedBiomes>
+		<baseFishingYield>25</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_VariegatedLardfishFish</defName>
+		<thingDef>ST_VariegatedLardfish</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>TemperateSwamp</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+
+
+
+
+
+
+</Defs>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IncidentDef>
+		<defName>Jeub_Swarm</defName>
+		<label>jeub swarm</label>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>StoryTime.IncidentWorker_JeubSwarm</workerClass>
+		<baseChance>0.6</baseChance>
+		<category>ThreatBig</category>
+		<minRefireDays>8</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>ManhunterPack</tale>
+	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>Cartographer_Wanders</defName>
+		<label>wandering cartographer</label>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>StoryTime.IncidentWorker_WanderingCartographer</workerClass>
+		<category>Misc</category>
+		<baseChance>0.3</baseChance>
+		<minRefireDays>20</minRefireDays>
+	</IncidentDef>
+	
+	  <IncidentDef>
+		<defName>GibbonousMoon</defName>
+		<label>gibbonous moon</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>GibbonousMoon</gameCondition>
+		<letterLabel>Gibbonous moon rising</letterLabel>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>0.8</baseChance>
+		<minRefireDays>10</minRefireDays>
+		<earliestDay>10</earliestDay>
+		<durationDays>0.75~1</durationDays>
+	  </IncidentDef>
+
+	  <IncidentDef>
+		<defName>NightFrogs</defName>
+		<label>night frogs approach</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>StoryTime.NightFrogIncidentWorker</workerClass>
+		<baseChance>0.6</baseChance>
+		<minRefireDays>30</minRefireDays>
+	  </IncidentDef>
+
+
+</Defs>

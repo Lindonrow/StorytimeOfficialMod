@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>NogStarter</defName>
+    <label>nog starter</label>
+    <description>It's basically just crushed eggs, but what could it become...?</description>
+    <graphicData>
+      <texPath>Things/Items/Nog/NogStarter</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Flammability>1.3</Flammability>
+	  <Nutrition>0.02</Nutrition> 
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>AnimalProduct, Fluid</foodType>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>RawNog</defName>
+    <label>raw nog</label>
+    <description>Crushed eggs that have been allowed to ferment in a wooden barrel.</description>
+    <graphicData>
+      <texPath>Things/Items/Nog/RawNog</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>2.5</MarketValue>
+      <Flammability>1.3</Flammability>
+	  <Nutrition>0.02</Nutrition> 
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct, Fluid</foodType>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealCooked">
+    <defName>EggNog</defName>
+    <label>egg nog</label>
+    <description>So... good...</description>
+    <graphicData>
+      <texPath>Things/Items/Nog/EggNog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>400</WorkToMake>
+      <MarketValue>15</MarketValue>
+      <Mass>0.05</Mass>
+	  <Nutrition>1</Nutrition> 
+      <DeteriorationRate>6</DeteriorationRate>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+	<storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+    <ingestible>
+      <foodType>AnimalProduct, Processed</foodType>
+	  <preferability>MealFine</preferability>
+      <joyKind>Chemical</joyKind>
+      <joy>0.60</joy>
+      <baseIngestTicks>100</baseIngestTicks>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.21,0,0.05)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>HediffEggNog</hediffDef>
+          <severity>0.4</severity>
+          <toleranceChemical>EggNogChemical</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>EggNogTolerance</hediffDef>
+          <severity>0.030</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>EggNogChemical</chemical>
+        <addictiveness>0.75</addictiveness>
+        <minToleranceToAddict>0.01</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.09</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>20</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>HediffEggNog</defName>
+    <label>Sublime Nog</label>
+    <labelNoun>egg nog good</labelNoun>
+    <description>Active egg nog in the bloodstream. Produces an intense happiness.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(0,128,128)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
+          <painOffset>-0.1</painOffset>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>YummyNog</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>HediffEggNog</hediff>
+    <stages>
+      <li>
+        <label>Drank egg nog</label>
+        <description>Drank some sweet sweet egg nog.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+    <ChemicalDef>
+    <defName>EggNogChemical</defName>
+    <label>Egg Nog</label>
+    <addictionHediff>EggNogAddiction</addictionHediff>
+    <toleranceHediff>EggNogTolerance</toleranceHediff>
+    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+    <onGeneratedAddictedEvents>
+      <li>
+        <hediff>ChemicalDamageSevere</hediff>
+        <chance>0.02</chance>
+        <partsToAffect>
+		  <li>Stomach</li>
+        </partsToAffect>
+      </li>
+    </onGeneratedAddictedEvents>
+  </ChemicalDef>
+  
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>EggNogChemical</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>egg nog</label>
+    <description>Because of an egg nog addiction, this person needs to regularly consume the drink to avoid withdrawal symptoms.</description>
+    <listPriority>50</listPriority>
+  </NeedDef>
+  
+    <HediffDef ParentName="DrugToleranceBase">
+    <defName>EggNogTolerance</defName>
+    <label>egg nog tolerance</label>
+    <description>A built-up tolerance to egg nog. You need to consume MORE.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>EggNogChemical</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>ChemicalDamageSevere</hediff>
+        <minSeverity>0.90</minSeverity>
+        <baseMtbDays>180</baseMtbDays>
+        <partsToAffect>
+		  <li>Stomach</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+  </HediffDef>
+  
+    <HediffDef ParentName="AddictionBase">
+    <defName>EggNogAddiction</defName>
+    <label>egg nog addiction</label>
+    <description>A deep love of egg nog. Not being able to drink it will make you pissed, but it'll wear off after a few days.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>EggNogChemical</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.15</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <socialFightChanceFactor>6.0</socialFightChanceFactor>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>2</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>EggNogWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>EggNogAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>egg nog withdrawal</label>
+        <description>Why is it only available around Christmas...</description>
+        <baseMoodEffect>-50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThingDef ParentName="MealCooked">
+    <defName>FrogNog</defName>
+    <label>frog nog</label>
+    <description>It's a nog with a frog in it, reasons unclear.</description>
+    <graphicData>
+      <texPath>Things/Items/Nog/EggNog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(109,157,114)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <WorkToMake>400</WorkToMake>
+      <Nutrition>1.5</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Ingest_Beer</ingestSound>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>HedFrogNog</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealCooked">
+    <defName>FogNog</defName>
+    <label>fog nog</label>
+    <description>Nog mixed with beer, it doesn't taste half bad.</description>
+    <descriptionHyperlinks>
+      <HediffDef>AlcoholHigh</HediffDef>
+      <HediffDef>AlcoholTolerance</HediffDef>
+      <HediffDef>Hangover</HediffDef>
+      <HediffDef>AlcoholAddiction</HediffDef>
+      <HediffDef>Cirrhosis</HediffDef>
+      <HediffDef>ChemicalDamageModerate</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Items/Nog/EggNog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(242,142,28)</color>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>12</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.6</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+	  <preferability>NeverForNutrition</preferability>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.13</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.014</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.010</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>10</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealCooked">
+    <defName>ProfaneNog</defName>
+    <label>profane nog</label>
+    <description>This should not exist. This is wrong.</description>
+    <descriptionHyperlinks>
+      <HediffDef>AlcoholHigh</HediffDef>
+      <HediffDef>AlcoholTolerance</HediffDef>
+      <HediffDef>Hangover</HediffDef>
+      <HediffDef>AlcoholAddiction</HediffDef>
+      <HediffDef>Cirrhosis</HediffDef>
+      <HediffDef>ChemicalDamageModerate</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Items/Nog/EggNog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(75,75,75)</color>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>12</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.6</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+	  <preferability>NeverForNutrition</preferability>
+      <joyKind>Chemical</joyKind>
+      <joy>-0.5</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Defile self</ingestCommandString>
+      <ingestReportString>Defiling themself with {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.85</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.2</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>EggNogTolerance</hediffDef>
+          <severity>0.15</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+		<li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>HedProfaneNog</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>EggNogChemical</chemical>
+        <addictiveness>1</addictiveness>
+        <minToleranceToAddict>0</minToleranceToAddict>
+        <existingAddictionSeverityOffset>1</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>10</listOrder>
+      </li>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.010</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>10</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+  
+    <ThingDef Name="FireNog" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>0</Beauty>
+      <Mass>0.44</Mass>
+      <DeteriorationRate>10</DeteriorationRate>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Ingredients" />
+    </comps>
+    <pathCost>14</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>NogFire</defName>
+    <label>fireball</label>
+    <graphicData>
+      <texPath>Spells/fireball4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="FireNog">
+    <defName>FieryNog</defName>
+    <label>fire nog</label>
+    <description>Unlike most forms of nog, this nog is not consumed for nutritional value. This nog is a weapon.</description>
+    <graphicData>
+      <texPath>Things/Items/Nog/EggNog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(125,15,15)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <WorkToMake>400</WorkToMake>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Drink fire nog</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>HedFireNog</hediffDef>
+        <bodyPart>Stomach</bodyPart>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+  
+</Defs>  

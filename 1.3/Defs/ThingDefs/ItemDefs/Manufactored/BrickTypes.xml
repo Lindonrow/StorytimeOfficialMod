@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+ <ThingDef ParentName="ResourceBase">
+    <defName>Mordor_Brick</defName>
+    <label>Adamant</label>
+    <description>The Black Brick of MORDOR</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(25,25,25)</color>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+      <BluntDamageMultiplier>2.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.1</deepCommonality>
+    <deepCountPerPortion>15</deepCountPerPortion>
+    <deepLumpSizeRange>1~4</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(25,25,25)</color>
+	  <appearance>Bricks</appearance>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>3.2</MaxHitPoints>
+        <WorkToMake>6</WorkToMake>
+        <WorkToBuild>30</WorkToBuild>
+        <Beauty>0.5</Beauty>
+        <Flammability>0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </ThingDef>
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileMordor</defName>
+    <label>adamant tile</label>
+    <color>(25,25,25)</color>
+    <costList>
+      <Mordor_Brick>4</Mordor_Brick>
+    </costList>
+  </TerrainDef>
+
+
+ <ThingDef ParentName="ResourceBase">
+    <defName>Flesh_Brick</defName>
+    <label>Flesh Brick</label>
+    <description>Meat that has been reshaped into a rectangular shape. Can be used to build, but it looks vile.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/MeatBrick</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(165,42,42)</color>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <soundInteract>Corpse_Drop</soundInteract>
+    <soundDrop>Corpse_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+      <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.1</deepCommonality>
+    <deepCountPerPortion>15</deepCountPerPortion>
+    <deepLumpSizeRange>1~4</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(110,30,10)</color>
+	  <appearance>Bricks</appearance>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>-3</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <WorkToMake>1</WorkToMake>
+        <WorkToBuild>1</WorkToBuild>
+        <Beauty>-0.5</Beauty>
+        <Flammability>0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </ThingDef>
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileFlesh</defName>
+    <label>flesh tile</label>
+    <color>(110,30,10)</color>
+    <costList>
+      <Flesh_Brick>4</Flesh_Brick>
+    </costList>
+	<statBases>
+      <WorkToBuild>500</WorkToBuild>
+      <Beauty>-2</Beauty>
+    </statBases>
+  </TerrainDef>
+</Defs>

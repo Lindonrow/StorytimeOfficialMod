@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>BeanManLarva</defName>
+		<label>Bean man larva</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>Tiny larva of a bean man. With help, it will grow.</description>
+		<graphicData>
+			<texPath>Things/Items/BeanManLarva</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>15.0</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Grow bean man</useLabel>
+				<useDuration>1500</useDuration>
+			</li>
+			<li Class="StoryTime.CompProperties_SpawnPawn">
+				<compClass>StoryTime.CompUseEffect_SpawnPerson</compClass>
+				<pawnKind>PlayerBeanMan</pawnKind>
+
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_DestroySelf</compClass>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>SapientBeanMatrix</defName>
+    <label>sapient bean matrix</label>
+    <description>A highly advanced piece of technology containing the blueprint for a sentient creature. Strangely, it is hard-wired to only work when surrounded with a large amount of beans.</description>
+    <graphicData>
+      <texPath>Things/Items/SapientBeanMatrix</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+ <RecipeDef>
+    <defName>MakeSapientBeanMatrix</defName>
+    <label>Make Sapient Bean Matrix</label>
+    <description>Assemble an AI Core to be placed inside a bean man.</description>    
+	<jobString>Assemble a Sapient Bean Matrix.</jobString>
+    <workAmount>4000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>beanManCrafting</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	<recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+						<li>Gold</li>
+						<li>Plasteel</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<SapientBeanMatrix>1</SapientBeanMatrix>
+	</products>
+  </RecipeDef>
+  
+ <RecipeDef>
+    <defName>MakeBeanManLarva</defName>
+    <label>Grow Bean Man Larva</label>
+    <description>Throw a SBM and a bunch of beans into the pit.</description>    
+	<jobString>Assemble a Sapient Bean Matrix.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>beanManCrafting</researchPrerequisite>
+	<recipeUsers>
+      <li>BeanPit</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>SapientBeanMatrix</li>
+					</thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>Bean</li>
+					</thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>SapientBeanMatrix</li>
+						<li>Bean</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<BeanManLarva>1</BeanManLarva>
+	</products>
+  </RecipeDef>
+</Defs>

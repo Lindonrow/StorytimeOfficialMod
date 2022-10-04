@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>ManFrog</defName>
+    <label>Man-Frog</label>
+    <description>The horrific product of genetic experimentation with frog and humanoid genomes, this creature exists in constant mental and physical anguish. Not man, not frog, it belongs nowhere and has no one.</description>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <MarketValue>250</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.3</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+      <nameGenerator>FrogNamerMale</nameGenerator>
+      <nameGeneratorFemale>FrogNamerFemale</nameGeneratorFemale>
+      <baseBodySize>0.6</baseBodySize>
+      <baseHealthScale>0.75</baseHealthScale>
+      <baseHungerRate>0.33</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <leatherDef>Leather_Human</leatherDef>
+      <wildness>0.1</wildness>
+      <trainability>Advanced</trainability>
+      <useMeatFrom>Toad</useMeatFrom>
+      <petness>0.1</petness>
+      <lifeExpectancy>3</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.09</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>ManFrog_Screech</soundWounded>
+          <soundDeath>ManFrog_Screech</soundDeath>
+          <soundCall>ManFrog_Screech</soundCall>
+          <soundAngry>ManFrog_Screech</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+	<tradeTags>
+		<li>AnimalGenetic</li>
+		<li>NonContractable</li>
+	</tradeTags>
+	<modExtensions>
+		<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>ST_FrogRole</li>
+					<li>ST_FrogRarity</li>					
+				</statToAdd>
+				<statValues>
+					<li>ST_MeleeTank</li>
+					<li>ST_FrogAbomination</li>					
+				</statValues>
+				<statDescriptions>
+					<li>ST_MeleeTankDesc</li>
+					<li>ST_FrogAbominationDesc</li>
+				</statDescriptions>	
+		</li>
+  </modExtensions>
+	<comps>
+		<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+			<hediffname>HedUnholyAbomination</hediffname>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>ManFrog</defName>
+	<label>man-frog</label>
+	<labelMale>man-frog</labelMale>
+	<labelFemale>woman-frog</labelFemale>
+    <race>ManFrog</race>
+	<canArriveManhunter>false</canArriveManhunter>
+    <combatPower>60</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Abomination_Types/ManFrog/ManFrog</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Abomination_Types/ManFrog/ManFrog</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Abomination_Types/ManFrog/ManFrog</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.35, 0.4, 0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+	<modExtensions>
+					<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
+				<secondaryGenome>ST_FrogGenetic</secondaryGenome>
+			</li>
+	</modExtensions>
+  </PawnKindDef>
+  
+</Defs>

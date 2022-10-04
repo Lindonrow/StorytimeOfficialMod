@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Items -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "SmokeleafLeaves"]/label</xpath>
+		<value>
+		      <label>weed</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "SmokeleafLeaves"]/description</xpath>
+		<value>
+		      <description>Raw cut leaves of a weed plant. Can be rolled into smokeable joints at a crafting spot.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_Smokeleaf"]/label</xpath>
+		<value>
+		      <label>weed plant</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_Smokeleaf"]/description</xpath>
+		<value>
+		      <description>A leafy crop grown for the psychological effects of chemicals in its leaves. Weed leaves can be prepared into joints at the crafting spot. Weed makes a user feel relaxed, but reduces motivation, and can be addictive.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "SmokeleafJoint"]/label</xpath>
+		<value>
+		      <label>weed joint</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "SmokeleafLeaves"]/description</xpath>
+		<value>
+		      <description>Weed leaves prepared in small rolls for smoking. The drug improves mood, but also increases appetite, reduces focus and slows movement. Weed use can produce a dependency.\n\nJoints can be produced at a crafting spot without equipment, and are a fixture in many traditional low-industriousness cultures.</description>
+		</value>
+	</Operation>	
+
+<!-- Hediffs -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "SmokeleafHigh"]/label</xpath>
+		<value>
+		      <label>stoned on weed</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "SmokeleafHigh"]/labelNoun</xpath>
+		<value>
+		      <labelNoun>a weed high</labelNoun>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "SmokeleafHigh"]/description</xpath>
+		<value>
+		      <description>Weed's active chemical in the bloodstream. Generates a soft feeling of fuzzy well-being.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThoughtDef[defName = "SmokeleafHigh"]/stages</xpath>
+		<value>
+			<stages>
+			  <li>
+				<label>high on weed</label>
+				<description>I'm, like, stoned, man.</description>
+				<baseMoodEffect>13</baseMoodEffect>
+			  </li>
+			</stages>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ChemicalDef[defName = "Smokeleaf"]/label</xpath>
+		<value>
+			<label>weed</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/NeedDef[defName = "Chemical_Smokeleaf"]/label</xpath>
+		<value>
+			<label>weed</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/NeedDef[defName = "Chemical_Smokeleaf"]/description</xpath>
+		<value>
+			<description>Because of a weed dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "SmokeleafTolerance"]/label</xpath>
+		<value>
+		      <label>weed tolerance</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "SmokeleafTolerance"]/description</xpath>
+		<value>
+		      <description>A built-up tolerance to weed. The more severe this tolerance is, the more weed it takes to get the same effect.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "SmokeleafAddiction"]/label</xpath>
+		<value>
+		      <label>weed dependence</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "SmokeleafAddiction"]/description</xpath>
+		<value>
+		      <description>A chemical addiction to weed. Long-term use of weed has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of weed, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThoughtDef[defName = "SmokeleafWithdrawal"]/stages</xpath>
+		<value>
+			<stages>
+			  <li>
+				<visible>false</visible>
+			  </li>
+			  <li>
+				<label>weed withdrawal</label>
+				<description>I really wish I could smoke. I feel jittery, and my gut has that anxious sensation all the time.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			  </li>
+			</stages>
+		</value>
+	</Operation>	
+
+</Patch>

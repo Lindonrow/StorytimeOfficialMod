@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_ArmoredCavefish</defName>
+		<label>armored cavefish</label>
+		<description>Not really found in a cave, I suppose...</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/ArmoredCavefish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>0.4</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_BlueJellyfish</defName>
+		<label>blue jellyfish</label>
+		<description>Grape flavored.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/BlueJellyfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_ChaosFish</defName>
+		<label>chaos fish</label>
+		<description>CHAOS</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/ChaosFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Nutrition>0.015</Nutrition>
+			<MarketValue>0.6</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_CrimsonTigerfish</defName>
+		<label>crimson tigerfish</label>
+		<description>Not a real tiger.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/CrimsonTigerfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Nutrition>0.03</Nutrition>
+			<MarketValue>0.4</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Damselfish</defName>
+		<label>damselfish</label>
+		<description>Not a real damsel.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Damselfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>0.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Ebonkoi</defName>
+		<label>ebonkoi</label>
+		<description>BLACK. KOI.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Ebonkoi</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>0.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_FlarefinKoi</defName>
+		<label>flarefin koi</label>
+		<description>Is it made of fire? It's really unclear.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/FlarefinKoi</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Nutrition>0.03</Nutrition>
+			<MarketValue>0.8</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>		
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Flounder</defName>
+		<label>flounder</label>
+		<description>Flip flop.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Flounder</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>		
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_FrostMinnow</defName>
+		<label>frost minnow</label>
+		<description>I feel... cold.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/FrostMinnow</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>		
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_GoldenCarp</defName>
+		<label>golden carp</label>
+		<description>Literally a carp made of solid gold. How does it even survive?</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/GoldenCarp</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.2</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>8</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_GreenJellyfish</defName>
+		<label>green jellyfish</label>
+		<description>Lime flavored.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/GreenJellyfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Hemopiranha</defName>
+		<label>hemopiranha</label>
+		<description>Blood fish.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Hemopiranha</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_NeonTetra</defName>
+		<label>neon tetra</label>
+		<description>NEON FISH</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/NeonTetra</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>0.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Obsidifish</defName>
+		<label>obsidifish</label>
+		<description>A fish made of rocks.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Obsidifish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.03</Nutrition>
+			<MarketValue>0.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>		
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_PinkJellyfish</defName>
+		<label>pink jellyfish</label>
+		<description>Beef flavored.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/PinkJellyfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_PrincessFish</defName>
+		<label>princess fish</label>
+		<description>I guess they must all be female. Doesn't really make sense, but whatever.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/PrincessFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>0.4</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Prismite</defName>
+		<label>prismite</label>
+		<description>Pretty.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Prismite</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>4</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_RedSnapper</defName>
+		<label>red snapper</label>
+		<description>Accurate name.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/RedSnapper</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>0.4</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_SpecularFish</defName>
+		<label>specular fish</label>
+		<description>What even is a specular?</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/SpecularFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_Stinkfish</defName>
+		<label>stinkfish</label>
+		<description>Stinky.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/Stinkfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.01</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>ST_VariegatedLardfish</defName>
+		<label>variegated lardfish</label>
+		<description>FAT.</description>
+		<graphicData>
+			<texPath>Things/Items/Fish/VariegatedLardfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.06</Nutrition>
+			<MarketValue>0.01</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>	
+
+
+
+
+
+
+
+
+
+	
+</Defs>

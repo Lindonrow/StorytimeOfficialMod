@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>FrogPersonMaleName</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[MaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>MaleList</keyword>
+					<path>FrogPersonNames/FrogPersonMale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList</keyword>
+					<path>FrogPersonNames/FrogPersonLastNames</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>FrogPersonFemaleName</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[FemaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>FemaleList</keyword>
+					<path>FrogPersonNames/FrogPersonFemale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList</keyword>
+					<path>FrogPersonNames/FrogPersonLastNames</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+  <RulePackDef>
+    <defName>NamerFrogFactionUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>FrogTypes->FrogPersonNames/FrogTypes</li>
+        <li>FrogSettlements->FrogPersonNames/FrogPersonSettlement</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFactionFrogTribes</defName>
+	<include>
+      <li>NamerFrogFactionUtility</li>
+    </include>	
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Frogman Tribes of the [Color] Swamps</li>
+		<li>r_name->Tribes of the [ColorBadass] [FrogTypes]</li>
+		<li>r_name->Tribes of the [AdjectiveBadass] [FrogTypes]</li>
+		<li>r_name->Tribes of the [FrogTypes]</li>
+		<li>r_name->[AdjectiveBadass] [FrogTypes] Tribes</li>
+		<li>r_name->[ColorBadass] [FrogTypes] Confederation</li>
+		<li>r_name->[ColorBadass] [FrogTypes] Tribes</li>
+		<li>r_name->[FrogSettlements] Confederation</li>
+		<li>r_name->[FrogSettlements] Federation</li>
+		<li>r_name->Allied [FrogTypes] Tribes</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<RulePackDef>
+    <defName>FrogPersonSettlementName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>FrogPersonNames/FrogPersonSettlement</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+	
+	
+</Defs>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>MakeBananaMilk</defName>
+    <label>Make banana milk</label>
+    <description>Make banana milk.</description>
+    <jobString>Mixing.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>Banana</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>ST_Milk</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>Banana</li>
+					</thingDefs>
+					<categories>
+					  <li>ST_Milk</li>
+					</categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+					<thingDefs>
+						<li>Banana</li>
+					</thingDefs>
+					<categories>
+					  <li>ST_Milk</li>
+					</categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<researchPrerequisite>advancedCooking</researchPrerequisite>
+	<products>
+		<Banana_Milk>1</Banana_Milk>
+	</products>
+  </RecipeDef>
+  
+</Defs>

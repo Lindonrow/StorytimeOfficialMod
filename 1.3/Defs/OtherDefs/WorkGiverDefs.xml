@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  <WorkGiverDef>
+    <defName>GnomeCooking</defName>
+    <label>cook meals at gnome table</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>GnomeTable</li>
+    </fixedBillGiverDefs>
+    <verb>cook</verb>
+    <gerund>cooking at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>WormGrabbing</defName>
+    <label>dig for worms</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Mining</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>WormSpot</li>
+    </fixedBillGiverDefs>
+    <verb>dig</verb>
+    <gerund>digging at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+		<defName>FrogLegRipping</defName>
+		<label>rip off a toad's legs</label>
+		<giverClass>StoryTime.WorkGiver_LegRip</giverClass>
+		<workType>Handling</workType>
+		<verb>ripping off legs</verb>
+		<gerund>ripping off legs of</gerund>
+		<priorityInType>85</priorityInType>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+		<defName>TomatoCutting</defName>
+		<label>cut the tomatoes off a frog's back</label>
+		<giverClass>StoryTime.WorkGiver_Tomato</giverClass>
+		<workType>Handling</workType>
+		<verb>cutting off tomatoes</verb>
+		<gerund>cutting tomatoes off of</gerund>
+		<priorityInType>85</priorityInType>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+		<defName>woodFrogHarvesting</defName>
+		<label>harvest the wood from a wood frog</label>
+		<giverClass>StoryTime.WorkGiver_woodFrog</giverClass>
+		<workType>Handling</workType>
+		<verb>harvesting wood</verb>
+		<gerund>harvesting wood from</gerund>
+		<priorityInType>85</priorityInType>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>grinding</defName>
+    <label>grind stuff at a grinder</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ManualGrinder</li>
+      <li>ElectricGrinder</li>
+    </fixedBillGiverDefs>
+    <verb>grind</verb>
+    <gerund>grinding at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef> 
+  
+  <WorkGiverDef>
+    <defName>growing</defName>
+    <label>grow bean men</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>BeanPit</li>
+    </fixedBillGiverDefs>
+    <verb>grow</verb>
+    <gerund>growing</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef> 
+  
+  <WorkGiverDef>
+    <defName>alchemy</defName>
+    <label>mix potions</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>AlchemyTable</li>
+    </fixedBillGiverDefs>
+    <verb>mix</verb>
+    <gerund>mixing</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef> 
+</Defs>

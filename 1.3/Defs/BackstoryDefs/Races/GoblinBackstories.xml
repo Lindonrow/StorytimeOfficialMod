@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.BackstoryDef Name="GoblinBackstories" Abstract="True">
+	<spawnCategories>
+      <li>GoblinBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+<!-- Childhood -->
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_Cave</defName>
+    <title>Cave Child</title>
+    <baseDescription>[PAWN_nameDef] was birthed in a cave and left behind by [PAWN_possessive] mother immediately. [PAWN_pronoun] had to survive all on [PAWN_possessive] own in the depths of the earth.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>3</amount>
+	  </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-3</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_Greedy</defName>
+    <title>Greedy Kid</title>
+    <baseDescription>[PAWN_nameDef] was at the top of the food chain amongst the children of [PAWN_possessive] clan. [PAWN_pronoun] used this position to take all the best food and toys from [PAWN_possessive] peers, a tendency which earned few friends.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>Greedy</defName>
+      </li>
+	  <li>
+		<defName>Abrasive</defName>
+		<chance>50</chance>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_MaggotSpawnofMordor</defName>
+    <title>Spawn</title>
+    <baseDescription>Unlike most goblins, [PAWN_nameDef] was not born through natural means. Instead [PAWN_pronoun] was birthed through the use of unholy magic in the spawning pits of a powerful dark sorcerer's realm.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-6</amount>
+	  </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_Foundling</defName>
+    <title>Foundling</title>
+    <baseDescription>[PAWN_nameDef] was abandoned by [PAWN_possessive] tribe at birth for unknown reasons. [PAWN_pronoun] was found by a human couple and raised as their own, despite [PAWN_possessive] species.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+      <li>
+        <defName>Xenophobia</defName>
+		<degree>-1</degree>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_Banker</defName>
+    <title>Banker's Son</title>
+	<titleFemale>Banker's Daughter</titleFemale>
+    <baseDescription>[PAWN_nameDef] was born to a family of respected goblin bankers. [PAWN_possessive] parents always expected [PAWN_possessive] to follow in the family business.</baseDescription>
+    <slot>Childhood</slot>
+    <linkedBackstory>Goblin_Banker</linkedBackstory>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+	  </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_Feral</defName>
+    <title>Feral</title>
+    <baseDescription>[PAWN_nameDef] ] was abandoned by [PAWN_possessive] parents as an infant. Somehow, [PAWN_pronoun] on his own in the wilds, but [PAWN_possessive] isolation from society stunted [PAWN_possessive] social skills.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-6</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+      <li>
+        <defName>ST_SemiFeral</defName>
+		<chance>40</chance>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_Beggar</defName>
+    <title>Beggar</title>
+    <baseDescription>[PAWN_nameDef] grew up in a large, primarily human city. There was a great deal of anti-goblin prejudice in the city, so [PAWN_possessive] parents were unable to find work. As a result, the family was forced to beg for a living.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+	  </li>
+    </skillGains>
+    <workDisables>
+        <li>Intellectual</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_CookpotKeeper</defName>
+    <title>Cookpot Keeper</title>
+    <baseDescription>In [PAWN_nameDef]'s tribe, all food was collectively gathered in a central cookpot where it was rendered into stew and shared amongst the group. As a child, [PAWN_nameDef] was assigned the task of stirring the pot and keeping the flame beneath it going.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_CookpotCannibal</defName>
+    <title>Cookpot Keeper</title>
+    <baseDescription>In [PAWN_nameDef]'s tribe, all food was collectively gathered in a central cookpot where it was rendered into stew and shared amongst the group. As a child, [PAWN_nameDef] was assigned the task of stirring the pot and keeping the flame beneath it going. When times were tough, even the flesh of dead enemies would be dumped into the pot. [PAWN_nameDef] found [PAWN_pronoun] quite liked the taste.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+      <li>
+        <defName>Cannibal</defName>
+		<chance>100</chance>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_AnimalLover</defName>
+    <title>Animal Lover</title>
+    <baseDescription>Unlike most in [PAWN_possessive] tribe, [PAWN_nameDef] loved animals. And not just for eating, either!</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_Collector</defName>
+    <title>Collector</title>
+    <baseDescription>[PAWN_nameDef] was constantly making collections of random items [PAWN_pronoun] found near [PAWN_possessive] village. While it was mostly junk, some of these things quite useful and [PAWN_pronoun] learned a lot by messing with them.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+	  </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+	  </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>1</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>ChildGoblin_Nomad</defName>
+    <title>Nomadic Child</title>
+    <baseDescription>[PAWN_nameDef] grew up living the life of a nomad and was raised by a band of fellow travelers. They mostly survived by foraging or performing for money, both of which taught useful skills.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>3</amount>
+	  </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+	  </li>
+
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+
+
+<!-- Adulthood -->
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Cave</defName>
+    <title>Cave Goblin</title>
+    <baseDescription>[PAWN_nameDef] lived in a complex series of caves with [PAWN_possessive] tribe. [PAWN_pronoun] had to become adept at mining to survive.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>6</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>Undergrounder</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Warrior</defName>
+    <title>Goblin Warrior</title>
+    <baseDescription>[PAWN_nameDef] found for [PAWN_possessive] on the front lines as a warrior. [PAWN_pronoun] slew many foes along the way. [PAWN_pronoun] enjoyed the feeling of [PAWN_possessive] enemy's blood on [PAWN_possessive] hands.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>Bloodlust</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Tinkerer</defName>
+    <title>Tinkerer</title>
+    <baseDescription>[PAWN_nameDef] had a fascination for new putting together new devices with whatever materials [PAWN_pronoun] had at hand. While [PAWN_possessive] inventions and constructions were crude, they got the job done.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+	  </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+	  </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Forager</defName>
+    <title>Forager</title>
+    <baseDescription>[PAWN_nameDef] was tasked with foraging amongst the bushes gathering food and herbs for [PAWN_possessive] tribe.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>6</amount>
+	  </li>
+      <li>
+        <defName>Alchemy</defName>
+        <amount>2</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>    
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Poisoner</defName>
+    <title>Poisoner</title>
+    <baseDescription>[PAWN_nameDef] synthesized poisons from various herbs and other ingredients. These poisons were applied to all the tribe's weapons to give them an edge in battles.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Alchemy</defName>
+        <amount>6</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>     
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Hunter</defName>
+    <title>Hunter</title>
+    <baseDescription>[PAWN_nameDef] went out into the wilds, hunting game to supplement [PAWN_possessive] people's diet.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>3</amount>
+	  </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>   
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_DarkSlave</defName>
+    <title>Slave of the Dark Lord</title>
+    <titleShort>Slave</titleShort>
+    <baseDescription>As has been the fate of many goblins over the millenia, [PAWN_nameDef] was for many years a conscript in the armies of some dark lord or another. [PAWN_pronoun] was forced to fight on the front lines as cannon fodder. It was a miracle [PAWN_pronoun] survived.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+	  </li>
+    </skillGains>
+    <workDisables>
+        <li>Artistic</li>
+        <li>Intellectual</li>
+		<li>Social</li>
+        <li>Caring</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_DarkOverseer</defName>
+    <title>Overseer</title>
+    <baseDescription>[PAWN_nameDef] joined the infernal legions of an evil overlord willingly. [PAWN_pronoun] rose through the ranks quickly through ruthless cunning, eventually attaining the highest rank that a goblin could: Overseer. In this role [PAWN_pronoun] operated by the principle of: 'Where there's a whip, there's a way!'</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+	  </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+	  </li>
+    </skillGains>
+    <workDisables>
+        <li>ManualDumb</li>
+    </workDisables>
+	<forcedTraits>
+	  <li>
+		<defName>Psychopath</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>    
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Banker</defName>
+    <title>Banker</title>
+    <baseDescription>[PAWN_nameDef] joined the family business when [PAWN_pronoun] reached adulthood, becoming extremely rich in the process.</baseDescription>
+    <slot>Adulthood</slot>
+    <linkedBackstory>ChildGoblin_Banker</linkedBackstory>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+	  </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>5</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>ST_Rich</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>  
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Weaver</defName>
+    <title>Weaver</title>
+    <baseDescription>[PAWN_nameDef] was in charge of weaving cloth and leather into clothing for [PAWN_possessive] tribe, a task which [PAWN_pronoun] excelled at.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>    
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Clown</defName>
+    <title>Weaver</title>
+    <baseDescription>[PAWN_nameDef] became a clown serving the court of a human king. [PAWN_pronoun] was treated horribly- constantly humiliated and belittled by the courtiers. Eventually [PAWN_pronoun] escaped, but was left with lifelong trauma.</baseDescription>
+    <slot>Adulthood</slot>
+    <workDisables>
+        <li>Social</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>      
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Thief</defName>
+    <title>Thief</title>
+    <baseDescription>[PAWN_nameDef] made a living as a thief in a human city. [PAWN_pronoun] was quite crafty, but eventually the heat became too great and [PAWN_pronoun] had to skip town.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+	  </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>Nimble</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>      
+  
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Warlord</defName>
+    <title>Warlord</title>
+    <baseDescription>[PAWN_nameDef] came into control of a powerful goblin horde, power which [PAWN_pronoun] used to launch a vast war of annihilation against the humans of [PAWN_possessive] planet. Many thousands died before [PAWN_possessive] were eventually defeated.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>8</amount>
+	  </li>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>Bloodlust</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>    
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_GobbieRights</defName>
+    <title>Goblin Rights Activist</title>
+    <titleShort>Activist</titleShort>
+    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] constantly in the shadow of the prejudice against [PAWN_possessive] people felt by many humans. As an adult, [PAWN_pronoun] dedicated [PAWN_possessive] life to advocating for the rights of goblins everywhere. [PAWN_pronoun] swore off violence to prove that [PAWN_possessive] people were not all savages.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>Kind</defName>
+		<chance>50</chance>
+      </li>
+    </forcedTraits>
+    <workDisables>
+        <li>Violent</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>    
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Fanatic</defName>
+    <title>Fanatical Devotee</title>
+    <titleShort>Fanatic</titleShort>
+    <baseDescription>[PAWN_nameDef] spent years in special brainwashing programs which turned [PAWN_objective] into the perfect unquestioning kiling machine for [PAWN_possessive] warlord. [PAWN_pronoun] was sent on numerous suicidal missions, but somehow always survived. Eventually, [PAWN_pronoun] saw through the brainwashing and left that life behind.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+	  </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+	  </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-5</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>Tough</defName>
+		<chance>50</chance>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>  
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_NightHaunter</defName>
+    <title>Night Haunter</title>
+    <baseDescription>[PAWN_nameDef] lived alone out in the wilds. [PAWN_pronoun] survived by sneaking into the homes of the unsuspecting during the middle of the night, killing them, and eating the bodies. [PAWN_possessive] crimes were infamous and [PAWN_pronoun] quickly gained the nickname 'the Night Haunter'</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>NightOwl</defName>
+      </li>
+	  <li>
+		<defName>Cannibal</defName>
+      </li>
+	  <li>
+		<defName>Psychopath</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>  
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Deserter</defName>
+    <title>Deserter</title>
+    <baseDescription>After countless meaningless battles in the service of the Dark Lord, [PAWN_nameDef] grew tired of the violence and deserted the army to live a life of peace as a farmer.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>3</amount>
+	  </li>
+    </skillGains>
+    <workDisables>
+        <li>Violent</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>  
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_GreatGoblin</defName>
+    <title>Great Goblin</title>
+    <baseDescription>[PAWN_nameDef] ruled over a subterranean society of near-feral goblins. [PAWN_pronoun] expected constant devotion and service from all [PAWN_possessive] servants and grew prodigiously fat as a result.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Fat</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+	  </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>1</amount>
+	  </li>
+    </skillGains>
+    <workDisables>
+        <li>ManualDumb</li>
+    </workDisables>
+	<forcedTraits>
+	  <li>
+		<defName>Gourmand</defName>
+		<chance>50</chance>
+      </li>
+	  <li>
+		<defName>Greedy</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>  
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_TribalHealer</defName>
+    <title>Tribal Healer</title>
+    <baseDescription>[PAWN_nameDef] gathered herbs and other ingredients for use in various healing concotions that [PAWN_possessive] tribe needed.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Alchemy</defName>
+        <amount>6</amount>
+	  </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+	  </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>  
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_CityGoblin</defName>
+    <title>City Goblin</title>
+    <baseDescription>[PAWN_nameDef] made a living in a large human city. Finding work was tough, but [PAWN_pronoun] was able to find various odd jobs to make ends meet.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+	  </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+	  </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_FlameShaman</defName>
+    <title>Shaman of Flame</title>
+    <baseDescription>[PAWN_nameDef] was a powerful shaman within [PAWN_possessive] tribe. [PAWN_possessive] powers were associated with the element of fire, an extremely auspicious thing in [PAWN_possessive] culture.</baseDescription>
+    <slot>Adulthood</slot>
+    <maleCommonality>33</maleCommonality>
+    <femaleCommonality>33</femaleCommonality>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+	  </li>
+    </skillGains>
+	<forcedTraits>
+	  <li>
+		<defName>InnerFire</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef> 
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_Weaponsmith</defName>
+    <title>Weaponsmith</title>
+    <baseDescription>[PAWN_nameDef] was enslaved for many years in the vast forges of the Dark Lord, forging thousands upon thousands of blades, clubs, and other weapons for service in [PAWN_possessive] master's never ending war against the free peoples of their world.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>7</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef> 
+
+  <AlienRace.BackstoryDef ParentName="GoblinBackstories">
+    <defName>Goblin_TrophyKeeper</defName>
+    <title>Trophy-Keeper</title>
+    <baseDescription>[PAWN_nameDef] fought in many battles, brawls, and general scuffles. Everytime [PAWN_pronoun] killed a foe, [PAWN_pronoun] made a special point of gathering a grisly trophy from the body- an ear, a nose, a finger, something like that. While not a particularly pleasant habit, it did give [PAWN_objective] a bit of knowledge about... human anatomy.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+	  </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+	  </li>
+    </skillGains>
+  </AlienRace.BackstoryDef> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+</Defs>

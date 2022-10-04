@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeAdamant</defName>
+    <label>Make Adamant Brick</label>
+    <description>Imbue stone with dark magic.</description>    
+	<jobString>Imbue stone with dark magic.</jobString>
+    <workAmount>4000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+	<recipeUsers>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+     <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+		<filter>
+			<categories>
+				<li>StoneBlocks</li>
+			</categories>
+		</filter>
+		<count>20</count>
+		</li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+		<li>Corpses</li>
+      </categories>
+	  <disallowedCategories>
+        <li>CorpsesMechanoid</li>
+      </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+	<products>
+		<Mordor_Brick>20</Mordor_Brick>
+	</products>
+  </RecipeDef>
+
+
+</Defs>

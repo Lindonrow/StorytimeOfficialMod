@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>BananaScytheDamage</defName>
+    <label>banana scythe</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <additionalHediffs>
+      <li>
+        <hediff>Hed_Bones2Bananas</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScaling>PolymorphSensitivity</victimSeverityScaling>
+      </li>
+    </additionalHediffs>
+    <deathMessage>{0} has been sliced to death.</deathMessage>
+    <hediff>Cut</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+  </DamageDef>
+
+
+
+
+
+
+
+
+  <!--<ThingDef ParentName="BaseWeapon">
+    <defName>BananaScythe</defName>
+    <label>Banana Scythe</label>
+    <description>An accurate recreation of one of the legendary Ancient Weapons crafted by Colin after his victory over Allah in the Jeub-Muslim War. \n\n The Banana Scythe is a strange weapon. As its name implies, it is shaped like a golden scythe with a head in the shape of a banana. Uniquely, however, it has the power to turn those it strikes into bananas. Those who would stand against its wielder would do well to be cautious, for death is perhaps not the worst fate one may suffer...</description>
+    <techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <relicChance>1</relicChance>
+    <statBases>
+      <Mass>10</Mass>
+    </statBases>
+    <weaponTags>
+      <li>AncientWeapon</li>
+      <li>RelicWeapon</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>BananaScytheCleave</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>0.8</cooldownTime>
+      </li>
+    </tools>
+    <equippedAngleOffset>-15</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Items/Weapons/RareWeapons/AncientWeapons/BananaScythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.6</drawSize>
+    </graphicData>
+	<comps>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
+    </comps>
+  </ThingDef>
+ 
+
+
+-->
+
+
+</Defs>

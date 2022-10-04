@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerBeetnikhUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>BeetnikhNames->BeetNames/BeetnikhNames</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerPersonBeetnikh</defName>
+	<include>
+      <li>NamerBeetnikhUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[BeetnikhNames] [BeetnikhNames]</li>
+		<li>r_name->[BeetnikhNames]-[BeetnikhNames]</li>
+		<li>r_name->[BeetnikhNames] [BeetnikhNames]-[BeetnikhNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+		
+  <RulePackDef>
+    <defName>BeetnikhSettlementName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>BeetNames/BeetnikhSettlement</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+	
+</Defs>

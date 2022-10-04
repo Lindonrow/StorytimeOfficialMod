@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>FrogNamerMale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[FrogMale]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>FrogMale</keyword>
+          <path>FrogPersonNames/FrogPersonMale</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>FrogNamerFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[FrogFemale]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>FrogFemale</keyword>
+          <path>FrogPersonNames/FrogPersonFemale</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>

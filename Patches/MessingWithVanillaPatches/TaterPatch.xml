@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "RawPotatoes"]/label</xpath>
+		<value>
+		      <label>tater</label>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "RawPotatoes"]/description</xpath>
+		<value>
+		      <description>'Boil em, freeze em, stick em up your ass' -Jonah Johnson</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_Potato"]/label</xpath>
+		<value>
+		      <label>tater plant</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_Potato"]/description</xpath>
+		<value>
+		      <description>'Mash em, boil em, stick em in a stew' -Samwise Gamgee</description>
+		</value>
+	</Operation>	
+
+</Patch>
+
+

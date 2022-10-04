@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MealBase">
+		<defName>ST_Pepsi</defName>
+		<label>Pepsi</label>
+		<description>Just remember, it's milk.</description>
+		<graphicData>
+		<texPath>Things/Items/Resources/Pepsi</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>5</MarketValue>
+		<Mass>0.3</Mass>
+		<Nutrition>0.5</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>HedPepsi</hediffDef>
+			<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeGoblinPoison</defName>
+    <label>mix goblin poison</label>
+    <description>Mix goblin poison from regular poison and worms.</description>    
+	<jobString>mixing goblin poison.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>Poison</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>Worm</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>Poison</li>
+						<li>Worm</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<GoblinPoison>15</GoblinPoison>
+	</products>
+  </RecipeDef>
+  
+</Defs>
+  

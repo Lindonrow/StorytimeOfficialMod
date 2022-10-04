@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BeardDef>
+    <defName>FancyGoatee</defName>
+    <label>fancy goatee</label>
+    <texPath>Things/Pawn/Humanlike/Beards/FancyGoatee/FancyGoatee</texPath>
+    <styleGender>Male</styleGender>
+    <category>Urban</category>
+    <styleTags>
+      <li>BeardUrban</li>
+      <li>BeardRural</li>
+    </styleTags>
+  </BeardDef>
+  
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.PawnBioDef>
+		<defName>STMosherBio</defName>
+		<childhoodDef>ST_RockChild</childhoodDef>
+		<adulthoodDef>ST_RockTeacher</adulthoodDef>
+		<gender>Male</gender>
+		<name>
+		  <first>Cam</first>
+		  <last>Mosher</last>
+		  <nick>Mosher</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+
+	<AlienRace.PawnBioDef>
+		<defName>STSpencerBio</defName>
+		<childhoodDef>ST_SmartChild</childhoodDef>
+		<adulthoodDef>ST_SlowBowler</adulthoodDef>
+		<gender>Male</gender>
+		<name>
+		  <first>Spencer</first>
+		  <last>Hafen</last>
+		  <nick>Godly One</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+</Defs>

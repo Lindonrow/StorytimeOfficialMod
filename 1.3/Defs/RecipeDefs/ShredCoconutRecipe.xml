@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_ShreddedCoconut</defName>
+    <label>make shredded coconut</label>
+    <description>shred coconut.</description>
+    <jobString>shredding.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>Coconut</li>
+					</thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<thingDefs>
+			<li>Coconut</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+		<thingDefs>
+			<li>Coconut</li>
+		</thingDefs>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricGrinder</li>
+		    <li>ManualGrinder</li>
+	</recipeUsers>
+	<products>
+		<ShreddedCoconut>50</ShreddedCoconut>
+	</products>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PotionBase">
+		<defName>FrogPotion</defName>
+		<label>frog potion</label>
+		<description>A frog potion. Infects the drinker with froganthropy. This can be dangerous without proper preparations. However, if good medical care is provided the user may benefit from some of the alterations to their body without totally losing their mind.</description>
+		<graphicData>
+		<texPath>Things/Items/Resources/Potions/FrogPotion</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>200</MarketValue>
+		<Mass>0.3</Mass>
+		<WorkToMake>900</WorkToMake>
+		<Nutrition>0</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>NeverForNutrition</preferability>
+        <ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>FroggyFate</hediffDef>
+				<severity>0.015</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+</Defs>

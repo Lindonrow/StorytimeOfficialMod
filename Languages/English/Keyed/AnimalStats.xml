@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<ST_FrogRole>Primary Frog Role</ST_FrogRole>
+<ST_FrogRoleSecondary>Secondary Frog Role</ST_FrogRoleSecondary>
+<ST_FrogRarity>Frog Rarity</ST_FrogRarity>
+
+<!-- Roles -->
+
+<ST_FrogFoodProduction>Food Production</ST_FrogFoodProduction>	
+<ST_FrogProduction>Production</ST_FrogProduction>	
+<ST_MeleeTank>Melee Tank</ST_MeleeTank>	
+<ST_FrogPoison>Poison</ST_FrogPoison>	
+<ST_FrogRanged>Ranged</ST_FrogRanged>	
+<ST_FrogLick>Lick</ST_FrogLick>	
+<ST_FrogFire>Fire</ST_FrogFire>	
+<ST_FrogIntelligent>Intelligent</ST_FrogIntelligent>	
+<ST_FrogExplosive>Explosive</ST_FrogExplosive>	
+<ST_FrogFriendly>Friendly</ST_FrogFriendly>	
+<ST_FrogDivine>Divine</ST_FrogDivine>	
+<ST_FrogCarrier>Carrier</ST_FrogCarrier>
+
+<ST_FrogFoodProductionDesc>This frog naturally produces a resource which can be used as food by humanlikes and other animals.</ST_FrogFoodProductionDesc>	
+<ST_FrogProductionDesc>This frog naturally produces a non-food resource.</ST_FrogProductionDesc>	
+<ST_MeleeTankDesc>This frog is tougher than most and can be utilized as a tank in melee combat.</ST_MeleeTankDesc>	
+<ST_FrogPoisonDesc>This frog utilizes poison attacks in combat.</ST_FrogPoisonDesc>	
+<ST_FrogRangedDesc>This frog utilizes ranged attacks in combat</ST_FrogRangedDesc>	
+<ST_FrogLickDesc>This frog utilizes lick attacks in combat.</ST_FrogLickDesc>	
+<ST_FrogFireDesc>This frog utilizes fire attacks in combat.</ST_FrogFireDesc>	
+<ST_FrogIntelligentDesc>This frog is extremely intelligent and can be drafted like a colonist.</ST_FrogIntelligentDesc>	
+<ST_FrogExplosiveDesc>This frog explodes on death.</ST_FrogExplosiveDesc>	
+<ST_FrogFriendlyDesc>This frog is extremely friendly and improves the mood of those around it in some way.</ST_FrogFriendlyDesc>	
+<ST_FrogDivineDesc>This frog is angelic in nature, giving it a unique biology.</ST_FrogDivineDesc>
+<ST_FrogCarrierDesc>This frog is very large and can be used as a pack animal.</ST_FrogCarrierDesc>
+
+
+
+
+
+
+
+
+
+<!-- Rarities -->
+
+<ST_FrogCommon>Common</ST_FrogCommon>
+<ST_FrogUncommon>Uncommon</ST_FrogUncommon>
+<ST_FrogRare>Rare</ST_FrogRare>
+<ST_FrogLegendary>Legendary</ST_FrogLegendary>
+<ST_FrogAbomination>Genetic Experiment</ST_FrogAbomination>
+
+<ST_FrogCommonDesc>This frog comes from a fairly common species.</ST_FrogCommonDesc>
+<ST_FrogUncommonDesc>This frog is not commonly seen by humans.</ST_FrogUncommonDesc>
+<ST_FrogRareDesc>This frog is quite rare. Treasure it.</ST_FrogRareDesc>
+<ST_FrogLegendaryDesc>This is truly a frog for the ages, a legend whose story will echo on into eternity.</ST_FrogLegendaryDesc>
+<ST_FrogAbominationDesc>This frog is the product of genetic experimentation and does not occur in the wild.</ST_FrogAbominationDesc>
+
+
+
+
+
+
+
+</LanguageData>

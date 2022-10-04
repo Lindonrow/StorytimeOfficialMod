@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeCombatPotion</defName>
+    <label>Make Combat Potion</label>
+    <description>Extract fighting essence from harralander to make a potion.</description>    
+	<jobString>Craft combat potion.</jobString>
+    <workAmount>1300</workAmount>
+    <skillRequirements>
+      <Alchemy>6</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>HarralanderLeaves</li>
+					</thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>HarralanderLeaves</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<CombatPotion>1</CombatPotion>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>
+  

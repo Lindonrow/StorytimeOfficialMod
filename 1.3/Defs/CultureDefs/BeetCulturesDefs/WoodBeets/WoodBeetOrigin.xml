@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<MemeDef>
+		<defName>STWoodBeetOrigin</defName>
+		<label>Wood beet origin</label>
+		<description>savages</description>
+		<iconPath>World/WoodBeets/WoodBeetSettlementLogo</iconPath>
+		<deityCount>1</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+		</requiredRituals>
+		<consumableBuildings>
+		</consumableBuildings>
+		<requireAnyRitualSeat>
+		</requireAnyRitualSeat>
+		   <descriptionMaker>
+			 <patterns>
+			   <li><def>TheistMyth</def></li>
+			   <li><def>TheistFounder</def></li>
+			 </patterns>
+			 <constants>
+			   <li><key>structure_theist</key><value>true</value></li>
+			 </constants>
+		   </descriptionMaker>
+	   <symbolPacks>
+		  <li><ideoName>Wood Beet 'Culture'</ideoName><adjective>Wood Beet</adjective><member>Wood Beet</member><prefix>true</prefix></li>
+		  <li><ideoName>Pecan Joe Worship</ideoName><adjective>Wood Beet</adjective><member>Wood Beet</member><prefix>true</prefix></li>
+		  <li><ideoName>Valenroff Hatred</ideoName><adjective>Wood Beet</adjective><member>Wood Beet</member><prefix>true</prefix></li>
+		  <li><ideoName>Pecanism</ideoName><adjective>Wood Beet</adjective><member>Wood Beet</member><prefix>true</prefix></li>
+		</symbolPacks>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeCreed->sect</li>
+			<li>memeCreed->temple</li>
+			<li>memeCreed->faith</li>
+			<li>memeLeaderNoun->Voice of Pecan Joe</li>
+			<li>memeLeaderAdjective->Voice of Pecan Joe</li>
+			<li>memeMoralist->shaman</li>
+			<li>memeMoralist->cleric</li>
+		  </rulesStrings>
+		</generalRules>
+		<fixedDeityNameTypes>
+		  <li><name>27 Pecan Joe</name><type>Eternal Lord</type></li>
+		  <li><name>26 Pecan Joe</name><type>Eternal Lord</type></li>
+		  <li><name>25 Pecan Joe</name><type>Eternal Lord</type></li>
+		  <li><name>24 Pecan Joe</name><type>Eternal Lord</type></li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+		  <li>
+			<category>Morbid</category>
+			<priority>2</priority>
+		  </li>
+		  <li>
+			<category>Totemic</category>
+			<priority>2</priority>
+		  </li>
+		</thingStyleCategories>
+	</MemeDef>
+
+</Defs>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="Embrasure" ParentName="BuildingBase">
+		<defName>STEmbrasure</defName>
+		<label>Embrasure</label>
+		<description>It's not cheating...</description>
+		<costStuffCount>15</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		<building>
+		  <isInert>true</isInert>
+		  <isPlaceOverableWall>true</isPlaceOverableWall>
+		  <ai_chillDestination>false</ai_chillDestination>
+		  <blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		  </blueprintGraphicData>
+		  <relatedBuildCommands>
+			<li>Door</li>
+			<li>Autodoor</li>
+		  </relatedBuildCommands>
+		</building>
+		<comps>
+		  <li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+			  <li>Minimal</li>
+			</focusTypes>
+		  </li>
+		</comps>
+		<damageMultipliers>
+		  <li>
+			<damageDef>Bomb</damageDef>
+			<multiplier>2</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Thump</damageDef>
+			<multiplier>2</multiplier>
+		  </li>
+		</damageMultipliers>
+		<designationHotKey>Misc3</designationHotKey>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		    <MaxHitPoints>275</MaxHitPoints>
+		</statBases>
+		<fillPercent>0.65</fillPercent>
+		<uiIconPath>UI/Embrasure/Embrasure</uiIconPath> 
+		<graphicData>
+		    <texPath>Things/Buildings/Linked/Embrasure</texPath>
+			  <graphicClass>Graphic_Appearances</graphicClass>
+			  <linkType>CornerFiller</linkType>
+			  <linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			  </linkFlags>
+			  <damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			  </damageData>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

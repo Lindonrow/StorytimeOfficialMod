@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Strange Fruit-->
+	<AchievementsExpanded.AchievementDef>
+		<defName>strangeFruitAchievement</defName>
+		<label>Strange.</label>
+		<description>Harvest a strange fruit.</description>
+		<tab>Storytime</tab>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>StrangeFruit</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/fruitAchievement</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	
+<!--JeubKilling-->	
+	<AchievementsExpanded.AchievementDef>
+		<defName>jeubkillingAchievement</defName>
+		<label>Jeub Killer</label>
+		<description>Kill 1 feral jeub.</description>
+		<tab>Storytime</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>Jeub</kindDef>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/jeubKillerAchievement</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>	
+	<AchievementsExpanded.AchievementDef>
+		<defName>jeubkillingAchievement2</defName>
+		<label>Jeub Exterminator</label>
+		<description>Kill 100 feral jeubs.</description>
+		<tab>Storytime</tab>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>Jeub</kindDef>
+			<count>100</count>
+		</tracker>
+		<texPath>Achievements/jeubExterminatorAchievement</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	
+<!--Frogs-->		
+	<AchievementsExpanded.AchievementDef>
+		<defName>froglordAchievement</defName>
+		<label>Frog Lord</label>
+		<description>Tame a Spring Peeper, a Tree Frog, a Tomato Frog, a Poison Dart Frog, a Bullfrog, and a Budgett Frog.</description>
+		<tab>Storytime</tab>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>SpringPeeper</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>TreeFrog</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>TomatoFrog</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>PoisonDartFrog</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>BullFrog</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>BudgettFrog</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/frogAchievement</texPath>
+		<points>30</points>
+	</AchievementsExpanded.AchievementDef>
+	
+<!--Coins-->		
+	<AchievementsExpanded.AchievementDef>
+		<defName>coinAchievement</defName>
+		<label>Cursed Aztec Gold</label>
+		<description>Acquire 100 cursed coins.</description>
+		<tab>Storytime</tab>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>CursedCoin</def>
+			<count>100</count>
+		</tracker>
+		<texPath>Achievements/coinAchievement</texPath>
+		<points>30</points>
+	</AchievementsExpanded.AchievementDef>
+	
+<!--Burrito-->		
+	<AchievementsExpanded.AchievementDef>
+		<defName>beefyFiveLayerAchievement</defName>
+		<label>Hold the Sour Cream</label>
+		<description>Cook a Beefy Five Layer Burrito.</description>
+		<tab>Storytime</tab>		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>TacoBellBurrito</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/burritoAchievement</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	
+<!--Nog-->		
+	<AchievementsExpanded.AchievementDef>
+		<defName>eggNogAchievement</defName>
+		<label>Nog Lover</label>
+		<description>Make 20 bottles of Egg Nog.</description>
+		<tab>Storytime</tab>		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>EggNog</def>
+			<count>20</count>
+		</tracker>
+		<texPath>Achievements/eggNogAchievement</texPath>
+		<points>15</points> 
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef>
+		<defName>profaneNogAchievement</defName>
+		<label>No... no... please...</label>
+		<description>Create a bottle of Profane Nog.</description>
+		<tab>Storytime</tab>				
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>ProfaneNog</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/profaneNogAchievement</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>	
+	
+<!--Rune-->	
+	<AchievementsExpanded.AchievementDef>
+		<defName>runePlateAchievement</defName>
+		<label>Rune Platebody</label>
+		<description>Craft some heavy plate armor from runite.</description>
+		<tab>Storytime</tab>
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>VFEM_Apparel_PlateArmorHeavy</def>
+			<madeFrom>ST_Runite</madeFrom>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/runePlateAchievement</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+
+<!--Gibbonous Moon-->	
+	<AchievementsExpanded.AchievementDef>
+		<defName>gibbonMoonAchievement</defName>
+		<label>The Stars Were Right</label>
+		<description>Witness a gibbonous moon.</description>
+		<tab>Storytime</tab>		
+		<tracker Class="AchievementsExpanded.IncidentTracker">
+			<def>GibbonousMoon</def>
+			<count>1</count>
+		</tracker>	
+		<texPath>Achievements/gibbonousMoonAchievement</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+<!--Bean Man-->
+	<AchievementsExpanded.AchievementDef>
+		<defName>beanManAchievement</defName>
+		<label>The Bean</label>
+		<description>Create a bean man larva.</description>
+		<tab>Storytime</tab>		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>BeanManLarva</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/beanManAchievement</texPath>
+		<points>20</points> 
+	</AchievementsExpanded.AchievementDef>
+
+	
+<!--Bonus Bean Room-->
+	<AchievementsExpanded.AchievementDef>
+		<defName>bonusBeanRoomAchievement</defName>
+		<label>The Chamber of Secrets</label>
+		<description>Visit the Bonus Bean Room</description>
+		<tab>Storytime</tab>		
+		<tracker Class="AchievementsExpanded.QuestTracker">
+			<def>BonusBeanRoom</def>
+			<outcome>Success</outcome>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/bonusBeanRoomAchievement</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+
+</Defs>

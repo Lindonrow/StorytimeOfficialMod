@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeStaminaPotion</defName>
+    <label>Make Stamina Potion</label>
+    <description>Extract envigorating essence from strange fruit to make a potion.</description>    
+	<jobString>Craft stamina potion.</jobString>
+    <workAmount>1200</workAmount>
+    <skillRequirements>
+      <Alchemy>6</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>StrangeFruit</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>StrangeFruit</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<StaminaPotion>1</StaminaPotion>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>

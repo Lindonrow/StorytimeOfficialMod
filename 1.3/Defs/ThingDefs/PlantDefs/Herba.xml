@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Herba</defName>
+    <label>herba</label>
+    <description>This very common medicinal plant can be found in thickets and elsewhere..</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Herbs/Herba</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.1, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.5</fertilitySensitivity>
+      <growDays>8</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>HerbaLeaves</harvestedThingDef>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildClusterWeight>250</wildClusterWeight>
+      <visualSizeRange>0.95~1.7</visualSizeRange>
+      <wildOrder>2</wildOrder>
+		<wildBiomes>
+		  <TemperateForest>0.02</TemperateForest>
+		  <TemperateSwamp>0.01</TemperateSwamp>
+		  <BorealForest>0.01</BorealForest>
+		  <ColdBog>0.01</ColdBog>
+		  <AridShrubland>0.01</AridShrubland>
+		</wildBiomes>
+    </plant>
+  </ThingDef>
+  
+</Defs>

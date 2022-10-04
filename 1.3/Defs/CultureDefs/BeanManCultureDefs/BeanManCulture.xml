@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+
+  
+ 
+  <RulePackDef>
+    <defName>NamerIdeoBeanManLeader</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->President</li>
+        <li>r_leaderTitle->Prime Minister</li>
+        <li>r_leaderTitle->Chairman</li>
+        <li>r_leaderTitle->Chancellor</li>
+        <li>r_leaderTitle->Head Bean</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef> 
+  
+
+  <CultureDef>
+    <defName>STBeanMan</defName>
+    <label>bean man</label>
+    <description>Strange little creatures.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoBeanManLeader</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/BeanMen/BeanGuardianFactionLogo</iconPath>
+    <styleItemTags>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+      <li>
+        <tag>NoHair</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+  <RulePackDef>
+    <defName>NamerIdeoBeanGuardianLeader</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Warlord</li>
+        <li>r_leaderTitle->Prime Guardian</li>
+        <li>r_leaderTitle->Supreme Leader</li>
+        <li>r_leaderTitle->Protector General</li>
+        <li>r_leaderTitle->Lord Protector</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef> 
+  
+
+  <CultureDef>
+    <defName>STBeanGuardian</defName>
+    <label>bean guardian</label>
+    <description>Angry little creatures.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoBeanGuardianLeader</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/BeanMen/BeanMenFactionLogo</iconPath>
+    <styleItemTags>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+      <li>
+        <tag>NoHair</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+
+</Defs>

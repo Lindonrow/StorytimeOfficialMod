@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Alloys-->
+	
+    <ThingCategoryDef>
+      <defName>ST_AlloyMetals</defName>
+      <label>alloy metals</label>
+      <parent>ResourcesRaw</parent>
+      <iconPath>Things/Items/Resources/Ores/Bronze/Bronze_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>	
+	
+<!--Gems-->
+
+    <ThingCategoryDef>
+      <defName>ST_Gems</defName>
+      <label>gems</label>
+      <parent>ResourcesRaw</parent>
+      <iconPath>Things/Items/Resources/AlloyDust/BronzeDust/BronzeDust_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+	<!--Cut-->	
+    <ThingCategoryDef>
+      <defName>ST_GemsCut</defName>
+      <label>cut gems</label>
+      <parent>ST_Gems</parent>
+      <iconPath>Things/Items/Resources/Ores/Bronze/Bronze_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+ 
+    <ThingCategoryDef>
+      <defName>ST_GemsCut_Common</defName>
+      <label>common</label>
+      <parent>ST_GemsCut</parent>
+      <iconPath>Things/Items/Resources/AlloyDust/BronzeDust/BronzeDust_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+	
+    <ThingCategoryDef>
+      <defName>ST_GemsCut_Uncommon</defName>
+      <label>uncommon</label>
+      <parent>ST_GemsCut</parent>
+      <iconPath>Things/Items/Resources/AlloyDust/BronzeDust/BronzeDust_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+	
+    <ThingCategoryDef>
+      <defName>ST_GemsCut_Rare</defName>
+      <label>rare</label>
+      <parent>ST_GemsCut</parent>
+      <iconPath>Things/Items/Resources/AlloyDust/BronzeDust/BronzeDust_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+	
+	<!--Uncut-->	
+    <ThingCategoryDef>
+      <defName>ST_GemsUncut</defName>
+      <label>uncut gems</label>
+      <parent>ST_Gems</parent>
+      <iconPath>Things/Items/Resources/AlloyDust/BronzeDust/BronzeDust_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+		<ThingCategoryDef>
+		  <defName>ST_GemsUncut_Common</defName>
+		  <label>common</label>
+		  <parent>ST_GemsUncut</parent>
+		  <iconPath>Things/Items/Resources/AlloyDust/BronzeDust/BronzeDust_a</iconPath>
+		  <resourceReadoutRoot>true</resourceReadoutRoot>
+		</ThingCategoryDef>
+
+		<ThingCategoryDef>
+		  <defName>ST_GemsUncut_Uncommon</defName>
+		  <label>uncommon</label>
+		  <parent>ST_GemsUncut</parent>
+		  <iconPath>Things/Items/Resources/AlloyDust/BronzeDust/BronzeDust_a</iconPath>
+		  <resourceReadoutRoot>true</resourceReadoutRoot>
+		</ThingCategoryDef>
+
+		<ThingCategoryDef>
+		  <defName>ST_GemsUncut_Rare</defName>
+		  <label>rare</label>
+		  <parent>ST_GemsUncut</parent>
+		  <iconPath>Things/Items/Resources/AlloyDust/BronzeDust/BronzeDust_a</iconPath>
+		  <resourceReadoutRoot>true</resourceReadoutRoot>
+		</ThingCategoryDef>
+<!--Rings-->	
+	
+    <ThingCategoryDef>
+      <defName>ST_Rings</defName>
+      <label>rings</label>
+      <parent>Apparel</parent>
+      <iconPath>Things/Items/Rings/SteelRing</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+<!--Poison-->	
+	
+    <ThingCategoryDef>
+      <defName>ST_Alchemy</defName>
+      <label>alchemy products</label>
+      <parent>Manufactured</parent>
+      <iconPath>Things/Items/Resources/Potions/AntifirePotion/AntifirePotion_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>ST_Potions</defName>
+      <label>potions</label>
+      <parent>ST_Alchemy</parent>
+      <iconPath>Things/Items/Resources/Potions/AttackPotion/AttackPotion_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>ST_Poison</defName>
+      <label>poisons</label>
+      <parent>ST_Alchemy</parent>
+      <iconPath>Things/Items/Resources/Poison/Poison_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+<!--Milk-->
+
+    <ThingCategoryDef>
+      <defName>ST_Milk_General</defName>
+      <label>milks</label>
+      <parent>AnimalProductRaw</parent>
+      <iconPath>Things/Item/Resource/Milk</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>	
+	
+    <ThingCategoryDef>
+      <defName>ST_Milk</defName>
+      <label>raw milks</label>
+      <parent>ST_Milk_General</parent>
+      <iconPath>Things/Item/Resource/Milk</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>	
+
+    <ThingCategoryDef>
+      <defName>ST_Milk_Processed</defName>
+      <label>processed milks</label>
+      <parent>ST_Milk_General</parent>
+      <iconPath>Things/Items/Resources/MilkTypes/BananaMilk/BananaMilk_a</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>	
+
+
+
+
+
+
+
+
+
+
+
+	
+</Defs>

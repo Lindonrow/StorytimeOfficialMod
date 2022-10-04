@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.PawnBioDef>
+		<defName>STPerrinBio</defName>
+		<childhoodDef>ST_BlacksmithApprentice</childhoodDef>
+		<adulthoodDef>ST_MedievalLord</adulthoodDef>
+		<gender>Male</gender>
+		<name>
+		  <first>Perrin</first>
+		  <last>Aybara</last>
+		  <nick>Goldeneyes</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+	
+	<AlienRace.PawnBioDef>
+		<defName>STRincewindBio</defName>
+		<childhoodDef>ST_MedievalOrphan</childhoodDef>
+		<adulthoodDef>ST_FailedWizard</adulthoodDef>
+		<gender>Male</gender>
+		<name>
+		  <first></first>
+		  <last>Rincewind</last>
+		  <nick></nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+	
+	<AlienRace.PawnBioDef>
+		<defName>STDibblerBio</defName>
+		<childhoodDef>ST_MedievalOrphan</childhoodDef>
+		<adulthoodDef>ST_SausageSalesman</adulthoodDef>
+		<gender>Male</gender>
+		<name>
+		  <first>Claude</first>
+		  <last>Dibbler</last>
+		  <nick>C.M.O.T.</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+	
+	<AlienRace.PawnBioDef>
+		<defName>STHeisenbergBio</defName>
+		<childhoodDef>ST_ChemistrySet</childhoodDef>
+		<adulthoodDef>ST_BreakingBad</adulthoodDef>
+		<gender>Male</gender>
+		<name>
+		  <first>Walter</first>
+		  <last>White</last>
+		  <nick>Heisenberg</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>	
+	
+
+</Defs>

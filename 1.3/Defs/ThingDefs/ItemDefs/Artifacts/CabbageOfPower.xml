@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>CabbageOfPower</defName>
+    <label>Cabbage of Power</label>
+    <description>Such...power...</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/Items/PowerCabbage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <Mass>4.6</Mass>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>18.00</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>cabbageCrafting</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ElectricStove</li>
+		<li>FueledStove</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Cabbage>1500</Cabbage>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Cabbage_Toss</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>80</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Interact_BeatFire</soundCast>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+
+	<ThingDef ParentName="BaseBullet">
+    <defName>Cabbage_Toss</defName>
+    <label>cabbage</label>
+    <graphicData>
+      <texPath>Things/Items/PowerCabbage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>CabbageBlast</damageDef>
+      <damageAmountBase>60</damageAmountBase>
+      <armorPenetrationBase>0.75</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+    </ThingDef>
+
+    <DamageDef>
+    <defName>CabbageBlast</defName>
+    <label>blasted</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted to death.</deathMessage>
+    <hediff>Blast</hediff>
+    <hediffSolid>Blast</hediffSolid>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+   </DamageDef>
+
+   <HediffDef ParentName="InjuryBase">
+    <defName>Blast</defName>
+    <label>blasted</label>
+    <labelNoun>a cabbage wound</labelNoun>
+    <description>A cabbage wound.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.15</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>old cabbage wound</permanentLabel>
+        <instantlyPermanentLabel>permanent cabbage injury</instantlyPermanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.06</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Blasted off</destroyedLabel>
+      <destroyedOutLabel>Blasted out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+</Defs>

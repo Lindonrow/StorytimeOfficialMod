@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MealBaseIngredientless" Name= "PotionBase" Abstract = "True">
+		<thingCategories>
+		  <li>ST_Potions</li>
+		</thingCategories>
+		<tradeTags>
+		  <li>STPotions</li>
+		</tradeTags>
+	   <tradeability>Sellable</tradeability>
+	</ThingDef>
+
+</Defs>

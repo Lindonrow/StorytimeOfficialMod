@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<MemeDef>
+		<defName>STBeanManOrigin</defName>
+		<label>bean man origin</label>
+		<description>Is it a man or a bean? Both.</description>
+		<iconPath>World/BeanMen/BeanMenFactionLogo</iconPath>
+		<deityCount>0</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>chamber</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+		</requiredRituals>
+		<consumableBuildings>
+		</consumableBuildings>
+		<requireAnyRitualSeat>
+		</requireAnyRitualSeat>
+		<descriptionMaker>
+		  <patterns>
+			<li>
+			  <def>IdeologicalFounder</def>
+			  <weight>1</weight>
+			</li>
+			<li>
+			  <def>IdeologicalLesson</def>
+			  <weight>3</weight>
+			</li>
+		  </patterns>
+		  <constants>
+			<li><key>structure_ideological</key><value>true</value></li>
+		  </constants>
+		</descriptionMaker>
+	   <symbolPacks>
+		  <li><ideoName>Beanism</ideoName><adjective>Bean Man</adjective><member>Bean Man</member><prefix>true</prefix></li>
+		  <li><ideoName>Bean Man Thought </ideoName><adjective>Bean Man</adjective><member>Bean Man</member><prefix>true</prefix></li>
+		  <li><ideoName>Bean Thought </ideoName><adjective>Bean Man</adjective><member>Bean Man</member><prefix>true</prefix></li>
+		  <li><ideoName>Bean Communism </ideoName><adjective>Bean Man</adjective><member>Bean Man</member><prefix>true</prefix></li>
+		</symbolPacks>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeCreed->ideology</li>
+			<li>memeLeaderNoun->President</li>
+			<li>memeLeaderAdjective->President</li>
+			<li>memeMoralist->wise bean</li>
+			<li>memeMoralist->senator</li>
+		  </rulesStrings>
+		</generalRules>
+		<thingStyleCategories>
+		  <li>
+			<category>Rustic</category>
+			<priority>1</priority>
+		  </li>
+		</thingStyleCategories>
+	</MemeDef>
+
+
+
+	
+	<MemeDef>
+		<defName>STBeanGuardianOrigin</defName>
+		<label>bean guardian origin</label>
+		<description>Is it a man or a bean? Both.</description>
+		<iconPath>World/BeanMen/BeanGuardianFactionLogo</iconPath>
+		<deityCount>0</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>chamber</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+		</requiredRituals>
+		<consumableBuildings>
+		</consumableBuildings>
+		<requireAnyRitualSeat>
+		</requireAnyRitualSeat>
+		<descriptionMaker>
+		  <patterns>
+			<li>
+			  <def>IdeologicalFounder</def>
+			  <weight>1</weight>
+			</li>
+			<li>
+			  <def>IdeologicalLesson</def>
+			  <weight>3</weight>
+			</li>
+		  </patterns>
+		  <constants>
+			<li><key>structure_ideological</key><value>true</value></li>
+		  </constants>
+		</descriptionMaker>
+	   <symbolPacks>
+		  <li><ideoName>Esoteric Beanism</ideoName><adjective>Bean Guardian</adjective><member>Bean Guardian</member><prefix>true</prefix></li>
+		  <li><ideoName>Fundamental Bean Protectionism</ideoName><adjective>Bean Guardian</adjective><member>Bean Guardian</member><prefix>true</prefix></li>
+		  <li><ideoName>Bean Protectionism</ideoName><adjective>Bean Guardian</adjective><member>Bean Guardian</member><prefix>true</prefix></li>
+		  <li><ideoName>Radical Beanism</ideoName><adjective>Bean Guardian</adjective><member>Bean Guardian</member><prefix>true</prefix></li>
+		  <li><ideoName>Bean Supremecist</ideoName><adjective>Bean Guardian</adjective><member>Bean Guardian</member><prefix>true</prefix></li>
+
+		</symbolPacks>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeCreed->ideology</li>
+			<li>memeLeaderNoun->Warlord</li>
+			<li>memeLeaderAdjective->Warlord</li>
+			<li>memeMoralist->wise bean</li>
+			<li>memeMoralist->shaman</li>
+		  </rulesStrings>
+		</generalRules>
+		<thingStyleCategories>
+		  <li>
+			<category>Rustic</category>
+			<priority>1</priority>
+		  </li>
+		</thingStyleCategories>
+	</MemeDef>
+</Defs>

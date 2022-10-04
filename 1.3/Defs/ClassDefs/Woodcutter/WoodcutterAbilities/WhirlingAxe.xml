@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs> 
+
+
+
+
+
+
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>ST_WhirlingAxe</defName>
+		<customPower>
+			<forFighter>true</forFighter>
+			<abilityDefs>
+				<li>ST_WhirlingAxe</li>
+				<li>ST_WhirlingAxeI</li>
+				<li>ST_WhirlingAxeII</li>
+				<li>ST_WhirlingAxeIII</li>
+			</abilityDefs>
+			<costToLevel>2</costToLevel>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax>4</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+
+
+   
+
+			
+	<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+        <thingClass>AbilityUser.Projectile_Ability</thingClass>
+		<defName>Projectile_WhirlingAxe</defName>
+        <label>Whirling Axe</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+            <flyOverhead>true</flyOverhead>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_WhirlingAxe</defName>
+        <label>Whirling Axe</label>
+        <uiIconPath>Skills/Woodcutter/WhirlingAxe</uiIconPath>
+        <description>The Woodcutter spins in a circle while running forward, cutting anyone in their path.</description>
+        <staminaCost>0.50</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>TorannMagic.Effect_Whirlwind</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Projectile_WhirlingAxe</defaultProjectile>
+            <abilityDef>ST_WhirlingAxe</abilityDef>
+            <AbilityTargetCategory>TargetLocation</AbilityTargetCategory>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <warmupTime>0.2</warmupTime>
+            <SecondsToRecharge>75.0</SecondsToRecharge>
+            <range>7.5</range>
+			<isViolent>true</isViolent>
+            <burstShotCount>1</burstShotCount>
+            <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+            <soundCast>DropPod_Leaving</soundCast>
+            <muzzleFlashScale>20</muzzleFlashScale>
+            <isPrimary>false</isPrimary>
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_WhirlingAxeI</defName>
+        <label>Whirling Axe (II)</label>
+        <uiIconPath>Skills/Woodcutter/WhirlingAxe</uiIconPath>
+        <description>The Woodcutter spins in a circle while running forward, cutting anyone in their path.
+		
+Leveling this increases the range and decreases the stamina cost and recharge time of the ability.</description>
+        <staminaCost>0.40</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>TorannMagic.Effect_Whirlwind</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Projectile_WhirlingAxe</defaultProjectile>
+            <abilityDef>ST_WhirlingAxeI</abilityDef>
+            <AbilityTargetCategory>TargetLocation</AbilityTargetCategory>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <warmupTime>0.2</warmupTime>
+            <SecondsToRecharge>60.0</SecondsToRecharge>
+            <range>12</range>
+			<isViolent>true</isViolent>
+            <burstShotCount>1</burstShotCount>
+            <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+            <soundCast>DropPod_Leaving</soundCast>
+            <muzzleFlashScale>20</muzzleFlashScale>
+            <isPrimary>false</isPrimary>
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_WhirlingAxeII</defName>
+        <label>Whirling Axe (III)</label>
+        <uiIconPath>Skills/Woodcutter/WhirlingAxe</uiIconPath>
+        <description>The Woodcutter spins in a circle while running forward, cutting anyone in their path.
+		
+Leveling this increases the range and decreases the stamina cost and recharge time of the ability.</description>
+        <staminaCost>0.30</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>		
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>TorannMagic.Effect_Whirlwind</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Projectile_WhirlingAxe</defaultProjectile>
+            <abilityDef>ST_WhirlingAxeII</abilityDef>
+            <AbilityTargetCategory>TargetLocation</AbilityTargetCategory>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <warmupTime>0.2</warmupTime>
+           <SecondsToRecharge>45.0</SecondsToRecharge>
+            <range>16</range>
+			<isViolent>true</isViolent>
+            <burstShotCount>1</burstShotCount>
+            <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+            <soundCast>DropPod_Leaving</soundCast>
+            <muzzleFlashScale>20</muzzleFlashScale>
+            <isPrimary>false</isPrimary>
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_WhirlingAxeIII</defName>
+        <label>Whirling Axe (IV)</label>
+        <uiIconPath>Skills/Woodcutter/WhirlingAxe</uiIconPath>
+        <description>The Woodcutter spins in a circle while running forward, cutting anyone in their path.</description>
+        <staminaCost>0.30</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>TorannMagic.Effect_Whirlwind</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Projectile_WhirlingAxe</defaultProjectile>
+            <abilityDef>ST_WhirlingAxeIII</abilityDef>
+            <AbilityTargetCategory>TargetLocation</AbilityTargetCategory>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <warmupTime>0.2</warmupTime>
+            <SecondsToRecharge>30.0</SecondsToRecharge>
+            <range>20</range>
+			<isViolent>true</isViolent>
+            <burstShotCount>1</burstShotCount>
+            <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+            <soundCast>DropPod_Leaving</soundCast>
+            <muzzleFlashScale>20</muzzleFlashScale>
+            <isPrimary>false</isPrimary>
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>	
+</Defs>    

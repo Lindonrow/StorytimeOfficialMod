@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="PlantBase">
+    <defName>Plant_Cabbage</defName>
+    <label>Cabbage Plant</label>
+    <description>Cabbage plant.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Cabbage</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible/>
+    <plant>
+      <growDays>7</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Cabbage</harvestedThingDef>
+      <harvestYield>14</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+	  <sowResearchPrerequisites>
+        <li>cabbageCultivation</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.1</topWindExposure>
+      <immatureGraphicPath>Things/Plants/CabbageImmature</immatureGraphicPath>
+      <visualSizeRange>0.4~1.2</visualSizeRange>
+      <wildOrder>2</wildOrder>
+    </plant>
+  </ThingDef>
+  
+</Defs>

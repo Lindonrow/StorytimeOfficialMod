@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/FactionDef[@Name="VFEM_MedievalFactionBase"]/backstoryCategories</xpath>
+		<value>
+			<backstoryCategories>
+			  <li>Medieval</li>
+			</backstoryCategories>
+		 </value>	
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/FactionDef[@Name="VFEM_UnknownKingdomBase"]/backstoryCategories</xpath>
+		<value>
+			<backstoryCategories>
+			  <li>Medieval</li>
+			</backstoryCategories>
+		 </value>	
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="VFEM_MedievalPawnKindBase"]/backstoryCategories</xpath>
+		<value>
+			<backstoryCategories>
+			  <li>Medieval</li>
+			</backstoryCategories>
+		 </value>	
+	</Operation>	
+
+</Patch>

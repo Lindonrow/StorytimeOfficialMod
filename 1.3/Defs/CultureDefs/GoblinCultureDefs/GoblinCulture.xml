@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+  
+ 
+  <RulePackDef>
+    <defName>NamerIdeoGoblinLeader</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Great Goblin</li>
+        <li>r_leaderTitle->Chief</li>
+        <li>r_leaderTitle->King</li>
+        <li>r_leaderTitle->General</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef> 
+  
+
+  <CultureDef>
+    <defName>STGoblin</defName>
+    <label>goblin</label>
+    <description>The Cultured Goblin.</description>
+    <pawnNameMaker>GoblinName</pawnNameMaker>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoKriminul</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityKriminul</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerKriminul</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoJeubLeader</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/Goblins/GoblinLogo</iconPath>
+    <styleItemTags>
+	  <li>
+		<tag>Tribal</tag>
+		<baseWeight>1</baseWeight>
+		<weightFactor>1</weightFactor>
+	  </li>
+	  <li>
+		<tag>Urban</tag>
+		<baseWeight>5</baseWeight>
+		<weightFactor>1</weightFactor>
+	  </li>
+    </styleItemTags>
+  </CultureDef>
+
+
+
+</Defs>

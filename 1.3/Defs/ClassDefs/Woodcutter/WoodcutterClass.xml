@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+ 
+<Defs>
+
+	<TorannMagic.TM_CustomClassDef Name="CustomClass_List">
+		<defName>ST_WoodcutterClass</defName>
+		<customClasses>		
+		  <li>		  
+			<classTrait>ST_Woodcutter</classTrait>		
+			<traitDegree>4</traitDegree>				
+			<classHediff></classHediff>				
+			<classTexturePath>woodcutterMark</classTexturePath>
+			<classIconPath>woodcutterMark</classIconPath>		
+			<classIconColor>(0,0,0)</classIconColor>	
+			<tornScript></tornScript>						
+			<fullScript>BookOfWoodcutter</fullScript>							
+			<classFighterAbilities>
+				<li>ST_AnalyzeTree</li>
+				<li>ST_AnalyzeTreeI</li>
+				<li>ST_AnalyzeTreeII</li>
+				<li>ST_AnalyzeTreeIII</li>		
+				<li>ST_Cleave</li>
+				<li>ST_Cleave_I</li>
+				<li>ST_Cleave_II</li>
+				<li>ST_Cleave_III</li>
+				<li>ST_HatchetThrow</li>
+				<li>ST_HatchetThrowI</li>				
+				<li>ST_HatchetThrowII</li>				
+				<li>ST_HatchetThrowIII</li>				
+				<li>ST_HatchetThrowIV</li>				
+				<li>ST_HatchetThrowV</li>
+				<li>ST_DisorientingBlow</li>
+				<li>ST_DisorientingBlowI</li>
+				<li>ST_DisorientingBlowII</li>
+				<li>ST_DisorientingBlowIII</li>
+				<li>ST_WhirlingAxe</li>
+				<li>ST_WhirlingAxeI</li>
+				<li>ST_WhirlingAxeII</li>
+				<li>ST_WhirlingAxeIII</li>
+			</classFighterAbilities>
+			<learnableSkills>					
+			</learnableSkills>
+			
+			<isMage>false</isMage>					
+			<isFighter>true</isFighter>						
+
+			<isNecromancer>false</isNecromancer>			
+			<isUndead>false</isUndead>						
+															
+			<isAndroid>false</isAndroid>					
+			<isAdvancedClass>false</isAdvancedClass>		
+			<shouldShow>false</shouldShow>
+		  </li>		  	
+		</customClasses>			
+	</TorannMagic.TM_CustomClassDef>		
+
+</Defs>
+

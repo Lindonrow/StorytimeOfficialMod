@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Pearl</defName>
+    <label>pearl</label>
+    <description>A round little gem-thingy that comes from a clam. Can be used in jewelry among other things.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Gems/Pearl</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.75</drawSize>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>0.1</Mass>
+      <StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.4</StuffPower_Armor_Heat>
+      <BluntDamageMultiplier>0.75</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ST_Gems</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0.01</commonality>
+      <color>(255,224,255)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>10</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.3</MaxHitPoints>
+        <WorkToMake>1.4</WorkToMake>
+        <WorkToBuild>3.0</WorkToBuild>
+        <Beauty>2.5</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<MemeDef>
+		<defName>STGnomeOrigin</defName>
+		<label>Gnomish origin</label>
+		<description>LIKE. A. MINI. MAN.</description>
+		<iconPath>World/TreeGnomeEmpire/GnomeLogo</iconPath>
+		<deityCount>2</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+		</requiredRituals>
+		<consumableBuildings>
+		</consumableBuildings>
+		<requireAnyRitualSeat>
+		</requireAnyRitualSeat>
+		   <descriptionMaker>
+			 <patterns>
+			   <li><def>TheistMyth</def></li>
+			   <li><def>TheistFounder</def></li>
+			 </patterns>
+			 <constants>
+			   <li><key>structure_theist</key><value>true</value></li>
+			 </constants>
+		   </descriptionMaker>
+	   <symbolPacks>
+		  <li><ideoName>Gnomism</ideoName><adjective>Gnome</adjective><member>Gnome</member><prefix>true</prefix></li>
+		  <li><ideoName>Gnome Belief</ideoName><adjective>Gnome</adjective><member>Gnome</member><prefix>true</prefix></li>		  
+		  <li><ideoName>Gnome Thought</ideoName><adjective>Gnome</adjective><member>Gnome</member><prefix>true</prefix></li>
+		</symbolPacks>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeCreed->sect</li>
+			<li>memeCreed->temple</li>
+			<li>memeCreed->faith</li>
+			<li>memeLeaderNoun->king</li>
+			<li>memeLeaderAdjective->king</li>
+			<li>memeMoralist->priest</li>
+			<li>memeMoralist->cleric</li>
+		  </rulesStrings>
+		</generalRules>
+		<fixedDeityNameTypes>
+		  <li><name>Guthix</name><type>God of Balance</type></li>
+		  <li><name>Zamorak</name><type>God of Chaos</type></li>
+		  <li><name>Saradomin</name><type>God of Order</type></li>
+		  <li><name>Gnome Child</name><type>Slayer of Slayer</type></li>
+		  <li><name>Slayer</name><type>Beast of the Apocalypse</type></li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+		  <li>
+			<category>Animalist</category>
+			<priority>4</priority>
+		  </li>
+		</thingStyleCategories>
+	</MemeDef>
+
+</Defs>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ST_Coal</defName>
+    <label>coal</label>
+    <description>Coal.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Ores/Coal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>1</Mass>
+      <DeteriorationRate>2</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.20</StuffPower_Armor_Heat>
+      <SharpDamageMultiplier>0.10</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.75</BluntDamageMultiplier>
+    </statBases>
+    <deepCommonality>0.75</deepCommonality>
+    <minRewardCount>20</minRewardCount>
+    <deepCountPerPortion>30</deepCountPerPortion>
+    <deepLumpSizeRange>8~16</deepLumpSizeRange>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(30, 30, 30)</color>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <Flammability>0.5</Flammability>
+        <WorkToMake>1.5</WorkToMake>
+        <WorkToBuild>1.5</WorkToBuild>
+        <DoorOpenSpeed>0.75</DoorOpenSpeed>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+  
+</Defs>

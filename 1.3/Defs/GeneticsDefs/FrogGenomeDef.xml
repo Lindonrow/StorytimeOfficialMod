@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>ST_TierOneFrogList</defName>
+		<tier>1</tier>
+		<itemProduced>ST_FrogGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Toad</li>
+			<li>TreeFrog</li>			
+			<li>PepsiFrog</li>
+			<li>JudasFrog</li>	
+			<li>BloodFrog</li>
+			<li>FireBelliedToad</li>	
+			<li>BullFrog</li>
+			<li>LeviathanFrog</li>	
+			<li>CyberFrog</li>
+			<li>WoodFrog</li>	
+			<li>PoisonDartFrog</li>
+			<li>TomatoFrog</li>
+			<li>SpringPeeper</li>	
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	
+	<ThingDef ParentName="GR_GeneticsBase">
+		<defName>ST_FrogGenetic</defName>
+		<graphicData>
+			<texPath>Things/Items/Resources/Genomes/GenomeFrog</texPath>
+		</graphicData>
+		<label>frog genome</label>
+		<description>A payload of frog genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.</description>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>ST_ExtractGenesFrog</defName>
+		<label>extract genes from a frog</label>
+		<description>Extract genetic material from an frog corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+
+					<thingDefs>
+						<li>Toad</li>
+						<li>TreeFrog</li>			
+						<li>PepsiFrog</li>
+						<li>JudasFrog</li>	
+						<li>BloodFrog</li>
+						<li>FireBelliedToad</li>	
+						<li>BullFrog</li>
+						<li>LeviathanFrog</li>	
+						<li>CyberFrog</li>
+						<li>WoodFrog</li>	
+						<li>PoisonDartFrog</li>
+						<li>TomatoFrog</li>
+						<li>SpringPeeper</li>	
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>Toad</li>
+				<li>TreeFrog</li>			
+				<li>PepsiFrog</li>
+				<li>JudasFrog</li>	
+				<li>BloodFrog</li>
+				<li>FireBelliedToad</li>	
+				<li>BullFrog</li>
+				<li>LeviathanFrog</li>	
+				<li>CyberFrog</li>
+				<li>WoodFrog</li>	
+				<li>PoisonDartFrog</li>
+				<li>TomatoFrog</li>
+				<li>SpringPeeper</li>	
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ST_FrogGenetic>1</ST_FrogGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

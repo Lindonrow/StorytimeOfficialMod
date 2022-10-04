@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BasePawn" Name="DivineThingBase" Abstract="True">
+    <statBases>
+      <LeatherAmount>40</LeatherAmount>
+      <ToxicSensitivity>0.5</ToxicSensitivity>
+    </statBases>
+    <race>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+      <hasGenders>true</hasGenders>
+      <nameGenerator>NamerAnimalGenericMale</nameGenerator>
+      <nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+      <trainability>None</trainability>
+      <hediffGiverSets>
+        <li>DivineBeing</li>
+      </hediffGiverSets>
+    </race>
+    <thingCategories>
+      <li>Animals</li>
+    </thingCategories>
+    <recipes>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+      <li>CureScaria</li>
+      <li>Sterilize</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+    </recipes>
+  </ThingDef>
+
+  <ThingDef ParentName="DivineThingBase">
+    <defName>FlyingFrog</defName>
+    <label>Flying Frog</label>
+    <description>This is not actually a frog, but a lesser divine being in the form of a frog. It flies around on its little cloud for reasons unknown. Flying frogs can be convinced to join your colony and will from time to time summon friends from the spirit realm to join as well. It will occasionally use its divine power to heal those friendly to it.</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <MarketValue>200</MarketValue>
+      <ComfyTemperatureMin>-600</ComfyTemperatureMin>
+      <ComfyTemperatureMax>600</ComfyTemperatureMax>
+    </statBases>
+	<comps>
+	<li Class="AnimalBehaviours.CompProperties_NoFilth"> </li>
+	<li Class="AnimalBehaviours.CompProperties_Regeneration">
+		<rateInTicks>100</rateInTicks>
+	</li>	
+	<li Class="AnimalBehaviours.CompProperties_Floating">
+	</li>
+	<li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
+		<reproductionIntervalDays>30</reproductionIntervalDays>
+		<customString>Summoning friend:</customString>
+	</li>			
+	<li Class="AnimalBehaviours.CompProperties_PassiveRegenerator">
+		<radius>5</radius>
+		<needsToBeTamed>true</needsToBeTamed>
+		<tickInterval>600</tickInterval>	
+	</li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <wildBiomes>
+			<BorealForest>0.001</BorealForest>
+			<IceSheet>0.001</IceSheet>
+			<Tundra>0.001</Tundra>
+			<ColdBog>0.01</ColdBog>
+			<SeaIce>0.001</SeaIce>
+			<TemperateSwamp>0.02</TemperateSwamp>
+			<TropicalSwamp>0.02</TropicalSwamp>
+			<TemperateForest>0.006</TemperateForest>
+			<TropicalRainforest>0.008</TropicalRainforest>
+			<AridShrubland>0.001</AridShrubland>
+			<Desert>0.001</Desert>
+			<ExtremeDesert>0.001</ExtremeDesert>
+	  </wildBiomes>
+      <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+      <nameGenerator>FrogNamerMale</nameGenerator>
+      <nameGeneratorFemale>FrogNamerFemale</nameGeneratorFemale>
+      <bloodDef>Filth_IchorBlood</bloodDef>
+      <baseBodySize>0.15</baseBodySize>
+      <baseHealthScale>0.3</baseHealthScale>
+      <baseHungerRate>0</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <leatherDef>Leather_Frog</leatherDef>
+      <wildness>0</wildness>
+      <trainability>Advanced</trainability>
+      <useMeatFrom>Toad</useMeatFrom>
+      <petness>0.4</petness>
+      <lifeExpectancy>4</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.09</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Frog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>ST_FrogRole</li>				
+					<li>ST_FrogRarity</li>					
+				</statToAdd>
+				<statValues>
+					<li>ST_FrogDivine</li>
+					<li>ST_FrogRare</li>					
+				</statValues>
+				<statDescriptions>
+					<li>ST_FrogDivineDesc</li>
+					<li>ST_FrogRareDesc</li>
+				</statDescriptions>
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/FlyingFrogLore</ImageToShowInInfoCard>					
+			</li>
+		</modExtensions>
+  </ThingDef>
+  
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>FlyingFrog</defName>
+    <label>Flying Frog</label>
+    <race>FlyingFrog</race>
+    <combatPower>20</combatPower>
+    <ecoSystemWeight>0.3</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Flying_Frog/FlyingFrog</texPath>
+          <drawSize>0.4</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Flying_Frog/FlyingFrog</texPath>
+          <drawSize>0.6</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Flying_Frog/FlyingFrog</texPath>
+          <drawSize>0.8</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.25, 0.25)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

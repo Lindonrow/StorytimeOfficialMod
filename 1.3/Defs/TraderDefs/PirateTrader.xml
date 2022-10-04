@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Caravan_Storytime_Pirate</defName>
+    <label>pirate goods trader</label>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>750~1200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>100~150</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>PirateHat</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>PirateBandana</thingDef>
+        <countRange>2~10</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Kraken</thingDef>
+        <countRange>2~20</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>PiratePistol</thingDef>
+        <countRange>0~3</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>PirateBlunderbuss</thingDef>
+        <countRange>1~4</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>PirateGrenade</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>PirateCannon</thingDef>
+        <totalPriceRange>-1~1</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>PirateBola</thingDef>
+        <totalPriceRange>1~6</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>PirateCutlass</thingDef>
+        <totalPriceRange>0~2</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>BoardingAxe</thingDef>
+        <totalPriceRange>1~6</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>PirateAnchor</thingDef>
+        <totalPriceRange>-1~1</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>ST_Parrot</thingDef>
+        <totalPriceRange>1~2</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Monkey</thingDef>
+        <totalPriceRange>1~2</totalPriceRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>CursedCoin</thingDef>
+        <totalPriceRange>2~10</totalPriceRange>
+      </li>
+	  
+	  <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

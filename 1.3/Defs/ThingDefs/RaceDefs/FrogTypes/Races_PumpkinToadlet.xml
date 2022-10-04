@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>PumpkinToadlet</defName>
+    <label>Pumpkin Toadlet</label>
+    <description>This small orange frog with big anime eyes is notable for being the only frog capable of doing a gainer. Unfortunately, the reason it is able to do this is because it is actually terrible at jumping and completely loses control when it tries, causing it to spin through the air wildly. This is simultaneously badass and also painful for the frog. Also, these frogs are closely related to the Poison Dart Frog. While considerably less poisonous than their kin, they can still cause problems.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+      <MarketValue>100</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>PumpkinToadletEggUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>PumpkinToadletEggFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>5</eggLayIntervalDays>
+        <eggCountRange>1</eggCountRange>
+      </li>
+		<li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
+			<radius>10</radius>
+			<tickInterval>2500</tickInterval>
+			<thoughtDef>GainerThought</thoughtDef>
+		</li>
+		<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+			<hediffname>GainerFrog</hediffname>
+		</li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>1.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>1.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>PoisonDart</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <wildBiomes>
+			<TemperateSwamp>0.07</TemperateSwamp>
+			<TropicalSwamp>0.1</TropicalSwamp>
+			<TemperateForest>0.05</TemperateForest>
+			<TropicalRainforest>0.2</TropicalRainforest>
+	  </wildBiomes>	
+      <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+      <nameGenerator>FrogNamerMale</nameGenerator>
+      <nameGeneratorFemale>FrogNamerFemale</nameGeneratorFemale>
+      <baseBodySize>0.12</baseBodySize>
+      <baseHealthScale>0.15</baseHealthScale>
+      <baseHungerRate>0.12</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <leatherDef>Leather_Frog</leatherDef>
+      <wildness>0.5</wildness>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <trainability>Intermediate</trainability>
+      <useMeatFrom>Toad</useMeatFrom>
+      <petness>0.8</petness>
+      <lifeExpectancy>4</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.09</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundAngry>Frog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>ST_FrogRole</li>
+					<li>ST_FrogRarity</li>					
+				</statToAdd>
+				<statValues>
+					<li>ST_FrogFriendly</li>
+					<li>ST_FrogUncommon</li>					
+				</statValues>
+				<statDescriptions>
+					<li>ST_FrogFriendlyDesc</li>
+					<li>ST_FrogUncommonDesc</li>
+				</statDescriptions>	
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/PumpkinToadletLore</ImageToShowInInfoCard>					
+			</li>
+		</modExtensions>
+  </ThingDef>
+  
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>PumpkinToadlet</defName>
+    <label>Pumpkin Toadlet</label>
+    <race>PumpkinToadlet</race>
+    <combatPower>18</combatPower>
+    <ecoSystemWeight>0.1</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Pumpkin_Toadlet/PumpkinToadlet</texPath>
+          <drawSize>0.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Pumpkin_Toadlet/PumpkinToadlet</texPath>
+          <drawSize>0.4</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Pumpkin_Toadlet/PumpkinToadlet</texPath>
+          <drawSize>0.55</drawSize>
+          <shadowData>
+            <volume>(0.125, 0.125, 0.125)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>0.55</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+  <HediffDef>
+    <defName>GainerFrog</defName>
+    <label>Clumsy Toadlet</label>
+    <description>Pumpkin Toadlets will occasionally injure themselves attempting to do gainers.</description>
+  	<defaultLabelColor>(255,117,24)</defaultLabelColor>
+    <stages>
+      <li>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>FailedGainer</hediff>
+            <mtbDays>15</mtbDays>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FailedGainer</defName>
+    <label>Failed Gainer</label>
+    <description>This pumpkin toadlet tried to do a gainer, but all he accomplished was doing a pathetic flip and twisting his little froggy leg!</description>
+	<hediffClass>HediffWithComps</hediffClass>
+  	<defaultLabelColor>(161,75,18)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>12000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<painOffset>0.8</painOffset>		
+      </li>
+    </stages>
+  </HediffDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</Defs>

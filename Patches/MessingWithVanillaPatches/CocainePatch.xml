@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Things --> 
+
+<!-- Psychoid Plant -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_Psychoid"]/label</xpath>
+		<value>
+		      <label>coca plant</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_Psychoid"]/description</xpath>
+		<value>
+			<description>A leafy plant which generates the chemical compound cocaine. Originally evolved as a defense mechanism to ward off plant-eating animals by overstimulating and sickening them, cocaine can be extracted and refined into various forms for recreational use. It is addictive.</description>
+		</value>
+	</Operation>	
+	
+<!-- Psychoid Leaves -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "PsychoidLeaves"]/label</xpath>
+		<value>
+		      <label>coca leaves</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "PsychoidLeaves"]/description</xpath>
+		<value>
+			<description>Raw cut leaves of a coca plant. Can be refined into various form of the stimulant drug cocaine.</description>
+		</value>
+	</Operation>	
+	
+<!-- Research -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "PsychoidBrewing"]/label</xpath>
+		<value>
+			<label>coca brewing</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "PsychoidBrewing"]/description</xpath>
+		<value>
+			<description>Prepare coca leaves into a mildly euphoria-inducing and addictive tea at the campfire or cooking stove.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "PsychiteRefining"]/label</xpath>
+		<value>
+			<label>cocaine refining</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "PsychiteRefining"]/description</xpath>
+		<value>
+			<description>Refine coca leaves into different varieties of the addictive cocaine drug.</description>
+		</value>
+	</Operation>	
+
+<!-- Yayo -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Yayo"]/label</xpath>
+		<value>
+		      <label>cocaine</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Yayo"]/description</xpath>
+		<value>
+			<description>A refined powdery preparation of cocaine. When snorted, it produces a rapid euphoric high, dramatically reduces the user's need for rest, and suppresses pain. Like all forms of cocaine, it is addictive, though it is not as addictive as the cruder crack.\n\nBecause of its high cost and refined appearance, many cultures associate powder cocaine with degenerate wealth. Whether in the throneroom or the boardroom, many hare-brained policy schemes have been developed during cocaine-fueled binge parties.</description>
+		</value>
+	</Operation>	
+
+<!-- Flake -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Flake"]/label</xpath>
+		<value>
+		      <label>crack</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Flake"]/description</xpath>
+		<value>
+			<description>A flaky white preparation of cocaine that can be smoked to induce a short but powerful euphoric state. While it is cheap to produce and extremely pleasurable to use, it is exceptionally addictive. Crack is known for destroying lives, communities, and entire societies.</description>
+		</value>
+	</Operation>	
+
+<!-- Psychite Tea -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "PsychiteTea"]/label</xpath>
+		<value>
+		      <label>coca tea</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "PsychiteTea"]/description</xpath>
+		<value>
+			<description>A fragrant tea infused with leaves of the coca plant. Drinking it induces a subtle cocaine high. This tea is easy to produce at cooking facilities, but can produce cocaine addiction if consumed too often.\n\nMany tribes use coca tea, both as a daily energizer and as part of social and religious rituals.</description>
+		</value>
+	</Operation>	
+
+	<!-- Hediffs -->
+
+<!-- Yayo High -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "YayoHigh"]/label</xpath>
+		<value>
+		      <label>high on cocaine</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "YayoHigh"]/labelNoun</xpath>
+		<value>
+		      <labelNoun>a yayo high</labelNoun>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "YayoHigh"]/description</xpath>
+		<value>
+		      <description>Active cocaine in the bloodstream. Generates an intense euphoric high.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThoughtDef[defName = "YayoHigh"]/stages</xpath>
+		<value>
+			<stages>
+			  <li>
+				<label>high on cocaine</label>
+				<description>Feeling pumped! Let's do this!</description>
+				<baseMoodEffect>35</baseMoodEffect>
+			  </li>
+			</stages>
+		</value>
+	</Operation>	
+	
+<!-- Flake High -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "FlakeHigh"]/label</xpath>
+		<value>
+		      <label>high on crack</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "FlakeHigh"]/labelNoun</xpath>
+		<value>
+		      <labelNoun>a crack high</labelNoun>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "FlakeHigh"]/description</xpath>
+		<value>
+		      <description>Active crack in the bloodstream. Generates a euphoric, debilitating high.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThoughtDef[defName = "FlakeHigh"]/stages</xpath>
+		<value>
+			<stages>
+			  <li>
+				<label>high on crack</label>
+				<description>So good, so good.</description>
+				<baseMoodEffect>35</baseMoodEffect>
+			  </li>
+			</stages>
+		</value>
+	</Operation>	
+
+<!-- Psychite Tea High -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "PsychiteTeaHigh"]/label</xpath>
+		<value>
+		      <label>high on coca tea</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "PsychiteTeaHigh"]/labelNoun</xpath>
+		<value>
+		      <labelNoun>a coca tea high</labelNoun>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "PsychiteTeaHigh"]/description</xpath>
+		<value>
+		      <description>Active coca tea in the bloodstream. Generates a mild euphoric effect.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThoughtDef[defName = "PsychiteTeaHigh"]/stages</xpath>
+		<value>
+			<stages>
+			  <li>
+				<label>coca tea</label>
+				<description>Drinking that tea made me feel great. I love having this energy!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			  </li>
+			</stages>
+		</value>
+	</Operation>	
+	
+<!-- Tolerance/Addiction -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "PsychiteTolerance"]/label</xpath>
+		<value>
+		      <label>cocaine tolerance</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "PsychiteTolerance"]/description</xpath>
+		<value>
+		      <description>A built-up tolerance to cocaine. The more severe this tolerance is, the more cocaine it takes to get the same effect.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "PsychiteAddiction"]/label</xpath>
+		<value>
+		      <label>cocaine dependence</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "PsychiteAddiction"]/description</xpath>
+		<value>
+		      <description>A chemical addiction to cocaine. Long-term use of cocaine has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of cocaine, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThoughtDef[defName = "PsychiteWithdrawal"]/stages</xpath>
+		<value>
+			<stages>
+			  <li>
+				<visible>false</visible>
+			  </li>
+			  <li>
+				<label>cocaine withdrawal</label>
+				<description>God I'm tired. Everything's so slow and boring. Especially me.</description>
+				<baseMoodEffect>-35</baseMoodEffect>
+			  </li>
+			</stages>
+		</value>
+	</Operation>	
+
+
+
+	<!-- Other -->
+	
+<!-- Chemical -->	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ChemicalDef[defName = "Psychite"]/label</xpath>
+		<value>
+			<label>cocaine</label>
+		</value>
+	</Operation>		
+	
+<!-- Need -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/NeedDef[defName = "Chemical_Psychite"]/label</xpath>
+		<value>
+			<label>cocaine</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/NeedDef[defName = "Chemical_Psychite"]/description</xpath>
+		<value>
+			<description>Because of a cocaine dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Patch>

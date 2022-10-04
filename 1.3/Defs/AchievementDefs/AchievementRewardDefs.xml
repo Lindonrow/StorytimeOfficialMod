@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AchievementsExpanded.Reward_EnemyRaid>
+		<defName>JeubReward</defName>
+		<label>Summon A Swarm of Jeubs</label>
+		<tab>Storytime</tab>
+		<cost>10</cost>
+		<incident>Jeub_Swarm</incident>
+	</AchievementsExpanded.Reward_EnemyRaid>
+	<AchievementsExpanded.Reward_EnemyRaid>
+		<defName>CartographerReward</defName>
+		<label>Summon the Cartographer</label>
+		<tab>Storytime</tab>
+		<cost>50</cost>
+		<incident>Cartographer_Wanders</incident>
+	</AchievementsExpanded.Reward_EnemyRaid>
+	<AchievementsExpanded.Reward_EnemyRaid>
+		<defName>GibbonReward</defName>
+		<label>Summon the Gibbonous Moon</label>
+		<tab>Storytime</tab>
+		<cost>50</cost>
+		<incident>GibbonousMoon</incident>
+	</AchievementsExpanded.Reward_EnemyRaid>
+	<AchievementsExpanded.Reward_EnemyRaid>
+		<defName>PandemicReward</defName>
+		<label>Summon Pandemic</label>
+		<tab>Storytime</tab>
+		<cost>15</cost>
+		<incident>Disease_Coronavirus</incident>
+	</AchievementsExpanded.Reward_EnemyRaid>
+</Defs>

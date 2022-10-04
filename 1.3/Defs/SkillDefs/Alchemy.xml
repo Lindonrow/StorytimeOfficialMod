@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SkillDef>
+    <defName>Alchemy</defName>
+    <description>Using chemical and alchemical principles to synthesise drugs, potions, and other concoctions.</description>
+    <skillLabel>alchemy</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>1</listOrder>
+  </SkillDef>
+  
+  <WorkTypeDef>
+    <defName>Alchemy</defName>
+    <labelShort>alchemy</labelShort>
+    <pawnLabel>Alchemy</pawnLabel>
+    <gerundLabel>alchemizing</gerundLabel>
+    <description>Create potions and drugs from raw materials.</description>
+    <verb>Do alchemy at</verb>
+    <naturalPriority>450</naturalPriority>
+    <relevantSkills>
+      <li>Alchemy</li>
+    </relevantSkills>
+    <workTags>
+      <li>Crafting</li>
+      <li>Intellectual</li>
+      <li>ManualSkilled</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>  
+
+  <WorkGiverDef>
+    <defName>DoBillsMakePotions</defName>
+    <label>make potions</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Alchemy</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>AlchemyTable</li>
+    </fixedBillGiverDefs>
+    <verb>alchemize</verb>
+    <gerund>alchemizing at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>  
+ 
+
+</Defs>

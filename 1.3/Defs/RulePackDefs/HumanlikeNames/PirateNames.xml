@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerPirateUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>PirateWords->PirateNames/PirateNames</li>
+        <li>PirateSurnames->PirateNames/PirateLastNames</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonPirate</defName>
+	<include>
+      <li>NamerPirateUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[AdjectiveBadass]beard [PirateSurnames]</li>
+        <li>r_name->[Color]beard [PirateSurnames]</li>
+        <li>r_name->[Animal]beard [PirateSurnames]</li>
+        <li>r_name->[political_adjective]beard [PirateSurnames]</li>
+		<li>r_name->[TerrainFeature]beard [PirateSurnames]</li>
+        <li>r_name->[WordTribal]beard [PirateSurnames]</li>
+        <li>r_name->[Weapon]beard [PirateSurnames]</li>
+        <li>r_name->[ColorBadass]beard [PirateSurnames]</li>
+		<li>r_name->[AdjectiveBadass]hands [PirateSurnames]</li>
+        <li>r_name->[Color]hands [PirateSurnames]</li>
+        <li>r_name->[Animal]hands [PirateSurnames]</li>
+        <li>r_name->[political_adjective]hands [PirateSurnames]</li>
+		<li>r_name->[TerrainFeature]hands [PirateSurnames]</li>
+        <li>r_name->[WordTribal]hands [PirateSurnames]</li>
+        <li>r_name->[Weapon]hands [PirateSurnames]</li>
+        <li>r_name->[ColorBadass]hands [PirateSurnames]</li>
+		<li>r_name->[AdjectiveBadass]bones [PirateSurnames]</li>
+        <li>r_name->[Color]bones [PirateSurnames]</li>
+        <li>r_name->[Animal]bones [PirateSurnames]</li>
+        <li>r_name->[political_adjective]bones [PirateSurnames]</li>
+		<li>r_name->[TerrainFeature]bones [PirateSurnames]</li>
+        <li>r_name->[WordTribal]bones [PirateSurnames]</li>
+        <li>r_name->[Weapon]bones [PirateSurnames]</li>
+        <li>r_name->[ColorBadass]bones [PirateSurnames]</li>
+		<li>r_name->[AdjectiveBadass]dog [PirateSurnames]</li>
+        <li>r_name->[Color]dog [PirateSurnames]</li>
+        <li>r_name->[Animal]dog [PirateSurnames]</li>
+        <li>r_name->[political_adjective]dog [PirateSurnames]</li>
+		<li>r_name->[TerrainFeature]dog [PirateSurnames]</li>
+        <li>r_name->[WordTribal]dog [PirateSurnames]</li>
+        <li>r_name->[Weapon]dog [PirateSurnames]</li>
+        <li>r_name->[ColorBadass]dog [PirateSurnames]</li>
+        <li>r_name->[PirateWords]beard [PirateSurnames]</li>
+        <li>r_name->[PirateWords]hands [PirateSurnames]</li>
+        <li>r_name->[PirateWords]bones [PirateSurnames]</li>
+        <li>r_name->[PirateWords]dog [PirateSurnames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFactionStorytimePirate</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Crew of the [Color] [Animal]  </li>
+		<li>r_name->Crew of the [Color] [Weapon]  </li>
+		<li>r_name->Crew of the [ColorBadass] [Animal]  </li>
+		<li>r_name->Crew of the [ColorBadass] [Weapon]  </li>
+		<li>r_name->Crew of the [AdjectiveBadass] [Animal]  </li>
+		<li>r_name->Crew of the [AdjectiveBadass] [Weapon]  </li>
+		<li>r_name->Crew of the [AdjectiveBadass] [TerrainFeature]  </li>
+		<li>r_name->Crew of the [ColorBadass] [TerrainFeature]  </li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>political_union_outlander->Words/Nouns/PoliticalUnions_Outlander</li>
+        <li>political_adjective->Words/Adjectives/PoliticalUnions</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+		
+  <RulePackDef>
+    <defName>PirateSettlementName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>PirateNames/PirateSettlement</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+	
+</Defs>

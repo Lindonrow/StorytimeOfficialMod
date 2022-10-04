@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+<!--Beefy Five Layer Burrito-->
+
+	<HediffDef>
+		<defName>Bean_Burrito_Utility</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>you shouldn't be seeing this.</description>
+		<label>BurritoUtility</label>
+		<stages>
+			<li>
+				<label>minor</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+				<hediffAndBodypart>
+					<li>
+						<hediff>Bean_Burrito</hediff>
+					</li>
+					<li>
+						<hediff>HedBurrito</hediff>
+					</li>
+				</hediffAndBodypart>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Bean_Burrito</defName>
+		<label>Every Flavor Bean: Beefy Five Layer Burrito Flavor</label>
+		<description>Ate a beefy five layer burrito flavor jelly bean! You gotta love it. \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Gives the effect of a Beefy Five Layer Burrito.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(231,175,0)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Uncommon</label>
+				<minSeverity>0</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>  
+  
+<!--D-Pad Candy-->
+
+	<HediffDef>
+		<defName>Bean_PadCandy_Utility</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>you shouldn't be seeing this.</description>
+		<label>CandyUtility</label>
+		<stages>
+			<li>
+				<label>minor</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+				<hediffAndBodypart>
+					<li>
+						<hediff>Bean_PadCandy</hediff>
+					</li>
+					<li>
+						<hediff>HedCandy</hediff>
+					</li>
+				</hediffAndBodypart>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Bean_PadCandy</defName>
+		<label>Every Flavor Bean: D-Pad Candy Flavor</label>
+		<description>Ate a D-pad candy flavor jelly bean! Yucky. \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Gives the effect of a D-Pad Candy.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(203, 195, 227)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Uncommon</label>
+				<minSeverity>0</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>    
+  
+<!--Pepsi-->
+
+	<HediffDef>
+		<defName>Bean_Pepsi_Utility</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>you shouldn't be seeing this.</description>
+		<label>PepsiUtility</label>
+		<stages>
+			<li>
+				<label>minor</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+				<hediffAndBodypart>
+					<li>
+						<hediff>Bean_Pepsi</hediff>
+					</li>
+					<li>
+						<hediff>HedPepsi</hediff>
+					</li>
+				</hediffAndBodypart>
+				<debug>true</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Bean_Pepsi</defName>
+		<label>Every Flavor Bean: Pepsi Flavor</label>
+		<description>Ate a pepsi flavor jelly bean! Refreshing! \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Gives the effect of a Pepsi.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(118,94,70)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Uncommon</label>
+				<minSeverity>0</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>      
+
+<!--Grass-->
+
+	<HediffDef>
+		<defName>Bean_Grass</defName>
+		<label>Every Flavor Bean: Grass Flavor</label>
+		<description>Ate a grass flavor jelly bean! Tastes planty. \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Tastes bad, but gives an affinity towards plants.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(140,228,140)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			  <li>
+				<label>Uncommon</label>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<PlantWorkSpeed>0.6</PlantWorkSpeed>	
+				</statOffsets>		
+			  </li>
+		</stages>
+	</HediffDef>
+
+    <ThoughtDef>
+		<defName>BeanThought_Grass</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Bean_Grass</hediff>
+		<stages>
+		  <li>
+			<label>Grass Jellybean</label>
+			<description>I'm not a zuck, I don't like grass.</description>
+			<baseMoodEffect>-5</baseMoodEffect>
+		  </li>
+		</stages>
+  </ThoughtDef>  
+
+<!--Worm-->
+
+	<HediffDef>
+		<defName>Bean_Worm</defName>
+		<label>Every Flavor Bean: Worm Flavor</label>
+		<description>Ate a worm flavor jelly bean! Oh god, I think the worms are inside me...! \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Tastes bad and the pawn will periodically cough up worms.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(255,182,193)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>300000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="MoharHediffs.HediffCompProperties_Spawner">
+				<thingToSpawn>Worm</thingToSpawn>
+				<spawnCount>15</spawnCount>
+				<minDaysB4Next>0.5</minDaysB4Next>
+				<maxDaysB4Next>1.5</maxDaysB4Next>
+				<graceDays>0.25</graceDays>
+				<spawnForbidden>false</spawnForbidden>
+				<spawnVerb>coughing</spawnVerb>			
+			</li>
+		</comps>
+		<stages>
+			  <li>
+				<label>Uncommon</label>
+				<minSeverity>0</minSeverity>	
+			  </li>
+		</stages>
+	</HediffDef>
+
+    <ThoughtDef>
+		<defName>BeanThought_Worm</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Bean_Worm</hediff>
+		<stages>
+		  <li>
+			<label>Worm Jellybean</label>
+			<description>There are worms wiggling in my stomach... ugh...</description>
+			<baseMoodEffect>-15</baseMoodEffect>
+		  </li>
+		</stages>
+  </ThoughtDef>    
+  
+<!--Vomit-->
+
+	<HediffDef>
+		<defName>Bean_Vomit</defName>
+		<label>Every Flavor Bean: Vomit Flavor</label>
+		<description>Ate a vomit flavor jelly bean! Blegh! \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Tastes bad and causes periodic vomiting.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(148, 178, 28)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>90000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			  <li>
+				<vomitMtbDays>0.15</vomitMtbDays>
+				<label>Uncommon</label>
+				<minSeverity>0</minSeverity>	
+			  </li>
+		</stages>
+	</HediffDef>
+
+    <ThoughtDef>
+		<defName>BeanThought_Vomit</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Bean_Vomit</hediff>
+		<stages>
+		  <li>
+			<label>Vomit Jellybean</label>
+			<description>Absolutely vile!</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+  </ThoughtDef>     
+  
+<!--Banana-->
+
+	<HediffDef>
+		<defName>Bean_Banana</defName>
+		<label>Every Flavor Bean: Banana Flavor</label>
+		<description>Ate a vomit flavor jelly bean! Tasty... but there's something weird about it... \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Tastes good, but carries the risk of turning the pawn into a banana if they die while this effect is active.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(255, 225, 53)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>240000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="StoryTime.HediffCompProperties_Polymorph">
+				<targetPolymorph>Banana</targetPolymorph>
+				<polymorphLetterLabel>ST_LetterLabelBones2Bananas</polymorphLetterLabel>
+				<polymorphLetter>ST_LetterBones2Bananas</polymorphLetter>
+				<polymorphLetterDef>ST_BananaLetter</polymorphLetterDef>
+		    </li>
+		</comps>
+		<stages>
+			  <li>
+				<label>Uncommon</label>
+				<minSeverity>0</minSeverity>	
+			  </li>
+		</stages>
+	</HediffDef>
+  
+    <ThoughtDef>
+		<defName>BeanThought_Banana</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Bean_Banana</hediff>
+		<stages>
+		  <li>
+			<label>Banana Jellybean</label>
+			<description>Yummy!</description>
+			<baseMoodEffect>5</baseMoodEffect>
+		  </li>
+		</stages>
+  </ThoughtDef>    
+  
+<!--Gold-->
+
+	<HediffDef>
+		<defName>Bean_Gold</defName>
+		<label>Every Flavor Bean: Gold Flavor</label>
+		<description>Ate a gold flavor jelly bean! I'm rich, you know! \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Increases trading ability.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(140,228,140)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			  <li>
+				<label>Uncommon</label>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<TradePriceImprovement>0.25</TradePriceImprovement>	
+				</statOffsets>		
+			  </li>
+		</stages>
+	</HediffDef>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</Defs>

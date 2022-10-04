@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+ <ThingDef Name="STRingBase" ParentName="ApparelBase" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>LeftHand</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Jewelry</li>
+      </layers>
+    </apparel>
+    <statBases>
+      <WorkToMake>16000</WorkToMake>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.10</Mass>
+      <Flammability>0.1</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+      <li>RewardStandardQualitySuper</li> 
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>ST_Rings</li>
+    </thingCategories>
+    <tradeTags>
+      <li>STRings</li>
+    </tradeTags>
+  </ThingDef>
+  
+<!-- Steel Ring -->
+
+  <ThingDef ParentName="STRingBase">
+    <defName>ST_SteelRing</defName>
+    <label>steel ring</label>
+    <description>A simple steel ring similar to Jonah's Wedding Ring.</description>
+    <graphicData>
+      <texPath>Things/Items/Rings/SteelRing</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+    </statBases>
+    <generateCommonality>0.1</generateCommonality>
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+		  <tags>
+			<li>IndustrialBasic</li>
+			<li>MedievalBasic</li>
+		  </tags>
+    </apparel>
+  </ThingDef>  
+  
+<!-- Gold Ring -->
+  
+  <ThingDef ParentName="STRingBase">
+    <defName>ST_GoldRing</defName>
+    <label>gold ring</label>
+    <description>A simple gold ring. Very shiny.</description>
+    <graphicData>
+      <texPath>Things/Items/Rings/GoldRing</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.025</ArmorRating_Blunt>
+    </statBases>
+    <generateCommonality>0.05</generateCommonality>
+    <costList>
+      <Gold>50</Gold>
+    </costList>
+    <equippedStatOffsets>
+      <SocialImpact>0.20</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+		  <tags>
+			<li>IndustrialAdvanced</li>
+			<li>MedievalAdvanced</li>
+		  </tags>
+    </apparel>
+  </ThingDef>    
+  
+<!-- Weezer Ring -->
+  
+  <ThingDef ParentName="STRingBase">
+    <defName>ST_WeezerRing</defName>
+    <label>weezer ring</label>
+    <description>weezer</description>
+    <graphicData>
+      <texPath>Things/Items/Rings/WeezerRing</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Sharp>0.69</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.69</ArmorRating_Blunt>
+    </statBases>
+    <generateCommonality>0.02</generateCommonality>
+    <costList>
+      <Weezer>25</Weezer>
+    </costList>
+    <equippedStatOffsets>
+      <SocialImpact>0.1</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+		  <tags>
+			<li>IndustrialAdvanced</li>
+		  </tags>
+    </apparel>
+  </ThingDef>     
+  
+<!-- Silver Ring -->
+   
+  <ThingDef ParentName="STRingBase">
+    <defName>ST_SilverRing</defName>
+    <label>silver ring</label>
+    <description>A simple silver ring. Slightly shiny.</description>
+    <graphicData>
+      <texPath>Things/Items/Rings/SilverRing</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.025</ArmorRating_Blunt>
+    </statBases>
+    <generateCommonality>0.07</generateCommonality>
+    <costList>
+      <Silver>150</Silver>
+    </costList>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+		  <tags>
+			<li>IndustrialAdvanced</li>
+			<li>MedievalAdvanced</li>
+		  </tags>
+    </apparel>
+  </ThingDef>      
+  
+  
+  
+  
+  
+  
+  
+</Defs>

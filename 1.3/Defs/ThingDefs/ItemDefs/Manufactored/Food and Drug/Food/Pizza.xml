@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MealBase">
+		<defName>CheesePizza</defName>
+		<label>cheese pizza</label>
+		<description>Yawn.</description>
+		<graphicData>
+		<texPath>Things/Items/Pizza</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>18</MarketValue>
+		<Mass>0.3</Mass>
+		<WorkToMake>450</WorkToMake>
+		<Nutrition>1.4</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Meal_Eat</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>HedPizza</hediffDef>
+			<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+		<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>1.5</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="MealBase">
+		<defName>MeatPizza</defName>
+		<label>meat pizza</label>
+		<description>Pizza Time!</description>
+		<graphicData>
+		<texPath>Things/Items/Pizza</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>18</MarketValue>
+		<Mass>0.3</Mass>
+		<WorkToMake>450</WorkToMake>
+		<Nutrition>1.4</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Meal_Eat</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>HedPizza</hediffDef>
+			<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+		<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>1.5</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBase">
+		<defName>VegetablePizza</defName>
+		<label>veggie pizza</label>
+		<description>This is not ok.</description>
+		<graphicData>
+		<texPath>Things/Items/Pizza</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>18</MarketValue>
+		<Mass>0.3</Mass>
+		<WorkToMake>450</WorkToMake>
+		<Nutrition>1.4</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Meal_Eat</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>HedPizza</hediffDef>
+			<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+		<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>1.5</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="MealBase">
+		<defName>WormPizza</defName>
+		<label>worm pizza</label>
+		<description>Why are we born? Only to suffer?</description>
+		<graphicData>
+		<texPath>Things/Items/Pizza</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>18</MarketValue>
+		<Mass>0.3</Mass>
+		<WorkToMake>450</WorkToMake>
+		<Nutrition>1.0</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Meal_Eat</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>HedPizza</hediffDef>
+			<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+		<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>1.5</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+		</comps>
+	</ThingDef>
+</Defs>

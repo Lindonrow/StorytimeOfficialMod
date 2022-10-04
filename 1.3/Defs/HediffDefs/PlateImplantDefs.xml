@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>BronzePlateImplant</defName>
+    <label>Implanted Bronze Plates</label>
+    <labelNoun>implanted bronze plates</labelNoun>
+    <description>There are bronze plates implanted in this pawn's torso.</description>
+    <descriptionHyperlinks><ThingDef>BronzePlateImplant</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BronzePlateImplant</spawnThingOnRemoved>
+    <stages>
+        <li>
+			<painOffset>0.20</painOffset>
+			<statOffsets>
+				  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				  <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			</statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThingDef Name="BodyPartPlateBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>BodyPartsProsthetic</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>Bionic</li>
+    </tradeTags>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+    </statBases>		
+	<costList>
+		  <ST_Bronze>50</ST_Bronze>
+	</costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Prosthetics</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BodyPartPlateBase">
+    <defName>BronzePlateImplant</defName>
+    <label>Bronze Torso Plates</label>
+    <description>Plates of bronze that can be implanted in a pawn's torso, increasing their durability at the cost of causing great pain.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <color>(30, 120, 110)</color>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <defName>InstallBronzePlateImplant</defName>
+    <label>install bronze plates</label>
+    <description>Install bronze plates.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BronzePlateImplant</ThingDef>
+      <HediffDef>BronzePlateImplant</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bronze plates.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BronzePlateImplant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BronzePlateImplant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BronzePlateImplant</addsHediff>
+  </RecipeDef>
+
+</Defs>  

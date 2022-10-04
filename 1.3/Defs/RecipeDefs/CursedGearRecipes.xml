@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+    <defName>MeltCoins</defName>
+    <label>Melt haunted coins</label>
+    <description>Melt down haunted coins to obtain gold.</description>    
+	<jobString>Melt gold coins.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+	<researchPrerequisite>Smithing</researchPrerequisite>
+	<recipeUsers>
+      <li>ElectricSmelter</li>      
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+     </ingredients>
+     <fixedIngredientFilter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </fixedIngredientFilter>
+     <defaultIngredientFilter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </defaultIngredientFilter>
+	 <products>
+ 		<Gold>15</Gold>
+ 	</products>
+</RecipeDef>
+
+  
+<RecipeDef>
+    <defName>MakeCursedCutlass</defName>
+    <label>Forge haunted cutlass</label>
+    <description>Forge a cutlass and imbue it with spiritual power by adding cursed coins.</description>    
+	<jobString>Forge a haunted cutlass.</jobString>
+    <workAmount>12500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<researchPrerequisite>magicPirateCrafting</researchPrerequisite>
+	<recipeUsers>
+      <li>ElectricSmithy</li>      
+	  <li>FueledSmithy</li>
+    </recipeUsers>
+    <skillRequirements>
+			<Crafting>10</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+     </ingredients>
+     <fixedIngredientFilter>
+					<thingDefs>
+						<li>Steel</li>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </fixedIngredientFilter>
+     <defaultIngredientFilter>
+					<thingDefs>
+						<li>Steel</li>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </defaultIngredientFilter>
+	 <products>
+ 		<CursedCutlass>1</CursedCutlass>
+ 	</products>
+</RecipeDef>
+
+<RecipeDef>
+    <defName>MakeCursedGun</defName>
+    <label>Make haunted assault rifle</label>
+    <description>Coat an assault rifle in haunted gold. Why not?</description>    
+	<jobString>Make a haunted assault rifle.</jobString>
+    <workAmount>5000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	<researchPrerequisite>magicPirateCrafting</researchPrerequisite>
+	<recipeUsers>
+      <li>ElectricSmithy</li>      
+	  <li>FueledSmithy</li>
+    </recipeUsers>
+    <skillRequirements>
+			<Crafting>8</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>Gun_AssaultRifle</li>
+					</thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+     </ingredients>
+     <fixedIngredientFilter>
+					<thingDefs>
+						<li>Gun_AssaultRifle</li>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </fixedIngredientFilter>
+     <defaultIngredientFilter>
+					<thingDefs>
+						<li>Gun_AssaultRifle</li>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </defaultIngredientFilter>
+	 <products>
+ 		<CursedGun>1</CursedGun>
+ 	</products>
+</RecipeDef>
+
+<RecipeDef>
+    <defName>MakePirateCrown</defName>
+    <label>Forge a pirate crown</label>
+    <description>Forge a crown from cursed gold, fit for a pirate king.</description>    
+	<jobString>Make a pirate crown.</jobString>
+    <workAmount>10000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+	<researchPrerequisite>magicPirateCrafting</researchPrerequisite>
+	<recipeUsers>
+      <li>ElectricSmithy</li>      
+	  <li>FueledSmithy</li>
+    </recipeUsers>
+    <skillRequirements>
+			<Crafting>12</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+     </ingredients>
+     <fixedIngredientFilter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </fixedIngredientFilter>
+     <defaultIngredientFilter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </defaultIngredientFilter>
+	 <products>
+ 		<PirateCrown>1</PirateCrown>
+ 	</products>
+</RecipeDef>
+
+<RecipeDef>
+    <defName>MakeCursedWand</defName>
+    <label>Create a haunted wand</label>
+    <description>Melt down haunted coins into a wand capable of unleashing magical attacks.</description>    
+	<jobString>Make a haunted wand.</jobString>
+    <workAmount>10000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+	<researchPrerequisite>magicPirateCrafting</researchPrerequisite>
+	<recipeUsers>
+      <li>ElectricSmithy</li>      
+	  <li>FueledSmithy</li>
+    </recipeUsers>
+    <skillRequirements>
+			<Crafting>10</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+     </ingredients>
+     <fixedIngredientFilter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </fixedIngredientFilter>
+     <defaultIngredientFilter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+     </defaultIngredientFilter>
+	 <products>
+ 		<CursedWand>1</CursedWand>
+ 	</products>
+</RecipeDef>
+
+</Defs>

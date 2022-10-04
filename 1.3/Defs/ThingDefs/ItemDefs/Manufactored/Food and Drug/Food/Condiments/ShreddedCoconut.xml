@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>ShreddedCoconut</defName>
+    <label>shredded coconut</label>
+    <description>cocko nut shreddy.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Condiments/ShreddedCoconut</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>1.15</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.0</MarketValue>
+      <Flammability>1</Flammability>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+</Defs>  
+    

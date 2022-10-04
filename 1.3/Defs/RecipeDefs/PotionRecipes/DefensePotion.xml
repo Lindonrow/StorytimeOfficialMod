@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeDefensePotion</defName>
+    <label>Make Defense Potion</label>
+    <description>Extract defense essence from rannar to make a potion.</description>    
+	<jobString>Craft defense potion.</jobString>
+    <workAmount>1400</workAmount>
+    <skillRequirements>
+      <Alchemy>5</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>RannarLeaves</li>
+					</thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>RannarLeaves</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<DefensePotion>1</DefensePotion>
+	</products>
+  </RecipeDef> 
+  
+</Defs>
+  

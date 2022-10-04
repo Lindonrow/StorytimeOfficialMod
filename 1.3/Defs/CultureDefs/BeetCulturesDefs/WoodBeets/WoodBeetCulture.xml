@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+  
+ 
+  <RulePackDef>
+    <defName>NamerIdeoWoodBeetLeader</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Voice of Pecan Joe</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef> 
+  
+
+  <CultureDef>
+    <defName>STWoodBeet</defName>
+    <label>wood beet</label>
+    <description>'culture'</description>
+    <pawnNameMaker>NamerPersonWoodBeet</pawnNameMaker>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoKriminul</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityKriminul</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerKriminul</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoWoodBeetLeader</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/WoodBeets/WoodBeetSettlementLogo</iconPath>
+    <styleItemTags>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+
+
+</Defs>

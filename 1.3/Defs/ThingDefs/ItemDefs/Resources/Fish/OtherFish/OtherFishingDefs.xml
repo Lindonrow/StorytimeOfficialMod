@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- All vanilla biomes for copy pasting
+
+			<li>BorealForest</li>
+			<li>Tundra</li>
+			<li>ColdBog</li>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+			<li>AridShrubland</li>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+-->
+
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_GobulFish</defName>
+		<thingDef>ST_Gobul</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>		
+		</allowedBiomes>
+		<baseFishingYield>1</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_NibelsnarfFish</defName>
+		<thingDef>ST_Nibelsnarf</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>AridShrubland</li>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>		
+		</allowedBiomes>
+		<baseFishingYield>1</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
+		<defName>ST_ClamFish</defName>
+		<thingDef>ST_Clam</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Cold</li>
+			<li>Warm</li>
+			<li>Hot</li>
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+</Defs>

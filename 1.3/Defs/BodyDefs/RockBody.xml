@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>RockBody</defName>
+    <label>rock</label>
+    <listOrder>1</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartDef>
+    <defName>RockShell</defName>
+    <label>outer shell</label>
+    <hitPoints>25</hitPoints>
+    <frostbiteVulnerability>0.1</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.25</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+	<canScarify>false</canScarify>							   
+    <tags>
+      <li>ManipulationLimbCore</li>
+      <li>ConsciousnessSource</li>
+      <li>MovingLimbCore</li>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyDef>
+    <defName>Rock</defName>
+    <label>body</label>
+    <corePart>
+      <def>RockShell</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+          <li>RockBody</li>
+      </groups>
+    </corePart>
+  </BodyDef>
+  
+</Defs>

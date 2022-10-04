@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GameConditionDef>
+    <defName>GibbonousMoon</defName>
+    <conditionClass>StoryTime.GameCondition_GibbonousMoon</conditionClass>
+    <label>gibbonous moon</label>
+    <description>During the gibbonous moon, strange and otherworldy gibbons appear to observe humanity for their own enigmatic purposes.</description>
+	<endMessage>The gibbonous moon is coming to an end.</endMessage>
+    <letterText>The heavens have aligned to form a gibbonous moon. At times like these, it's said that moon gibbons can be seen frolicking under the light of the moon.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+	<exclusiveConditions>
+      <li>Eclipse</li>
+    </exclusiveConditions>
+  </GameConditionDef>
+
+</Defs>

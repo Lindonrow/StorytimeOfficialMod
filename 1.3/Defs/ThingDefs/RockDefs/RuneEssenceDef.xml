@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <ThingDef ParentName="UglyRockBase" Name="EssenceBase">
+    <defName>runeEssence</defName>
+    <label>rune essence</label>
+    <description>A soft stone brimming with magical potential.</description>
+    <graphicData>
+      <color>(110, 115, 115)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+    </statBases>
+    <building>
+      <mineableThing>ChunkEssence</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>SmoothedEssence</smoothedThing>
+    </building>
+  </ThingDef>
+  
+  <ThingDef ParentName="EssenceBase">
+    <defName>SmoothedEssence</defName>
+    <label>smoothed rune essence</label>
+    <description>A soft stone brimming with magical potential.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MarketValue>25</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>ChunkEssence</defName>
+    <label>rune essence chunk</label>
+    <graphicData>
+      <color>(110, 115, 115)</color>
+    </graphicData>
+    <statBases>
+      <Mass>15</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <BlankRune>20</BlankRune>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlankRune</defName>
+    <label>blank rune</label>
+    <description>A small rune, as yet lacking any particular elemental aspect.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Runes/BlankRune</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(110, 115, 115)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>rune</stuffAdjective>
+      <statFactors>
+        <Beauty>1.15</Beauty>
+        <MaxHitPoints>1.1</MaxHitPoints>
+        <WorkToBuild>5.0</WorkToBuild>
+        <WorkToMake>1.0</WorkToMake>
+      </statFactors>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>Make_BlankRune</defName>
+    <label>make blank runes</label>
+    <description>Cuts rune essence into blank runes.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkEssence</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ChunkEssence</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BlankRune>20</BlankRune>
+    </products>
+  </RecipeDef>  
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileRuneEssence</defName>
+    <label>rune tile</label>
+    <color>(110, 115, 115)</color>
+    <costList>
+      <BlankRune>4</BlankRune>
+    </costList>
+  </TerrainDef>      
+</Defs>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeBronzeHatchet</defName>
+    <label>Make Bronze Hatchet</label>
+    <description>Forge a bronze hatchet.</description>    
+	<jobString>Forge a hatchet.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>Smithing</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>ST_Bronze</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>ST_Bronze</li>
+						<li>WoodLog</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<BronzeHatchet>1</BronzeHatchet>
+	</products>
+  </RecipeDef>
+  
+ <RecipeDef>
+    <defName>MakeSteelHatchet</defName>
+    <label>Make Steel Hatchet</label>
+    <description>Forge a steel hatchet.</description>    
+	<jobString>Forge a hatchet.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>Smithing</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>Steel</li>
+						<li>WoodLog</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<SteelHatchet>1</SteelHatchet>
+	</products>
+  </RecipeDef>
+  
+ <RecipeDef>
+    <defName>MakeBlackHatchet</defName>
+    <label>Make Black Hatchet</label>
+    <description>Forge a black hatchet.</description>    
+	<jobString>Forge a hatchet.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>Smithing</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>ST_BlackSteel</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>ST_BlackSteel</li>
+						<li>WoodLog</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<BlackHatchet>1</BlackHatchet>
+	</products>
+  </RecipeDef>
+  
+ <RecipeDef>
+    <defName>MakeMithrilHatchet</defName>
+    <label>Make Mithril Hatchet</label>
+    <description>Forge a mithril hatchet.</description>    
+	<jobString>Forge a hatchet.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>Smithing</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>ST_Mithril</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>ST_Mithril</li>
+						<li>WoodLog</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<MithrilHatchet>1</MithrilHatchet>
+	</products>
+  </RecipeDef>
+  
+ <RecipeDef>
+    <defName>MakeAdamantHatchet</defName>
+    <label>Make Adamant Hatchet</label>
+    <description>Forge a adamant hatchet.</description>    
+	<jobString>Forge a hatchet.</jobString>
+    <workAmount>3500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>Smithing</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>ST_Adamantium</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>ST_Adamantium</li>
+						<li>WoodLog</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<AdamantiumHatchet>1</AdamantiumHatchet>
+	</products>
+  </RecipeDef>
+
+ <RecipeDef>
+    <defName>MakeRuneHatchet</defName>
+    <label>Make Rune Hatchet</label>
+    <description>Forge a rune hatchet.</description>    
+	<jobString>Forge a hatchet.</jobString>
+    <workAmount>4000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>Smithing</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>ST_Runite</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>ST_Runite</li>
+						<li>WoodLog</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<RuneHatchet>1</RuneHatchet>
+	</products>
+  </RecipeDef>
+  
+ <RecipeDef>
+    <defName>MakeDragonHatchet</defName>
+    <label>Make Dragon Hatchet</label>
+    <description>Forge a dragon hatchet.</description>    
+	<jobString>Forge a hatchet.</jobString>
+    <workAmount>5000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>Smithing</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>ST_Dragonite</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>ST_Dragonite</li>
+						<li>WoodLog</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<DragonHatchet>1</DragonHatchet>
+	</products>
+  </RecipeDef>
+
+ <RecipeDef>
+    <defName>MakeHauntedHatchet</defName>
+    <label>Make Haunted Hatchet</label>
+    <description>Forge a haunted hatchet.</description>    
+	<jobString>Forge a hatchet.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>magicPirateCrafting</researchPrerequisite>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>CursedCoin</li>
+					</thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+	  <li>
+        <filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>CursedCoin</li>
+						<li>WoodLog</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<HauntedHatchet>1</HauntedHatchet>
+	</products>
+  </RecipeDef>
+
+</Defs>

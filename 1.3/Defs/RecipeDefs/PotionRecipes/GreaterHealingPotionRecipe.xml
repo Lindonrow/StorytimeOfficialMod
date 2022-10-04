@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakeGreaterHealingPotion</defName>
+    <label>Make Greater Healing Potion</label>
+    <description>Extract healing essence from healroot and harralander leaves to make a potion.</description>    
+	<jobString>Craft greater healing potion.</jobString>
+    <workAmount>1600</workAmount>
+    <skillRequirements>
+      <Alchemy>10</Alchemy>
+    </skillRequirements>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+	<researchPrerequisite>STAlchemy</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>HarralanderLeaves</li>
+					</thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+						<li>HarralanderLeaves</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<GreaterHealingPotion>1</GreaterHealingPotion>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>
+  

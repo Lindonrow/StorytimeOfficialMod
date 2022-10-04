@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>    
+	
+	
+		<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>ST_HatchetThrow</defName>
+		<customPower>
+			<forFighter>true</forFighter>
+			<abilityDefs>
+				<li>ST_HatchetThrow</li>
+				<li>ST_HatchetThrowI</li>				
+				<li>ST_HatchetThrowII</li>				
+				<li>ST_HatchetThrowIII</li>				
+				<li>ST_HatchetThrowIV</li>				
+				<li>ST_HatchetThrowV</li>				
+			</abilityDefs>
+			<costToLevel>1</costToLevel>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax>4</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 <ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+        <thingClass>AbilityUser.Projectile_AbilityBase</thingClass>
+        <defName>ProjectileHatchet</defName>
+        <label>Thrown Hatchet</label>
+        <graphicData>
+            <texPath>Things/Items/Hatchets/BronzeHatchet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <flyOverhead>false</flyOverhead>
+            <damageDef>Cut</damageDef>
+            <damageAmountBase>1</damageAmountBase>
+            <speed>40</speed>
+        </projectile>
+    </ThingDef>
+
+    <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_HatchetThrow</defName>
+        <label>Throw Hatchet</label>
+        <uiIconPath>Skills/Woodcutter/ThrowAxe</uiIconPath>
+        <description>Throw a hatchet at an enemy.</description>
+		<staminaCost>0.25</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>
+		<efficiencyReductionPercent>.08</efficiencyReductionPercent>
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>AbilityUser.Verb_UseAbility_TrueBurst</verbClass>
+				<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+				<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+				<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+				<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>ProjectileHatchet</defaultProjectile>
+            <abilityDef>ST_HatchetThrow</abilityDef>
+            <warmupTime>2</warmupTime>
+            <SecondsToRecharge>60.0</SecondsToRecharge>
+			<isViolent>true</isViolent>
+            <range>16</range>
+            <forcedMissRadius>3</forcedMissRadius>
+            <burstShotCount>1</burstShotCount>
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <isPrimary>false</isPrimary>
+			<soundCast>MeleeHit_Metal_Sharp</soundCast>
+            <muzzleFlashScale>4</muzzleFlashScale>
+            <AlwaysHits>false</AlwaysHits>
+			<extraDamages>
+			  <li>
+				<damage>8</damage>
+				<damageDef>Cut</damageDef>
+				<chance>1</chance>
+			  </li>
+			</extraDamages>	
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>
+	
+	
+	
+    <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_HatchetThrowI</defName>
+        <label>Throw Hatchet (II)</label>
+        <uiIconPath>Skills/Woodcutter/ThrowAxe</uiIconPath>
+        <description>Throw two hatchets at an enemy.
+		
+Levelling increases range, decreases cooldown, and adds an extra hatchet at each level.</description>
+		<staminaCost>0.25</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>
+
+		<efficiencyReductionPercent>.08</efficiencyReductionPercent>
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>AbilityUser.Verb_UseAbility_TrueBurst</verbClass>
+				<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+				<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+				<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+				<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>ProjectileHatchet</defaultProjectile>
+            <abilityDef>ST_HatchetThrowI</abilityDef>
+            <warmupTime>2</warmupTime>
+            <SecondsToRecharge>55.0</SecondsToRecharge>
+			<isViolent>true</isViolent>
+            <range>18</range>
+            <forcedMissRadius>3</forcedMissRadius>
+            <burstShotCount>2</burstShotCount>
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <isPrimary>false</isPrimary>
+			<soundCast>MeleeHit_Metal_Sharp</soundCast>
+            <muzzleFlashScale>4</muzzleFlashScale>
+            <AlwaysHits>false</AlwaysHits>
+			<extraDamages>
+			  <li>
+				<damage>9</damage>
+				<damageDef>Cut</damageDef>
+				<chance>1</chance>
+			  </li>
+			</extraDamages>	
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>	
+	
+	
+	
+    <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_HatchetThrowII</defName>
+        <label>Throw Hatchet (III)</label>
+        <uiIconPath>Skills/Woodcutter/ThrowAxe</uiIconPath>
+        <description>Throw three hatchets at an enemy.
+		
+Levelling increases range, decreases cooldown, and adds an extra hatchet at each level.</description>
+		<staminaCost>0.25</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>
+		
+		<efficiencyReductionPercent>.08</efficiencyReductionPercent>
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>AbilityUser.Verb_UseAbility_TrueBurst</verbClass>
+				<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+				<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+				<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+				<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>ProjectileHatchet</defaultProjectile>
+            <abilityDef>ST_HatchetThrowII</abilityDef>
+            <warmupTime>2</warmupTime>
+            <SecondsToRecharge>50.0</SecondsToRecharge>
+			<isViolent>true</isViolent>
+            <range>20</range>
+            <forcedMissRadius>3</forcedMissRadius>
+            <burstShotCount>3</burstShotCount>
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <isPrimary>false</isPrimary>
+			<soundCast>MeleeHit_Metal_Sharp</soundCast>
+            <muzzleFlashScale>4</muzzleFlashScale>
+            <AlwaysHits>false</AlwaysHits>
+			<extraDamages>
+			  <li>
+				<damage>10</damage>
+				<damageDef>Cut</damageDef>
+				<chance>1</chance>
+			  </li>
+			</extraDamages>	
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>		
+	
+	
+	
+    <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_HatchetThrowIII</defName>
+        <label>Throw Hatchet (IV)</label>
+        <uiIconPath>Skills/Woodcutter/ThrowAxe</uiIconPath>
+        <description>Throw four hatchets at an enemy.
+		
+Levelling increases range, decreases cooldown, and adds an extra hatchet at each level.</description>
+		<staminaCost>0.25</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>
+
+		<efficiencyReductionPercent>.08</efficiencyReductionPercent>
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>AbilityUser.Verb_UseAbility_TrueBurst</verbClass>
+				<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+				<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+				<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+				<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>ProjectileHatchet</defaultProjectile>
+            <abilityDef>ST_HatchetThrowIII</abilityDef>
+            <warmupTime>2</warmupTime>
+            <SecondsToRecharge>45.0</SecondsToRecharge>
+			<isViolent>true</isViolent>
+            <range>22</range>
+            <forcedMissRadius>3</forcedMissRadius>
+            <burstShotCount>4</burstShotCount>
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <isPrimary>false</isPrimary>
+			<soundCast>MeleeHit_Metal_Sharp</soundCast>
+            <muzzleFlashScale>4</muzzleFlashScale>
+            <AlwaysHits>false</AlwaysHits>
+			<extraDamages>
+			  <li>
+				<damage>11</damage>
+				<damageDef>Cut</damageDef>
+				<chance>1</chance>
+			  </li>
+			</extraDamages>	
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>		
+	
+	
+	
+    <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_HatchetThrowIV</defName>
+        <label>Throw Hatchet (V)</label>
+        <uiIconPath>Skills/Woodcutter/ThrowAxe</uiIconPath>
+        <description>Throw five hatchets at an enemy.
+		
+Levelling increases range, decreases cooldown, and adds an extra hatchet at each level.</description>
+		<staminaCost>0.25</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>
+
+		<efficiencyReductionPercent>.08</efficiencyReductionPercent>
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>AbilityUser.Verb_UseAbility_TrueBurst</verbClass>
+				<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+				<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+				<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+				<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>ProjectileHatchet</defaultProjectile>
+            <abilityDef>ST_HatchetThrowIV</abilityDef>
+            <warmupTime>2</warmupTime>
+            <SecondsToRecharge>40.0</SecondsToRecharge>
+			<isViolent>true</isViolent>
+            <range>24</range>
+            <forcedMissRadius>3</forcedMissRadius>
+            <burstShotCount>1</burstShotCount>
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <isPrimary>false</isPrimary>
+			<soundCast>MeleeHit_Metal_Sharp</soundCast>
+            <muzzleFlashScale>4</muzzleFlashScale>
+            <AlwaysHits>false</AlwaysHits>
+			<extraDamages>
+			  <li>
+				<damage>12</damage>
+				<damageDef>Cut</damageDef>
+				<chance>1</chance>
+			  </li>
+			</extraDamages>	
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>		
+	
+	
+	
+    <TorannMagic.TMAbilityDef ParentName="BaseMightAbility">
+        <defName>ST_HatchetThrowV</defName>
+        <label>Throw Hatchet (VI)</label>
+        <uiIconPath>Skills/Woodcutter/ThrowAxe</uiIconPath>
+        <description>Throw six hatchets at an enemy.
+		
+Levelling increases range, decreases cooldown, and adds an extra hatchet at each level.</description>
+		<staminaCost>0.25</staminaCost>
+		<requiredWeaponsOrCategories>
+		  <li>BronzeHatchet</li>
+		  <li>BlackHatchet</li>
+		  <li>SteelHatchet</li>
+		  <li>MithrilHatchet</li>
+		  <li>AdamantiumHatchet</li>
+		  <li>RuneHatchet</li>
+		  <li>DragonHatchet</li>
+		</requiredWeaponsOrCategories>
+		<efficiencyReductionPercent>.08</efficiencyReductionPercent>
+		<canCopy>true</canCopy>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+            <verbClass>AbilityUser.Verb_UseAbility_TrueBurst</verbClass>
+				<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+				<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+				<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+				<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>ProjectileHatchet</defaultProjectile>
+            <abilityDef>ST_HatchetThrowV</abilityDef>
+            <warmupTime>2</warmupTime>
+            <SecondsToRecharge>30.0</SecondsToRecharge>
+			<isViolent>true</isViolent>
+            <range>26</range>
+            <forcedMissRadius>3</forcedMissRadius>
+            <burstShotCount>5</burstShotCount>
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <isPrimary>false</isPrimary>
+			<soundCast>MeleeHit_Metal_Sharp</soundCast>
+            <muzzleFlashScale>4</muzzleFlashScale>
+            <AlwaysHits>false</AlwaysHits>
+			<extraDamages>
+			  <li>
+				<damage>13</damage>
+				<damageDef>Cut</damageDef>
+				<chance>1</chance>
+			  </li>
+			</extraDamages>	
+        </MainVerb>
+    </TorannMagic.TMAbilityDef>		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

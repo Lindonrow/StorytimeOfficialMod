@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef>
+    <defName>WoodBeetTribe</defName>
+    <label>wood beet tribe</label>
+    <description>The many tribes of the wood beets, united under the rule of Pecan Joe.</description>
+    <pawnsPlural>wood beets</pawnsPlural>
+    <settlementGenerationWeight>0.4</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Voice of Pecan Joe</leaderTitle>
+    <factionIconPath>World/WoodBeets/WoodBeetSettlementLogo</factionIconPath>
+    <naturalEnemy>true</naturalEnemy>
+    <colorSpectrum>
+      <li>(0.0, 0.6, 0.1)</li>
+    </colorSpectrum>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </disallowedMemes>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </requiredMemes>
+    <allowedCultures><li>STWoodBeet</li></allowedCultures>
+    <structureMemeWeights>
+      <STWoodBeetOrigin MayRequire="Ludeon.RimWorld.Ideology">0.5</STWoodBeetOrigin>
+    </structureMemeWeights>
+    <fixedName>Wood Beet Tribes</fixedName>
+    <settlementNameMaker>WoodBeetSettlementName</settlementNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+      <li>WoodBeetBackstory</li>
+    </backstoryCategories>
+    <geneticVariance>0.8</geneticVariance>
+    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,135)</li>
+        <li>(70, 150)</li>
+        <li>(700, 200)</li>
+        <li>(1300, 250)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <WoodBeetWarrior>25000</WoodBeetWarrior>
+		  <WoodBeetArcher>5000</WoodBeetArcher>
+		  <Warg>0.00000001</Warg>
+		  <WoodBeetLeader>0.001</WoodBeetLeader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+			<WoodBeetWarrior>25000</WoodBeetWarrior>
+			<WoodBeetArcher>5000</WoodBeetArcher>
+			<Warg>0.00000001</Warg>
+			<WoodBeetLeader>1</WoodBeetLeader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <WoodBeetTrader>1</WoodBeetTrader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+			<WoodBeetWarrior>25000</WoodBeetWarrior>
+			<WoodBeetArcher>5000</WoodBeetArcher>
+			<Warg>0.00000001</Warg>
+			<WoodBeetLeader>1</WoodBeetLeader>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+			<WoodBeetWarrior>25000</WoodBeetWarrior>
+			<WoodBeetArcher>5000</WoodBeetArcher>
+			<Warg>0.00001</Warg>
+			<WoodBeetLeader>1</WoodBeetLeader>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<modExtensions>
+		<li Class="VFECore.FactionDefExtension">			
+			<allowedBiomes>
+				<li>TropicalRainforest</li>
+			</allowedBiomes>			
+		</li>
+      <li Class="FactionSounds.FactionSound">
+        <soundDef>War_Pipes</soundDef>
+      </li>
+	</modExtensions>
+  </FactionDef>
+
+
+
+
+</Defs>

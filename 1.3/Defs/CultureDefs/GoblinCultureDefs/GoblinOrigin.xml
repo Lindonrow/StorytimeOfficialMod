@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<MemeDef>
+		<defName>STGoblinOrigin</defName>
+		<label>Goblin origin</label>
+		<description>goblin</description>
+		<iconPath>World/Goblins/GoblinLogo</iconPath>
+		<deityCount>1</deityCount>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+		</requiredRituals>
+		<consumableBuildings>
+		</consumableBuildings>
+		<requireAnyRitualSeat>
+		</requireAnyRitualSeat>
+		   <descriptionMaker>
+			 <patterns>
+			   <li><def>TheistMyth</def></li>
+			   <li><def>TheistFounder</def></li>
+			 </patterns>
+			 <constants>
+			   <li><key>structure_theist</key><value>true</value></li>
+			 </constants>
+		   </descriptionMaker>
+	   <symbolPacks>
+		  <li><ideoName>Goblin Belief</ideoName><adjective>Goblin</adjective><member>Goblin</member><prefix>true</prefix></li>
+		  <li><ideoName>Goblin Way</ideoName><adjective>Goblin</adjective><member>Goblin</member><prefix>true</prefix></li>
+		  <li><ideoName>Goblinism</ideoName><adjective>Goblin</adjective><member>Goblin</member><prefix>true</prefix></li>
+		  <li><ideoName>Goblin Way</ideoName><adjective>Goblin</adjective><member>Goblin</member><prefix>true</prefix></li>
+		</symbolPacks>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeCreed->sect</li>
+			<li>memeCreed->cult</li>
+			<li>memeCreed->faith</li>
+			<li>memeLeaderNoun->chief</li>
+			<li>memeLeaderAdjective->chief</li>
+			<li>memeMoralist->priest</li>
+			<li>memeMoralist->shaman</li>
+		  </rulesStrings>
+		</generalRules>
+		<fixedDeityNameTypes>
+		  <li><name>Bandos</name><type>Big High War God</type></li>
+		  <li><name>The Sideways Moving Goblin</name><type>Sideways Moving</type></li>
+		  <li><name>The Running Goblins</name><type>Runners</type></li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+		  <li>
+			<category>Totemic</category>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<category>Animalist</category>
+			<priority>2</priority>
+		  </li>
+		</thingStyleCategories>
+	</MemeDef>
+
+</Defs>

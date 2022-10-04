@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="BaseHatchet" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <Mass>1.5</Mass>
+    </statBases>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponTags>
+      <li>WoodcuttingHatchet</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHatchet">
+    <defName>BronzeHatchet</defName>
+    <label>bronze hatchet</label>
+    <description>A bronze woodcutter's axe.</description>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <graphicData>
+      <texPath>Things/Items/Hatchets/BronzeHatchet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<generateCommonality>0.5</generateCommonality>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.025</PlantWorkSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="BaseHatchet">
+    <defName>SteelHatchet</defName>
+    <label>steel hatchet</label>
+    <description>A steel woodcutter's axe.</description>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <graphicData>
+      <texPath>Things/Items/Hatchets/SteelHatchet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<generateCommonality>0.5</generateCommonality>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.05</PlantWorkSpeed>
+    </equippedStatOffsets>
+  </ThingDef>  
+  
+  
+  
+  <ThingDef ParentName="BaseHatchet">
+    <defName>BlackHatchet</defName>
+    <label>black hatchet</label>
+    <description>A black woodcutter's axe.</description>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <graphicData>
+      <texPath>Things/Items/Hatchets/BlackHatchet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<generateCommonality>0.2</generateCommonality>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.10</PlantWorkSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BaseHatchet">
+    <defName>MithrilHatchet</defName>
+    <label>mithril hatchet</label>
+    <description>A mithril woodcutter's axe.</description>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <graphicData>
+      <texPath>Things/Items/Hatchets/MithrilHatchet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<generateCommonality>0.1</generateCommonality>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.15</PlantWorkSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BaseHatchet">
+    <defName>AdamantiumHatchet</defName>
+    <label>adamant hatchet</label>
+    <description>A powerful hatchet.</description>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <graphicData>
+      <texPath>Things/Items/Hatchets/AdamantHatchet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<generateCommonality>0.1</generateCommonality>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.20</PlantWorkSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BaseHatchet">
+    <defName>RuneHatchet</defName>
+    <label>rune hatchet</label>
+    <description>A powerful hatchet.</description>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <graphicData>
+      <texPath>Things/Items/Hatchets/RuneHatchet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<generateCommonality>0.08</generateCommonality>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.25</PlantWorkSpeed>
+    </equippedStatOffsets>
+  </ThingDef>  
+  
+  
+  
+  <ThingDef ParentName="BaseHatchet">
+    <defName>DragonHatchet</defName>
+    <label>dragon hatchet</label>
+    <description>A very powerful hatchet.</description>
+    <weaponTags>
+      <li>MedievalMeleeElite</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <graphicData>
+      <texPath>Things/Items/Hatchets/DragonHatchet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<generateCommonality>0.05</generateCommonality>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.35</PlantWorkSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHatchet">
+    <defName>HauntedHatchet</defName>
+    <label>haunted hatchet</label>
+    <description>A spooky hatchet.</description>
+    <weaponTags>
+      <li>WoodcuttingHatchet</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <graphicData>
+      <texPath>Things/Items/Hatchets/HauntedHatchet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<generateCommonality>0</generateCommonality>
+    <comps>
+	  <li Class = "TorannMagic.Enchantment.CompProperties_EnchantedItem">
+		  <hasEnchantment>true</hasEnchantment>
+		  <mpRegenRate>0.20</mpRegenRate>
+		  <mpRegenRateTier>Standard</mpRegenRateTier>
+		  <arcaneDmg>0.10</arcaneDmg>
+		  <arcaneDmgTier>Crafted</arcaneDmgTier>
+		  <enchantedAction>
+			<type>ApplyHediff</type>
+			<actionLabel>Spirit Energy</actionLabel>
+			<onSelf>true</onSelf>
+			<hediffDef>HedSpiritEnergy</hediffDef>
+			<hediffSeverity>1</hediffSeverity>
+			<hediffChance>.2</hediffChance>
+		  </enchantedAction>
+	  </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.15</PlantWorkSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+</Defs>

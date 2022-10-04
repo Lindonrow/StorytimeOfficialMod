@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="MealBaseIngredientless">
+		<defName>BertieBottBean</defName>
+		<label>Bertie Bott's Every Flavor Bean</label>
+		<description>One of the most popular sweets in the world, they're known for literally coming in every flavor imaginable. You might get something tasty like chocolate... or not. Eat at your own risk.</description>
+		<statBases>
+		  <Mass>0.1</Mass>
+		  <Nutrition>0.1</Nutrition>
+		  <MarketValue>10</MarketValue>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Items/Resources/BertieBottBeans</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>  
+		<thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+		<minRewardCount>5</minRewardCount>  
+		<tradeTags>
+		  <li>ExoticMisc</li>
+		</tradeTags>  
+		<ingestible>
+		  <preferability>NeverForNutrition</preferability>
+		  <ingestEffect>EatVegetarian</ingestEffect>
+		  <ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>Hediff_BertieBottBeanManBuildup</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>    
+  </ThingDef>
+</Defs>

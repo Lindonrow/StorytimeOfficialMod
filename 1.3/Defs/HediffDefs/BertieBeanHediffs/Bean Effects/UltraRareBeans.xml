@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+ 
+ <!--Heart Attack-->  
+  
+	<HediffDef>
+		<defName>Bean_HeartAttack</defName>
+		<label>Every Flavor Bean: Heart Attack Flavor</label>
+		<description>Ate a heart attack flavor jelly bean! Hngnh.\n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; Causes heart attacks.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(230,0,0)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>7500</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Ultra-Rare</label>
+				<minSeverity>0</minSeverity>
+				<hediffGivers>
+				  <li Class="HediffGiver_Random">
+					<hediff>HeartAttack</hediff>
+					<mtbDays>0.05</mtbDays>
+					<partsToAffect>
+					  <li>Heart</li>
+					</partsToAffect>
+				  </li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>   
+	
+<!--Bean-->  
+
+	<HediffDef>
+		<defName>Bean_Bean</defName>
+		<label>Every Flavor Bean: Bean Flavor</label>
+		<description>Ate a bean flavor jelly bean! Huh. \n\n&lt;color=#F27893&gt;Bean effect:&lt;/color&gt; It's a bean.</description>		
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(200,150,150)</defaultLabelColor>      	
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Ultra-Rare</label>
+				<minSeverity>0</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs> 

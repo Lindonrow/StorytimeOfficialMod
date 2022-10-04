@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraitDef>  
+		<defName>ST_Woodcutter</defName>
+		<ignoreConfigErrors>true</ignoreConfigErrors>
+		<commonality>0</commonality>
+		<degreeDatas>
+		  <li>
+			<label>Woodcutter</label>
+			<description>This pawn is a Woodcutter, a master lumberjack who has become extremely adept at using hatchets as weapons.</description>
+			<degree>4</degree>
+			<statOffsets>
+				<MoveSpeed>1.0</MoveSpeed>
+				<MeleeHitChance>7.5</MeleeHitChance>
+				<PainShockThreshold>0.05</PainShockThreshold>
+				<PlantWorkSpeed>0.5</PlantWorkSpeed>
+                <MentalBreakThreshold>0.05</MentalBreakThreshold>
+				<WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+			</statOffsets>
+		  </li>
+		</degreeDatas>
+	</TraitDef>
+</Defs>

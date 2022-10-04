@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<MemeDef>
+		<defName>STPirateOrigin</defName>
+		<label>Piratical origin</label>
+		<description>They used to pirates. They still are, but they were in the past as well</description>
+		<iconPath>World/Pirates/MeanPirates</iconPath>
+		<deityCount>1</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>cabin</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+		</requiredRituals>
+		<consumableBuildings>
+		</consumableBuildings>
+		<requireAnyRitualSeat>
+		</requireAnyRitualSeat>
+		   <descriptionMaker>
+			 <patterns>
+			   <li><def>TheistMyth</def></li>
+			   <li><def>TheistFounder</def></li>
+			 </patterns>
+			 <constants>
+			   <li><key>structure_theist</key><value>true</value></li>
+			 </constants>
+		   </descriptionMaker>
+	   <symbolPacks>
+		  <li><ideoName>Piracy</ideoName><adjective>Pirate</adjective><member>Pirate</member><prefix>true</prefix></li>
+		  <li><ideoName>Pirate Lifestyle</ideoName><adjective>Pirate</adjective><member>Pirate</member><prefix>true</prefix></li>
+		</symbolPacks>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeCreed->crew</li>
+			<li>memeCreed->fleet</li>
+			<li>memeLeaderNoun->Captain</li>
+			<li>memeLeaderAdjective->Captain</li>
+			<li>memeMoralist->First Mate</li>
+			<li>memeMoralist->Bosun</li>
+		  </rulesStrings>
+		</generalRules>
+		<fixedDeityNameTypes>
+		  <li><name>Jack Sparrow</name><type>Captain</type></li>
+		  <li><name>Li Pointybeard</name><type>Grand Chancellor</type></li>
+		  <li><name>Davy Jones</name><type>Squid Man</type></li>
+		  <li><name>Tyrese</name><type>Clown Hater</type></li>
+		  <li><name>Bardbeard</name><type>Norn Pirate</type></li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+		  <li>
+			<category>Morbid</category>
+			<priority>1</priority>
+		  </li>
+		  <li>
+			<category>Rustic</category>
+			<priority>2</priority>
+		  </li>
+		</thingStyleCategories>
+	</MemeDef>
+
+</Defs>

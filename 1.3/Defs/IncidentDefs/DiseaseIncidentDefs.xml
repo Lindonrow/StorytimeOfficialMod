@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  
+  <IncidentDef ParentName="DiseaseIncident">
+    <defName>Disease_Coronavirus</defName>
+    <label>coronavirus</label>
+    <diseaseIncident>Coronavirus</diseaseIncident>
+    <letterLabel>Disease: Coronavirus</letterLabel>
+  </IncidentDef>
+  
+</Defs>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ChemicalDef>
+    <defName>DriedFrogPills</defName>
+    <label>dried frog pills</label>
+    <addictionHediff>DriedFrogPillsAddiction</addictionHediff>
+    <toleranceHediff>DriedFrogPillsTolerance</toleranceHediff>
+    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+  </ChemicalDef>
+  
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>DriedFrogPills</defName>
+    <label>dried frog pills</label>
+    <description>Dried frog pills are useful for keeping you sane, but you shouldn't become TOO reliant on them...</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/DriedFrogPills</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>300</WorkToMake>
+      <MarketValue>8</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>200</baseIngestTicks>
+      <drugCategory>Hard</drugCategory>
+      <ingestSound>Ingest_Snort</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.21,0,0.05)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Eat {0}</ingestCommandString>
+      <ingestReportString>Eating {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DriedFrogPillsHigh</hediffDef>
+          <severity>0.5</severity>
+          <toleranceChemical>DriedFrogPills</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DriedFrogPillsTolerance</hediffDef>
+          <severity>0.030</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Alchemy</workSkill>
+    </recipeMaker>
+    <costList>
+      <Leather_Frog>8</Leather_Frog>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>DriedFrogPills</chemical>
+        <addictiveness>0.1</addictiveness>
+        <minToleranceToAddict>0.2</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.09</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>20</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.01</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>DriedFrogPillsHigh</defName>
+    <label>high on dried frog pills</label>
+    <labelNoun>a dried frog pill high</labelNoun>
+    <description>Active frog pills in the bloodstream. Stabilizes one's mental state.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+            <capMods>
+              <li>
+                <capacity>Consciousness</capacity>
+                <offset>1.25</offset>
+              </li>
+            </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>DriedFrogPillsHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>DriedFrogPillsHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>dried frog clarity</label>
+        <description>Everything makes sense under the influence of these pills.</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>  
+ 
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>DriedFrogPillsTolerance</defName>
+    <label>dried frog pill tolerance</label>
+    <description>The pills are starting to have less of an effect... I need more.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>DriedFrogPills</chemical>
+      </li>
+    </comps>
+  </HediffDef> 
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_DriedFrogPills</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>dried frog pills</label>
+    <description>Because of a dried frog pill addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>50</listPriority>
+  </NeedDef>
+  
+    <HediffDef ParentName="AddictionBase">
+    <defName>DriedFrogPillsAddiction</defName>
+    <label>dried frog pill addiction</label>
+    <description>A chemical addiction to dried frog pills. Long-term presence of dried frog pills has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of dried frog pills, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>Chemical_DriedFrogPills</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.029</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.30</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>10</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>DriedFrogPillWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>DriedFrogPillsAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>dried frog pill withdrawal</label>
+        <description>Fig.</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
+ 
+ 
+ 
+ 
+ 
+ 
+</Defs>

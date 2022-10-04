@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <RecipeDef>
+    <defName>MakePoison</defName>
+    <label>extract poison</label>
+    <description>Extract bean poison from a bean.</description>    
+	<jobString>Extracting poison.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+		<li>AlchemyTable</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>Bean</li>
+					</thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>ToadflaxLeaves</li>
+					</thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<Poison>15</Poison>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>
+  

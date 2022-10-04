@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+  
+ 
+  <RulePackDef>
+    <defName>NamerIdeoBeetnikhLeader</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Chieftain</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef> 
+  
+
+  <CultureDef>
+    <defName>STBeetnikh</defName>
+    <label>beetnikh</label>
+    <description>From beetnikh.</description>
+    <pawnNameMaker>NamerPersonBeetnikh</pawnNameMaker>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoKriminul</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityKriminul</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerKriminul</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoBeetnikhLeader</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/Beetnikh/BeetnikhSettlements</iconPath>
+    <styleItemTags>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>10</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+
+
+</Defs>
