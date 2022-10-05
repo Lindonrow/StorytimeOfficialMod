@@ -111,6 +111,7 @@
     <graphicData>
       <texPath>Things/Items/Resources/Burrito</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>1.25</drawSize>
     </graphicData>
     <statBases>
       <DeteriorationRate>0.25</DeteriorationRate>
@@ -136,6 +137,12 @@
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/BurritoLore</ImageToShowInInfoCard>						
+			</li>
+		</modExtensions>
   </ThingDef>
   
 <ThingDef ParentName="MealBase">

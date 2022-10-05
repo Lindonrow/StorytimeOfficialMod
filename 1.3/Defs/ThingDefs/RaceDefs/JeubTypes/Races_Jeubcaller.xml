@@ -126,6 +126,12 @@
     <tradeTags>
       <li>AnimalExotic</li>
     </tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/JeubLore</ImageToShowInInfoCard>						
+			</li>
+		</modExtensions>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
