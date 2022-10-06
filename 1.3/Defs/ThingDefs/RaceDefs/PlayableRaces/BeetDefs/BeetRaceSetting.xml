@@ -281,6 +281,12 @@
 			<hediffname>HedBeet</hediffname>
 		</li>
 	</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/BeetLore</ImageToShowInInfoCard>						
+			</li>
+		</modExtensions>
   </AlienRace.ThingDef_AlienRace>
   <AlienRace.RaceSettings>
     <defName>BeetRaceSettings</defName>

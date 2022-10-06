@@ -292,6 +292,12 @@
 			<hediffname>HedFrogMan</hediffname>
 		</li>
 	</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/FrogmanLore</ImageToShowInInfoCard>						
+			</li>
+		</modExtensions>
   </AlienRace.ThingDef_AlienRace>
   <AlienRace.RaceSettings>
     <defName>FrogPersonRaceSettings</defName>

@@ -281,6 +281,12 @@
 			<gender>Male</gender>
 		</li>
 	</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Achievements/beanManAchievement</ImageToShowInInfoCard>						
+			</li>
+		</modExtensions>
   </AlienRace.ThingDef_AlienRace>
   <AlienRace.RaceSettings>
     <defName>BeanManRaceSettings</defName>

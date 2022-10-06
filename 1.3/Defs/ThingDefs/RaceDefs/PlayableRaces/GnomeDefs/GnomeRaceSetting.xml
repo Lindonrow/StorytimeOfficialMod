@@ -299,6 +299,12 @@
 			<hediffname>HedGnome</hediffname>
 		</li>
 	</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/GnomeLore</ImageToShowInInfoCard>						
+			</li>
+		</modExtensions>
   </AlienRace.ThingDef_AlienRace>
   <AlienRace.RaceSettings>
     <defName>GnomeRaceSettings</defName>
