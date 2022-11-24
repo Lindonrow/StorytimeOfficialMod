@@ -461,7 +461,7 @@
     <ingestible>
       <foodType>Fluid, Processed, Liquor</foodType>
       <joyKind>Chemical</joyKind>
-      <joy>0.3</joy>
+      <joy>0.45</joy>
       <nurseable>true</nurseable>
       <drugCategory>Social</drugCategory>
       <ingestSound>Ingest_Beer</ingestSound>
@@ -477,12 +477,12 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>AlcoholHigh</hediffDef>
-          <severity>0.35</severity>
+          <severity>0.4</severity>
           <toleranceChemical>Alcohol</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>AlcoholTolerance</hediffDef>
-          <severity>0.036</severity>
+          <severity>0.04</severity>
           <divideByBodySize>true</divideByBodySize>
         </li>
       </outcomeDoers>
