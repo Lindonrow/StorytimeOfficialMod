@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>Alien_Jeub</defName>
+    <label>royal jeub</label>
+    <description>This jeub seems smarter and less insane than the rest. Perhaps it is from the royal family?</description>
+    <alienRace>
+	  <raceRestriction>
+            <plantList>
+                <li>Plant_Botox</li>
+            </plantList>
+	  </raceRestriction>
+		<styleSettings>
+			<li>
+				<key>TattooDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+		</styleSettings>
+      <generalSettings>
+        <humanRecipeImport>true</humanRecipeImport>
+        <maleGenderProbability>0.5</maleGenderProbability>
+        <immuneToAge>false</immuneToAge>
+        <canLayDown>true</canLayDown>
+        <forcedRaceTraitEntries>
+          <li>
+            <defName>Psychopath</defName>
+            <chance>33</chance>
+          </li>          
+		  <li>
+            <defName>Cannibal</defName>
+            <chance>50</chance>
+          </li>
+          <li>
+            <defName>Beauty</defName>
+			<degree>-1</degree>
+            <chance>40</chance>
+          </li>   
+          <li>
+            <defName>Beauty</defName>
+			<degree>-2</degree>
+            <chance>35</chance>
+          </li>   
+        </forcedRaceTraitEntries>
+        <maxDamageForSocialfight>3</maxDamageForSocialfight>
+        <alienPartGenerator>
+          <headTypes Inherit="False">
+            <li>Jeub_Average_Normal</li>
+          </headTypes>
+          <bodyTypes Inherit="False">
+            <li>Male</li>
+          </bodyTypes>
+		  <customDrawSize>(0.7, 0.605)</customDrawSize>
+          <customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
+          <customPortraitDrawSize>(0.7, 0.605)</customPortraitDrawSize>
+          <customPortraitHeadDrawSize>(0.8, 0.8)</customPortraitHeadDrawSize>
+          <headOffset>(0.0, -0.077)</headOffset>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>5</weight>
+                    <min>RGBA(169,169,169)</min>
+                    <max>RGBA(165,165,165)</max>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <min>RGBA(192,192,192)</min>
+                    <max>RGBA(187,187,187)</max>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <min>RGBA(128,128,128)</min>
+                    <max>RGBA(125,125,125)</max>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <min>RGBA(105,105,105)</min>
+                    <max>RGBA(103,103,103)</max>
+                  </li>
+                </options>
+              </first>
+            </li>
+            <li>
+              <name>hair</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>5</weight>
+                    <min>RGBA(30,10,10)</min>
+                    <max>RGBA(60,40,40)</max>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>
+        </alienPartGenerator>
+      </generalSettings>
+      <graphicPaths>
+          <body>Things/Pawn/Humanlike/Jeub/Body/</body>
+          <head>Things/Pawn/Humanlike/Jeub/Head/</head>
+      </graphicPaths>
+      <relationSettings>
+        <relationChanceModifierSibling>3</relationChanceModifierSibling>
+        <renamer>
+          <li>
+            <relation>Parent</relation>
+            <label>Progenitor</label>
+            <femaleLabel>Progenitor</femaleLabel>
+          </li>
+          <li>
+            <relation>Child</relation>
+            <label>Child</label>
+            <femaleLabel>Child</femaleLabel>
+          </li>
+          <li>
+            <relation>Spouse</relation>
+            <label>Spouse</label>
+            <femaleLabel>Spouse</femaleLabel>
+          </li>
+          <li>
+            <relation>ExSpouse</relation>
+            <label>ExSpouse</label>
+            <femaleLabel>ExSpouse</femaleLabel>
+          </li>
+          <li>
+            <relation>Sibling</relation>
+            <label>Sibling</label>
+            <femaleLabel>Sibling</femaleLabel>
+          </li>
+          <li>
+            <relation>Fiance</relation>
+            <label>Betrothed</label>
+            <femaleLabel>Betrothed</femaleLabel>
+          </li>
+        </renamer>
+      </relationSettings>
+    </alienRace>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <MoveSpeed>6.25</MoveSpeed>
+      <Flammability>1.1</Flammability>
+      <ComfyTemperatureMin>10</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
+      <LeatherAmount>40</LeatherAmount>
+      <PsychicSensitivity>0.5</PsychicSensitivity>
+      <Mass>40</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>16</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>16</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+	  <nameGenerator>JeubMaleName</nameGenerator>
+	  <nameGeneratorFemale>JeubFemaleName</nameGeneratorFemale>
+      <leatherDef>Leather_Jeub</leatherDef>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>60</lifeExpectancy>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>JeubBody</body>
+      <baseBodySize>0.5</baseBodySize>
+      <baseHealthScale>0.65</baseHealthScale>
+	  <baseHungerRate>0.45</baseHungerRate>
+      <foodType>OmnivoreHuman</foodType>
+      <useMeatFrom>Jeub</useMeatFrom>
+      <gestationPeriodDays>1</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>1</minAge>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>HumanlikePreTeenager</def>
+          <minAge>6</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>10</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>14</minAge>
+        </li>
+      </lifeStageAges>
+      <lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+        <Firefighter>2</Firefighter>
+        <Patient>0</Patient>
+        <Doctor>15</Doctor>
+        <PatientBedRest>0</PatientBedRest>
+        <Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+        <BasicWorker>2</BasicWorker>
+        <Warden>2</Warden>
+        <Handling>2</Handling>
+        <Cooking>2</Cooking>
+        <Hunting>2</Hunting>
+        <Construction>2</Construction>
+        <Growing>2</Growing>
+        <Mining>2</Mining>
+        <PlantCutting>2</PlantCutting>
+        <Smithing>2</Smithing>
+        <Tailoring>2</Tailoring>
+        <Art>15</Art>
+        <Crafting>2</Crafting>
+        <Hauling>5</Hauling>
+        <Cleaning>2</Cleaning>
+        <Research>15</Research>
+      </lifeStageWorkSettings>  
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(9.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+          <li MayRequire="Ludeon.RimWorld.Biotech">(9.51,0)</li>  
+          <li MayRequire="Ludeon.RimWorld.Biotech">(10,0)</li>      
+          <li MayRequire="Ludeon.RimWorld.Biotech">(10.001,122)</li><!-- End exclude -->
+          <li MayRequire="Ludeon.RimWorld.Biotech">(10.999,130)</li>
+          <li>(14,0)</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+          <li>(15,100)</li>
+          <li>(25,100)</li>
+          <li>(35,30)</li>
+          <li>(45,18)</li>
+          <li>(55,10)</li>
+          <li>(65,3)</li>
+          <li>(70,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+        <li>Human</li>
+      </hediffGiverSets>
+    </race>
+    <recipes>
+      <li>InstallPowerClaw</li>
+      <li>InstallBionicEye</li>
+      <li>InstallBionicArm</li>
+      <li>InstallBionicLeg</li>
+      <li>InstallSimpleProstheticArm</li>
+      <li>InstallSimpleProstheticLeg</li>
+      <li>InstallPegLeg</li>
+      <li>InstallDenture</li>
+      <li>InstallJoywire</li>
+      <li>InstallPainstopper</li>
+      <li>InstallNaturalHeart</li>
+      <li>InstallNaturalLung</li>
+      <li>InstallNaturalKidney</li>
+      <li>InstallNaturalLiver</li>
+
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+      <li>CureScaria</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+    </recipes>
+	<comps>
+		<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+			<hediffname>HedJeub</hediffname>
+		</li>
+	</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>UI/Lore/JeubLore</ImageToShowInInfoCard>						
+			</li>
+		</modExtensions>
+  </AlienRace.ThingDef_AlienRace>
+  
+  <AlienRace.RaceSettings>
+    <defName>JeubRaceSettings</defName>
+    <pawnKindSettings>
+      <startingColonists>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>PlayerJeub</li>
+              </kindDefs>
+              <chance>7.0</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerTribe</li>
+          </factionDefs>
+        </li>
+      </startingColonists>
+      <alienslavekinds>
+        <li>
+          <kindDefs>
+            <li>PlayerJeub</li>
+          </kindDefs>
+          <chance>12.0</chance>
+        </li>
+      </alienslavekinds>
+      <alienrefugeekinds>
+        <li>
+          <kindDefs>
+            <li>PlayerJeub</li>
+          </kindDefs>
+          <chance>6.0</chance>
+        </li>
+      </alienrefugeekinds>
+      <alienwandererkinds>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>PlayerJeub</li>
+              </kindDefs>
+              <chance>10.0</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
+            <li>PlayerTribe</li>
+          </factionDefs>
+        </li>
+      </alienwandererkinds>
+    </pawnKindSettings>
+  </AlienRace.RaceSettings>
+
+
+</Defs>

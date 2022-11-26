@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>Hediff_Rock</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>It's a rock, but it's alive. Why are you seeing this anyway?</description>
+		<label>rock</label>
+		<stages>
+		  <li>
+			<becomeVisible>false</becomeVisible>
+		  </li>
+		</stages>
+		<comps>
+		  <li Class="StoryTime.HediffCompProperties_CoconutDeath">
+			<targetCoconut>ChunkMarble</targetCoconut>
+		  </li>
+		</comps>
+	</HediffDef>
+
+
+  <ThingDef ParentName="BasePawn">
+    <defName>EvilRock</defName>
+    <label>living rock</label>
+    <description>That's no natural rock formation.</description>
+    <statBases>
+      <MoveSpeed>1.5</MoveSpeed>
+      <MarketValue>150</MarketValue>
+      <ComfyTemperatureMin>-460</ComfyTemperatureMin>
+      <ComfyTemperatureMax>650</ComfyTemperatureMax>
+      <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>0</MeatAmount>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <ToxicResistance>0.9</ToxicResistance>
+      <ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
+      <Flammability>0</Flammability>
+      <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+    </statBases>
+    <tools>
+      <li>
+        <label>rock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>6</cooldownTime>
+        <linkedBodyPartsGroup>RockBody</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+      <bloodDef>Filth_RubbleRock</bloodDef>
+	  <wildBiomes>
+			<BorealForest>0.02</BorealForest>
+			<TemperateForest>0.03</TemperateForest>
+			<TropicalRainforest>0.01</TropicalRainforest>
+			<AridShrubland>0.02</AridShrubland>
+			<Desert>0.02</Desert>
+			<ExtremeDesert>0.01</ExtremeDesert>
+	  </wildBiomes>
+      <body>Rock</body>
+      <petness>0</petness>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <baseBodySize>2</baseBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>4</baseHealthScale>
+      <gestationPeriodDays>100</gestationPeriodDays>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Intermediate</trainability>
+      <wildness>0.99</wildness>
+      <nuzzleMtbHours>900</nuzzleMtbHours>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <lifeExpectancy>2500</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>RockAngry</soundWounded>
+          <soundDeath>RockAngry</soundDeath>
+          <soundAngry>RockNeutral</soundAngry> 
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>      
+	  <nameGenerator>NamerAnimalGenericMale</nameGenerator>
+      <nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+		<thingCategories>
+		  <li>Animals</li>
+		</thingCategories>
+		<recipes>
+		  <li>Euthanize</li>
+		  <li>Anesthetize</li>
+		</recipes>   
+	<comps>
+		<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+			<hediffname>Hediff_Rock</hediffname>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>EvilRock</defName>
+    <label>living rock</label>
+    <race>EvilRock</race>
+    <combatPower>120</combatPower>
+    <ecoSystemWeight>30</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>living rock</label>
+        <labelPlural>living rocks</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/EvilRock/SentientRock</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/EvilRock/SentientRock</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

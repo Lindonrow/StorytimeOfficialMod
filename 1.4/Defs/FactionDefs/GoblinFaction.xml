@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef>
+    <defName>GoblinTown</defName>
+    <label>goblin clan</label>
+    <description>The Politically Organized Goblins.</description>
+    <pawnsPlural>goblins</pawnsPlural>
+    <settlementGenerationWeight>0.4</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/Goblins/GoblinLogo</factionIconPath>
+    <colorSpectrum>
+      <li>(150, 175, 25)</li>
+    </colorSpectrum>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </requiredMemes>
+    <allowedCultures><li>STGoblin</li></allowedCultures>
+    <structureMemeWeights>
+      <STGoblinOrigin MayRequire="Ludeon.RimWorld.Ideology">1</STGoblinOrigin>
+    </structureMemeWeights>
+    <factionNameMaker>NamerFactionGoblinTribes</factionNameMaker>
+    <settlementNameMaker>GoblinSettlementName</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+    <backstoryCategories>
+      <li>GoblinBackstory</li>
+    </backstoryCategories>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GoblinPeon>20</GoblinPeon>
+          <GoblinArcher>20</GoblinArcher>
+          <GoblinRunner>25</GoblinRunner>
+          <GoblinTinkerer>10</GoblinTinkerer>
+		  <GoblinWarrior>20</GoblinWarrior>
+          <GoblinWarlord>5</GoblinWarlord>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <GoblinPeon>20</GoblinPeon>
+          <GoblinArcher>20</GoblinArcher>
+          <GoblinRunner>25</GoblinRunner>
+          <GoblinTinkerer>10</GoblinTinkerer>
+		  <GoblinWarrior>20</GoblinWarrior>
+          <GoblinWarlord>5</GoblinWarlord>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <GoblinTrader>1</GoblinTrader>
+        </traders>
+        <carriers>
+          <Muffalo>100</Muffalo>
+        </carriers>
+        <guards>
+          <GoblinPeon>20</GoblinPeon>
+          <GoblinArcher>20</GoblinArcher>
+          <GoblinRunner>25</GoblinRunner>
+          <GoblinTinkerer>10</GoblinTinkerer>
+		  <GoblinWarrior>20</GoblinWarrior>
+          <GoblinWarlord>5</GoblinWarlord>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <GoblinPeon>30</GoblinPeon>
+          <GoblinArcher>20</GoblinArcher>
+          <GoblinRunner>10</GoblinRunner>
+          <GoblinTinkerer>5</GoblinTinkerer>
+		  <GoblinWarrior>20</GoblinWarrior>
+          <GoblinWarlord>15</GoblinWarlord>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<modExtensions>
+      <li Class="FactionSounds.FactionSound">
+        <soundDef>Goblin_Town</soundDef>
+      </li>
+    </modExtensions>
+  </FactionDef>
+
+
+
+
+</Defs>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.AlienBackstoryDef Name="PirateBackstories" Abstract="True">
+	<spawnCategories>
+      <li>PirateBackstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_CabinBoy</defName>
+    <title>cabin boy</title>
+    <titleShort>cabin boy</titleShort>
+    <baseDesc>[PAWN_nameDef] joined a pirate crew at a young age. [PAWN_pronoun] spent [PAWN_possessive] childhood doing various small jobs around the ship. [PAWN_pronoun] became something of a mascot for the crew. </baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>4</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_Shipwrecked</defName>
+    <title>shipwrecked sailor</title>
+    <titleShort>shipwrecked</titleShort>	
+    <baseDesc>[PAWN_nameDef] was on a ship that was destroyed in a storm. [PAWN_pronoun] was the only survivor, washing up on a desert island where [PAWN_pronoun] had to fend for [PAWN_objective]self for years before being rescued by a passing pirate ship. </baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+	  <li>
+		<key>Animals</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Plants</key>
+        <value>6</value>
+      </li>
+	  <li>
+		<key>Cooking</key>
+        <value>3</value>
+      </li>
+	  <li>
+		<key>Crafting</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+    <workDisables>
+	  <li>Social</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_Cadet</defName>
+    <title>navy cadet</title>
+    <titleShort>cadet</titleShort>
+    <baseDesc>[PAWN_nameDef] enlisted in the navy at a young age and received an education as well as combat training. </baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>2</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>4</value>
+	  </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_EscapedSlave</defName>
+    <title>escaped slave</title>
+    <titleShort>slave</titleShort>	
+    <baseDesc>[PAWN_nameDef] was taken from [PAWN_possessive] home and enslaved. When [PAWN_possessive] captors were themselves killed by pirates, [PAWN_pronoun] joined the pirate crew.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Mining</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Plants</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+    <workDisables>
+      <li>Intellectual</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>  
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_PirateChild</defName>
+    <title>pirate's child</title>
+    <titleShort>pirate child</titleShort>	
+    <baseDesc>[PAWN_nameDef] was born the bastard child of a pirate captain. [PAWN_possessive] father kept [PAWN_objective] on the ship and spared no expense in [PAWN_possessive] upbringing.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Social</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Melee</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+	<workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>  
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_ChildTreasure</defName>
+    <title>young treasure hunter</title>
+    <titleShort>treasure hunter</titleShort>	
+    <baseDesc>[PAWN_nameDef] found a treasure map as a child and spent [PAWN_possessive] whole childhood trying to find the treasure. [PAWN_pronoun] eventually ran across some pirates and joined them instead.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Mining</key>
+        <value>5</value>
+	  </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>2</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>  
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_PirateCook</defName>
+    <title>pirate cook</title>
+    <titleShort>cook</titleShort>	
+    <baseDesc>[PAWN_nameDef] was the only chef onboard [PAWN_possessive] ship. Most of [PAWN_possessive] time was spent cooking for the crew.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Cooking</key>
+        <value>6</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_PirateOfficer</defName>
+    <title>pirate officer</title>
+    <titleShort>officer</titleShort>	
+    <baseDesc>[PAWN_nameDef] was among the high ranking officers of [PAWN_possessive] pirate crew, and became accustomed to giving orders.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+	  <li>
+		<key>Social</key>
+        <value>5</value>
+      </li>
+	  <li>
+        <key>Intellectual</key>
+        <value>5</value>
+	  </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>Abrasive</defName>
+      </li>
+    </forcedTraitsChance>
+	<workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_CursedPirate</defName>
+    <title>cursed pirate</title>
+    <titleShort>cursed pirate</titleShort>	
+    <baseDesc>[PAWN_nameDef] came into possession of a great treasure. Unbeknownst to [PAWN_objective] it was cursed, and [PAWN_pronoun] spent many years stuck as an undead before managing to break the curse. This time has had some residual effects on [PAWN_possessive] body and mind.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>-6</value>
+	  </li>
+	  <li>
+		<key>Melee</key>
+        <value>6</value>
+      </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>Bloodlust</defName>
+      </li>
+	  <li>
+		<defName>Tough</defName>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_TreasureHunter</defName>
+    <title>treasure hunter</title>
+    <titleShort>treasure hunter</titleShort>	
+    <baseDesc>[PAWN_nameDef] spent years searching for a hidden treasure without success.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Mining</key>
+        <value>8</value>
+	  </li>
+	  <li>
+		<key>Social</key>
+        <value>-3</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_Marooned</defName>
+    <title>marooned captain</title>
+    <titleShort>marooned</titleShort>	
+    <baseDesc>[PAWN_nameDef] was captain of a pirate vessel until being overthrown in a mutiny by [PAWN_possessive] first mate. The crew proceeded to abandon [PAWN_objective] on a desert island, where [PAWN_pronoun] stayed for months until rescue came.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Plants</key>
+        <value>7</value>
+	  </li>
+	  <li>
+		<key>Cooking</key>
+        <value>5</value>
+	  </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>Nerves</defName>
+		<degree>-1</degree>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_Mutineer</defName>
+    <title>mutineer</title>
+    <titleShort>mutineer</titleShort>	
+    <baseDesc>[PAWN_nameDef] led a mutiny against the captain of [PAWN_possessive] crew, taking his place as leader and cruelly leaving him to die.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>3</value>
+	  </li>      
+	  <li>
+		<key>Melee</key>
+        <value>6</value>
+	  </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>Psychopath</defName>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_ShipDoctor</defName>
+    <title>pirate doctor</title> 
+    <titleShort>doctor</titleShort>	
+    <baseDesc>[PAWN_nameDef] served as the chief medical expert of a crew of pirates. [PAWN_pronoun] had no formal training and relied primarily on herbal remedies and other folk knowledge.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Medicine</key>
+        <value>4</value>
+	  </li>
+	  <li>
+		<key>Cooking</key>
+        <value>2</value>
+      </li>
+	  <li>
+		<key>Alchemy</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_GentlemanPirate</defName>
+    <title>gentleman corsair</title> 
+    <titleShort>gentleman corsair</titleShort>	
+    <baseDesc>[PAWN_nameDef] was captain of a crew of pirates. [PAWN_pronoun] became well known for [PAWN_possessive] mercy and civility to [PAWN_possessive] foes, as well as [PAWN_possessive] surprising intelligence and craftiness.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Intellectual</key>
+        <value>8</value>
+	  </li>
+	  <li>
+		<key>Social</key>
+        <value>8</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_Shanghaied</defName>
+    <title>shanghaied</title>
+    <titleShort>shanghaied</titleShort>	
+    <baseDesc>[PAWN_nameDef] was known for being drunk nearly constantly. This ended up causing [PAWN_objective] trouble when [PAWN_pronoun] was kidnapped by pirates while passed out drunk and forced to join the crew.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>-2</value>
+	  </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>-4</value>
+      </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>DrugDesire</defName>
+        <degree>1</degree>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_NavyTraitor</defName>
+    <title>navy traitor</title>
+    <titleShort>traitor</titleShort>	
+    <baseDesc>[PAWN_nameDef] served in the navy for a few years before deciding the life wasn't for [PAWN_objective]. [PAWN_pronoun] jumped ship at port and joined up with a pirate crew.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Intellectual</key>
+        <value>2</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_HurdyGurdy</defName>
+    <title>hurdy gurdy player</title>
+    <titleShort>hurdy gurdy player</titleShort>	
+    <baseDesc>[PAWN_nameDef] provided entertainment on the ship by playing the Hurdy Gurdy. Everybody loved [PAWN_objective] and [PAWN_pronoun] rarely had to do any real work around the ship.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>8</value>
+	  </li>
+    </skillGains>
+	<workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_Smuggler</defName>
+    <title>smuggler</title>
+    <titleShort>smuggler</titleShort>
+    <baseDesc>[PAWN_nameDef] smuggled goods across the ocean. This required a lot of fast talking and fast sailing to avoid arrest.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>4</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>Nimble</defName>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_ArmsDealer</defName>
+    <title>pirate arms dealer</title>
+    <titleShort>arms dealer</titleShort>
+    <baseDesc>[PAWN_nameDef] built and sold guns and other weapons to various pirate crews. [PAWN_possessive]'s work was considered amongst the best in the sea.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Crafting</key>
+        <value>6</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_Boarder</defName>
+    <title>boarder</title>
+    <titleShort>boarder</titleShort>
+    <baseDesc>[PAWN_nameDef] always volunteered to join boarding parties when attacking another ship. [PAWN_pronoun] was a terrifying opponent and the ship's best fighter.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Melee</key>
+        <value>8</value>
+	  </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>Brawler</defName>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+    <defName>ST_Cannoneer</defName>
+    <title>cannoneer</title>
+    <titleShort>cannoneer</titleShort>
+    <baseDesc>[PAWN_nameDef] was in charge of manning the cannons on [PAWN_possessive] pirate ship. [PAWN_pronoun] was known as quite the marksman.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Shooting</key>
+        <value>8</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>  
+</Defs>

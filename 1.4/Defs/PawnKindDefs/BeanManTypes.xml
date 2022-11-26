@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Abstract="True" Name="BasePlayerBeanManPawnKind">
+    <race>Alien_BeanMan</race>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>false</forceNormalGearQuality>
+  </PawnKindDef>
+  
+  <!-- Player -->
+  <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
+    <defName>PlayerBeanMan</defName>
+    <label>member</label>
+    <combatPower>30</combatPower>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>150~400</apparelMoney>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>BeanManBackstory</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+	<maxGenerationAge>10</maxGenerationAge>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~10</initialResistanceRange>
+  </PawnKindDef>
+  
+  <!-- Friendly Bean Men -->  
+  <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
+    <defName>BeanManGuard</defName>
+    <label>bean man</label>
+    <combatPower>55</combatPower>
+    <defaultFactionType>BeanManFaction</defaultFactionType>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>150~400</apparelMoney>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>BeanManBackstory</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>250~500</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~10</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
+    <defName>BeanManTrader</defName>
+    <label>bean man</label>
+    <combatPower>55</combatPower>
+    <defaultFactionType>BeanManFaction</defaultFactionType>
+	<trader>true</trader>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>150~400</apparelMoney>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>BeanManBackstory</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>250~500</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~10</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
+    <defName>BeanManLeader</defName>
+    <label>bean man</label>
+    <combatPower>55</combatPower>
+    <defaultFactionType>BeanManFaction</defaultFactionType>
+    <factionLeader>true</factionLeader>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>150~400</apparelMoney>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>BeanManBackstory</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>250~1000</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~10</initialResistanceRange>
+  </PawnKindDef>
+  
+  
+  
+  
+<!--Bean Guardians -->
+
+  <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
+    <defName>BeanGuardianBasic</defName>
+    <label>bean guardian</label>
+    <combatPower>55</combatPower>
+    <defaultFactionType>BeanGuardians</defaultFactionType>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>150~400</apparelMoney>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>BeanGuardian</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+    <weaponTags>
+      <li>Gun</li>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <weaponMoney>100~500</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~10</initialResistanceRange>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>BertieBottBean</thingDef>
+          <countRange>0~5</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+ 
+  <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
+    <defName>BeanGuardianAdvanced</defName>
+    <label>bean guardian</label>
+    <combatPower>90</combatPower>
+    <defaultFactionType>BeanGuardians</defaultFactionType>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>150~400</apparelMoney>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>BeanGuardian</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+    <weaponTags>
+      <li>Gun</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <weaponMoney>300~900</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~10</initialResistanceRange>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>BertieBottBean</thingDef>
+          <countRange>0~10</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
+    <defName>BeanGuardianTrader</defName>
+    <label>bean man</label>
+    <combatPower>55</combatPower>
+    <defaultFactionType>BeanGuardians</defaultFactionType>
+	<trader>true</trader>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>150~400</apparelMoney>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>BeanGuardian</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>250~500</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~10</initialResistanceRange>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>BertieBottBean</thingDef>
+          <countRange>0~10</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
+    <defName>BeanGuardianLeader</defName>
+    <label>bean man</label>
+    <combatPower>55</combatPower>
+    <defaultFactionType>BeanGuardians</defaultFactionType>
+    <factionLeader>true</factionLeader>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>150~400</apparelMoney>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>BeanGuardian</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>250~1000</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~10</initialResistanceRange>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>BertieBottBean</thingDef>
+          <countRange>0~10</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+</Defs>

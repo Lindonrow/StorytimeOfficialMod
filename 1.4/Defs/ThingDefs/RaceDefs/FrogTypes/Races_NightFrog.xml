@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ParalyzingLick</defName>
+    <label>lick</label>
+    <graphicData>
+      <texPath>Projectiles/NeurotoxinLick</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>ParalyzingLick</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>10</speed>
+    </projectile>
+  </ThingDef>
+
+ 
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>NightFrog</defName>
+    <label>Night Frog</label>
+    <description>These black frogs haunt the night, hunting their prey by licking them with their neurotoxin-coated tongues to paralyze them and leave them helpless. Alone among all known species of frog, these creatures are purely carnivorous and have been known to hunt humans.</description>
+    <statBases>
+      <MoveSpeed>6.0</MoveSpeed>
+      <MarketValue>300</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+	  <ArmorRating_Lick>1</ArmorRating_Lick>
+	  <ToxicResistance>0.6</ToxicResistance>
+      <ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>NightFrogEggUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>NightFrogEggUnfertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggCountRange>1</eggCountRange>
+      </li>
+		<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+			<resourceDef>Neurotoxin</resourceDef>
+			<gatheringIntervalDays>4</gatheringIntervalDays>
+			<resourceAmount>25</resourceAmount>
+			<customResourceString>PoisonGather</customResourceString>
+		</li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <chanceFactor>0.5</chanceFactor>
+        <cooldownTime>2.3</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <chanceFactor>0.5</chanceFactor>
+        <cooldownTime>2.3</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>tongue</label>
+        <capacities>
+          <li>ParalyzingLick</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>Tongue</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>0.9</accuracyShort>
+				<accuracyMedium>0.8</accuracyMedium>
+				<accuracyLong>0.75</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ParalyzingLick</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<range>4</range>				
+				<soundCast>Lick</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>lick</label>
+				<commonality>1</commonality>
+			</li>
+		</verbs>
+    <race>
+	  <wildBiomes>
+			<BorealForest>0.005</BorealForest>
+			<TemperateSwamp>0.01</TemperateSwamp>
+			<TropicalSwamp>0.02</TropicalSwamp>
+			<TemperateForest>0.01</TemperateForest>
+			<TropicalRainforest>0.015</TropicalRainforest>
+			<AridShrubland>0.005</AridShrubland>
+	  </wildBiomes>	
+      <body>LickyFrogBody</body>
+      <nameGenerator>FrogNamerMale</nameGenerator>
+      <nameGeneratorFemale>FrogNamerFemale</nameGeneratorFemale>
+      <baseBodySize>0.8</baseBodySize>
+	  <predator>true</predator>
+      <maxPreyBodySize>1.2</maxPreyBodySize>
+      <baseHealthScale>1.1</baseHealthScale>
+	  <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <baseHungerRate>1</baseHungerRate>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_NightFrog</leatherDef>
+      <wildness>0.8</wildness>
+      <trainability>Advanced</trainability>
+      <useMeatFrom>Toad</useMeatFrom>
+      <petness>0.4</petness>
+      <lifeExpectancy>16</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.09</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Frog_Angry_Deep</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalFighter</li>
+      <li>AnimalExotic</li>
+    </tradeTags>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>ST_FrogRole</li>
+					<li>ST_FrogRoleSecondary</li>
+					<li>ST_FrogRarity</li>					
+				</statToAdd>
+				<statValues>
+					<li>ST_FrogPoison</li>
+					<li>ST_FrogLick</li>
+					<li>ST_FrogUncommon</li>					
+				</statValues>
+				<statDescriptions>
+					<li>ST_FrogPoisonDesc</li>
+					<li>ST_FrogLickDesc</li>
+					<li>ST_FrogUncommonDesc</li>
+				</statDescriptions>				
+			</li>
+		<li Class="NocturnalAnimals.ExtendedRaceProperties">
+			<bodyClock>Nocturnal</bodyClock>
+		</li>
+	</modExtensions>
+  </ThingDef>
+  
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>NightFrog</defName>
+    <label>Night Frog</label>
+    <race>NightFrog</race>
+    <combatPower>60</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Night_Frog/NightFrog</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Night_Frog/NightFrog</texPath>
+          <drawSize>1.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Frog_Types/Night_Frog/NightFrog</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Toad/FrogCorpse</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

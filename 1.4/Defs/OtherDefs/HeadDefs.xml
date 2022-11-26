@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BeanMan_Narrow_Normal</defName>
+    <graphicPath>Things/Pawn/Humanlike/BeanMan/Head/Narrow_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Goblin_Average_Normal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Jeub/Head/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef> 
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Jeub_Average_Normal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Jeub/Head/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>  
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Gnome_Average_Normal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Gnome/Head/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef> 
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Male_Beet_Average_Normal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Beet/Head/Male_Average_Normal</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef> 
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Female_Beet_Average_Normal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Beet/Head/Female_Average_Normal</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef> 
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Frogman_Average_Normal</defName>
+    <graphicPath>Things/Pawn/Humanlike/FrogPeople/Head/Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef> 
+
+
+
+  
+</Defs>

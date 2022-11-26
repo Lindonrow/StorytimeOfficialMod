@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.AlienBackstoryDef Name="GnomeBackstories" Abstract="True">
+	<spawnCategories>
+      <li>GnomeBackstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Child</defName>
+    <title>gnome child</title>
+    <titleShort>gnome child</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up in a community of gnomes. Like all gnome children, [PAWN_pronoun] had a deep magical power. Even now, [PAWN_pronoun] is attuned to all living things. </baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Plants</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Chef</defName>
+    <title>gnome chef</title>
+    <titleShort>chef</titleShort>
+    <baseDesc>[PAWN_nameDef] practiced the art of gnome cooking.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Cooking</key>
+        <value>7</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Glider</defName>
+    <title>glider pilot</title>
+    <titleShort>glider pilot</titleShort>
+    <baseDesc>[PAWN_nameDef] flew gnome gliders all across the land. [PAWN_pronoun] had many adventures along the way.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+	  <li>
+		<key>Shooting</key>
+        <value>2</value>
+      </li>
+	  <li>
+        <key>Intellectual</key>
+        <value>5</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Soldier</defName>
+    <title>gnome soldier</title>
+    <titleShort>soldier</titleShort>
+    <baseDesc>[PAWN_nameDef] served in the gnome army. [PAWN_pronoun] defended the gnome homeland from many foes.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Noble</defName>
+    <title>gnome noble</title>
+    <titleShort>noble</titleShort>
+    <baseDesc>[PAWN_nameDef] was among the highest in the social hierarchy of the gnomes.[PAWN_pronoun] never had to do manual labor. </baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Social</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Crafting</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Alchemy</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+	<workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Froggy</defName>
+    <title>frogsnatcher</title>
+    <titleShort>frogsnatcher</titleShort>
+    <baseDesc>[PAWN_nameDef] was in charge of gathering the frogs in the gnome stronghold's ponds.[PAWN_pronoun] acquired a deep respect for the amphibians during this time.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Animals</key>
+        <value>5</value>
+	  </li>
+	  <li>
+		<key>Cooking</key>
+        <value>2</value>
+	  </li>
+    </skillGains>
+	<workDisables>
+	  <li>PlantWork</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Crafter</defName>
+    <title>gnome crafter</title>
+    <titleShort>gnome crafter</titleShort>
+    <baseDesc>[PAWN_nameDef] owned a small clothing store, where [PAWN_pronoun] made [PAWN_possessive] own clothes for sale.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Crafting</key>
+        <value>6</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Ambassador</defName>
+    <title>ambassador</title> 
+    <titleShort>ambassador</titleShort> 
+    <baseDesc>[PAWN_nameDef] served as an ambassador from the gnome stronghold to many foreign lands. This gave [PAWN_pronoun] a knowledge of other lands that most gnomes lack.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>8</value>
+	  </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Engineer</defName>
+    <title>gnome engineer</title> 
+    <titleShort>engineer</titleShort> 
+    <baseDesc>[PAWN_nameDef] developed new machines to serve the gnome people.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Crafting</key>
+        <value>4</value>
+	  </li>
+	  <li>
+		<key>Construction</key>
+        <value>4</value>
+	  </li>
+      <li>	  
+		<key>Intellectual</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+    <defName>Gnome_Sage</defName>
+    <title>gnome sage</title>
+    <titleShort>sage</titleShort>
+    <baseDesc>[PAWN_nameDef] was a gnome sage, possessed of powerful magic connected to the world's life force</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Plants</key>
+        <value>8</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+	<workDisables>
+      <li>Mining</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+</Defs>

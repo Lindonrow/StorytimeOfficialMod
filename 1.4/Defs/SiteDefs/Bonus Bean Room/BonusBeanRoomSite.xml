@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<SitePartDef>
+      <defName>BonusBeanRoom</defName>
+      <label>bonus bean room</label>
+      <description>A recently-discovered bonus bean room.</description>
+      <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+      <expandingIconTexture>Things/Items/Resources/BertieBottBeans/BertieBottBeans_a</expandingIconTexture>
+      <tags>
+         <li>BonusBeanRoom</li>
+      </tags>
+   </SitePartDef>
+   
+   <GenStepDef>
+      <defName>BonusBeanRoom</defName>
+      <linkWithSite>BonusBeanRoom</linkWithSite>
+      <order>450</order>
+      <genStep Class="KCSG.GenStep_CustomStructureGen">
+         <structureLayoutDefs>
+            <li>STBonusBeanRoom_Limestone</li>
+            <li>STBonusBeanRoom_Granite</li>
+            <li>STBonusBeanRoom_Marble</li>
+         </structureLayoutDefs>
+         <scatterThings>
+            <li>Bean</li>
+            <li>BertieBottBean</li>
+         </scatterThings>
+         <scatterChance>0.05</scatterChance>
+      </genStep>
+   </GenStepDef>
+
+</Defs>

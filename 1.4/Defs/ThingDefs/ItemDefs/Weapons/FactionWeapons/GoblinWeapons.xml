@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Goblin Poison Damage-->
+
+  <DamageDef>
+    <defName>GoblinPoison</defName>
+    <label>goblin poison</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <additionalHediffs>
+      <li>
+        <hediff>GoblinPoisonBuildup</hediff>
+        <severityPerDamageDealt>0.011</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+		<inverseStatScaling>true</inverseStatScaling>
+      </li>
+    </additionalHediffs>
+    <deathMessage>{0} has been stabbed to death.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>GoblinPoisonExplosive</defName>
+    <label>goblin poison</label>
+    <additionalHediffs>
+      <li>
+        <hediff>GoblinPoisonBuildup</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+		<inverseStatScaling>true</inverseStatScaling>
+      </li>
+    </additionalHediffs>
+    <deathMessage>{0} has been blown up.</deathMessage>
+    <hediff>Cut</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>
+    <defaultDamage>10</defaultDamage>
+    <armorCategory>Sharp</armorCategory>
+  </DamageDef>
+
+
+
+
+
+<!--Weapons-->
+
+<!-- Melee -->
+
+<!-- Goblin Knife -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GoblinKnife</defName>
+    <label>goblin knife</label>
+    <techLevel>Neolithic</techLevel>
+    <description>A crude knife of the sort usually used by low-caste goblins. Coated in special poison.</description>
+    <graphicData>
+      <texPath>Things/Items/Weapons/GoblinWeapons/GobbieKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.6</uiIconScale>
+    <weaponTags>
+      <li>GoblinBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <costList>
+      <GoblinPoison>30</GoblinPoison>
+    </costList> 
+    <costStuffCount>30</costStuffCount>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+		<chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>GoblinPoison</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>GoblinPoison</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+    </tools>
+    <equippedStatOffsets>
+      <ButcheryFleshSpeed>0.20</ButcheryFleshSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+ 
+<!-- Goblin Spear -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GoblinSpear</defName>
+    <label>goblin spear</label>
+    <techLevel>Neolithic</techLevel>
+    <description>A crude spear of the sort usually used by goblins. Coated in special poison.</description>
+    <graphicData>
+      <texPath>Things/Items/Weapons/GoblinWeapons/GobbieSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.6</uiIconScale>
+    <weaponTags>
+      <li>GoblinDecent</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <costList>
+      <GoblinPoison>50</GoblinPoison>
+    </costList> 
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>3</cooldownTime>
+		<chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>GoblinPoison</li>
+        </capacities>
+        <power>14</power>
+        <armorPenetration>0.50</armorPenetration>        
+		<cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Goblin Mace -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>GoblinMace</defName>
+    <label>goblin mace</label>
+    <description>A flanged mace of goblin-make. The tips of the flanges are coated in poison.</description>
+    <graphicData>
+      <texPath>Things/Items/Weapons/GoblinWeapons/GobbieMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+      <GoblinPoison>50</GoblinPoison>
+    </costList> 
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1.25</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <weaponTags>
+      <li>GoblinDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.7</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>flanges</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>GoblinPoison</li>
+        </capacities>
+        <armorPenetration>0.25</armorPenetration> 
+        <power>21</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Goblin Axe -->
+
+  <DamageDef ParentName="CutBase">
+    <defName>Demolish_Sharp</defName>
+    <buildingDamageFactor>10</buildingDamageFactor>
+    <buildingDamageFactorImpassable>0.75</buildingDamageFactorImpassable>
+  </DamageDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GoblinAxe</defName>
+    <label>goblin axe</label>
+    <description>A wide-headed goblin axe with a small spike on the end. A versatile weapon- the head is good for breaking down walls, while the spikes are tipped in goblin poison.</description>
+    <graphicData>
+      <texPath>Things/Items/Weapons/GoblinWeapons/GobbieAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.4</drawSize>
+    </graphicData>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>GoblinDecent</li>
+    </weaponTags>
+    <costList>
+      <GoblinPoison>50</GoblinPoison>
+    </costList> 
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.1</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+		<chanceFactor>0.6</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Demolish_Sharp</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>spike</label>
+        <capacities>
+          <li>GoblinPoison</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<comps>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
+	</comps>
+  </ThingDef>
+
+<!-- Goblin Sword -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GoblinSword</defName>
+    <label>goblin longsword</label>
+    <description>A long, wicked sword of goblin-make. Only utilized by the highest-caste goblins. The tip is coated in a special poison.</description>
+    <graphicData>
+      <texPath>Things/Items/Weapons/GoblinWeapons/GobbieSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>	  
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>GoblinAdvanced</li>
+    </weaponTags>
+    <costList>
+      <GoblinPoison>75</GoblinPoison>
+    </costList> 
+    <costStuffCount>100</costStuffCount>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>GoblinPoison</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>GoblinPoison</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<comps>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
+	</comps>
+  </ThingDef>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Ranged -->
+
+ 
+<!-- Goblin Shortbow -->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>GoblinArrow</defName>
+    <label>arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>GoblinPoison</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>44</speed>
+    </projectile>
+  </ThingDef>  
+  
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>GoblinShortbow</defName>
+    <label>goblin shortbow</label>
+    <description>A shortbow made in goblin style. It is coated in a special poison</description>
+    <graphicData>
+      <texPath>Things/Items/Weapons/GoblinWeapons/GoblinBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Small</soundInteract>
+    <costList>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>2400</WorkToMake>
+      <Mass>0.8</Mass>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>GoblinBow</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>GoblinArrow</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>20</range>
+        <soundCast>Bow_Small</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+	<li Class="Reloading.CompProperties_Reloadable">
+		<compClass>Reloading.CompReloadable</compClass>
+		<MaxShots>1</MaxShots>
+		<AmmoFilter>
+			<thingDefs>
+				<li>GoblinPoison</li>
+			</thingDefs>
+		</AmmoFilter>
+		<ItemsPerShot>1</ItemsPerShot>
+		<ReloadTimePerShot>0.15</ReloadTimePerShot>
+		<NewVerbClass>Verb_Shoot</NewVerbClass>
+		<GenerateAmmo>
+			<GoblinPoison>5~15</GoblinPoison>
+		</GenerateAmmo>
+	</li>
+    </comps>
+  </ThingDef>
+  
+<!-- Goblin Shotgun -->
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>GoblinShotgun</defName>
+    <label>goblin shotgun</label>
+    <description>A shotgun cobbled together from various scrap parts, powerful but not reliable. For added versatility, this weapon has a large blade welded to the underside of the barrel, coated in poison.</description>
+    <graphicData>
+      <texPath>Things/Items/Weapons/GoblinWeapons/GoblinShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.67</AccuracyShort>
+      <AccuracyMedium>0.57</AccuracyMedium>
+      <AccuracyLong>0.47</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <GoblinPoison>25</GoblinPoison>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+    <weaponTags>
+      <li>GoblinTech</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>VWEMakeshift.Verb_MakeshiftShoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>GoblinShotgunPellet</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>12</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+		<chanceFactor>0.3</chanceFactor>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>GoblinPoison</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+	<modExtensions>
+		<li Class="VWEMakeshift.MoteProperties">
+			<fleckDef>DustPuffThick</fleckDef>
+			<size>0.5</size>
+			<velocity>2</velocity>
+			<angleRange>-15~15</angleRange> 
+			<rotationRange>-5~5</rotationRange>
+			<numTimesThrown>1</numTimesThrown> 
+		</li>
+		<li Class="VWEMakeshift.MakeshiftProperties">
+			<shots>2~8</shots>
+		</li>
+	</modExtensions>
+	<comps>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
+	  
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>GoblinShotgunPellet</defName>
+    <label>goblin shotgun pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <stoppingPower>10</stoppingPower>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+<!-- Goblin Grenade -->
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>GoblinGrenadeProjectile</defName>
+    <label>goblin grenade</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Projectiles/GoblinGrenadeProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+	  <speed>10</speed>
+      <arcHeightFactor>2.2</arcHeightFactor>
+      <explosionRadius>1.5</explosionRadius>
+	  <stoppingPower>6</stoppingPower>
+      <damageDef>GoblinPoisonExplosive</damageDef>
+      <explosionDelay>80</explosionDelay>
+    </projectile>
+  </ThingDef>
+ 
+  <ThingDef ParentName="BaseMakeableGrenade">
+    <defName>GoblinGrenade</defName>
+    <label>goblin grenades</label>
+    <description>A weird glowing orb that passes for a grenade amongst the goblins. The mechanics behind it are unclear.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Items/Weapons/GoblinWeapons/GoblinGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Industrial</techLevel>
+    <uiIconScale>1.1</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <Chemfuel>50</Chemfuel>
+      <GoblinPoison>50</GoblinPoison>
+    </costList>
+    <weaponTags>
+      <li>GoblinTech</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw goblin grenade</label>
+        <verbClass>VWEMakeshift.Verb_MakeshiftShoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>13</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>3</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>GoblinGrenadeProjectile</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.0</explosiveRadius>
+        <explosiveDamageType>GoblinPoisonExplosive</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+	<modExtensions>
+		<li Class="VWEMakeshift.MoteProperties">
+			<fleckDef>DustPuffThick</fleckDef>
+			<size>0</size>
+			<velocity>2</velocity>
+			<angleRange>-15~15</angleRange> 
+			<rotationRange>-5~5</rotationRange>
+			<numTimesThrown>1</numTimesThrown> 
+		</li>
+		<li Class="VWEMakeshift.MakeshiftProperties">
+			<shots>1~3</shots>
+		</li>
+	</modExtensions>
+  </ThingDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+</Defs>

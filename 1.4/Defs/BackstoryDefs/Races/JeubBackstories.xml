@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.AlienBackstoryDef Name="JeubBackstories" Abstract="True">
+	<spawnCategories>
+      <li>JeubBackstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Livestock_Jeub</defName>
+    <title>livestock</title>
+    <titleShort>livestock</titleShort>
+    <baseDesc>[PAWN_nameDef]'s parents intended to eat [PAWN_possessive] after [PAWN_possessive] birth. Somehow [PAWN_pronoun] was able to slither away before being eaten and grew up alone in the wilds.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>-5</value>
+	  </li>
+	  <li>
+		<key>Melee</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Royal_Bastard_Jeub</defName>
+    <title>royal bastard</title>
+    <titleShort>royal bastard</titleShort>
+    <baseDesc>[PAWN_nameDef]was one of the many jeub bastards in the Royal Court of Jeubscalon. [PAWN_pronoun] learned how to survive there, using [Pawn_possessive] wits to survive.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>5</value>
+	  </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+	<workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Youth_Brigade_Jeub</defName>
+    <title>child soldier</title>
+    <titleShort>child soldier</titleShort>
+    <baseDesc>[PAWN_nameDef] was part of Jeubscalon's crack Child Soldier Division. [PAWN_pronoun] fought in many battles, starting from the age of only 2 years.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>5</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Raised_Humans_Jeub</defName>
+    <title>raised by humans</title>
+    <titleShort>foundling</titleShort>
+    <baseDesc>[PAWN_nameDef] was found abandoned on the border of Jeubscalon by a family of human farmers. For some reason, they took [PAWN_possessive] in and raised [Pawn_possessive] as one of their own.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>2</value>
+	  </li>
+	  <li>
+		<key>Plants</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Slum_Child_Jeub</defName>
+    <title>Rata Jeub orphan</title>
+    <titleShort>orphan</titleShort>
+    <baseDesc>[PAWN_nameDef] lived in the slums of Rata Jeub. [PAWN_pronoun] had to learn many skills to survive in such a competetive environment.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Social</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Crafting</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Cooking</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Animal_Lover_Jeub</defName>
+    <title>child gang leader</title>
+    <titleShort>gang leader</titleShort>
+    <baseDesc>[PAWN_nameDef] was always smarter than [PAWN_possessive] peers. [PAWN_pronoun]organized the local urchins into a gang under [PAWN_pronoun] leadership.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>4</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Soldier_Jeub</defName>
+    <title>cannon fodder</title>
+    <titleShort>fodder</titleShort>
+    <baseDesc>[PAWN_nameDef] served in the army of Jeubscalon. Somehow, [PAWN_pronoun] survived when the rest of [PAWN_possessive] unit was slaughtered.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Melee</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Noble_Jeub</defName>
+    <title>jeub noble</title>
+    <titleShort>noble</titleShort>
+    <baseDesc>[PAWN_nameDef] was one of the lucky few Jeubs to be member of a noble family. Unlike most [PAWN_pronoun] was able to fulfill [PAWN_possessive] basic needs.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+	<workDisables>
+      <li>ManualDumb</li>
+	  <li>PlantWork</li>
+	  <li>Cooking</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Servant_Jeub</defName>
+    <title>servant</title>
+    <titleShort>jeub servant</titleShort>
+    <baseDesc>[PAWN_nameDef] served in the household of a jeub nobleman for many years, doing whatever tasks he required.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Crafting</key>
+        <value>4</value>
+	  </li>
+	  <li>
+		<key>Cooking</key>
+        <value>4</value>
+	  </li>
+      <li>	  
+		<key>Construction</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Botox_Miner_Jeub</defName>
+    <title>botox miner</title>
+    <titleShort>botox miner</titleShort>
+    <baseDesc>[PAWN_nameDef] laboured long years in the botox mines of the Jeub Isles before escaping.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Mining</key>
+        <value>8</value>
+	  </li>
+	  <li>
+		<key>Social</key>
+        <value>-4</value>
+      </li>
+    </skillGains>
+	<workDisables>
+      <li>Intellectual</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Boiling_Rock_Jeub</defName>
+    <title>Boiling Rock inmate</title>
+    <titleShort>inmate</titleShort>
+    <baseDesc>[PAWN_nameDef] was arrested and sent to the boiling rock. There [PAWN_pronoun] joined one of the many gangs and fought for survival.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Melee</key>
+        <value>6</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Pacifist_Jeub</defName>
+    <title>jeub pacifist</title>
+    <titleShort>pacifist</titleShort>
+    <baseDesc>[PAWN_nameDef] saw the horror and violence of the jeubish lifestyle and desired to change it. Unfortunately, [PAWN_pronoun] quickly realized that jeubs were inherently violent and [PAWN_possessive] was pointless.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>6</value>
+      </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>NaturalMood</defName>
+		<degree>-2</degree>
+	  </li>
+	  <li>
+		<defName>Kind</defName>
+      </li>
+    </forcedTraitsChance>
+	<workDisables>
+      <li>Violent</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+    <defName>Farmer_Jeub</defName>
+    <title>jeub farmer</title>
+    <titleShort>farmer</titleShort>
+    <baseDesc>[PAWN_nameDef] worked as a farmer, growing botox and processing it into drugs and consuming a great deal of [PAWN_possessive] own supply.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Intellectual</key>
+        <value>2</value>
+	  </li>
+	  <li>
+		<key>Plants</key>
+        <value>6</value>
+      </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>DrugDesire</defName>
+        <degree>2</degree>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+  
+  
+</Defs>

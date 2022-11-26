@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="TM_BaseMeleeMageWeapon">
+    <defName>FatManAngreal</defName>
+    <label>Fat Man Angreal</label>
+    <description>A little fat man, it makes you feel more powerful.</description>
+    <smeltable>false</smeltable>
+    <graphicData>
+      <texPath>Things/Items/FatMan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+	  <MarketValue>3000</MarketValue>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+	<comps>
+		<li Class = "TorannMagic.Enchantment.CompProperties_EnchantedItem">
+		  <hasEnchantment>true</hasEnchantment>
+		  <arcaneDmg>0.50</arcaneDmg>
+		  <arcaneDmgTier>Crafted</arcaneDmgTier>	
+		</li>
+		<li>
+		  <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+		</li>
+	</comps>
+	<tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>.9</cooldownTime>
+		<armorPenetration>0</armorPenetration>
+      </li>
+    </tools>
+
+  </ThingDef>	
+</Defs>

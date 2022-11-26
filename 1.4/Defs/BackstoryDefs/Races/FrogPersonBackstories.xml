@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.AlienBackstoryDef Name="FrogBackstories" Abstract="True">
+	<spawnCategories>
+      <li>FrogPersonBackstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_Flycatcher</defName>
+    <title>flycatcher</title>
+    <titleShort>flycatcher</titleShort>
+    <baseDesc>[PAWN_nameDef] caught flies along with many other young frogs from [PAWN_possessive] tribe, an important task in the community. </baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Cooking</key>
+        <value>5</value>
+	  </li>
+	  <li>
+		<key>Melee</key>
+        <value>2</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_ChiefsTadpole</defName>
+    <title>chief's tadpole</title>
+    <titleShort>chief's tadpole</titleShort>
+    <baseDesc>[PAWN_nameDef] was the child of [PAWN_possessive] tribe's chief.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>6</value>
+	  </li>
+      <li>
+        <key>Intellectual</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Alchemy</key>
+        <value>4</value>
+	  </li>
+    </skillGains>
+	<workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_TransformedDruid</defName>
+    <title>transformed druid</title>
+    <titleShort>druid</titleShort>
+    <baseDesc>[PAWN_nameDef] was once a human druid who reached a great age before deciding to polymorph into a frogman and restart life. [PAWN_pronoun] retained much of [PAWN_possessive] wisdom.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+	  <li>
+		<key>Intellectual</key>
+        <value>10</value>
+      </li>
+	  <li>
+		<key>Alchemy</key>
+        <value>4</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_SwampChild</defName>
+    <title>swamp child</title>
+    <titleShort>swamp child</titleShort>
+    <baseDesc>[PAWN_nameDef] swam away from the tadpole pond while no one was looking, and was forced to grow up alone among the frogs of the swamp.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>3</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_WarriorTrainee</defName>
+    <title>warrior trainee</title>
+    <titleShort>trainee</titleShort>
+    <baseDesc>[PAWN_nameDef] spent [PAWN_possessive] childhood training to become one of [PAWN_possessive] tribe's elite warriors.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>6</value>
+	  </li>
+    </skillGains>
+	<workDisables>
+      <li>Intellectual</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+ 
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_Alchemist</defName>
+    <title>alchemist</title>
+    <titleShort>alchemist</titleShort>
+    <baseDesc>[PAWN_nameDef] practiced the art of alchemy, creating powerful potions to aid the tribe.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+	  <li>
+		<key>Alchemy</key>
+        <value>7</value>
+	  </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>3</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_FrogKeeper</defName>
+    <title>frog keeper</title>
+    <titleShort>frog keeper</titleShort>
+    <baseDesc>[PAWN_nameDef] tended to the tribe's herd of tamed frogs.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Animals</key>
+        <value>8</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_Chieftain</defName>
+    <title>chieftain</title> 
+    <titleShort>chieftain</titleShort> 
+    <baseDesc>[PAWN_nameDef] was the leader of [PAWN_possessive] tribe.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>8</value>
+	  </li>
+    </skillGains>
+	<workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_FrogPoacher</defName>
+    <title>frog poacher</title> 
+    <titleShort>poacher</titleShort> 
+    <baseDesc>[PAWN_nameDef] abandoned [PAWN_possessive] tribe and survived by killing and eating the frogs of the swamp, a horrible crime in Frogman society.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Shooting</key>
+        <value>5</value>
+	  </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>Cannibal</defName>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_TadpoleTender</defName>
+    <title>tadpole tender</title>
+    <titleShort>tadpole tender</titleShort>
+    <baseDesc>[PAWN_nameDef] watched the young tadpoles, keeping them safe from predators and the environment until they were able to survive on their own.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Animals</key>
+        <value>2</value>
+	  </li>
+	  <li>
+		<key>Social</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_Warrior</defName>
+    <title>frogperson warrior</title>
+    <titleShort>warrior</titleShort>
+    <baseDesc>[PAWN_nameDef] protected the tribe as an elite warrior.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Shooting</key>
+        <value>5</value>
+	  </li>
+	  <li>
+		<key>Melee</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+	<workDisables>
+      <li>Intellectual</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_FlyChef</defName>
+    <title>fly chef</title>
+    <titleShort>chef</titleShort>
+    <baseDesc>[PAWN_nameDef] cooked flies into delicious meals such as- fly quiche, fly cake, and fly soup.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Cooking</key>
+        <value>8</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>  
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_Puppeteer</defName>
+    <title>puppeteer</title>
+    <titleShort>puppeteer</titleShort>
+    <baseDesc>[PAWN_nameDef] operated puppets to entertain the children of the tribe.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>5</value>
+	  </li>
+	  <li>
+		<key>Melee</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>  
+  
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+    <defName>Frog_FrogSupremecist</defName>
+    <title>frog supremecist</title>
+    <titleShort>supremecist</titleShort>
+    <baseDesc>[PAWN_nameDef] believed that frogmen were the greatest race in the universe, superior to all others.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>-5</value>
+	  </li>
+	  <li>
+		<key>Melee</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>Xenophobia</defName>
+		<degree>1</degree>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>     
+</Defs>

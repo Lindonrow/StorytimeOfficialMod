@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+  
+  <ThingDef ParentName="TM_BaseMeleeMageWeapon">
+    <defName>CursedCutlass</defName>
+    <label>Haunted Cutlass</label>
+    <description>The hilt of this blade is covered in melted gold coins, and a strange ethereal glow emanates from it.</description>
+    <smeltable>false</smeltable>
+    <graphicData>
+      <texPath>Things/Items/PirateWeapons/CursedCutlass</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+	  <MarketValue>1500</MarketValue>
+    </statBases>
+	<comps>
+		<li Class = "TorannMagic.Enchantment.CompProperties_EnchantedItem">
+		  <hasEnchantment>true</hasEnchantment>
+		  <mpRegenRate>0.20</mpRegenRate>
+		  <mpRegenRateTier>Standard</mpRegenRateTier>
+		  <arcaneDmg>0.10</arcaneDmg>
+		  <arcaneDmgTier>Crafted</arcaneDmgTier>
+		  <enchantedAction>
+			<type>ApplyHediff</type>
+			<actionLabel>Spirit Energy</actionLabel>
+			<onSelf>true</onSelf>
+			<hediffDef>HedSpiritEnergy</hediffDef>
+			<hediffSeverity>1</hediffSeverity>
+			<hediffChance>.2</hediffChance>
+		  </enchantedAction>
+		</li>
+	</comps>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+	<tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1</cooldownTime>
+		<armorPenetration>0.2</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>CursedGun</defName>
+    <label>haunted assault rifle</label>
+    <description>An assault rifle that's been covered in haunted gold.</description>
+    <graphicData>
+      <texPath>Things/Items/PirateWeapons/CursedGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<techLevel>Industrial</techLevel>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+	<comps>
+		<li Class = "TorannMagic.Enchantment.CompProperties_EnchantedItem">
+		  <hasEnchantment>true</hasEnchantment>
+		  <mpRegenRate>0.20</mpRegenRate>
+		  <mpRegenRateTier>Standard</mpRegenRateTier>
+		  <arcaneDmg>0.10</arcaneDmg>
+		  <arcaneDmgTier>Crafted</arcaneDmgTier>
+		  <enchantedAction>
+			<type>ApplyHediff</type>
+			<actionLabel>Spirit Energy</actionLabel>
+			<onSelf>true</onSelf>
+			<hediffDef>HedSpiritEnergy</hediffDef>
+			<hediffSeverity>1</hediffSeverity>
+			<hediffChance>.2</hediffChance>
+		  </enchantedAction>
+		</li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+	</comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CursedRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>32</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CursedRifle</defName>
+    <label>haunted assault rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelBase">
+    <defName>PirateCrown</defName>
+    <label>pirate crown</label>
+    <description>A crown of haunted gold.</description>
+    <smeltable>false</smeltable>
+    <thingCategories>
+      <li>HeadgearNoble</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PirateClothing/PirateCrown/PirateCrown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>0.9</Mass>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.2</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PirateClothing/PirateCrown/PirateCrown</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier7</li>
+      </tags>	 
+    </apparel>
+	<comps>
+	  <li Class="TorannMagic.Enchantment.CompProperties_EnchantedItem">
+		<hasEnchantment>true</hasEnchantment>
+		<hediff>HedSpiritEnergy</hediff>
+		<hediffSeverity>1</hediffSeverity>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMageWeapon">
+    <defName>CursedWand</defName>
+    <label>haunted wand</label>
+    <description>A wand made from melted down coins. It hums with power.</description>
+    <graphicData>
+      <texPath>Things/Items/PirateWeapons/HauntedWand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+	<techLevel>Medieval</techLevel>
+	<smeltable>false</smeltable>
+    <thingCategories>
+      <li>TM_MagicWeaponsFoci</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+	  <li>TorannMagic.Enchantment.ITab_Enchantment</li>
+    </inspectorTabs>
+	<equippedAngleOffset>40</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+	  <MarketValue>480</MarketValue>
+      <Mass>1.0</Mass>
+      <AccuracyTouch>.67</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+		<li Class = "TorannMagic.Enchantment.CompProperties_EnchantedItem">
+		  <hasEnchantment>true</hasEnchantment>
+		  <mpRegenRate>0.20</mpRegenRate>
+		  <mpRegenRateTier>Standard</mpRegenRateTier>
+		  <arcaneDmg>0.10</arcaneDmg>
+		  <arcaneDmgTier>Crafted</arcaneDmgTier>
+		  <enchantedAction>
+			<type>ApplyHediff</type>
+			<actionLabel>Spirit Energy</actionLabel>
+			<onSelf>true</onSelf>
+			<hediffDef>HedSpiritEnergy</hediffDef>
+			<hediffSeverity>1</hediffSeverity>
+			<hediffChance>.2</hediffChance>
+		  </enchantedAction>
+		</li>
+	</comps>
+    <verbs>
+      <li>
+			<verbClass>Verb_Shoot</verbClass>
+			<accuracyTouch>0.67</accuracyTouch>
+			<accuracyShort>0.1</accuracyShort>
+			<accuracyMedium>0.1</accuracyMedium>
+			<accuracyLong>0.8</accuracyLong>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>SkeletonBlast</defaultProjectile>
+			<warmupTime>1.2</warmupTime>
+			<burstShotCount>1</burstShotCount>
+			<minRange>1</minRange>
+			<range>30</range>				
+			<soundCast>TM_FireWooshSD</soundCast>
+			<muzzleFlashScale>0</muzzleFlashScale>
+			<label>ethereal blast</label>
+			<commonality>1</commonality>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>wand</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</Defs>

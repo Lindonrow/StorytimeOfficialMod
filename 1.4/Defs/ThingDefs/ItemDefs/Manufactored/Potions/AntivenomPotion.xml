@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PotionBase">
+		<defName>AntivenomPotion</defName>
+		<label>antivenom potion</label>
+		<description>A potion of antivenom.</description>
+		<graphicData>
+		<texPath>Things/Items/Resources/Potions/AntivenomPotion</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>125</MarketValue>
+		<Mass>0.3</Mass>
+		<WorkToMake>900</WorkToMake>
+		<Nutrition>0</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>NeverForNutrition</preferability>
+        <ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>HedAntivenomPotion</hediffDef>
+				<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	
+ <HediffDef>
+    	<defName>HedAntivenomPotion</defName>
+    	<label>Consumed Antivenom Potion</label>
+		<description>Drank an antivenom potion!</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(200,80,80)</defaultLabelColor>      	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>40000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+		<statOffsets>
+			  <ToxicResistance>0.75</ToxicResistance>
+		</statOffsets>		
+      </li>
+    </stages>
+  </HediffDef>	
+	
+
+
+
+</Defs>

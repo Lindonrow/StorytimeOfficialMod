@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Abstract="True" Name="BasePlayerBeetPawnKind">
+    <race>Alien_Beet</race>
+    <combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BasePlayerBeetPawnKind">
+    <defName>PlayerBeet</defName>
+    <label>member</label>
+    <defaultFactionType>PlayerTribe</defaultFactionType>
+    <chemicalAddictionChance>0.02</chemicalAddictionChance>
+	<apparelMoney>150~300</apparelMoney>
+	<apparelTags>
+        <li>Neolithic</li>
+    </apparelTags>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~10</initialResistanceRange>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>WoodBeetBackstory</li>
+		  <li>BeetnikhBackstory</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+  </PawnKindDef>
+ 
+</Defs>

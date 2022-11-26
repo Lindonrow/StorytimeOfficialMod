@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+<!-- Outlander -->
+  <AlienRace.AlienBackstoryDef>
+    <defName>ST_Chemist</defName>
+    <title>chemist</title>
+    <titleShort>chemist</titleShort>
+    <baseDesc>[PAWN_nameDef] was a trained chemist on an Urbworld. [PAWN_pronoun] learned much about synthesizing useful materials from various chemicals.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>6</value>
+	  </li>
+      <li>
+        <key>Intellectual</key>
+        <value>2</value>
+	  </li>
+    </skillGains>
+	<spawnCategories>
+		<li>Offworlder</li>
+		<li>Outlander</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>ST_PlantEnthusiast</defName>
+    <title>plant enthusiast</title>
+    <titleShort>plant enthusiast</titleShort>
+    <baseDesc>[PAWN_nameDef] enjoyed going out into the woods near [PAWN_possessive] town to collect various nice-smelling plants.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>4</value>
+	  </li>
+	  <li>
+        <key>Plants</key>
+        <value>2</value>
+	  </li>
+    </skillGains>
+	<spawnCategories>
+		<li>Offworlder</li>
+		<li>Outlander</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>ST_HumanTransmutation</defName>
+    <title>fullmetal alchemist</title>
+    <titleShort>fullmetal alchemist</titleShort>
+    <baseDesc>[PAWN_nameDef] was an alchemist whose mom died. In an attempt to bring her back, [PAWN_pronoun] practiced human alchemy. Instead of bringing her back, however, [PAWN_pronoun] turned [PAWN_possessive] brother into a meat mountain named Alphonse. It was depressing.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>4</value>
+	  </li>
+      <li>
+        <key>Intellectual</key>
+        <value>-2</value>
+	  </li>
+    </skillGains>
+    <forcedTraitsChance>
+        <li>
+            <defName>NaturalMood</defName>
+            <degree>-2</degree>
+        </li>
+    </forcedTraitsChance>
+	<spawnCategories>
+		<li>Offworlder</li>
+		<li>Outlander</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+<!-- Pirate -->
+  <AlienRace.AlienBackstoryDef>
+    <defName>ST_BreakingBad</defName>
+    <title>kingpin chemist</title>
+    <titleShort>kingpin</titleShort>
+    <baseDesc>[PAWN_nameDef] was once an innocent chemistry teacher before getting involved in the meth business. [PAWN_pronoun] grew more and more powerful until becoming kingpin of a vast drug empire.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>8</value>
+	  </li>
+      <li>
+        <key>Shooting</key>
+        <value>3</value>
+	  </li>
+    </skillGains>
+	<spawnCategories>
+		<li>Pirate</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>ST_ChemistrySet</defName>
+    <title>chemistry kid</title>
+    <titleShort>chemistry kid</titleShort>
+    <baseDesc>[PAWN_nameDef] got a chemistry set for [PAWN_possessive] birthday. Unfortunately, [PAWN_pronoun] used it for evil by making crude meth, and it was taken away by [PAWN_possessive] parents.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>3</value>
+	  </li>
+    </skillGains>
+	<spawnCategories>
+		<li>Pirate</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+<!-- Tribal -->
+  <AlienRace.AlienBackstoryDef>
+    <defName>ST_HerbloreExpert</defName>
+    <title>herbologist</title>
+    <titleShort>herbologist</titleShort>
+    <baseDesc>[PAWN_nameDef] collected medicinal herbs for [PAWN_possessive] tribe, an important role in a society without modern medicine.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>5</value>
+	  </li>
+	  <li>
+		<key>Medicine</key>
+        <value>3</value>
+      </li>
+	  <li>
+        <key>Plants</key>
+        <value>2</value>
+	  </li>
+    </skillGains>
+	<spawnCategories>
+		<li>Tribal</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Defs>

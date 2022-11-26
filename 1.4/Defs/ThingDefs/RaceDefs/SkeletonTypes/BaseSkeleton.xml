@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BasePawn" Name="BaseSkeleton" Abstract="True">
+    <statBases>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <Flammability>0.3</Flammability>
+      <ComfyTemperatureMin>-250</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+	  <LeatherAmount>0</LeatherAmount>
+	  <MeatAmount>0</MeatAmount>
+    </statBases>
+    <race>
+      <needsRest>false</needsRest>
+      <thinkTreeMain>SkeletonPirate</thinkTreeMain>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <lifeExpectancy>2000</lifeExpectancy>
+    </race>
+	<comps>
+		<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+			<hediffname>HedSTUndead</hediffname>
+			<hediffseverity>1</hediffseverity>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  <PawnKindDef Name="BaseSkeletonKind" Abstract="True">
+    <defaultFactionType>Skeleton_Pirates</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <destroyGearOnDrop>false</destroyGearOnDrop>
+  </PawnKindDef>
+  
+</Defs>

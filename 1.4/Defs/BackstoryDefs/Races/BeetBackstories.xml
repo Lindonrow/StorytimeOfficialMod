@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.AlienBackstoryDef Name="BeetnikhBackstories" Abstract="True">
+	<spawnCategories>
+      <li>BeetnikhBackstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetHerderChild</defName>
+    <title>young herder</title>
+    <titleShort>young herder</titleShort>
+    <baseDesc>[PAWN_nameDef] helped herd the ship that lived on the island. It was a lonely upbringing.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>-3</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetFisherChild</defName>
+    <title>young fisher</title>
+    <titleShort>young fisher</titleShort>
+    <baseDesc>[PAWN_nameDef] lived in town and helped [PAWN_possessive] catch fish. Everybody liked [PAWN_pronoun].</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Animals</key>
+        <value>2</value>
+	  </li>
+	  <li>
+		<key>Cooking</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetSchoolChild</defName>
+    <title>schoolchild</title>
+    <titleShort>schoolchild</titleShort>
+    <baseDesc>[PAWN_nameDef]'s family was well off enough that [PAWN_pronoun] was able to attend school instead of helping out around the house.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+		<key>Intellectual</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Social</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetCulturalExchange</defName>
+    <title>exchange student</title>
+    <titleShort>exchange student</titleShort>
+    <baseDesc>[PAWN_nameDef] joined a program of cultural exchange with their wood beet cousins. This ended poorly. </baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>4</value>
+	  </li>
+	  <li>
+        <key>Shooting</key>
+        <value>2</value>
+	  </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>DrugDesire</defName>
+        <degree>2</degree>
+      </li>
+    </forcedTraitsChance>
+	<workDisables>
+      <li>Intellectual</li>
+	  <li>Caring</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetFarmer</defName>
+    <title>beet farmer</title>
+    <titleShort>farmer</titleShort>
+    <baseDesc>[PAWN_nameDef] farmed beets. This was considered in poor taste by [PAWN_possessive] neighbors</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>-4</value>
+	  </li>
+	  <li>
+		<key>Plants</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Cooking</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>Abrasive</defName>
+      </li>
+    </forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetShaman</defName>
+    <title>beet shaman</title>
+    <titleShort>shaman</titleShort>
+    <baseDesc>[PAWN_nameDef] was a member of the elite group who communed with the spirits of nature that beets revere.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Intellectual</key>
+        <value>4</value>
+	  </li>
+	  <li>
+		<key>Alchemy</key>
+        <value>4</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetGuard</defName>
+    <title>town guard</title>
+    <titleShort>guard</titleShort>
+    <baseDesc>[PAWN_nameDef] worked as a guard in town, protecting the citizenry from pirates and drunkards.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Melee</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetAlcoholic</defName>
+    <title>alcoholic</title>
+    <titleShort>alcoholic</titleShort>
+    <baseDesc>[PAWN_nameDef] can't stop drinking alcohol. This has made them violent and dangerous to society.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Social</key>
+        <value>-6</value>
+	  </li>
+      <li>
+		<key>Melee</key>
+        <value>8</value>
+	  </li>
+    </skillGains>
+	<forcedTraitsChance>
+      <li>
+        <defName>DrugDesire</defName>
+        <degree>1</degree>
+      </li>
+	  <li>
+        <defName>Bloodlust</defName>
+      </li>
+    </forcedTraitsChance>
+	<workDisables>
+      <li>ManualDumb</li>
+	  <li>Caring</li>
+	  <li>Intellectual</li>
+	  <li>ManualSkilled</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetEmperor</defName>
+    <title>emperor</title>
+    <titleShort>emperor</titleShort>
+    <baseDesc>[PAWN_nameDef] somehow managed to become ruler of a great Empire. Considering how stupid [PAWN_pronoun] is, no one knows exactly how this was accomplished. </baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Melee</key>
+        <value>12</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Social</key>
+        <value>-8</value>
+	  </li>
+    </skillGains>
+	<workDisables>
+      <li>ManualDumb</li>
+	  <li>Caring</li>
+	  <li>Intellectual</li>
+	  <li>ManualSkilled</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetHerder</defName>
+    <title>herder</title>
+    <titleShort>herder</titleShort>
+    <baseDesc>[PAWN_nameDef] herded sheep around the island. It was boring.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+	  <li>
+		<key>Social</key>
+        <value>-5</value>
+      </li>
+	  <li>
+		<key>Animals</key>
+        <value>6</value>
+	  </li>
+	  <li>
+		<key>Shooting</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+    <defName>BeetTownsperson</defName>
+    <title>townsperson</title>
+    <titleShort>townsperson</titleShort>
+    <baseDesc>[PAWN_nameDef] lived in town, doing various odd tasks for pay.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+		<key>Construction</key>
+        <value>4</value>
+      </li>
+	  <li>
+		<key>Crafting</key>
+        <value>4</value>
+      </li>
+	  <li>
+		<key>Cooking</key>
+        <value>2</value>
+      </li>
+	  <li>
+		<key>Alchemy</key>
+        <value>2</value>
+	  </li>
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+</Defs>

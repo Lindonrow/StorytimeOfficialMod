@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Abstract="True" Name="BasePlayerFrogPersonPawnKind">
+    <race>Alien_FrogPerson</race>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>FrogPersonBackstory</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BasePlayerFrogPersonPawnKind">
+    <defName>PlayerFrogPerson</defName>
+    <label>member</label>
+    <combatPower>50</combatPower>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <chemicalAddictionChance>0.09</chemicalAddictionChance>
+    <apparelMoney>
+      <min>10</min>
+      <max>500</max>
+    </apparelMoney>
+	<apparelTags>
+        <li>Neolithic</li>
+    </apparelTags>
+	<weaponMoney>
+         <min>90</min>
+         <max>150</max>
+    </weaponMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+	<weaponTags>
+		<li>FrogmanMelee</li>
+		<li>FrogmanRanged</li>
+    </weaponTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~20</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BasePlayerFrogPersonPawnKind">
+    <defName>FrogPersonHunter</defName>
+    <label>hunter</label>
+    <combatPower>45</combatPower>
+    <defaultFactionType>FrogTribes</defaultFactionType>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelMoney>
+      <min>40</min>
+      <max>300</max>
+    </apparelMoney>
+	<apparelTags>
+        <li>Neolithic</li>
+    </apparelTags>
+	<weaponMoney>
+         <min>50</min>
+         <max>300</max>
+    </weaponMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+	<weaponTags>
+		<li>FrogmanRanged</li>
+    </weaponTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~20</initialResistanceRange>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="BasePlayerFrogPersonPawnKind">
+    <defName>FrogPersonWarrior</defName>
+    <label>warrior</label>
+    <combatPower>45</combatPower>
+    <defaultFactionType>FrogTribes</defaultFactionType>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelMoney>
+      <min>40</min>
+      <max>300</max>
+    </apparelMoney>
+	<apparelTags>
+        <li>Neolithic</li>
+    </apparelTags>
+	<weaponMoney>
+         <min>250</min>
+         <max>300</max>
+    </weaponMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+	<weaponTags>
+		<li>FrogmanMelee</li>
+    </weaponTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~20</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BasePlayerFrogPersonPawnKind">
+    <defName>FrogPersonTrader</defName>
+    <label>trader</label>
+    <trader>true</trader>
+	<combatPower>60</combatPower>
+    <defaultFactionType>FrogTribes</defaultFactionType>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelMoney>
+      <min>40</min>
+      <max>300</max>
+    </apparelMoney>
+	<apparelTags>
+        <li>Neolithic</li>
+    </apparelTags>
+    <weaponMoney>
+         <min>50</min>
+         <max>300</max>
+    </weaponMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+	<weaponTags>	
+        <li>FrogmanRanged</li>
+    </weaponTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~20</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BasePlayerFrogPersonPawnKind">
+    <defName>FrogPersonChief</defName>
+    <label>chief</label>
+	<combatPower>60</combatPower>
+    <defaultFactionType>FrogTribes</defaultFactionType>
+    <factionLeader>true</factionLeader>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>40</min>
+      <max>300</max>
+    </apparelMoney>
+	<weaponMoney>
+         <min>250</min>
+         <max>500</max>
+    </weaponMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+	<weaponTags>	
+        <li>FrogmanMelee</li>
+    </weaponTags>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~30</initialResistanceRange>
+  </PawnKindDef>  
+  
+  
+  
+  
+  
+  
+  
+  
+</Defs>

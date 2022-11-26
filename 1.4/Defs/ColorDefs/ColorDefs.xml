@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- The Four Great OGs -->
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STPurple</defName>
+    <label>swanky purple</label>
+    <color>(138,43,226)</color>
+    <displayOrder>1</displayOrder>
+  </ColorDef>
+  
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STGold</defName>
+    <label>gold</label>
+    <color>(218,165,32)</color>
+    <displayOrder>1</displayOrder>
+  </ColorDef>
+  
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STTeal</defName>
+    <label>real teal</label>
+    <color>(32,178,170)</color>
+    <displayOrder>1</displayOrder>
+  </ColorDef>
+  
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STOrange</defName>
+    <label>fiery orange</label>
+    <color>(200, 110, 0)</color>
+    <displayOrder>1</displayOrder>
+  </ColorDef>  
+
+<!-- Fruit Colors -->
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STBananaColor</defName>
+    <label>banana color</label>
+    <color>(255, 225, 53)</color>
+    <displayOrder>2</displayOrder>
+  </ColorDef>
+  
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STMelonColor</defName>
+    <label>melon color</label>
+    <color>(243, 85, 136)</color>
+    <displayOrder>2</displayOrder>
+  </ColorDef>
+  
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STPotatoColor</defName>
+    <label>potato color</label>
+    <color>(183,146,104)</color>
+    <displayOrder>2</displayOrder>
+  </ColorDef>
+
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STPumpkinColor</defName>
+    <label>pumpkin color</label>
+    <color>(255, 117, 24)</color>
+    <displayOrder>2</displayOrder>
+  </ColorDef>
+  
+<!-- Gay Flag Colors -->
+  
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STGayRed</defName>
+    <label>gay red</label>
+    <color>(228, 3, 3)</color>
+    <displayOrder>3</displayOrder>
+  </ColorDef>  
+
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STGayOrange</defName>
+    <label>gay orange</label>
+    <color>(255, 140, 0)</color>
+    <displayOrder>3</displayOrder>
+  </ColorDef>  
+
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STGayYellow</defName>
+    <label>gay orange</label>
+    <color>(255, 237, 0)</color>
+    <displayOrder>3</displayOrder>
+  </ColorDef>    
+
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STGayGreen</defName>
+    <label>gay green</label>
+    <color>(0, 128, 38)</color>
+    <displayOrder>3</displayOrder>
+  </ColorDef>  
+
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STGayBlue</defName>
+    <label>gay blue</label>
+    <color>(36, 64, 142)</color>
+    <displayOrder>3</displayOrder>
+  </ColorDef>  
+
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STGayPurple</defName>
+    <label>gay purple</label>
+    <color>(115, 41, 130)</color>
+    <displayOrder>3</displayOrder>
+  </ColorDef>     
+
+<!--Country Colors-->
+
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STCanthaGreen</defName>
+    <label>Canthan jade</label>
+    <color>(0, 168, 107)</color>
+    <displayOrder>4</displayOrder>
+  </ColorDef>     
+
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STElonaBlue</defName>
+    <label>Elonan blue</label>
+    <color>(29, 68, 184)</color>
+    <displayOrder>4</displayOrder>
+  </ColorDef>     
+
+  <ColorDef ParentName="StructureColorBase">
+    <defName>STKrytaOrange</defName>
+    <label>Krytan orange</label>
+    <color>(225, 80, 15)</color>
+    <displayOrder>4</displayOrder>
+  </ColorDef>      
+</Defs>

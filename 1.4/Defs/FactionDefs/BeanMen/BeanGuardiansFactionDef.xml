@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.BackstoryDef>
+    <defName>BeanManAdult_Bott_Guardian</defName>
+    <title>Bertie Bott's Every Flavor Bean Man</title>
+	<titleShort>Bean Man</titleShort>
+	<bodyTypeGlobal>Bott</bodyTypeGlobal>
+	<spawnCategories>
+      <li>BeanGuardian</li>
+    </spawnCategories>
+    <baseDescription>Born with a close affinity to the rare and powerful beans of Bertie Bott, this bean man variety possesses a biological quirk that causes them to produce Every Flavor Beans inside their stomach. Practically speaking, this means that they periodically suffer (or benefit) from the random effects of Bertie Bott's Every Flavor Beans.</baseDescription>
+    <slot>Adulthood</slot>
+    <forcedHediffs>
+      <li>HedBottBeanMan</li>
+    </forcedHediffs>
+  </AlienRace.BackstoryDef>
+
+  <FactionDef>
+    <defName>BeanGuardians</defName>
+    <label>bean guardians</label>
+    <description>A sworn brotherhood of Bertie Bott's Every Flavor Bean Men who have banded together to prevent anyone from misusing the Every Flavor Beans. In their minds, this means anyone using them (except themselves, of course).</description>
+    <pawnsPlural>bean guardians</pawnsPlural>
+    <settlementGenerationWeight>0.2</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>warlord</leaderTitle>
+    <factionIconPath>World/BeanMen/BeanGuardianFactionLogo</factionIconPath>
+    <naturalEnemy>true</naturalEnemy>
+    <colorSpectrum>
+      <li>(150, 20, 20)</li>
+    </colorSpectrum>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+    </disallowedMemes>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </requiredMemes>
+    <allowedCultures><li>STBeanGuardian</li></allowedCultures>
+    <structureMemeWeights>
+      <STBeanGuardianOrigin MayRequire="Ludeon.RimWorld.Ideology">1</STBeanGuardianOrigin>
+    </structureMemeWeights>
+    <factionNameMaker>NamerFactionBeanGuardians</factionNameMaker>
+    <settlementNameMaker>BeanSettlementName</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+    <backstoryCategories>
+      <li>BeanGuardian</li>
+    </backstoryCategories>
+    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <BeanGuardianBasic>1000</BeanGuardianBasic>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <BeanGuardianBasic>100</BeanGuardianBasic>
+          <BeanGuardianAdvanced>25</BeanGuardianAdvanced>
+		  <BeanGuardianLeader>1</BeanGuardianLeader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <BeanGuardianTrader>1</BeanGuardianTrader>
+        </traders>
+        <carriers>
+          <Muffalo>1</Muffalo>
+          <Alpaca>1</Alpaca>
+        </carriers>
+        <guards>
+          <BeanGuardianBasic>100</BeanGuardianBasic>
+          <BeanGuardianAdvanced>25</BeanGuardianAdvanced>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <BeanGuardianBasic>100</BeanGuardianBasic>
+          <BeanGuardianAdvanced>25</BeanGuardianAdvanced>
+		  <BeanGuardianLeader>1</BeanGuardianLeader>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<modExtensions>
+      <li Class="FactionSounds.FactionSound">
+        <soundDef>Hedwig_Theme</soundDef>
+      </li>
+	</modExtensions>
+  </FactionDef>
+
+
+
+
+</Defs>
