@@ -5,6 +5,11 @@
       <li>GnomeBackstory</li>
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef Name="GnomeBackstoriesAdult" Abstract="True" ParentName="GnomeBackstories"> 
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+  </AlienRace.AlienBackstoryDef>
   
   <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
     <defName>Gnome_Child</defName>
@@ -28,7 +33,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstoriesAdult">
     <defName>Gnome_Chef</defName>
     <title>gnome chef</title>
     <titleShort>chef</titleShort>
@@ -42,7 +47,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstoriesAdult">
     <defName>Gnome_Glider</defName>
     <title>glider pilot</title>
     <titleShort>glider pilot</titleShort>
@@ -60,7 +65,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstoriesAdult">
     <defName>Gnome_Soldier</defName>
     <title>gnome soldier</title>
     <titleShort>soldier</titleShort>
@@ -78,7 +83,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstoriesAdult">
     <defName>Gnome_Noble</defName>
     <title>gnome noble</title>
     <titleShort>noble</titleShort>
@@ -107,7 +112,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstoriesAdult">
     <defName>Gnome_Froggy</defName>
     <title>frogsnatcher</title>
     <titleShort>frogsnatcher</titleShort>
@@ -128,7 +133,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstoriesAdult">
     <defName>Gnome_Crafter</defName>
     <title>gnome crafter</title>
     <titleShort>gnome crafter</titleShort>
@@ -142,7 +147,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstoriesAdult">
     <defName>Gnome_Ambassador</defName>
     <title>ambassador</title> 
     <titleShort>ambassador</titleShort> 
@@ -160,7 +165,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstoriesAdult">
     <defName>Gnome_Engineer</defName>
     <title>gnome engineer</title> 
     <titleShort>engineer</titleShort> 
@@ -182,7 +187,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="GnomeBackstoriesAdult">
     <defName>Gnome_Sage</defName>
     <title>gnome sage</title>
     <titleShort>sage</titleShort>

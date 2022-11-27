@@ -36,6 +36,8 @@
           </headTypes>			
           <bodyTypes>
             <li>Thin</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
           </bodyTypes>
 		  <customDrawSize>(0.7, 0.7)</customDrawSize>
           <customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>

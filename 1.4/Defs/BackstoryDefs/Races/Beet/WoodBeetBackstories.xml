@@ -6,6 +6,11 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
+  <AlienRace.AlienBackstoryDef Name="BeetBackstoriesAdult" Abstract="True" ParentName = "BeetBackstories">
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+  </AlienRace.AlienBackstoryDef>  
+  
   <AlienRace.AlienBackstoryDef ParentName="BeetBackstories">
     <defName>CommunalChildWoodBeet</defName>
     <title>village child</title>
@@ -100,12 +105,14 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetBackstoriesAdult">
     <defName>DrugAddledWoodBeet</defName>
     <title>drug addled</title>
     <titleShort>drug addled</titleShort>
     <baseDesc>[PAWN_nameDef] has spent most of [PAWN_possessive] adult life doing various drugs. [PAWN_pronoun]'s not very smart, but most [PAWN_pronoun] has a certain charm.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Fat</bodyTypeMale>
+	<bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
       <li>
         <key>Social</key>
@@ -124,7 +131,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetBackstoriesAdult">
     <defName>ChildEaterWoodBeet</defName>
     <title>child-eater</title>
     <titleShort>child-eater</titleShort>
@@ -151,7 +158,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetBackstoriesAdult">
     <defName>ShamanWoodBeet</defName>
     <title>Pecan shaman</title>
     <titleShort>shaman</titleShort>
@@ -173,12 +180,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetBackstoriesAdult">
     <defName>RaiderWoodBeet</defName>
     <title>Valenwood raider</title>
     <titleShort>raider</titleShort>
     <baseDesc>[PAWN_nameDef] has participated in numerous raids on Valenroff holdings. Dozens have died by [PAWN_possessive] hand.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Melee</key>
@@ -196,12 +205,14 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetBackstoriesAdult">
     <defName>LazyBeet</defName>
     <title>lazy villager</title>
     <titleShort>villager</titleShort>
     <baseDesc>[PAWN_nameDef]'s use of drugs has made them quite lazy.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Fat</bodyTypeMale>
+	<bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Social</key>
@@ -223,12 +234,14 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetBackstoriesAdult">
     <defName>SlaveWoodBeet</defName>
     <title>Valenroff slave</title>
     <titleShort>slave</titleShort>
     <baseDesc>[PAWN_nameDef] was captured by Valenroffs and forced to work in their mines for years before escaping.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Mining</key>
@@ -245,7 +258,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetBackstoriesAdult">
     <defName>MeatballWoodBeet</defName>
     <title>meatball near-miss</title>
     <titleShort>meatball near-miss</titleShort>
@@ -265,7 +278,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetBackstoriesAdult">
     <defName>WoodBeetGatherer</defName>
     <title>Valenwood forager</title>
     <titleShort>forager</titleShort>
@@ -282,7 +295,7 @@
   
   
   <AlienRace.AlienBackstoryDef Name="PecanJoeBackstories" Abstract="True">
-    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeMale>Hulk</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<spawnCategories>
       <li>PecanJoeBackstory</li>

@@ -50,6 +50,8 @@
           </headTypes>
           <bodyTypes Inherit="False">
             <li>Male</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
           </bodyTypes>
 		  <customDrawSize>(0.7, 0.605)</customDrawSize>
           <customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
@@ -251,7 +253,7 @@
         </li>
         <li>
           <def>HumanlikeAdult</def>
-          <minAge>14</minAge>
+          <minAge>13</minAge>
         </li>
       </lifeStageAges>
       <lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">

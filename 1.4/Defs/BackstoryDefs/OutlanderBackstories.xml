@@ -60,6 +60,8 @@
 		<workDisables>
 			<li>ManualDumb</li>
 		</workDisables>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
 			  <li>
 				<key>Shooting</key>
@@ -87,6 +89,8 @@
 		<workDisables>
 			<li>Intellectual</li>
 		</workDisables>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
 			  <li>
 				<key>Shooting</key>
@@ -110,6 +114,8 @@
 		<title>rock teacher</title>
 		<titleShort>rock teacher</titleShort>
 		<baseDesc>[PAWN_nameDef] spent years learning the way of the rock. Once [PAWN_pronoun] had achieved full mastery, [PAWN_pronoun] decided to share [PAWN_possessive] wisdom by teaching rock class at a local community college, training others in the knowledge of rock and also warning them about the dangers of global warming.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
 			  <li>
 				<key>Mining</key>
@@ -133,10 +139,12 @@
 	
 	<AlienRace.AlienBackstoryDef ParentName="STOutlanderBackstories">
 		<defName>ST_FrogFarmer</defName>
-		<slot>Adulthood</slot>
 		<title>frog rancher</title>
 		<titleShort>frog rancher</titleShort>
 		<baseDesc>[PAWN_nameDef] owned and operated a ranch specializing in frogs. [PAWN_pronoun] raised many different species of frog, including some of the more exotic ones.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
 		<skillGains>
 			  <li>
 				<key>Animals</key>

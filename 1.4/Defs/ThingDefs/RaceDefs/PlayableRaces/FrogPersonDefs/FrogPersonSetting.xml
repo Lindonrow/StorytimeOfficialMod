@@ -34,6 +34,8 @@
 			<li>Thin</li>
 			<li>Hulk</li>
 			<li>Fat</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 		</bodyTypes>
 		  <customDrawSize>(0.95,0.95)</customDrawSize>
           <customHeadDrawSize>(1.1,1.1)</customHeadDrawSize>

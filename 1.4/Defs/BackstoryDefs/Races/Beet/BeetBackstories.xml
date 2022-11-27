@@ -6,6 +6,11 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
+  <AlienRace.AlienBackstoryDef Name="BeetnikhBackstoriesAdult" Abstract="True" ParentName = "BeetnikhBackstories">
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+  </AlienRace.AlienBackstoryDef>
+  
   <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
     <defName>BeetHerderChild</defName>
     <title>young herder</title>
@@ -96,7 +101,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">
     <defName>BeetFarmer</defName>
     <title>beet farmer</title>
     <titleShort>farmer</titleShort>
@@ -123,7 +128,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">
     <defName>BeetShaman</defName>
     <title>beet shaman</title>
     <titleShort>shaman</titleShort>
@@ -145,12 +150,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">
     <defName>BeetGuard</defName>
     <title>town guard</title>
     <titleShort>guard</titleShort>
     <baseDesc>[PAWN_nameDef] worked as a guard in town, protecting the citizenry from pirates and drunkards.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Melee</key>
@@ -163,12 +170,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">
     <defName>BeetAlcoholic</defName>
     <title>alcoholic</title>
     <titleShort>alcoholic</titleShort>
     <baseDesc>[PAWN_nameDef] can't stop drinking alcohol. This has made them violent and dangerous to society.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Fat</bodyTypeMale>
+	<bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Social</key>
@@ -196,12 +205,14 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">
     <defName>BeetEmperor</defName>
     <title>emperor</title>
     <titleShort>emperor</titleShort>
     <baseDesc>[PAWN_nameDef] somehow managed to become ruler of a great Empire. Considering how stupid [PAWN_pronoun] is, no one knows exactly how this was accomplished. </baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Fat</bodyTypeMale>
+	<bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Melee</key>
@@ -224,7 +235,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">
     <defName>BeetHerder</defName>
     <title>herder</title>
     <titleShort>herder</titleShort>
@@ -246,12 +257,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">
     <defName>BeetTownsperson</defName>
     <title>townsperson</title>
     <titleShort>townsperson</titleShort>
     <baseDesc>[PAWN_nameDef] lived in town, doing various odd tasks for pay.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Fat</bodyTypeMale>
+	<bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Construction</key>

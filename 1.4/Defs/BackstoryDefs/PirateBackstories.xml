@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <AlienRace.AlienBackstoryDef Name="PirateBackstories" Abstract="True">
+  <AlienRace.AlienBackstoryDef Name="PirateBackstories" Abstract="True"> 
 	<spawnCategories>
       <li>PirateBackstory</li>
     </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef Name="PirateBackstoriesAdult" Abstract="True" ParentName="PirateBackstories"> 
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
   </AlienRace.AlienBackstoryDef>
   
   <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
@@ -139,12 +144,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_PirateCook</defName>
     <title>pirate cook</title>
     <titleShort>cook</titleShort>	
     <baseDesc>[PAWN_nameDef] was the only chef onboard [PAWN_possessive] ship. Most of [PAWN_possessive] time was spent cooking for the crew.</baseDesc>
     <slot>Adulthood</slot>
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
       <li>
         <key>Cooking</key>
@@ -153,7 +160,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_PirateOfficer</defName>
     <title>pirate officer</title>
     <titleShort>officer</titleShort>	
@@ -179,7 +186,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_CursedPirate</defName>
     <title>cursed pirate</title>
     <titleShort>cursed pirate</titleShort>	
@@ -205,7 +212,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_TreasureHunter</defName>
     <title>treasure hunter</title>
     <titleShort>treasure hunter</titleShort>	
@@ -223,12 +230,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_Marooned</defName>
     <title>marooned captain</title>
     <titleShort>marooned</titleShort>	
     <baseDesc>[PAWN_nameDef] was captain of a pirate vessel until being overthrown in a mutiny by [PAWN_possessive] first mate. The crew proceeded to abandon [PAWN_objective] on a desert island, where [PAWN_pronoun] stayed for months until rescue came.</baseDesc>
     <slot>Adulthood</slot>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Plants</key>
@@ -247,7 +256,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_Mutineer</defName>
     <title>mutineer</title>
     <titleShort>mutineer</titleShort>	
@@ -270,7 +279,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_ShipDoctor</defName>
     <title>pirate doctor</title> 
     <titleShort>doctor</titleShort>	
@@ -292,7 +301,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_GentlemanPirate</defName>
     <title>gentleman corsair</title> 
     <titleShort>gentleman corsair</titleShort>	
@@ -310,12 +319,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_Shanghaied</defName>
     <title>shanghaied</title>
     <titleShort>shanghaied</titleShort>	
     <baseDesc>[PAWN_nameDef] was known for being drunk nearly constantly. This ended up causing [PAWN_objective] trouble when [PAWN_pronoun] was kidnapped by pirates while passed out drunk and forced to join the crew.</baseDesc>
     <slot>Adulthood</slot>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Social</key>
@@ -334,7 +345,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_NavyTraitor</defName>
     <title>navy traitor</title>
     <titleShort>traitor</titleShort>	
@@ -352,12 +363,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_HurdyGurdy</defName>
     <title>hurdy gurdy player</title>
     <titleShort>hurdy gurdy player</titleShort>	
     <baseDesc>[PAWN_nameDef] provided entertainment on the ship by playing the Hurdy Gurdy. Everybody loved [PAWN_objective] and [PAWN_pronoun] rarely had to do any real work around the ship.</baseDesc>
     <slot>Adulthood</slot>
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Social</key>
@@ -369,7 +382,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
 
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_Smuggler</defName>
     <title>smuggler</title>
     <titleShort>smuggler</titleShort>
@@ -392,7 +405,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
 
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_ArmsDealer</defName>
     <title>pirate arms dealer</title>
     <titleShort>arms dealer</titleShort>
@@ -406,12 +419,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
 
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_Boarder</defName>
     <title>boarder</title>
     <titleShort>boarder</titleShort>
     <baseDesc>[PAWN_nameDef] always volunteered to join boarding parties when attacking another ship. [PAWN_pronoun] was a terrifying opponent and the ship's best fighter.</baseDesc>
     <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Melee</key>
@@ -425,12 +440,14 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
 
-  <AlienRace.AlienBackstoryDef ParentName="PirateBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="PirateBackstoriesAdult">
     <defName>ST_Cannoneer</defName>
     <title>cannoneer</title>
     <titleShort>cannoneer</titleShort>
     <baseDesc>[PAWN_nameDef] was in charge of manning the cannons on [PAWN_possessive] pirate ship. [PAWN_pronoun] was known as quite the marksman.</baseDesc>
     <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Shooting</key>

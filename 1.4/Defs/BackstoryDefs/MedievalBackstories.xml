@@ -5,6 +5,11 @@
 			<li>Medieval</li>
 	    </spawnCategories>
 	</AlienRace.AlienBackstoryDef>
+	
+  <AlienRace.AlienBackstoryDef Name="STMedievalBackstoriesAdult" Abstract="True" ParentName="STMedievalBackstories"> 
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+  </AlienRace.AlienBackstoryDef>
 
 <!-- Childhood -->
 
@@ -291,12 +296,14 @@
 
 <!-- Adulthood -->
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_MedievalPeasant</defName>
     <title>peasant</title>
     <titleShort>peasant</titleShort>
     <baseDesc>[PAWN_nameDef] lived the life of a peasant, farming to sustain [PAWN_possessive] family. [PAWN_pronoun] was looked down on by the other members of [PAWN_possessive] society.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Social</key>
@@ -313,12 +320,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_FailedWizard</defName>
     <title>failed wizard</title>
     <titleShort>failed wizard</titleShort>
     <baseDesc>[PAWN_nameDef] attempted to become a wizard but couldn't manage even the simplest spell. Instead [PAWN_pronoun] learned to run from all [PAWN_possessive] problems.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Social</key>
@@ -348,7 +357,7 @@
 	<maleCommonality>0</maleCommonality>
   </AlienRace.AlienBackstoryDef>
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_MagicAztec</defName>
     <title>Magic Aztec</title>
     <titleShort>Magic Aztec</titleShort>
@@ -373,12 +382,14 @@
 	<maleCommonality>25</maleCommonality>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Blacksmith</defName>
     <title>blacksmith</title>
     <titleShort>blacksmith</titleShort>
     <baseDesc>[PAWN_nameDef] was a blacksmith, crafting tools and weapons for [PAWN_possessive] community.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Crafting</key>
@@ -392,7 +403,7 @@
 	</forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_MedievalLord</defName>
     <title>noble lord</title>
     <titleShort>lord</titleShort>
@@ -415,12 +426,14 @@
 	</forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>    
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_EvilMedievalLord</defName>
     <title>cruel baron</title>
     <titleShort>baron</titleShort>
     <baseDesc>[PAWN_nameDef] was a baron, ruling over [PAWN_possessive] fiefdom with an iron fist and earning the hatred of [PAWN_possessive] subjects.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Fat</bodyTypeMale>
+	<bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Social</key>
@@ -449,12 +462,14 @@
 	</forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>      
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Knight</defName>
     <title>knight</title>
     <titleShort>knight</titleShort>
     <baseDesc>[PAWN_nameDef] was a knight of the realm, serving in multiple campaigns and wars over the years.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Melee</key>
@@ -467,7 +482,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Crusader</defName>
     <title>crusader</title>
     <titleShort>crusader</titleShort>
@@ -485,7 +500,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>    
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_MedievalMerchant</defName>
     <title>medieval merchant</title>
 	<titleShort>merchant</titleShort>
@@ -499,7 +514,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>     
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Jester</defName>
     <title>jester</title>
     <titleShort>jester</titleShort>
@@ -524,12 +539,14 @@
 	</forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>    
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_SausageSalesman</defName>
     <title>sausage salesman</title>
     <titleShort>sausage salesman</titleShort>
     <baseDesc>[PAWN_nameDef] spend [PAWN_possessive] days attempting to peddle sausages in [PAWN_possessive] town's main square. The sausages were universally regarded as vile, but somehow [PAWN_nameDef] managed to get people to buy them anyway...</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Social</key>
@@ -547,7 +564,7 @@
 	</forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>    
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Librarian</defName>
     <title>librarian</title>
     <titleShort>librarian</titleShort>
@@ -573,12 +590,14 @@
 	<maleCommonality>50</maleCommonality>
   </AlienRace.AlienBackstoryDef> 
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_PlagueVictim</defName>
     <title>plague victim</title>
     <titleShort>plague victim</titleShort>
     <baseDesc>[PAWN_nameDef] suffered from a terrible plague which nearly took [PAWN_possessive] life. [PAWN_pronoun] was strengthed from the experience in the long run, however, and has a high resistance to disease.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Medicine</key>
@@ -593,12 +612,14 @@
 	</forcedTraitsChance>
   </AlienRace.AlienBackstoryDef> 
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Archchancellor</defName>
     <title>archchancellor</title>
     <titleShort>archchancellor</titleShort>
     <baseDesc>[PAWN_nameDef] was the archchancellor of a prestigious university. [PAWN_pronoun] had a rather non-standard approach to this, and preferred to intimidate [PAWN_possessive] underlings with a crossbow rather than engage in intellectual pursuits.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Shooting</key>
@@ -622,12 +643,14 @@
 	<maleCommonality>50</maleCommonality>
   </AlienRace.AlienBackstoryDef> 
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Bursar</defName>
     <title>universary bursar</title>
     <titleShort>bursar</titleShort>
     <baseDesc>[PAWN_nameDef] was the bursar of a university. [PAWN_pronoun] was known for [PAWN_possessive] mental instability in this role and required a constant supply of dried frog pills to maintain [PAWN_possessive] sanity.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Intellectual</key>
@@ -670,7 +693,7 @@
 	<maleCommonality>50</maleCommonality>
   </AlienRace.AlienBackstoryDef> 
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Witch</defName>
     <title>village witch</title>
 	<titleShort>witch</titleShort>
@@ -726,7 +749,7 @@
 	<maleCommonality>0</maleCommonality>
   </AlienRace.AlienBackstoryDef> 
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Courtier</defName>
     <title>courtier</title>
     <titleShort>courtier</titleShort>
@@ -743,7 +766,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>  
 
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_DonkeyCart</defName>
     <title>donkey cart operator</title>
     <titleShort>donkey cart operator</titleShort>
@@ -761,7 +784,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>    
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_MedievalDoctor</defName>
     <title>medieval doctor</title>
     <titleShort>medieval doctor</titleShort>
@@ -779,7 +802,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>      
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Adventurer</defName>
     <title>adventurer</title>
     <titleShort>adventurer</titleShort>
@@ -803,12 +826,14 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>    
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Tavernkeep</defName>
     <title>tavernkeep</title>
     <titleShort>tavernkeep</titleShort>
     <baseDesc>[PAWN_nameDef] owned the local tavern in [PAWN_possessive] town, and was generally respected by the community. Unfortunately, [PAWN_pronoun] tended to get drunk on his own supply.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Fat</bodyTypeMale>
+	<bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Social</key>
@@ -834,7 +859,7 @@
     </forcedItems>
   </AlienRace.AlienBackstoryDef>   
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Poacher</defName>
     <title>poacher</title>
     <titleShort>poacher</titleShort>
@@ -848,12 +873,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>     
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_Assassin</defName>
     <title>assassin</title>
     <titleShort>assassin</titleShort>
     <baseDesc>[PAWN_nameDef] was an assassin for the Assassin's Guild. [PAWN_pronoun] inhumed many with flair and style.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
     <skillGains>
 	  <li>
 		<key>Shooting</key>
@@ -884,7 +911,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>      
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_MedievalAlchemist</defName>
     <title>medieval alchemist</title>
     <titleShort>medieval alchemist</titleShort>
@@ -898,7 +925,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>      
   
-  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="STMedievalBackstoriesAdult">
     <defName>ST_ChineseAlchemist</defName>
     <title>煉金術士</title>
     <titleShort>煉金術士</titleShort>

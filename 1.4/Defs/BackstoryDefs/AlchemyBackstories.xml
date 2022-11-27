@@ -9,6 +9,8 @@
     <titleShort>chemist</titleShort>
     <baseDesc>[PAWN_nameDef] was a trained chemist on an Urbworld. [PAWN_pronoun] learned much about synthesizing useful materials from various chemicals.</baseDesc>
     <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
     <skillGains>
       <li>
         <key>Alchemy</key>
@@ -30,6 +32,8 @@
     <title>plant enthusiast</title>
     <titleShort>plant enthusiast</titleShort>
     <baseDesc>[PAWN_nameDef] enjoyed going out into the woods near [PAWN_possessive] town to collect various nice-smelling plants.</baseDesc>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
     <skillGains>
       <li>
@@ -82,6 +86,8 @@
     <titleShort>kingpin</titleShort>
     <baseDesc>[PAWN_nameDef] was once an innocent chemistry teacher before getting involved in the meth business. [PAWN_pronoun] grew more and more powerful until becoming kingpin of a vast drug empire.</baseDesc>
     <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
     <skillGains>
       <li>
         <key>Alchemy</key>
@@ -121,6 +127,8 @@
     <titleShort>herbologist</titleShort>
     <baseDesc>[PAWN_nameDef] collected medicinal herbs for [PAWN_possessive] tribe, an important role in a society without modern medicine.</baseDesc>
     <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
     <skillGains>
       <li>
         <key>Alchemy</key>

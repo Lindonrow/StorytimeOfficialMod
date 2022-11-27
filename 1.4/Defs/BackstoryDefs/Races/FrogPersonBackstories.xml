@@ -5,6 +5,11 @@
       <li>FrogPersonBackstory</li>
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef Name="FrogBackstoriesAdult" Abstract="True" ParentName="FrogBackstories"> 
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+  </AlienRace.AlienBackstoryDef>
   
   <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
     <defName>Frog_Flycatcher</defName>
@@ -106,7 +111,8 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
  
-  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+ 
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstoriesAdult">
     <defName>Frog_Alchemist</defName>
     <title>alchemist</title>
     <titleShort>alchemist</titleShort>
@@ -124,7 +130,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstoriesAdult">
     <defName>Frog_FrogKeeper</defName>
     <title>frog keeper</title>
     <titleShort>frog keeper</titleShort>
@@ -138,7 +144,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstoriesAdult">
     <defName>Frog_Chieftain</defName>
     <title>chieftain</title> 
     <titleShort>chieftain</titleShort> 
@@ -155,12 +161,13 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstoriesAdult">
     <defName>Frog_FrogPoacher</defName>
     <title>frog poacher</title> 
     <titleShort>poacher</titleShort> 
     <baseDesc>[PAWN_nameDef] abandoned [PAWN_possessive] tribe and survived by killing and eating the frogs of the swamp, a horrible crime in Frogman society.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Thin</bodyTypeMale>
     <skillGains>
       <li>
 		<key>Shooting</key>
@@ -174,7 +181,7 @@
     </forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstoriesAdult">
     <defName>Frog_TadpoleTender</defName>
     <title>tadpole tender</title>
     <titleShort>tadpole tender</titleShort>
@@ -192,12 +199,14 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstoriesAdult">
     <defName>Frog_Warrior</defName>
     <title>frogperson warrior</title>
     <titleShort>warrior</titleShort>
     <baseDesc>[PAWN_nameDef] protected the tribe as an elite warrior.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Shooting</key>
@@ -213,12 +222,14 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstoriesAdult">
     <defName>Frog_FlyChef</defName>
     <title>fly chef</title>
     <titleShort>chef</titleShort>
     <baseDesc>[PAWN_nameDef] cooked flies into delicious meals such as- fly quiche, fly cake, and fly soup.</baseDesc>
     <slot>Adulthood</slot>
+	<bodyTypeMale>Fat</bodyTypeMale>
+	<bodyTypeFemale>Fat</bodyTypeFemale>
     <skillGains>
       <li>
 		<key>Cooking</key>
@@ -227,7 +238,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstoriesAdult">
     <defName>Frog_Puppeteer</defName>
     <title>puppeteer</title>
     <titleShort>puppeteer</titleShort>
@@ -245,7 +256,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>  
   
-  <AlienRace.AlienBackstoryDef ParentName="FrogBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="FrogBackstoriesAdult">
     <defName>Frog_FrogSupremecist</defName>
     <title>frog supremecist</title>
     <titleShort>supremecist</titleShort>

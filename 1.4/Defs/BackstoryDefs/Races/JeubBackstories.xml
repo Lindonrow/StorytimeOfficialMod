@@ -6,6 +6,11 @@
     </spawnCategories>
   </AlienRace.AlienBackstoryDef>
   
+  <AlienRace.AlienBackstoryDef Name="JeubBackstoriesAdult" Abstract="True" ParentName="JeubBackstories">
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Male</bodyTypeFemale>
+  </AlienRace.AlienBackstoryDef>
+  
   <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
     <defName>Livestock_Jeub</defName>
     <title>livestock</title>
@@ -137,7 +142,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstoriesAdult">
     <defName>Soldier_Jeub</defName>
     <title>cannon fodder</title>
     <titleShort>fodder</titleShort>
@@ -155,7 +160,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstoriesAdult">
     <defName>Noble_Jeub</defName>
     <title>jeub noble</title>
     <titleShort>noble</titleShort>
@@ -178,7 +183,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstoriesAdult">
     <defName>Servant_Jeub</defName>
     <title>servant</title>
     <titleShort>jeub servant</titleShort>
@@ -200,7 +205,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstoriesAdult">
     <defName>Botox_Miner_Jeub</defName>
     <title>botox miner</title>
     <titleShort>botox miner</titleShort>
@@ -221,7 +226,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstoriesAdult">
     <defName>Boiling_Rock_Jeub</defName>
     <title>Boiling Rock inmate</title>
     <titleShort>inmate</titleShort>
@@ -235,7 +240,7 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstoriesAdult">
     <defName>Pacifist_Jeub</defName>
     <title>jeub pacifist</title>
     <titleShort>pacifist</titleShort>
@@ -265,7 +270,7 @@
     </workDisables>
   </AlienRace.AlienBackstoryDef>
   
-  <AlienRace.AlienBackstoryDef ParentName="JeubBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="JeubBackstoriesAdult">
     <defName>Farmer_Jeub</defName>
     <title>jeub farmer</title>
     <titleShort>farmer</titleShort>
