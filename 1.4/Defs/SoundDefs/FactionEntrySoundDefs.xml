@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Faction Music -->
+  <SoundDef>
+    <defName>Snaffs_Workshop</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/Snaffs_Workshop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+    <SoundDef>
+    <defName>Gnome_Theme</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/Gnome_Theme</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+    <SoundDef>
+    <defName>War_Pipes</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/War_Pipes</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>15.058827</min>
+          <max>15.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Pirate_Theme</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/Pirate_Theme</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.058827</min>
+          <max>40.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>SkeletonPirate_Theme</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/On_The_Warpath</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.058827</min>
+          <max>40.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1.02</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>Hedwig_Theme</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/Hedwig_Theme</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+    <SoundDef>
+    <defName>Frog_Theme</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/Frog_Theme</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>    
+  
+    <SoundDef>
+    <defName>Hope_Garden</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/Hope_Garden</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>      
+  
+    <SoundDef>
+    <defName>Oblivion_Theme</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/Oblivion_Theme</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>        
+  
+    <SoundDef>
+    <defName>Goblin_Town</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/Goblin_Town</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>          
+  
+    <SoundDef>
+    <defName>Jack_Sparrow</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Factions/Jack_Sparrow</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.99</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>            
+  
+</Defs>

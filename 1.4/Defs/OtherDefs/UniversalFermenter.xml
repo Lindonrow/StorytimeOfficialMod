@@ -5,7 +5,8 @@
         <defName>StorytimeBarrel</defName>
         <label>Greater Fermenting Barrel</label>
 		<description>Barrel.</description>
-	    <thingClass>UniversalFermenter.Building_ColorCoded</thingClass>
+		<thingClass>ProcessorFramework.Building_ColorCoded</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Buildings/UF_Barrel/UF_Barrel</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -46,64 +47,182 @@
     	<researchPrerequisites>
 			<li>advancedBrewing</li>
 		</researchPrerequisites>
-    <comps>
-		<li Class="UniversalFermenter.CompProperties_UniversalFermenter">
-			<showProductIcon>true</showProductIcon>
-			<barOffset>(0.0, 0.25)</barOffset>
-			<barScale>(1.0, 1.0)</barScale>
-			<processes>
-                <li>
-                  <thingDef>GnomeBeer</thingDef>
-                  <ingredientFilter>
-                    <thingDefs>
-                      <li>GnomeWort</li>
-                    </thingDefs>
-                  </ingredientFilter>
-                  <maxCapacity>75</maxCapacity>
-				  <usesTemperature>true</usesTemperature>
-				  <temperatureSafe>-1.0~32.0</temperatureSafe>
-				  <temperatureIdeal>7.0~32.0</temperatureIdeal>
-				  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
-                  <speedBelowSafe>0.1</speedBelowSafe>
-				  <speedAboveSafe>1.0</speedAboveSafe>
-                  <processDays>4</processDays>
-                </li>
-				<li>
-                  <thingDef>RawNog</thingDef>
-                  <ingredientFilter>
-                    <thingDefs>
-                      <li>NogStarter</li>
-                    </thingDefs>
-                  </ingredientFilter>
-                  <maxCapacity>75</maxCapacity>
-				  <usesTemperature>true</usesTemperature>
-				  <temperatureSafe>-24.0~12.0</temperatureSafe>
-				  <temperatureIdeal>-24.0~12.0</temperatureIdeal>
-				  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> 
-                  <speedBelowSafe>0.1</speedBelowSafe>
-				  <speedAboveSafe>1.0</speedAboveSafe>
-                  <processDays>1</processDays>
-                </li>
-				<li>
-                  <thingDef>Kraken</thingDef>
-                  <ingredientFilter>
-                    <thingDefs>
-                      <li>Sugar</li>
-                    </thingDefs>
-                  </ingredientFilter>
-                  <maxCapacity>75</maxCapacity>
-				  <usesTemperature>true</usesTemperature>
-				  <temperatureSafe>-1.0~32.0</temperatureSafe>
-				  <temperatureIdeal>7.0~32.0</temperatureIdeal>
-				  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
-                  <speedBelowSafe>0.1</speedBelowSafe>
-				  <speedAboveSafe>1.0</speedAboveSafe>
-                  <processDays>5</processDays>
-                </li>
-			</processes>
-			</li>
-		<li Class="CompProperties_Forbiddable"/>
-    </comps>
+	<comps>
+	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="ProcessorFramework.CompProperties_Processor">
+		<capacity>25</capacity>
+		<independentProcesses>false</independentProcesses>
+		<parallelProcesses>false</parallelProcesses>
+		<dropIngredients>false</dropIngredients>
+		<showProductIcon>true</showProductIcon>
+		<barOffset>(0.0, 0.25)</barOffset>
+		<barScale>(1.0, 1.0)</barScale>
+		<colorCoded>true</colorCoded>
+		<processes>
+		  <li>GnomeBeer</li>
+		  <li>RawNog</li>
+		  <li>Kraken</li>
+		</processes>
+	  </li>
+	</comps>
     </ThingDef>
+
+<!-- Processes -->
+
+<!-- Gnome Beer -->
+<ProcessorFramework.ProcessDef>
+  <defName>GnomeBeer</defName>
+  <thingDef>GnomeBeer</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>GnomeWort</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>3</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>1</capacityFactor>
+  <efficiency>0.8</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-1.0~32.0</temperatureSafe>
+  <temperatureIdeal>7.0~32.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(0, 200, 0)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel>What is this and what do I do with it</customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <Rat>(0.1, 1)</Rat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+<!-- Nog -->
+
+<ProcessorFramework.ProcessDef>
+  <defName>RawNog</defName>
+  <thingDef>RawNog</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>NogStarter</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>1</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>1</capacityFactor>
+  <efficiency>1</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-24.0~12.0</temperatureSafe>
+  <temperatureIdeal>-24.0~12.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~2.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(244, 218, 184)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel>What is this and what do I do with it</customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <Rat>(0.1, 1)</Rat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+<!-- Kraken -->
+
+<ProcessorFramework.ProcessDef>
+  <defName>Kraken</defName>
+  <thingDef>Kraken</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>Sugar</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>6</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>1</capacityFactor>
+  <efficiency>0.8</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-1.0~32.0</temperatureSafe>
+  <temperatureIdeal>7.0~32.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~2.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(50, 50, 50)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel>What is this and what do I do with it</customLabel>
+  <destroyChance>0.01</destroyChance>
+  <bonusOutputs>
+    <Monkey>(0.1, 1)</Monkey>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+<!-- Butterbeer -->
+<ProcessorFramework.ProcessDef>
+  <defName>Butterbeer</defName>
+  <thingDef>Butterbeer</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>Butterscotch</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>0.5</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>1</capacityFactor>
+  <efficiency>0.8</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-5.0~52.0</temperatureSafe>
+  <temperatureIdeal>7.0~32.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>0.5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(212, 136, 39)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel>What is this and what do I do with it</customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <Rat>(0.1, 1)</Rat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+
+
+
+
+
 
 </Defs>

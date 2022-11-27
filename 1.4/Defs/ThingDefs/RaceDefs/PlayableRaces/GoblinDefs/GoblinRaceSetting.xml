@@ -56,6 +56,8 @@
             <li>Male</li>
 			<li>Fat</li>
 			<li>Thin</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
           </bodyTypes>
 		  <customDrawSize>(0.75, 0.75)</customDrawSize>
           <customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>

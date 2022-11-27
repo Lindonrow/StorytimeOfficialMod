@@ -6,6 +6,9 @@
     <description>What a strange creature.</description>
     <alienRace>
 	  <raceRestriction>
+		<blackGeneTags>
+		  <li>HairColor</li>
+		</blackGeneTags>
         <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
             <whiteApparelList>
 				<li>Apparel_Parka</li>
@@ -134,6 +137,7 @@
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
       <PsychicSensitivity>0.9</PsychicSensitivity>
+	  <Fertility>0</Fertility>
       <Mass>40</Mass>
     </statBases>
     <tools>

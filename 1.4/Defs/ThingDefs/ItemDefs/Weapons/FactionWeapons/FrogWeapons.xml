@@ -108,21 +108,31 @@
       </li>
     </tools>
     <comps>
-	<li Class="Reloading.CompProperties_Reloadable">
-		<compClass>Reloading.CompReloadable</compClass>
-		<MaxShots>1</MaxShots>
-		<AmmoFilter>
-			<thingDefs>
-				<li>Poison</li>
-			</thingDefs>
-		</AmmoFilter>
-		<ItemsPerShot>1</ItemsPerShot>
-		<ReloadTimePerShot>0.1</ReloadTimePerShot>
-		<ReloadSound>BlowGunSound</ReloadSound>
-		<NewVerbClass>Verb_Shoot</NewVerbClass>
-		<GenerateAmmo>
-			<Poison>4~16</Poison>
-		</GenerateAmmo>
+	<li Class="MVCF.Comps.CompProperties_VerbProps">
+		<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+		<verbProps>
+			<li>
+				<label>blow gun</label>
+				<canBeToggled>false</canBeToggled>
+				<comps>
+					<li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
+						<compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
+						<MaxShots>1</MaxShots>
+						<AmmoFilter>
+							<thingDefs>
+								<li>Poison</li>
+							</thingDefs>
+						</AmmoFilter>
+						<ItemsPerShot>1</ItemsPerShot>
+						<ReloadTimePerShot>0.1</ReloadTimePerShot>
+						<NewVerbClass>Verb_Shoot</NewVerbClass>
+						<GenerateAmmo>
+							<Poison>4~16</Poison>
+						</GenerateAmmo>
+					</li>
+				</comps>
+			</li>
+		</verbProps>
 	</li>
     </comps>
   </ThingDef>

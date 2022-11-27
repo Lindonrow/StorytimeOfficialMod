@@ -30,7 +30,7 @@
     <ingestible>
       <foodType>Fluid, Processed, Liquor</foodType>
       <joyKind>Chemical</joyKind>
-      <joy>0.2</joy>
+      <joy>0.3</joy>
       <nurseable>true</nurseable>
       <drugCategory>Social</drugCategory>
       <ingestSound>Ingest_Beer</ingestSound>

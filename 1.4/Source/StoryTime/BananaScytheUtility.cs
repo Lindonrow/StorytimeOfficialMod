@@ -38,7 +38,7 @@ namespace StoryTime
                         (Props.polymorphLetterDef), null, null, null);
 
                     GenSpawn.Spawn(ThingDef.Named(Props.targetPolymorph), pos, map, WipeMode.Vanish);
-                    FilthMaker.TryMakeFilth(parent.pawn.Position, parent.pawn.Corpse.Map, ThingDefOf.Filth_Blood);
+                    //FilthMaker.TryMakeFilth(parent.pawn.Position, parent.pawn.Corpse.Map, ThingDefOf.Filth_Blood);
                     parent.pawn.Corpse.Destroy();
                 }
             }

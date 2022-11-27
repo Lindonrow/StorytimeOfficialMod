@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Other -->
+  <SoundDef>
+    <defName>Frog_Angry</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Frog_Angry</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20.058827</min>
+          <max>40.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+  <SoundDef>
+    <defName>Frog_Angry_Deep</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Frog_Angry</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20.058827</min>
+          <max>40.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.5</min>
+          <max>0.8</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Peeper_Peep</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>PeeperPeep</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>10.058827</min>
+          <max>30.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>PeeledScreech</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>PeeledScreech</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>5.058827</min>
+          <max>15.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Lick</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>LickSound</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20.058827</min>
+          <max>40.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RockNeutral</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Rock/RockNeutral</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.80</min>
+          <max>0.90</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RockAngry</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Rock/RockAngry</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.70</min>
+          <max>0.75</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>GibbonAngry</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Gibbon/GibbonAngry</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20.058827</min>
+          <max>40.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+  <SoundDef>
+    <defName>GibbonNeutral</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Gibbon/GibbonNeutral</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20.058827</min>
+          <max>40.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BlowGunSound</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BlowDartSound</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30.058827</min>
+          <max>50.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.8311765</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+  <SoundDef>
+    <defName>Fly_Spit</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Fly_Spit</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.7</min>
+          <max>0.8</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>FrogPop</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>FrogPop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>100</min>
+          <max>100</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9311765</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Bones2Bananas</defName>    
+    <maxSimultaneous>5</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BananaSound</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>25~35</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>CoconutNeutral</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Coconut/cocknut_neutral</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.80</min>
+          <max>0.90</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>CoconutAngry</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>Coconut/cocknut_angry</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30.058827</min>
+          <max>60.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.70</min>
+          <max>0.75</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+  <SoundDef>
+    <defName>ManFrog_Screech</defName>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ManFrog_Screech</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20.058827</min>
+          <max>40.058827</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.85</min>
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</Defs>
+

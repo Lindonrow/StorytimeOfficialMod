@@ -21,9 +21,9 @@
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2195729899</steamWorkshopUrl>
 		  </li>
 		  <li>
-			<packageId>syrchalis.universalfermenter</packageId>
-			<displayName>Universal Fermenter</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2073225100</steamWorkshopUrl>
+			<packageId>syrchalis.processor.framework</packageId>
+			<displayName>[SYR] Processor Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2633514537</steamWorkshopUrl>
 		  </li>
 		  <li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
@@ -98,7 +98,7 @@
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>UnlimitedHugs.HugsLib</li>
 		<li>jecrell.jecstools</li>
-		<li>syrchalis.universalfermenter</li>
+		<li>syrchalis.processor.framework</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li>

@@ -448,6 +448,7 @@
     </recipeMaker>
     <verbs>
       <li>
+		<label>goblin shortbow</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>GoblinArrow</defaultProjectile>
@@ -468,20 +469,31 @@
       </li>
     </tools>
     <comps>
-	<li Class="Reloading.CompProperties_Reloadable">
-		<compClass>Reloading.CompReloadable</compClass>
-		<MaxShots>1</MaxShots>
-		<AmmoFilter>
-			<thingDefs>
-				<li>GoblinPoison</li>
-			</thingDefs>
-		</AmmoFilter>
-		<ItemsPerShot>1</ItemsPerShot>
-		<ReloadTimePerShot>0.15</ReloadTimePerShot>
-		<NewVerbClass>Verb_Shoot</NewVerbClass>
-		<GenerateAmmo>
-			<GoblinPoison>5~15</GoblinPoison>
-		</GenerateAmmo>
+	<li Class="MVCF.Comps.CompProperties_VerbProps">
+		<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+		<verbProps>
+			<li>
+				<label>goblin shortbow</label>
+				<canBeToggled>false</canBeToggled>
+				<comps>
+					<li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
+						<compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
+						<MaxShots>1</MaxShots>
+						<AmmoFilter>
+							<thingDefs>
+								<li>GoblinPoison</li>
+							</thingDefs>
+						</AmmoFilter>
+						<ItemsPerShot>1</ItemsPerShot>
+						<ReloadTimePerShot>0.15</ReloadTimePerShot>
+						<NewVerbClass>Verb_Shoot</NewVerbClass>
+						<GenerateAmmo>
+							<GoblinPoison>5~15</GoblinPoison>
+						</GenerateAmmo>
+					</li>
+				</comps>
+			</li>
+		</verbProps>
 	</li>
     </comps>
   </ThingDef>
