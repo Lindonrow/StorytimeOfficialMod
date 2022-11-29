@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="FertilityBase">
+    <defName>VeryLessFertile</defName>
+    <label>very low fertility</label>
+    <description>Carriers of this gene have a much lower chance of becoming pregnant or impregnating others.</description>
+    <iconPath>UI/Icons/Genes/Gene_VeryLessFertile</iconPath>
+    <displayOrderInCategory>110</displayOrderInCategory>
+    <statFactors>
+      <Fertility>0.25</Fertility>
+    </statFactors>
+  </GeneDef>
+  
+  <GeneDef ParentName="FertilityBase">
+    <defName>LessFertile</defName>
+    <label>low fertility</label>
+    <description>Carriers of this gene have a lower chance of becoming pregnant or impregnating others.</description>
+    <iconPath>UI/Icons/Genes/Gene_LessFertile</iconPath>
+    <displayOrderInCategory>110</displayOrderInCategory>
+    <statFactors>
+      <Fertility>0.50</Fertility>
+    </statFactors>
+  </GeneDef>
+  
+</Defs>

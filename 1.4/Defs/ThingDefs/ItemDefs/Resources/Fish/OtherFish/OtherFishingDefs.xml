@@ -58,4 +58,40 @@
 		</allowedBiomes>
 		<baseFishingYield>40</baseFishingYield>  		
 	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_FrogFishSmall</defName>
+		<thingDef>ToadLegs</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>froggySwamp</li>
+		</allowedBiomes>
+		<baseFishingYield>10</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+	
+	<VCE_Fishing.FishDef>
+		<defName>ST_FrogFishMedium</defName>
+		<thingDef>ToadLegs</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>froggySwamp</li>
+		</allowedBiomes>
+		<baseFishingYield>20</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>ST_FrogFishLarge</defName>
+		<thingDef>ToadLegs</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>froggySwamp</li>
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>  		
+	</VCE_Fishing.FishDef>
 </Defs>

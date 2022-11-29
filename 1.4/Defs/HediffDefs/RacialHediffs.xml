@@ -82,7 +82,7 @@
  <HediffDef>
     <defName>HedHuman</defName>
     <label>Racial Trait: Versatility</label>
-	<description>Humans learn good.</description>		
+	<description>Of all species in existence, humans are the most diverse and versatile.</description>		
     <initialSeverity>1</initialSeverity>
   	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
 	<hediffClass>HediffWithComps</hediffClass>

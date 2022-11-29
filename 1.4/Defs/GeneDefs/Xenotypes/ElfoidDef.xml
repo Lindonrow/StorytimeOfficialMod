@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeIconDef>
+    <defName>STElf</defName>
+    <texPath>UI/Icons/Genes/Gene_EarPointed</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>STElf</defName>
+    <label>Elfoid</label>
+    <description>Elfoids are humans who have been morphed into something resembling the classic elves of myth such as Francis Fransioux.</description>
+    <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>0.9</combatPowerFactor>
+    <genes>
+      <li>Beauty_Beautiful</li>
+      <li>Delicate</li>
+      <li>Aggression_DeadCalm</li>
+	  <li>LowSleep</li>
+      <li>KindInstinct</li>
+      <li>Hair_LongOnly</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Body_Thin</li>
+	  <li>Ears_Pointed</li>
+      <li>ElongatedFingers</li>
+	  <li>VeryLessFertile</li>
+	  <li>MoveSpeed_Quick</li>
+    </genes>
+  </XenotypeDef>
+  
+</Defs>

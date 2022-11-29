@@ -255,7 +255,7 @@
     </comps>
 	<stages>
 		<li>   
-				<hungerRateFactor>0.85</hungerRateFactor>
+				<hungerRateFactor>1.1</hungerRateFactor>
 		</li>
 	</stages>
   </HediffDef>

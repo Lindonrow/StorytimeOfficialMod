@@ -12,6 +12,7 @@
       <MarketValue>1</MarketValue>
     </statBases>
     <stuffProps>
+	  <stuffAdjective>vile little</stuffAdjective>
       <color>(169,169,169)</color>
       <commonality>0.08</commonality>
     </stuffProps>
@@ -91,10 +92,15 @@
 	<statBases>
       <MarketValue>1</MarketValue>
       <StuffPower_Armor_Lick>1.12</StuffPower_Armor_Lick>
+	  <Flammability>0.5</Flammability>
     </statBases>
     <stuffProps>
+	  <stuffAdjective>frog</stuffAdjective>
       <color>(0,100,0)</color>
       <commonality>0.08</commonality>
+		<statOffsets>
+			<Flammability>-0.3</Flammability> <!-- "Super Mario" reference -->
+		</statOffsets>
     </stuffProps>
   </ThingDef>
   
@@ -110,10 +116,15 @@
       <StuffPower_Armor_Lick>1.2</StuffPower_Armor_Lick>
       <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt>
+	  <Flammability>0.5</Flammability>
     </statBases>
     <stuffProps>
+	  <stuffAdjective>night frog</stuffAdjective>
       <color>(40,40,40)</color>
       <commonality>0.04</commonality>
+		<statOffsets>
+			<Flammability>-0.3</Flammability> <!-- "Super Mario" reference -->
+		</statOffsets>
     </stuffProps>
   </ThingDef>
   
@@ -127,10 +138,15 @@
 	<statBases>
       <MarketValue>1</MarketValue>
       <StuffPower_Armor_Lick>1.12</StuffPower_Armor_Lick>
+	  <Flammability>0.5</Flammability>
     </statBases>
     <stuffProps>
+	  <stuffAdjective>salamander</stuffAdjective>
       <color>(75,75,75)</color>
       <commonality>0.04</commonality>
+		<statOffsets>
+			<Flammability>-0.3</Flammability> <!-- "Super Mario" reference -->
+		</statOffsets>
     </stuffProps>
   </ThingDef>
   
@@ -144,10 +160,14 @@
 	<statBases>
       <MarketValue>1.2</MarketValue>
       <StuffPower_Armor_Lick>1.15</StuffPower_Armor_Lick>
+	  <Flammability>0.5</Flammability>
     </statBases>
     <stuffProps>
       <color>(0,100,0)</color>
       <commonality>0.001</commonality>
+		<statOffsets>
+			<Flammability>-0.3</Flammability> <!-- "Super Mario" reference -->
+		</statOffsets>
     </stuffProps>
   </ThingDef>  
   
@@ -214,6 +234,7 @@
       <StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
     </statBases>
     <stuffProps>
+	  <stuffAdjective>bug</stuffAdjective>
       <color>(168, 147, 125)</color>
       <commonality>0.07</commonality>
       <statFactors>

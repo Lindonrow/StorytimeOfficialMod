@@ -4,8 +4,11 @@
   <TipSetDef>
     <defName>StorytimeTips</defName>
     <tips>
-      <li TKey="HelpfulAdviceFromGod">"If you need to look at a damn wiki to understand this mod, you shouldn't be playing it." -God</li>	
-	
+      <li TKey="HelpfulAdviceFromGod1">"If you need to look at a damn wiki to understand this mod, you shouldn't be playing it." -God</li>	
+      <li TKey="HelpfulAdviceFromGod2">Turtleshroom is no longer welcome here.</li>	
+      <li TKey="HelpfulAdviceFromGod3">I want to have gay sex while developing this mod.</li>	
+      <li TKey="HelpfulAdviceFromGod4">I want to have gay sex with Jonah.</li>	
+	  
       <li TKey="Quote1">Most racist things are true.</li>
       <li TKey="Quote2">The first step to winning is admitting that you suck.</li>
       <li TKey="Quote3">Shhh...its vision is based off of sight.</li>
@@ -61,7 +64,11 @@
 	  <li TKey="Quote53">Do duppies even have genders?</li>  
 	  <li TKey="Quote54">I want a crystal that cures my erectile dysfunction.</li> 
 	  <li TKey="Quote55">Yoda must punish Dobby's asshole.</li> 	  
-	  <li TKey="Quote56">If you could go back in time and kill baby Donald Duck, would you?</li> 	  
+	  <li TKey="Quote56">If you could go back in time and kill baby Donald Duck, would you?</li> 	 
+      <li TKey="Quote57">Not a red error in sight, just tall humans living in the moment.</li> 	 
+	  <li TKey="Quote58">What is Carl Douglas' egg color?</li> 	 
+	  <li TKey="Quote59">You lack the self-confidence to be a good terrorist.</li> 	 
+	  <li TKey="Quote60">We need to get more quotes out there, but we can't force it.</li> 	 	 
     </tips>
   </TipSetDef>
 </Defs>

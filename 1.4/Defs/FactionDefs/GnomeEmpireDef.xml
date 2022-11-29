@@ -23,7 +23,6 @@
     </disallowedMemes>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
     </requiredMemes>
     <allowedCultures><li>STGnome</li></allowedCultures>
     <structureMemeWeights>
