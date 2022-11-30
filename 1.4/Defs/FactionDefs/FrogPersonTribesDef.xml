@@ -16,6 +16,7 @@
       <li>(0.1, 0.3, 0.1)</li>
     </colorSpectrum>
     <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
     </disallowedMemes>

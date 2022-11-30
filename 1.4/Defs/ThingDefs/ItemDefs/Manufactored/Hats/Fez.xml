@@ -55,5 +55,8 @@
       </defaultOutfitTags>
 	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Fez/Fez</wornGraphicPath>
     </apparel>
+	<tradeTags>
+		<li>StorytimeHats</li>
+	</tradeTags>
   </ThingDef>
 </Defs>

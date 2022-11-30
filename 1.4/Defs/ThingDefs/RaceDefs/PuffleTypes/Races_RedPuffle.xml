@@ -83,6 +83,7 @@
     <tradeTags>
       <li>AnimalCommon</li>
 	  <li>AnimalPet</li>
+	  <li>StorytimeAnimal</li>
     </tradeTags>
   </ThingDef>
  

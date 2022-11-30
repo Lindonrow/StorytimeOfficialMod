@@ -25,12 +25,6 @@
     </MusicExpanded.TrackDef>	
 
     <MusicExpanded.TrackDef>
-        <label>Dawn in Kryta - Rise of MiniDredge</label>
-        <defName>DawnInShaemoor</defName>
-        <clipPath>Music/DawnInShaemoor</clipPath>
-    </MusicExpanded.TrackDef>	
-
-    <MusicExpanded.TrackDef>
         <label>Logan's Flight - ?</label>
         <defName>LogansJourney</defName>
         <clipPath>Music/LogansJourney</clipPath>
@@ -49,17 +43,30 @@
     </MusicExpanded.TrackDef>	
 
     <MusicExpanded.TrackDef>
-        <label>Lumbridge Theme - Slayer's Awakening</label>
-        <defName>StillNight</defName>
-        <clipPath>Music/StillNight</clipPath>
-    </MusicExpanded.TrackDef>	
-
-    <MusicExpanded.TrackDef>
         <label>Draynor Theme - Slayer's Awakening</label>
         <defName>Wander</defName>
         <clipPath>Music/Wander</clipPath>
     </MusicExpanded.TrackDef>	
 
+<!--Daytime Ambient-->
+
+    <MusicExpanded.TrackDef>
+        <label>Dawn in Kryta - Rise of MiniDredge</label>
+        <defName>DawnInShaemoor</defName>
+        <clipPath>Music/DawnInShaemoor</clipPath>
+        <vanillaLogic>true</vanillaLogic>
+		<allowedTimeOfDay>Day</allowedTimeOfDay>
+    </MusicExpanded.TrackDef>	
+
+<!--Nighttime Ambient-->
+
+    <MusicExpanded.TrackDef>
+        <label>Lumbridge Theme - Slayer's Awakening</label>
+        <defName>StillNight</defName>
+        <clipPath>Music/StillNight</clipPath>
+        <vanillaLogic>true</vanillaLogic>
+		<allowedTimeOfDay>Night</allowedTimeOfDay>
+    </MusicExpanded.TrackDef>	
 
 <!-- Seasonal Ambient -->
 

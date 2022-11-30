@@ -2,7 +2,7 @@
     <MusicExpanded.ThemeDef>
         <defName>StorytimeOST</defName>
         <label>Storytime Official OST</label>
-		<iconPath>UI/SpaceGibbon</iconPath>
+		<iconPath>UI/SpaceGibbonSquare</iconPath>
         <description>Let me put it simply. If you are using any other music than the Storytime Official OST while playing this game, then you're a fucking hack fraud and I pity you.</description>
         <tracks>
             <li>OortCloudTheme</li>

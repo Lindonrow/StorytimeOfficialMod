@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="VCEF_RawFishBase">
+
+	<ThingDef  Name="RunescapeFish" ParentName="VCEF_RawFishBase" Abstract="True">
+		<tradeTags>
+			<li>RunescapeFish</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Shrimp</defName>
 		<label>shrimp</label>
 		<description>I should try cooking this.</description>
@@ -19,7 +26,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Sardine</defName>
 		<label>sardine</label>
 		<description>I should try cooking this.</description>
@@ -38,7 +45,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Karambwanji</defName>
 		<label>karambwanji</label>
 		<description>Small brightly coloured tropical fish.</description>
@@ -57,7 +64,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Herring</defName>
 		<label>herring</label>
 		<description>I should try cooking this.</description>
@@ -76,7 +83,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Mackerel</defName>
 		<label>mackerel</label>
 		<description>I should try cooking this.</description>
@@ -95,7 +102,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Pike</defName>
 		<label>pike</label>
 		<description>I should try cooking this.</description>
@@ -114,7 +121,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_SlimyEel</defName>
 		<label>slimy eel</label>
 		<description>A slime covered eel - yuck!</description>
@@ -133,7 +140,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_RainbowFish</defName>
 		<label>rainbow fish</label>
 		<description>A colourful fish, attracted to colourful flies.</description>
@@ -152,7 +159,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Bluegill</defName>
 		<label>bluegill</label>
 		<description>A large Bluegill.</description>
@@ -171,7 +178,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_LavaEel</defName>
 		<label>lava eel</label>
 		<description>A very strange eel.</description>
@@ -190,7 +197,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_CommonTench</defName>
 		<label>common tench</label>
 		<description>The most common of the tench.</description>
@@ -209,7 +216,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Monkfish</defName>
 		<label>monkfish</label>
 		<description>I should try cooking this.</description>
@@ -228,7 +235,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Karambwan</defName>
 		<label>karambwan</label>
 		<description>A raw green octopus.</description>
@@ -247,7 +254,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_Shark</defName>
 		<label>shark</label>
 		<description>Fuck you it's mine I found it.</description>
@@ -266,7 +273,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_SeaTurtle</defName>
 		<label>sea turtle</label>
 		<description>A rare catch.</description>
@@ -285,7 +292,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_MantaRay</defName>
 		<label>manta ray</label>
 		<description>A rare catch.</description>
@@ -304,7 +311,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_DarkCrab</defName>
 		<label>dark crab</label>
 		<description>I should try cooking this.</description>
@@ -323,7 +330,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_SacredEel</defName>
 		<label>sacred eel</label>
 		<description>An eel that used to live in a toxic swamp containing Zulrah's discarded scales.</description>
@@ -342,7 +349,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="RunescapeFish">
 		<defName>ST_GreaterSiren</defName>
 		<label>greater siren</label>
 		<description>A descendant of the salamander family.</description>

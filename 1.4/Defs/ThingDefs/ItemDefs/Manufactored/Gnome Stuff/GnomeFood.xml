@@ -26,6 +26,8 @@
     <ingestible>
       <preferability>DesperateOnly</preferability>
       <foodType>Meat</foodType>
+	  <ingestEffect>EatMeat</ingestEffect>
+	  <ingestSound>RawMeat_Eat</ingestSound>		
     </ingestible>
   </ThingDef>
 

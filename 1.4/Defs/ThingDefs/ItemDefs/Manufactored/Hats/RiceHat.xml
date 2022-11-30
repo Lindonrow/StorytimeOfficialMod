@@ -53,5 +53,8 @@
       </defaultOutfitTags>
 	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/RiceHat/RiceHat</wornGraphicPath>
     </apparel>
+	<tradeTags>
+		<li>StorytimeHats</li>
+	</tradeTags>
   </ThingDef>
 </Defs>

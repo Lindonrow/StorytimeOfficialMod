@@ -22,9 +22,6 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
     </disallowedMemes>
-    <requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-    </requiredMemes>
     <allowedCultures><li>STBeanMan</li></allowedCultures>
     <structureMemeWeights>
       <STBeanManOrigin MayRequire="Ludeon.RimWorld.Ideology">1</STBeanManOrigin>

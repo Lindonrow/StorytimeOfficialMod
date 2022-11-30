@@ -10,6 +10,9 @@
     <thingCategories>
       <li>ST_AlloyMetals</li>
     </thingCategories>  
+	<tradeTags>
+		<li>AlloyMetals</li>
+	</tradeTags>
   </ThingDef>
 
   <ThingDef ParentName="AlloyMetalBase">

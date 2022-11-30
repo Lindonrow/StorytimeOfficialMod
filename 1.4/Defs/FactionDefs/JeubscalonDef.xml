@@ -15,9 +15,13 @@
     <colorSpectrum>
       <li>(0.7, 0.3, 0.9)</li>
     </colorSpectrum>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+    </disallowedMemes>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
     </requiredMemes>
     <allowedCultures><li>STJeub</li></allowedCultures>
     <structureMemeWeights>

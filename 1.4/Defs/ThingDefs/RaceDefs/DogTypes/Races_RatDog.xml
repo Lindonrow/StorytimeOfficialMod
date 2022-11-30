@@ -4,7 +4,7 @@
 
 <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>RatDog</defName>
-    <label>Rat Dog</label>
+    <label>rat dog</label>
     <description>Rat dog did nothing wrong.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
@@ -101,7 +101,9 @@
 		</li>
 	</comps>
     <tradeTags>
-      <li>AnimalCommon</li><li>AnimalPet</li>
+      <li>AnimalCommon</li>
+	  <li>AnimalPet</li>
+	  <li>StorytimeAnimal</li>
     </tradeTags>
   </ThingDef>
   

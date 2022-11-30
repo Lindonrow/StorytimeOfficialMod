@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationRemove">
+	  <xpath>Defs/ThingDef[defName="Ancient_TwoHandedFlair"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+	  <xpath>Defs/ThingDef[defName="Ancient_SamuraiYari"]</xpath>
+	</Operation>	
+	
+	<Operation Class="PatchOperationRemove">
+	  <xpath>Defs/ThingDef[defName="Ancient_GuanDo"]</xpath>
+	</Operation>		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Patch>

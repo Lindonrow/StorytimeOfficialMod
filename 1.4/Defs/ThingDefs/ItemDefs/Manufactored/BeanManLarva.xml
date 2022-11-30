@@ -66,7 +66,6 @@
       <li>Items</li>
     </thingCategories>
     <drawGUIOverlay>false</drawGUIOverlay>
-    <tradeability>Sellable</tradeability>
     <techLevel>Ultra</techLevel>
     <tradeTags>
       <li>ExoticMisc</li>

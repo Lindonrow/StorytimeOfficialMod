@@ -102,6 +102,7 @@
 
     <tradeTags>
       <li>AnimalExotic</li>
+	  <li>StorytimeAnimal</li>
     </tradeTags>
   </ThingDef>
   

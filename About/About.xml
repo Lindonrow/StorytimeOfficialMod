@@ -90,6 +90,16 @@
 			<displayName>Dubs Bad Hygiene</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=836308268</steamWorkshopUrl>
 		  </li>
+		  <li>
+			<packageId>Eastern.Armory.Geminingen</packageId>
+			<displayName>Ancient Eastern Armory</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2393395676</steamWorkshopUrl>
+		  </li>
+		  <li>
+			<packageId>VanillaExpanded.VMemesE</packageId>
+			<displayName>Vanilla Ideology Expanded - Memes and Structures</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2636329500</steamWorkshopUrl>
+		  </li>
 		</v1.4>
     </modDependenciesByVersion>
 	<loadAfter>
@@ -111,7 +121,9 @@
 		<li>SirMashedPotato.ESCP.RaceTools</li>
 		<li>VanillaExpanded.VGeneticsE</li>
 		<li>goudaquiche.MoharFramework</li>
+		<li>Eastern.Armory.Geminingen</li>
 		<li>Dubwise.DubsBadHygiene</li>
+		<li>VanillaExpanded.VMemesE</li>
 	</loadAfter>
   <url>https://poobahsociety.wordpress.com/</url>
   <packageId>Jonah.Storytime</packageId>

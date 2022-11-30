@@ -15,8 +15,11 @@
     <colorSpectrum>
       <li>(150, 175, 25)</li>
     </colorSpectrum>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+    </disallowedMemes>
     <requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">VME_Scrapper</li>
     </requiredMemes>
     <allowedCultures><li>STGoblin</li></allowedCultures>
     <structureMemeWeights>

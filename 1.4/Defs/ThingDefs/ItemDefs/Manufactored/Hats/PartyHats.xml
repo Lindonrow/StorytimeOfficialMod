@@ -51,6 +51,9 @@
       </defaultOutfitTags>
 	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PartyHat/PartyHat</wornGraphicPath>
     </apparel>
+	<tradeTags>
+		<li>StorytimePartyHats</li>
+	</tradeTags>
   </ThingDef>
   
   <ThingDef ParentName="PartyHatBase">

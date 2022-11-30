@@ -38,8 +38,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
     </disallowedMemes>
     <requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophobia</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
     </requiredMemes>
     <allowedCultures><li>STBeanGuardian</li></allowedCultures>

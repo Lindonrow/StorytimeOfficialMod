@@ -514,6 +514,7 @@
     </race>
     <tradeTags>
       <li>AnimalUncommon</li>
+	  <li>StorytimeAnimal</li>
     </tradeTags>
   </ThingDef>
   

@@ -52,5 +52,8 @@
       </defaultOutfitTags>
 	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SantaHat/SantaHat</wornGraphicPath>
     </apparel>
+	<tradeTags>
+		<li>StorytimeHats</li>
+	</tradeTags>
   </ThingDef>
 </Defs>

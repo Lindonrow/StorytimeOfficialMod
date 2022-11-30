@@ -23,6 +23,7 @@
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">VME_GodEmperor</li>
     </requiredMemes>
     <allowedCultures><li>STWoodBeet</li></allowedCultures>
     <structureMemeWeights>

@@ -57,5 +57,8 @@
       </defaultOutfitTags>
 	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Samo/Samo</wornGraphicPath>
     </apparel>
+	<tradeTags>
+		<li>StorytimeHats</li>
+	</tradeTags>
   </ThingDef>
 </Defs>

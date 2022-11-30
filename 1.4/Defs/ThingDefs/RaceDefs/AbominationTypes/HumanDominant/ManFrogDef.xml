@@ -90,6 +90,7 @@
 	<tradeTags>
 		<li>AnimalGenetic</li>
 		<li>NonContractable</li>
+	    <li>StorytimeAnimal</li>
 	</tradeTags>
 	<modExtensions>
 		<li Class="AnimalBehaviours.AnimalStatExtension">

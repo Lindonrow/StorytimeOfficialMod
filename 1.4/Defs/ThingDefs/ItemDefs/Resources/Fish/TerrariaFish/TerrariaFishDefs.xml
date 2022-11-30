@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="VCEF_RawFishBase">
+
+	<ThingDef  Name="TerrariaFish" ParentName="VCEF_RawFishBase" Abstract="True">
+		<tradeTags>
+			<li>TerrariaFish</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_ArmoredCavefish</defName>
 		<label>armored cavefish</label>
 		<description>Not really found in a cave, I suppose...</description>
@@ -19,7 +27,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_BlueJellyfish</defName>
 		<label>blue jellyfish</label>
 		<description>Grape flavored.</description>
@@ -38,7 +46,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_ChaosFish</defName>
 		<label>chaos fish</label>
 		<description>CHAOS</description>
@@ -57,7 +65,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_CrimsonTigerfish</defName>
 		<label>crimson tigerfish</label>
 		<description>Not a real tiger.</description>
@@ -76,7 +84,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_Damselfish</defName>
 		<label>damselfish</label>
 		<description>Not a real damsel.</description>
@@ -95,7 +103,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_Ebonkoi</defName>
 		<label>ebonkoi</label>
 		<description>BLACK. KOI.</description>
@@ -114,7 +122,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_FlarefinKoi</defName>
 		<label>flarefin koi</label>
 		<description>Is it made of fire? It's really unclear.</description>
@@ -133,7 +141,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>		
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_Flounder</defName>
 		<label>flounder</label>
 		<description>Flip flop.</description>
@@ -152,7 +160,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>		
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_FrostMinnow</defName>
 		<label>frost minnow</label>
 		<description>I feel... cold.</description>
@@ -171,7 +179,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>		
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_GoldenCarp</defName>
 		<label>golden carp</label>
 		<description>Literally a carp made of solid gold. How does it even survive?</description>
@@ -190,7 +198,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_GreenJellyfish</defName>
 		<label>green jellyfish</label>
 		<description>Lime flavored.</description>
@@ -209,7 +217,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_Hemopiranha</defName>
 		<label>hemopiranha</label>
 		<description>Blood fish.</description>
@@ -228,7 +236,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_NeonTetra</defName>
 		<label>neon tetra</label>
 		<description>NEON FISH</description>
@@ -247,7 +255,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_Obsidifish</defName>
 		<label>obsidifish</label>
 		<description>A fish made of rocks.</description>
@@ -266,7 +274,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>		
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_PinkJellyfish</defName>
 		<label>pink jellyfish</label>
 		<description>Beef flavored.</description>
@@ -285,7 +293,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
 	
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_PrincessFish</defName>
 		<label>princess fish</label>
 		<description>I guess they must all be female. Doesn't really make sense, but whatever.</description>
@@ -304,7 +312,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_Prismite</defName>
 		<label>prismite</label>
 		<description>Pretty.</description>
@@ -323,7 +331,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_RedSnapper</defName>
 		<label>red snapper</label>
 		<description>Accurate name.</description>
@@ -342,7 +350,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_SpecularFish</defName>
 		<label>specular fish</label>
 		<description>What even is a specular?</description>
@@ -361,7 +369,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_Stinkfish</defName>
 		<label>stinkfish</label>
 		<description>Stinky.</description>
@@ -380,7 +388,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>	
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="TerrariaFish">
 		<defName>ST_VariegatedLardfish</defName>
 		<label>variegated lardfish</label>
 		<description>FAT.</description>

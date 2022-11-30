@@ -55,6 +55,9 @@
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<tradeTags>
+		<li>StorytimeTraderBricks</li>
+	</tradeTags>
   </ThingDef>
   
   <TerrainDef ParentName="TileStoneBase">
@@ -118,6 +121,9 @@
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<tradeTags>
+		<li>StorytimeTraderBricks</li>
+	</tradeTags>
   </ThingDef>
   
   <TerrainDef ParentName="TileStoneBase">

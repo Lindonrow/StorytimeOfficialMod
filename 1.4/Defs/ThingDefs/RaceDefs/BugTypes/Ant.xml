@@ -94,6 +94,7 @@
     </ingredient>
     <tradeTags>
       <li>AnimalInsect</li>
+	  <li>StorytimeAnimal</li>
     </tradeTags>
   </ThingDef>
   

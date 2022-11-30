@@ -206,7 +206,7 @@
 		<ingestible/>
 		<plant>
 			<dieIfLeafless>false</dieIfLeafless>
-			<growDays>60</growDays>
+			<growDays>70</growDays>
 			<visualSizeRange>1~2.2</visualSizeRange>
 			<sowMinSkill>7</sowMinSkill>
 			<sowTags>
@@ -224,11 +224,11 @@
 			<harvestFailable>true</harvestFailable>
 			<harvestAfterGrowth>0.30</harvestAfterGrowth>
 		    <wildBiomes>
-			  <TemperateForest>0.01</TemperateForest>
-			  <TemperateSwamp>0.001</TemperateSwamp>
-			  <BorealForest>0.001</BorealForest>
-			  <ColdBog>0.001</ColdBog>
-			  <AridShrubland>0.001</AridShrubland>
+			  <TemperateForest>0.0005</TemperateForest>
+			  <TemperateSwamp>0.0005</TemperateSwamp>
+			  <BorealForest>0.00025</BorealForest>
+			  <ColdBog>0.0005</ColdBog>
+			  <AridShrubland>0.00025</AridShrubland>
 		    </wildBiomes>
 		</plant>
 	</ThingDef>

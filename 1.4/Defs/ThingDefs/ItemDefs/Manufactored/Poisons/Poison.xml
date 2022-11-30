@@ -40,6 +40,9 @@
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
+	<tradeTags>
+		<li>STPoison</li>
+	</tradeTags>
   </ThingDef>
   
 </Defs>

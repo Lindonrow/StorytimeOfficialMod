@@ -55,5 +55,8 @@
       </defaultOutfitTags>
 	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BowlHat/BowlHat</wornGraphicPath>
     </apparel>
+	<tradeTags>
+		<li>StorytimeHats</li>
+	</tradeTags>
   </ThingDef>
 </Defs>
