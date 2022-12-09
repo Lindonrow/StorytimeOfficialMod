@@ -27,4 +27,8 @@
   
   <LetterLabelNightFrogsArrived>Night Frogs Approach...</LetterLabelNightFrogsArrived>
   <NightFrogsArrived>A group of night frogs has entered the area. These predatory, venomous frogs can be a danger to your colonists- or an asset, if tamed.</NightFrogsArrived>
+  
+  <STVidSpread>{PAWN_nameDef} has caught the 'vid. Consider masking up to prevent a pandemic.</STVidSpread>  
+  
+  
 </LanguageData>

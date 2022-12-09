@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_Weezer</defName>
+    <label>weezer skin</label>
+    <labelShortAdj>weezer</labelShortAdj>
+    <description>Carriers of this produce a weezer pigment in their skin.</description>
+    <skinColorOverride>(0, 182, 213)</skinColorOverride>
+    <displayOrderInCategory>95</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>weezer</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+</Defs>

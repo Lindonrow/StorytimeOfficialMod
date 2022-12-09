@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PlaceDef>
+    <defName>Jeubscalon</defName>
+    <tags>
+      <li>OriginJeub</li>
+    </tags>
+    <placeRules>
+      <include>
+        <li>PlaceMakerCommon</li>
+      </include>
+      <rulesStrings>
+        <li>place_name->Jeubscalon</li>
+        <li>place_adjective->Jeubscalonian</li>
+        <li>place_summary->jungle kingdom</li>
+        <li>place_community->jeubish town</li>
+        <li>place_community->floating rocks</li>
+        <li>place_community->jeubish city</li>
+        <li>place_powerCenter->capital</li>
+        <li>place_job->restaurant owner</li>
+        <li>place_job->noble</li>
+        <li>place_job->Aetherjeub</li>
+        <li>place_job->sailor</li>
+        <li>place_job->bagel boy</li>
+        <li>place_personalWeapon->sword</li>
+        <li>place_personalWeapon->bow</li>
+        <li>place_massWeapon->a nuclear bomb</li>
+        <li>place_foeLeader->JJJ leader</li>
+        <li>place_foeSoldiers->human soldiers</li>
+      </rulesStrings>
+    </placeRules>
+  </PlaceDef>
+
+</Defs>

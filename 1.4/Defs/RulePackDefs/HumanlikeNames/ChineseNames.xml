@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerChineseUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>ChineseFemaleNames->ChineseNames/ChineseFemaleNames</li>
+        <li>ChineseMaleNames->ChineseNames/ChineseMaleNames</li>
+        <li>ChineseSurnames->ChineseNames/ChineseSurnames</li>
+        <li>ChineseCourtesyNamesHead->ChineseNames/ChineseCourtesyNamesHead</li>
+        <li>ChineseCourtesyNamesTail->ChineseNames/ChineseCourtesyNamesTail</li>
+        <li>ChineseSettlementNames->ChineseNames/ChineseSettlementNames</li>
+        <li>ChineseDynastyNames->ChineseNames/ChineseDynastyNames</li>
+        <li>ChineseKingdomNames->ChineseNames/ChineseKingdomNames</li>
+        <li>ChineseDynastyDescriptors->ChineseNames/ChineseDynastyDescriptors</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>ChineseFemaleName</defName>
+	<include>
+      <li>NamerChineseUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		<li>name->[ChineseFemaleNames] '[ChineseCourtesyNamesHead][ChineseCourtesyNamesTail]' [ChineseSurnames]</li>
+		<li>name->[ChineseFemaleNames] [ChineseSurnames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>ChineseMaleName</defName>
+	<include>
+      <li>NamerChineseUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		<li>name->[ChineseMaleNames] '[ChineseCourtesyNamesHead][ChineseCourtesyNamesTail]' [ChineseSurnames]</li>
+		<li>name->[ChineseMaleNames] [ChineseSurnames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<!--Faction & Settlement-->
+
+  <RulePackDef>
+    <defName>NamerFactionChinese</defName>
+	<include>
+      <li>NamerChineseUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[ChineseDynastyDescriptors] [ChineseDynastyNames]</li>
+		<li>r_name->[ChineseDynastyNames] Dynasty</li>
+		<li>r_name->Kingdom of [ChineseSurnames] [ChineseDynastyNames]</li>
+		<li>r_name->Kingdom of [ChineseKingdomNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+		
+  <RulePackDef>
+    <defName>ChineseSettlementName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>ChineseNames/ChineseSettlementNames</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+
+
+	
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeIconDef>
+    <defName>Weezey</defName>
+    <texPath>Things/Items/Resources/Ores/Weezer/Weezer_a</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>Weezey</defName>
+    <label>weezey</label>
+    <description>A humanoid who has been genetically modified to be more akin to weezer.</description>
+    <iconPath>Things/Items/Resources/Ores/Weezer/Weezer_a</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>Skin_Weezer</li>
+      <li>WeezerGene</li>
+      <li>Hair_Grayless</li>
+	  <li>Hair_LightOrange</li>
+    </genes>
+  </XenotypeDef>
+  
+</Defs>

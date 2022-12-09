@@ -6,6 +6,7 @@
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
+    <invNutrition>2.55</invNutrition>
   </PawnKindDef>
   
   <PawnKindDef ParentName="BasePlayerBeetPawnKind">

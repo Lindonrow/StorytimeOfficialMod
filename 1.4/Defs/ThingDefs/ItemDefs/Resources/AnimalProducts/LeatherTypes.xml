@@ -31,6 +31,9 @@
     <stuffProps>
       <color>(189,189,189)</color>
       <commonality>0.06</commonality>
+		<statOffsets>
+			<Flammability>-0.3</Flammability> <!-- "Super Mario" reference -->
+		</statOffsets>	  
     </stuffProps>
   </ThingDef>
   

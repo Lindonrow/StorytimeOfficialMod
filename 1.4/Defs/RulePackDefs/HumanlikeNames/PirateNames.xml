@@ -62,14 +62,14 @@
     <defName>NamerFactionStorytimePirate</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_name->Crew of the [Color] [Animal]  </li>
-		<li>r_name->Crew of the [Color] [Weapon]  </li>
-		<li>r_name->Crew of the [ColorBadass] [Animal]  </li>
-		<li>r_name->Crew of the [ColorBadass] [Weapon]  </li>
-		<li>r_name->Crew of the [AdjectiveBadass] [Animal]  </li>
-		<li>r_name->Crew of the [AdjectiveBadass] [Weapon]  </li>
-		<li>r_name->Crew of the [AdjectiveBadass] [TerrainFeature]  </li>
-		<li>r_name->Crew of the [ColorBadass] [TerrainFeature]  </li>
+        <li>r_name->Crew of the [Color] [Animal]</li>
+		<li>r_name->Crew of the [Color] [Weapon]</li>
+		<li>r_name->Crew of the [ColorBadass] [Animal]</li>
+		<li>r_name->Crew of the [ColorBadass] [Weapon]</li>
+		<li>r_name->Crew of the [AdjectiveBadass] [Animal]</li>
+		<li>r_name->Crew of the [AdjectiveBadass] [Weapon]</li>
+		<li>r_name->Crew of the [AdjectiveBadass] [TerrainFeature]</li>
+		<li>r_name->Crew of the [ColorBadass] [TerrainFeature]</li>
       </rulesStrings>
       <rulesFiles>
         <li>political_union_outlander->Words/Nouns/PoliticalUnions_Outlander</li>

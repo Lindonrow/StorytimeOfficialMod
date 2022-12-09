@@ -234,6 +234,55 @@
 		</degreeDatas>
 	</TraitDef>
 	
+<!--Squib-->
+	<TraitDef>
+		<defName>ST_Squib</defName>
+		<commonality>0.2</commonality>
+		<degreeDatas>
+			<li>
+				<label>squib</label>
+				<description>[PAWN_nameDef] is completely devoid of magical or psionic abilities.</description>
+				<statOffsets>
+					<PsychicSensitivity>-1</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+		  <li>PsychicSensitivity</li>
+		  <li>TM_Gifted</li>
+		  <li>TM_Empath</li>
+		  <li>TM_Apothecary</li>
+		  <li>HeartOfFrost</li>
+		  <li>Arcanist</li>
+		  <li>StormBorn</li>
+		  <li>InnerFire</li>
+		  <li>Paladin</li>
+		  <li>PhysicalProdigy</li>
+		  <li>Summoner</li>
+		  <li>Druid</li>
+		  <li>Necromancer</li>
+		  <li>Priest</li>
+		  <li>Lich</li>
+		  <li>TM_Bard</li>
+		  <li>Faceless</li>
+		  <li>TM_Psionic</li>
+		  <li>Succubus</li>
+		  <li>Warlock</li>
+		  <li>Geomancer</li>
+		  <li>Technomancer</li>
+		  <li>DeathKnight</li>
+		  <li>Enchanter</li>		  
+		  <li>BloodMage</li>
+		  <li>Chronomancer</li>
+		  <li>TM_Wanderer</li>
+		  <li>TM_Wayfarer</li>
+		  <li>ChaosMage</li>
+		  <li>TM_TheShadow</li>
+		  <li>TM_Brightmage</li>
+		  <li>TM_Shaman</li>
+		  <li>TM_Golemancer</li>
+		</conflictingTraits>
+	</TraitDef>		
 	
 	
 	

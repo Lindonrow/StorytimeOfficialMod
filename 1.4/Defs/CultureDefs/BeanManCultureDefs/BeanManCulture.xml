@@ -30,7 +30,7 @@
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>
-    <iconPath>World/BeanMen/BeanGuardianFactionLogo</iconPath>
+    <iconPath>World/BeanMen/BeanMenFactionLogo</iconPath>
     <styleItemTags>
       <li>
         <tag>NoBeard</tag>
@@ -76,7 +76,7 @@
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>
-    <iconPath>World/BeanMen/BeanMenFactionLogo</iconPath>
+    <iconPath>World/BeanMen/BeanGuardianFactionLogo</iconPath>
     <styleItemTags>
       <li>
         <tag>NoBeard</tag>

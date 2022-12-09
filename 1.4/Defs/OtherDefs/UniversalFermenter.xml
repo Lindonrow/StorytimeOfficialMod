@@ -28,7 +28,7 @@
 		<rotatable>true</rotatable>
      		<size>(1,1)</size>
 		<costList>
-			<Steel>10</Steel>
+			<ST_Bronze>10</ST_Bronze>
 		</costList>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
@@ -37,11 +37,11 @@
 		<useHitPoints>true</useHitPoints>
 		<tickerType>Rare</tickerType>
 	    <statBases>
-			<Cleanliness>-15</Cleanliness>
+			<Cleanliness>-5</Cleanliness>
 			<WorkToBuild>1500</WorkToBuild>
 			<Mass>30</Mass>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Flammability>1.0</Flammability>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.2</Flammability>
     	</statBases>
 		<designationCategory>Production</designationCategory>
     	<researchPrerequisites>
@@ -62,6 +62,9 @@
 		  <li>GnomeBeer</li>
 		  <li>RawNog</li>
 		  <li>Kraken</li>
+		  <li>Butterbeer</li>
+		  <li>MikesHardLemonade</li>
+		  <li>MikesHardStrawberry</li>
 		</processes>
 	  </li>
 	</comps>
@@ -99,7 +102,7 @@
   <usesQuality>false</usesQuality>
   <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
   <color>(0, 200, 0)</color> <!-- 0-255 or 0.0-1.0 -->
-  <customLabel>What is this and what do I do with it</customLabel>
+  <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
   <bonusOutputs>
     <Rat>(0.1, 1)</Rat>
@@ -137,7 +140,7 @@
   <usesQuality>false</usesQuality>
   <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
   <color>(244, 218, 184)</color> <!-- 0-255 or 0.0-1.0 -->
-  <customLabel>What is this and what do I do with it</customLabel>
+  <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
   <bonusOutputs>
     <Rat>(0.1, 1)</Rat>
@@ -165,7 +168,7 @@
   <speedAboveSafe>1.0</speedAboveSafe>
   <sunFactor>1.0~1.0</sunFactor>
   <rainFactor>1.0~1.0</rainFactor>
-  <snowFactor>1.0~2.0</snowFactor>
+  <snowFactor>1.0~1.0</snowFactor>
   <windFactor>1.0~1.0</windFactor>
   <unpoweredFactor>0.0</unpoweredFactor>
   <unfueledFactor>0.0</unfueledFactor>
@@ -175,7 +178,7 @@
   <usesQuality>false</usesQuality>
   <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
   <color>(50, 50, 50)</color> <!-- 0-255 or 0.0-1.0 -->
-  <customLabel>What is this and what do I do with it</customLabel>
+  <customLabel></customLabel>
   <destroyChance>0.01</destroyChance>
   <bonusOutputs>
     <Monkey>(0.1, 1)</Monkey>
@@ -191,7 +194,7 @@
       <li>Butterscotch</li>
     </thingDefs>
   </ingredientFilter>
-  <processDays>0.5</processDays> <!-- in days, a day is 60,000 ticks -->
+  <processDays>2</processDays> <!-- in days, a day is 60,000 ticks -->
   <capacityFactor>1</capacityFactor>
   <efficiency>0.8</efficiency>
   <usesTemperature>true</usesTemperature>
@@ -212,15 +215,86 @@
   <usesQuality>false</usesQuality>
   <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
   <color>(212, 136, 39)</color> <!-- 0-255 or 0.0-1.0 -->
-  <customLabel>What is this and what do I do with it</customLabel>
+  <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
   <bonusOutputs>
     <Rat>(0.1, 1)</Rat>
   </bonusOutputs>
 </ProcessorFramework.ProcessDef>
 
+<!-- Lemonade of Mike -->
+<ProcessorFramework.ProcessDef>
+  <defName>MikesHardLemonade</defName>
+  <thingDef>MikesLemonade</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>Lemon</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>3</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>0.5</capacityFactor>
+  <efficiency>0.5</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-1.0~32.0</temperatureSafe>
+  <temperatureIdeal>7.0~32.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(250, 250, 51)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <Rat>(0.1, 1)</Rat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
 
-
+<!-- Strawberry of Mike -->
+<ProcessorFramework.ProcessDef>
+  <defName>MikesHardStrawberry</defName>
+  <thingDef>MikesStrawberry</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>Strawberry</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>3</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>0.5</capacityFactor>
+  <efficiency>0.5</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-1.0~32.0</temperatureSafe>
+  <temperatureIdeal>7.0~32.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(200, 63, 73)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <Rat>(0.1, 1)</Rat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
 
 
 

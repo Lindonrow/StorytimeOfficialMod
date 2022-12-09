@@ -24,7 +24,7 @@
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoJeubLeader</leaderTitleMaker>
     <allowedPlaceTags>
-      <li>OriginTribal</li>
+      <li>OriginJeub</li>
     </allowedPlaceTags>
     <iconPath>World/Jeubscalon/JeubFactionLogo</iconPath>
     <styleItemTags>

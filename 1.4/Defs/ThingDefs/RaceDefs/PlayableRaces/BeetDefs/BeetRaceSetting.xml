@@ -25,6 +25,8 @@
           <bodyTypes>
 			<li>Fat</li>
 			<li>Hulk</li>
+			<li>Thin</li>
+			<li>Male</li>
 			<li>Female</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
@@ -82,7 +84,6 @@
         </alienPartGenerator>
       </generalSettings>
       <graphicPaths>
-          <body>Things/Pawn/Humanlike/Beet/Body/</body>
           <head>Things/Pawn/Humanlike/Beet/Head/</head>
       </graphicPaths>
       <relationSettings>

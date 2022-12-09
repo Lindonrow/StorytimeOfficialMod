@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef>
+		<defName>WeezerGene</defName>
+		<label>weezer gene</label>
+		 <displayCategory>SpecialEffects</displayCategory>
+		<description>This person excretes pure weezer through their skin by mechanisms unknown to science.</description>
+		<iconPath>Things/Items/Resources/Ores/Weezer/Weezer_a</iconPath>
+		<customEffectDescriptions>
+			<li>Produces 5 weezer per day.</li>
+			
+		</customEffectDescriptions>
+		<exclusionTags>
+		  <li>Weezer</li>
+		</exclusionTags>
+		<biostatMet>-2</biostatMet>
+		<biostatCpx>1</biostatCpx>
+		
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>WeezerGene_Hediff</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

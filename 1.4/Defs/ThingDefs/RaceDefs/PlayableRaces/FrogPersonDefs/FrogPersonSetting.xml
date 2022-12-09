@@ -30,10 +30,11 @@
             <li>Frogman_Average_Normal</li>
           </headTypes>	
 		<bodyTypes>
-			<li>Male</li>
-			<li>Thin</li>
-			<li>Hulk</li>
 			<li>Fat</li>
+			<li>Hulk</li>
+			<li>Thin</li>
+			<li>Male</li>
+			<li>Female</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 		</bodyTypes>

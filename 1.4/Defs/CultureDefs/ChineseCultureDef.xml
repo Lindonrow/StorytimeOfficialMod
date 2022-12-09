@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerIdeoChineseLeader</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Prime Minister</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef> 
+  
+
+  <CultureDef>
+    <defName>STChinese</defName>
+    <label>chinese</label>
+    <description>China is a country in East Asia. It is the world's most populous country, with a population exceeding 1.4 billion, slightly ahead of India. China spans the equivalent of five time zones and borders fourteen countries by land, the most of any country in the world, tied with Russia. China also has a narrow maritime boundary with the disputed Taiwan. Covering an area of approximately 9.6 million square kilometers (3,700,000 sq mi), it is the world's third largest country by total land area. The country consists of 22 provinces, five autonomous regions, four municipalities, and two Special Administrative Regions (Hong Kong and Macau). The national capital is Beijing, and the most populous city and financial center is Shanghai.</description>
+    <pawnNameMaker>ChineseMaleName</pawnNameMaker>
+    <pawnNameMakerFemale>ChineseFemaleName</pawnNameMakerFemale>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSophian</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityKriminul</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerKriminul</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoChineseLeader</leaderTitleMaker> <!-- Work on this -->
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>UI/Structures/Structure_Taoism</iconPath>
+    <styleItemTags>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardUrban</tag>
+        <baseWeight>0.15</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardRural</tag>
+        <baseWeight>0.15</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>MoustacheOnly</tag>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Urban</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+
+
+</Defs>

@@ -15,7 +15,7 @@
     <defName>BeetHerderChild</defName>
     <title>young herder</title>
     <titleShort>young herder</titleShort>
-    <baseDesc>[PAWN_nameDef] helped herd the ship that lived on the island. It was a lonely upbringing.</baseDesc>
+    <baseDesc>[PAWN_nameDef] helped herd the animals that lived on the island. It was a lonely upbringing.</baseDesc>
     <slot>Childhood</slot>
     <skillGains>
       <li>

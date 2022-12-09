@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef>
+    <defName>WayofJeub</defName>
+    <label>Way of Jeub</label>
+    <description>This faction's traditions are inspired by the ancient practices of the jeubish people.</description>
+    <iconPath>UI/Icons/JeubMeme</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>3</impact>
+    <renderOrder>999</renderOrder>
+    <requireOne>
+      <li>
+        <li>AnimalConnection_Strong</li>
+      </li>
+      <li>
+        <li>Cannibalism_RequiredStrong</li>
+        <li>Cannibalism_RequiredRavenous</li>
+      </li>
+      <li>
+        <li>Execution_DontCare</li>
+        <li>Execution_Required</li>
+      </li>
+      <li>
+        <li>OrganUse_Acceptable</li>
+      </li>
+      <li>
+        <li>Corpses_DontCare</li>
+      </li>
+      <li>
+        <li>Corpses_DontCare</li>
+      </li>
+    </requireOne>
+    <consumableBuildings>
+      <li>CannibalPlatter</li>
+    </consumableBuildings>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->jeubish</li>
+		<li>memeAdjective->vile little</li>
+        <li>memeCreed->jeubs</li>
+        <li>memeCreed->jeub-lovers</li>
+        <li>memeHyphenPrefix->blood</li>
+        <li>memeConcept->blood</li>
+        <li>memeConcept->flesh</li>
+        <li>memeConcept->murder</li>
+        <li>memeConcept->eating</li>
+        <li>memeConcept->meat</li>
+        <li>memeLeaderNoun->Snaff</li>
+        <li>memeLeaderNoun->king</li>
+        <li>memeLeaderNoun->elder</li>
+        <li>memeLeaderNoun->jeub</li>
+        <li>memeMoralist->eternal alchemist</li>
+        <li>memeMoralist->priest</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <!-- theist myth -->
+          <li>creation(tag=meme_WayofJeub)        ->[deity0_name] went to [deity0_possessive] brother and murdered him, and feasted upon his flesh. It was quite tasty.</li>
+          <li>episode(uses=1,tag=meme_WayofJeub)  ->The [deity0_type] [deity0_name] ate the bodies of [deity0_possessive] enemies.</li>
+          <!-- theist founder -->
+          <li>intro(tag=meme_WayofJeub)           ->In the [place_summary] [place_name], there was a jeub named [deity0_name]. After [deity0_possessive] father died, [deity0_name] ate his flesh and became the [deity0_type].</li>
+          <li>intro(tag=meme_WayofJeub)           ->In the [place_summary] [place_name], during the [ritualName], [deity0_name] came down into the [altarRoomLabel] and ate the flesh of other jeubs in front of the [memberNamePlural].</li>
+          <li>conflict(tag=meme_WayofJeub)        ->A [foeLeader] declared that [memberNamePlural] should be exterminated, and sent [foeSoldiers] to persecute the [memberNamePlural].</li>
+          <li>founderJoin(tag=meme_WayofJeub)     ->A [place_job] named [founderName] was attacked by one of the [foeLeader]'s [foeSoldiers]. [founderName] killed [foeLeader_objective] with a [place_personalWeapon] and became famous among the [memberNamePlural].</li>
+          <li>victory(tag=meme_WayofJeub)         ->[founderName] led a group of [memberNamePlural] into the [place_powerCenter], killed the [foeLeader], and consumed [foeLeader_possessive] flesh. [deity0_name] made [founderName] into the new [foeLeader].</li>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_WayofJeub)           ->[founderName] crashlanded on a distant world. Lacking food and surrounded by dead companions, [founder_pronoun] feasted, and became strong.</li>
+          <li>story(uses=1,tag=meme_WayofJeub)    ->Having fallen into insanity, [founderName] began consuming the flesh of evey jeub in the surrounding area until none were left.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_WayofJeub)         ->If there's one thing I know about the jeub, it's this: That</li>
+          <li>lesson(tag=meme_WayofJeub)              ->they're vile little creatures, but somehow I like them.</li>
+          <li>lessonReinforcement(tag=meme_WayofJeub) ->Every time I look at a jeub, I vomit a little inside my mouth, but I still find them worthy of worship.</li>
+          <!-- archist -->
+          <li>archistBasis(tag=meme_WayofJeub)    ->The archotech god-machines originated as jeubs who grew stronger and stronger until reaching their final form.</li>
+          <li>archistFact(tag=meme_WayofJeub)     ->As the consciousness of a jeub expands through technology, it slowly becomes closer and closer to a god.</li>
+          <li>archistProphecy(tag=meme_WayofJeub) ->[inTheEnd], the archotechs will finish their final phase of growth by consuming and merging with all creatures.</li>
+          <!-- animist -->
+          <li>animistBasis(tag=meme_WayofJeub)    ->The Eternal Alchemy surrounds and binds us all together.</li>
+          <li>animistFact(tag=meme_WayofJeub)     ->The jeubs know this, but are too stupid to do anything with that information.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Jeubism</ideoName>
+        <theme>jeubism</theme>
+        <adjective>jeubish</adjective>
+        <member>jeub</member>
+      </li>
+    </symbolPacks>
+ <!--   <selectOneOrNone>         I don't think this works... :wah:
+      <noneChance>0</noneChance>
+      <preceptThingPairs>
+        <li>
+          <precept>AnimalVenerated</precept>
+          <thing>Jeub</thing>
+        </li>
+	     <li>
+          <precept>AnimalVenerated</precept>
+          <thing>JeubCaller</thing>
+        </li>
+      </preceptThingPairs>
+    </selectOneOrNone> -->
+    <thingStyleCategories>
+      <li>
+        <category>Morbid</category>
+        <priority>3</priority>
+      </li>
+    </thingStyleCategories>
+    <ritualsToMake>1</ritualsToMake>
+    <replaceRitualsWithTags><li>CelebratedDate</li></replaceRitualsWithTags>
+    <replacementPatterns><li>SacrificePrisoner</li></replacementPatterns>
+    <agreeableTraits>
+      <li>Cannibal</li>
+    </agreeableTraits>
+  </MemeDef>
+  
+</Defs>

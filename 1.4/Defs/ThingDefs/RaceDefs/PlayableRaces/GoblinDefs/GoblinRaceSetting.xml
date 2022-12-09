@@ -53,9 +53,11 @@
             <li>Goblin_Average_Normal</li>
           </headTypes>
           <bodyTypes>
-            <li>Male</li>
 			<li>Fat</li>
+			<li>Hulk</li>
 			<li>Thin</li>
+			<li>Male</li>
+			<li>Female</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
           </bodyTypes>
@@ -113,7 +115,6 @@
         </alienPartGenerator>
       </generalSettings>
       <graphicPaths>
-          <body>Things/Pawn/Humanlike/Goblin/Body/</body>
           <head>Things/Pawn/Humanlike/Goblin/Head/</head>
       </graphicPaths>
       <relationSettings>

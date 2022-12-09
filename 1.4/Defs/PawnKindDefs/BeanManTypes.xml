@@ -5,6 +5,7 @@
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>false</forceNormalGearQuality>
+    <invNutrition>2.55</invNutrition>
   </PawnKindDef>
   
   <!-- Player -->

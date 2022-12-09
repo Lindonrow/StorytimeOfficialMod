@@ -20,6 +20,7 @@
 	  <li>Mood_Optimist</li>
       <li>KindInstinct</li>
 	  <li>MinTemp_SmallDecrease</li>
+	  <li>ST_Tall</li>
     </genes>
   </XenotypeDef>
   

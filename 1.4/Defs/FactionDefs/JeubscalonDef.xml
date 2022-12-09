@@ -19,7 +19,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
     </disallowedMemes>
     <requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">WayofJeub</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
     </requiredMemes>

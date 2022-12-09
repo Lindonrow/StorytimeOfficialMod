@@ -117,13 +117,13 @@
       <body>LickyFrogBody</body>
       <nameGenerator>FrogNamerMale</nameGenerator>
       <nameGeneratorFemale>FrogNamerFemale</nameGeneratorFemale>
-      <baseBodySize>0.8</baseBodySize>
+      <baseBodySize>1.25</baseBodySize>
 	  <predator>true</predator>
       <maxPreyBodySize>1.2</maxPreyBodySize>
-      <baseHealthScale>1.1</baseHealthScale>
+      <baseHealthScale>1.5</baseHealthScale>
 	  <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
-      <baseHungerRate>1</baseHungerRate>
+      <baseHungerRate>0.85</baseHungerRate>
       <foodType>CarnivoreAnimal</foodType>
       <leatherDef>Leather_NightFrog</leatherDef>
       <wildness>0.8</wildness>

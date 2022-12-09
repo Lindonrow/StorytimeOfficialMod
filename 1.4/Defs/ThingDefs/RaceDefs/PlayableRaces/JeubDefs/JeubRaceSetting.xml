@@ -6,6 +6,9 @@
     <description>This jeub seems smarter and less insane than the rest. Perhaps it is from the royal family?</description>
     <alienRace>
 	  <raceRestriction>
+		<blackGeneTags>
+		  <li>BodyType</li>
+		</blackGeneTags>
             <plantList>
                 <li>Plant_Botox</li>
             </plantList>

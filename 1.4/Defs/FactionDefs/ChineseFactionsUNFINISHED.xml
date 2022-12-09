@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef>
+    <defName>ChineseFriendly</defName>
+    <label>virtuous dynasty</label>
+    <description>This dynasty conforms to all the Confucian virtues and possesses the Mandate of Heaven to rule this world.</description>
+    <pawnsPlural>chinese</pawnsPlural>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>prime minister</leaderTitle>
+    <factionIconPath>UI/Structures/Structure_Taoism</factionIconPath>
+	<backstoryCategories>
+      <li>PirateBackstory</li>
+    </backstoryCategories>
+    <colorSpectrum>
+      <li>(255,198,62)</li>
+    </colorSpectrum>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+    </disallowedMemes>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </requiredMemes>
+    <allowedCultures><li>STChinese</li></allowedCultures>
+    <structureMemeWeights>
+      <VME_Structure_Shintaoism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Shintaoism>
+    </structureMemeWeights>
+    <factionNameMaker>NamerFactionChinese</factionNameMaker>
+    <settlementNameMaker>ChineseSettlementName</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(10000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+          <Monkey>5</Monkey>
+		  <ST_Parrot>5</ST_Parrot>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+          <Monkey>5</Monkey>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+		  <ST_Parrot>5</ST_Parrot>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <PirateCaptain>1</PirateCaptain>
+        </traders>
+        <carriers>
+          <Muffalo>100</Muffalo>
+        </carriers>
+        <guards>
+          <PirateSwabbie>35</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateJuggernaut>5</PirateJuggernaut>
+          <Monkey>5</Monkey>
+		  <ST_Parrot>5</ST_Parrot>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <PirateSwabbie>25</PirateSwabbie>
+		  <PirateNormal>40</PirateNormal>
+		  <PirateGrenadier>15</PirateGrenadier>
+		  <PirateCaptain>15</PirateCaptain>
+		  <PirateJuggernaut>15</PirateJuggernaut>
+          <Monkey>5</Monkey>
+		  <ST_Parrot>5</ST_Parrot>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<modExtensions>
+		<li Class="VFECore.FactionDefExtension">				
+			<allowedBiomes>
+				<li>TemperateForest</li>
+				<li>TropicalRainforest</li>
+				<li>AridShrubland</li>
+			</allowedBiomes>					
+		</li>
+	<li Class="FactionSounds.FactionSound">
+        <soundDef>Jack_Sparrow</soundDef>
+        <combatSoundDef>Pirate_Theme</combatSoundDef>
+      </li>
+    </modExtensions>
+	
+	
+  </FactionDef>
+  
+</Defs>

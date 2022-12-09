@@ -7,7 +7,9 @@
     <alienRace>
 	  <raceRestriction>
 		<blackGeneTags>
+		  <li>BodyType</li>
 		  <li>HairColor</li>
+		  <li>SkinColorOverride</li>
 		</blackGeneTags>
         <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
             <whiteApparelList>

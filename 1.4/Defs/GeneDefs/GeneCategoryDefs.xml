@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneCategoryDef>
+		<defName>SpecialEffects</defName>
+		<label>special effects</label>
+		<displayPriorityInXenotype>515</displayPriorityInXenotype>
+	</GeneCategoryDef>	
+	<GeneCategoryDef>
+		<defName>BodySize</defName>
+		<label>body size</label>
+		<displayPriorityInXenotype>516</displayPriorityInXenotype>
+	</GeneCategoryDef>	
+</Defs>

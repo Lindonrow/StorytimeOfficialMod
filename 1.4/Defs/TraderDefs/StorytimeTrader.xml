@@ -10,19 +10,19 @@
 	  <!-- Fish -->
       <li Class="StockGenerator_Tag">
         <tradeTag>RunescapeFish</tradeTag>
-        <thingDefCountRange>1~3</thingDefCountRange>
+        <thingDefCountRange>-1~3</thingDefCountRange>
         <countRange>10~50</countRange>
       </li>
 	  
       <li Class="StockGenerator_Tag">
         <tradeTag>TerrariaFish</tradeTag>
-        <thingDefCountRange>1~3</thingDefCountRange>
+        <thingDefCountRange>-1~3</thingDefCountRange>
         <countRange>10~50</countRange>
       </li>
 
       <li Class="StockGenerator_Tag">
         <tradeTag>StorytimeFish</tradeTag>
-        <thingDefCountRange>1</thingDefCountRange>
+        <thingDefCountRange>0~2</thingDefCountRange>
         <countRange>10~25</countRange>
       </li>
 	  

@@ -12,6 +12,7 @@
 	</backstoryFiltersOverride>
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <invNutrition>2</invNutrition>
   </PawnKindDef>
   
   <PawnKindDef ParentName="BaseGoblinKind">

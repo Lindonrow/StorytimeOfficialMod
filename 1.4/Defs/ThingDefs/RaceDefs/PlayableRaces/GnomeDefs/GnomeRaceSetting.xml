@@ -35,7 +35,11 @@
             <li>Gnome_Average_Normal</li>
           </headTypes>			
           <bodyTypes>
-            <li>Thin</li>
+			<li>Fat</li>
+			<li>Hulk</li>
+			<li>Thin</li>
+			<li>Male</li>
+			<li>Female</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
           </bodyTypes>
@@ -93,7 +97,6 @@
         </alienPartGenerator>
       </generalSettings>
       <graphicPaths>
-          <body>Things/Pawn/Humanlike/Gnome/Body/</body>
           <head>Things/Pawn/Humanlike/Gnome/Head/</head>
       </graphicPaths>
       <relationSettings>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>ST_Tall</defName>
+		<label>tall</label>
+		<description>Carriers of this gene are much taller than normal.</description>
+		<iconPath>UI/Icons/Genes/Tall</iconPath>
+		<exclusionTags>
+			<li>BodySize</li>
+		</exclusionTags>
+		
+		<statFactors>
+			<Mass>1.3</Mass>
+			<MeatAmount>1.3</MeatAmount>
+			<LeatherAmount>1.3</LeatherAmount>
+			<MeleeDamageFactor>1.1</MeleeDamageFactor>
+			<MeleeDodgeChance>0.9</MeleeDodgeChance>
+			<HuntingStealth>0.6</HuntingStealth>
+			<CarryingCapacity>1.3</CarryingCapacity>		
+		</statFactors>
+		<displayCategory>BodySize</displayCategory>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<bodyScaleFactor>(1.15,1.15)</bodyScaleFactor>
+				<headScaleFactor>(1.15,1.15)</headScaleFactor>
+			</li>
+		</modExtensions>
+	</GeneDef>	
+</Defs>
