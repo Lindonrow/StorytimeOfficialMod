@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<!--Multilingual-->
+	<TraitDef>
+		<defName>ST_Multilingual</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#9EF2FF&gt;Multilingual&lt;/color&gt;</label>
+				<description>[PAWN_nameDef] has a talent for languages, giving [PAWN_possessive] a major edge when dealing with the many cultures of the Rim.</description>
+				<statOffsets>
+					<TradePriceImprovement>0.2</TradePriceImprovement>
+					<NegotiationAbility>0.3</NegotiationAbility>
+					<SocialImpact>0.15</SocialImpact>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>		
+	
+<!-- Heat and Cold Lovers -->
+
+	<TraitDef>
+		<defName>ColdLover</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#9EF2FF&gt;Cold Lover&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} loves the cold and is well adjusted to it. {PAWN_pronoun} will never complain about it being too cold. Watch out for hypothermia, though.</description>
+				<statOffsets>
+					<ComfyTemperatureMin>-12.0</ComfyTemperatureMin>
+					<ComfyTemperatureMax>-6.0</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>HeatLover</li>
+		</conflictingTraits>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>HeatLover</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#9EF2FF&gt;Heat Lover&lt;/color&gt;</label>
+				<description>{PAWN_nameDef} loves the heat and is well adjusted to it. {PAWN_pronoun} will never complain about it being too hot. Watch out for heatstroke, though.</description>
+				<statOffsets>
+					<ComfyTemperatureMax>12.0</ComfyTemperatureMax>
+					<ComfyTemperatureMin>6.0</ComfyTemperatureMin>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>ColdLover</li>
+		</conflictingTraits>
+	</TraitDef>
+
+
+
+
+
+
+
+
+</Defs>

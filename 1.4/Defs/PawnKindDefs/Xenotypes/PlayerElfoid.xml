@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="TribalBase">
+    <defName>PlayerElfoid</defName>
+    <label>elfoid</label>
+    <combatPower>75</combatPower>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>250~250</weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedDecent</li>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <defaultFactionType>PlayerTribe</defaultFactionType>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>14~22</initialResistanceRange>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <xenotypeSet>
+      <xenotypeChances>
+        <ST_Elf>999</ST_Elf>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+</Defs>

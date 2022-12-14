@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>PolymorphResistance</defName>
+    <commonality>0.8</commonality>
+    <degreeDatas>
+      <li>
+        <label>&lt;color=#FF9600&gt;Polymorph Vulnerability&lt;/color&gt;</label>
+        <description>For some reason, {PAWN_nameDef}'s morphic field is extremely weak and {PAWN_pronoun} is more vulnerable than most to polymorphing.</description>
+        <degree>-1</degree>
+        <statFactors>
+          <PolymorphSensitivity>2</PolymorphSensitivity>
+        </statFactors>
+      </li>
+      <li>
+        <label>&lt;color=#FF9600&gt;Polymorph Immunity&lt;/color&gt;</label>
+        <description>{PAWN_nameDef} has an extremely strong morphic field. Attacks that cause polymorphing will nave no effect.</description>
+        <degree>1</degree>
+        <statFactors>
+          <PolymorphSensitivity>0</PolymorphSensitivity>
+        </statFactors>
+      </li>   
+    </degreeDatas>
+  </TraitDef>
+  
+</Defs>

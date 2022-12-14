@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Nudist"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Nudist&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Bloodlust"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Bloodlust&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Kind"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Kind&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Psychopath"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Psychopath&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Cannibal&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Abrasive"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Abrasive&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="TooSmart"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Too Smart&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Brawler"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Brawler&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Masochist"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#FF9600&gt;Masochist&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="NightOwl"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Night Owl&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Greedy"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Greedy&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Jealous"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Jealous&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Ascetic"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Ascetic&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Gay"]/degreeDatas/li/label</xpath>
+    <value>
+      <label>&lt;color=#D1B8FF&gt;Gay&lt;/color&gt;</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Bisexual"]/degreeDatas/li/label</xpath>
+    <value>
+      <label>&lt;color=#D1B8FF&gt;Bisexual&lt;/color&gt;</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Asexual"]/degreeDatas/li/label</xpath>
+    <value>
+      <label>&lt;color=#D1B8FF&gt;Asexual&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="AnnoyingVoice"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#FF9600&gt;Annoying Voice&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="CreepyBreathing"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#FF9600&gt;Creepy Breathing&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Pyromaniac"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Pyromaniac&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Wimp"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Wimp&lt;/color&gt;</label>
+    </value>
+  </Operation>
+  
+   <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Nimble"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Nimble&lt;/color&gt;</label>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="FastLearner"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Fast Learner&lt;/color&gt;</label>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="SlowLearner"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Slow Learner&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Undergrounder"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Undergrounder&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Transhumanist"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Body Modder&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="BodyPurist"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Body Purist&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="DislikesMen"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Misandrist&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="DislikesWomen"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Misogynist&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="GreatMemory"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Great Memory&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Tough"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Tough&lt;/color&gt;</label>
+    </value>
+  </Operation>
+  
+    <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="TorturedArtist"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#FF9600&gt;Tortured Artist&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Gourmand"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Gourmand&lt;/color&gt;</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="QuickSleeper"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Quick Sleeper&lt;/color&gt;</label>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Delicate"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Delicate&lt;/color&gt;</label>
+    </value>
+  </Operation>  
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Recluse"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#FF9600&gt;Recluse&lt;/color&gt;</label>
+    </value>
+  </Operation>    
+  
+</Patch>

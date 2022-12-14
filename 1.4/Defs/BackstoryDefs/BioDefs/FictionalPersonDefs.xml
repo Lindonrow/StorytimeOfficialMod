@@ -60,6 +60,29 @@
 		  <li>Human</li>
 		</validRaces>
 	</AlienRace.PawnBioDef>	
+
+	<AlienRace.PawnBioDef>				<!-- Replace with Chinese Backstory -->
+		<defName>STQiJingshuBio</defName>
+		<childhood>ST_BlacksmithApprentice</childhood>
+		<adulthood>ST_MedievalLord</adulthood>
+		<gender>Male</gender>
+		<name>
+		  <first>Jingshu</first>
+		  <last>Qi</last>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+
+
+
+
+
+
+
+
+
 	
 
 </Defs>

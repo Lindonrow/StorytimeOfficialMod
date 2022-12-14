@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="ESCP_Mage"]/degreeDatas/li[label="Mage Acolyte"]/label</xpath>
+    <value>
+        <label>&lt;color=#FF9600&gt;Tamrielic Mage Acolyte&lt;/color&gt;</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="ESCP_Mage"]/degreeDatas/li[label="Mage Journeyman"]/label</xpath>
+    <value>
+        <label>&lt;color=#FF9600&gt;Tamrielic Mage Journeyman&lt;/color&gt;</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="ESCP_Mage"]/degreeDatas/li[label="Mage"]/label</xpath>
+    <value>
+        <label>&lt;color=#FF9600&gt;Tamrielic Mage&lt;/color&gt;</label>
+    </value>
+  </Operation>
+ 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="ESCP_Slaver"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Slaver&lt;/color&gt;</label>
+    </value>
+  </Operation>
+ 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="VCEF_Fisherman"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Fisherman&lt;/color&gt;</label>
+    </value>
+  </Operation> 
+ 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Hygienic"]/degreeDatas/li[label="germaphobe"]/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Germaphobe&lt;/color&gt;</label>
+    </value>
+  </Operation> 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Hygienic"]/degreeDatas/li[label="hygienic"]/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Hygienic&lt;/color&gt;</label>
+    </value>
+  </Operation>  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Hygienic"]/degreeDatas/li[label="unhygienic"]/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Unhygienic&lt;/color&gt;</label>
+    </value>
+  </Operation>   
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Hygienic"]/degreeDatas/li[label="slob"]/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Slob&lt;/color&gt;</label>
+    </value>
+  </Operation>    
+ 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="VME_Elder"]/degreeDatas/li/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Elder&lt;/color&gt;</label>
+    </value>
+  </Operation>  
+ 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Xenophobia"]/degreeDatas/li[label="xenophobe"]/label</xpath>
+    <value>
+        <label>&lt;color=#3DC616&gt;Xenophobe&lt;/color&gt;</label>
+    </value>
+  </Operation>  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TraitDef[defName="Xenophobia"]/degreeDatas/li[label="xenophile"]/label</xpath>
+    <value>
+        <label>&lt;color=#9EF2FF&gt;Xenophile&lt;/color&gt;</label>
+    </value>
+  </Operation>   
+ 
+ 
+ 
+ 
+ 
+</Patch>

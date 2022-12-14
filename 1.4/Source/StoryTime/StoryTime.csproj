@@ -64,6 +64,7 @@
     <Compile Include="PawnKindDefOf.cs" />
     <Compile Include="ThingDefOf.cs" />
     <Compile Include="IncidentWorker_JeubSwarm.cs" />
+    <Compile Include="ThoughtWorker_BugLover.cs" />
     <Compile Include="ThoughtWorker_InsanityHat.cs" />
     <Compile Include="IncidentWorker_WanderingCartographer.cs" />
     <Compile Include="CompProperties_AnimalProduct.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="TradingPost\TP_DefOf.cs" />
     <Compile Include="TradingPost\TradeMode.cs" />
     <Compile Include="TradingPost\TradingPost.cs" />
+    <Compile Include="TraitDefOf.cs" />
     <Compile Include="WorkGiver_LegRip.cs" />
     <Compile Include="CompTomato.cs" />
     <Compile Include="CompProperties_Tomato.cs" />

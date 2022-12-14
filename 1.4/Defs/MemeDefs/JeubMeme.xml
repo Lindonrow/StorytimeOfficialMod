@@ -11,9 +11,6 @@
     <renderOrder>999</renderOrder>
     <requireOne>
       <li>
-        <li>AnimalConnection_Strong</li>
-      </li>
-      <li>
         <li>Cannibalism_RequiredStrong</li>
         <li>Cannibalism_RequiredRavenous</li>
       </li>
@@ -28,7 +25,7 @@
         <li>Corpses_DontCare</li>
       </li>
       <li>
-        <li>Corpses_DontCare</li>
+        <li>VME_InsectMeatEating_DontCare</li>
       </li>
     </requireOne>
     <consumableBuildings>

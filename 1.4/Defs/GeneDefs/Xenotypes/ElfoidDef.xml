@@ -7,11 +7,14 @@
   </XenotypeIconDef>  
   
   <XenotypeDef>
-    <defName>STElf</defName>
+    <defName>ST_Elf</defName>
     <label>Elfoid</label>
     <description>Elfoids are humans who have been morphed into something resembling the classic elves of myth such as Francis Fransioux.</description>
     <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
     <inheritable>true</inheritable>
+    <nameMaker>NamerElfoidMale</nameMaker>
+    <nameMakerFemale>NamerElfoidFemale</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
     <combatPowerFactor>0.9</combatPowerFactor>
     <genes>
       <li>Beauty_Beautiful</li>

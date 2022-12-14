@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "Kind"]/commonality</xpath>
+		<value>
+			<commonality>1.7</commonality>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "Bloodlust"]/commonality</xpath>
+		<value>
+			<commonality>0.9</commonality>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>/Defs/TraitDef[defName = "Psychopath"]</xpath>
+		<value>
+			<commonality>0.9</commonality>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "Cannibal"]/commonality</xpath>
+		<value>
+			<commonality>0.7</commonality>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "Gay"]/commonality</xpath>
+		<value>
+			<commonality>0.5</commonality>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "Bisexual"]/commonality</xpath>
+		<value>
+			<commonality>0.6</commonality>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "Asexual"]/commonality</xpath>
+		<value>
+			<commonality>0.3</commonality>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "Undergrounder"]/commonality</xpath>
+		<value>
+			<commonality>0.3</commonality>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "DislikesMen"]/commonalityFemale</xpath>
+		<value>
+			<commonalityFemale>1.3</commonalityFemale>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "DislikesWomen"]/commonality</xpath>
+		<value>
+			<commonality>1.3</commonality>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TraitDef[defName = "Tough"]/commonality</xpath>
+		<value>
+			<commonality>0.85</commonality>
+		</value>
+	</Operation>			
+	
+	
+	
+	
+	
+	
+	
+	
+</Patch>

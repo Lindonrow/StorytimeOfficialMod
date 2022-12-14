@@ -23,7 +23,7 @@
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoPirateLeader</leaderTitleMaker>
     <allowedPlaceTags>
-      <li>OriginTribal</li>
+      <li>OriginPirate</li>
     </allowedPlaceTags>
     <iconPath>World/Pirates/MeanPirates</iconPath>
     <styleItemTags>

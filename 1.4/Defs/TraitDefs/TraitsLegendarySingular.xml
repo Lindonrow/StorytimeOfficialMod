@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<!--Rare Genius-->
+	<TraitDef>
+		<defName>RareGenius</defName>
+		<commonality>0.05</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#FFDD43&gt;Rare Genius&lt;/color&gt;</label>
+				<description>A poet of later times wrote of [PAWN_nameDef]:
+				
+[PAWN_nameDef]'s mighty name hangs proudly on the upper sphere;
+Stern and grand, the royal liege man's likeness claims respect.
+In the tri-part world below [PAWN_pronoun] spun deep schemes.
+In the age-old realm of cloud, one single plume unites our gaze.
+Who rank [PAWN_possessive] peers? Yi Yin and Jiang Ziya.
+In command [PAWN_pronoun] was more sure than Xiao or Cao.
+But the stars had turned, [PAWN_pronoun] could not save Han's Reign.
+Toiling to the end, body broken, will unbroke.
+				
+				</description>
+				<statFactors>
+					<ResearchSpeed>1.5</ResearchSpeed>
+					<PawnTrapSpringChance>0</PawnTrapSpringChance>
+				    <AimingDelayFactor>0.33</AimingDelayFactor>
+				</statFactors>
+				<statOffsets>
+				  <SocialImpact>0.25</SocialImpact>
+				  <HuntingStealth>0.5</HuntingStealth>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedPassions>
+		  <li>Intellectual</li>
+		</forcedPassions>
+	</TraitDef>		
+	
+	
+</Defs>

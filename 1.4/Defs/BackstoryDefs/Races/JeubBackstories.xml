@@ -80,7 +80,7 @@
     <defName>Raised_Humans_Jeub</defName>
     <title>raised by humans</title>
     <titleShort>foundling</titleShort>
-    <baseDesc>[PAWN_nameDef] was found abandoned on the border of Jeubscalon by a family of human farmers. For some reason, they took [PAWN_possessive] in and raised [Pawn_possessive] as one of their own.</baseDesc>
+    <baseDesc>[PAWN_nameDef] was found abandoned on the border of Jeubscalon by a family of human farmers. For some reason, they took [PAWN_possessive] in and raised [PAWN_possessive] as one of their own.</baseDesc>
     <slot>Childhood</slot>
     <skillGains>
       <li>

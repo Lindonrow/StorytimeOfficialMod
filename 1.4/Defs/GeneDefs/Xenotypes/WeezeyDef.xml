@@ -11,7 +11,6 @@
     <label>weezey</label>
     <description>A humanoid who has been genetically modified to be more akin to weezer.</description>
     <iconPath>Things/Items/Resources/Ores/Weezer/Weezer_a</iconPath>
-    <inheritable>true</inheritable>
     <combatPowerFactor>1</combatPowerFactor>
     <genes>
       <li>Skin_Weezer</li>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Rarity Hexcodes -->
+
+<!-- Common = Light Blue = #9EF2FF -->
+
+<!-- Uncommon = Green = #3DC616 -->
+
+<!-- Rare = Orange = #FF9600 -->
+
+<!-- Very Rare = Magenta = #FA64D2 -->
+
+
+
+
+<!-- Rich -->
+	<TraitDef>
+		<defName>ST_Rich</defName>
+		<commonality>0.7</commonality>
+		<forcedPassions>
+			<li>Social</li>
+		</forcedPassions>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#3DC616&gt;Rich&lt;/color&gt;</label>
+				<description>I'm rich you know</description>
+				<skillGains>
+					<li>
+						<key>Social</key>
+						<value>4</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<TradePriceImprovement>0.30</TradePriceImprovement>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+	
+<!-- Stupid -->
+	<TraitDef>
+		<defName>ST_Stupid</defName>
+		<commonality>0.7</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#3DC616&gt;Stupid&lt;/color&gt;</label>
+				<description>wuh?</description>
+				<skillGains>
+					<li>
+						<key>Intellectual</key>
+						<value>-4</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<GlobalLearningFactor>-0.25</GlobalLearningFactor>
+					<ResearchSpeed>-0.5</ResearchSpeed>
+					<TradePriceImprovement>-0.20</TradePriceImprovement>
+					<WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+				</statOffsets>
+			<marketValueFactorOffset>-0.1</marketValueFactorOffset>
+			</li>			
+		</degreeDatas>
+		<conflictingTraits>
+			<li>TooSmart</li>
+			<li>FastLearner</li>
+		</conflictingTraits>
+	</TraitDef>	
+	<ThoughtDef>
+		<defName>StupidThought</defName>
+		<workerClass>ThoughtWorker_AlwaysActive</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<requiredTraits>
+			<li>ST_Stupid</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>stupid</label>
+				<description>I am too stupid to be sad.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+<!-- Rincewind -->
+	<TraitDef>
+		<defName>ST_Rincewind</defName>
+		<commonality>0.7</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#3DC616&gt;Runner&lt;/color&gt;</label>
+				<description>"Dead is only for once, but running away is for ever." 
+		-Noted Runner</description>
+				<statOffsets>
+					<MoveSpeed>0.50</MoveSpeed>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+		  <li>SpeedOffset</li>
+		</conflictingTraits>
+	</TraitDef>	
+	
+<!-- Buglover -->
+
+  <TraitDef>
+    <defName>Buglover</defName>
+    <commonality>0.8</commonality>
+    <degreeDatas>
+      <li>
+        <label>&lt;color=#3DC616&gt;Buglover&lt;/color&gt;</label>
+        <description>{PAWN_nameDef} loves the taste of bug meat, a fact which normal people find vile.</description>
+        <disallowedThoughtsFromIngestion>
+          <li>
+            <meatSource>Insect</meatSource>
+            <thoughts>
+              <li>AteRawFood</li>
+              <li>AteInsectMeatDirect</li>
+              <li>AteInsectMeatAsIngredient</li>
+            </thoughts>
+          </li>
+        </disallowedThoughtsFromIngestion>
+        <extraThoughtsFromIngestion>
+          <li>
+            <meatSource>Insect</meatSource>
+            <thoughtsDirect>
+              <li>AteInsectMeatDirectBuglover</li>
+            </thoughtsDirect>
+            <thoughtsAsIngredient>
+              <li>AteInsectMeatAsIngredientBuglover</li>
+            </thoughtsAsIngredient>
+          </li>
+        </extraThoughtsFromIngestion>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+
+
+
+
+
+
+
+
+	
+</Defs>

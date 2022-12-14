@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PlaceDef>
+    <defName>STChina</defName>
+    <tags>
+      <li>OriginChinese</li>
+    </tags>
+    <placeRules>
+      <include>
+        <li>PlaceMakerCommon</li>
+      </include>
+      <rulesStrings>
+        <li>place_name->China</li>
+        <li>place_adjective->Chinese</li>
+        <li>place_summary->celestial empire</li>
+        <li>place_community->commandery</li>
+        <li>place_community->province</li>
+        <li>place_community->city</li>
+        <li>place_powerCenter->imperial capital</li>
+        <li>place_job->bureaucrat</li>
+        <li>place_job->noble</li>
+        <li>place_job->rice farmer</li>
+        <li>place_job->soldier</li>
+        <li>place_job->scholar-official</li>
+        <li>place_job->scholar</li>
+        <li>place_job->sandalmaker</li>
+        <li>place_job->basketweaver</li>
+        <li>place_personalWeapon->qiang</li>
+        <li>place_personalWeapon->guandao</li>
+        <li>place_personalWeapon->jian</li>
+        <li>place_personalWeapon->zhanmadao</li>
+        <li>place_massWeapon->fireships</li>
+        <li>place_massWeapon->repeating crossbows</li>
+        <li>place_massWeapon->multiple bolt crossbows</li>
+        <li>place_foeLeader->tyrant</li>
+        <li>place_foeLeader->rebel leader</li>
+        <li>place_foeLeader->usurper</li>
+        <li>place_foeLeader->big-eared villain</li>
+        <li>place_foeSoldiers->eunuchs</li>        
+		<li>place_foeSoldiers->yellow turban rebels</li>
+      </rulesStrings>
+    </placeRules>
+  </PlaceDef>
+
+</Defs>

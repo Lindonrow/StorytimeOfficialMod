@@ -6,7 +6,7 @@
 		<commonality>0</commonality>
 		<degreeDatas>
 		  <li>
-			<label>Woodcutter</label>
+			<label>&lt;color=#8CDC64&gt;Woodcutter&lt;/color&gt;</label>
 			<description>This pawn is a Woodcutter, a master lumberjack who has become extremely adept at using hatchets as weapons.</description>
 			<degree>4</degree>
 			<statOffsets>

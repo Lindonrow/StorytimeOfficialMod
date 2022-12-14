@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName = "Cannibalism_RequiredStrong"]/requiredMemes</xpath>
+		<value>
+			  <li>WayofJeub</li>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName = "Cannibalism_RequiredRavenous"]/requiredMemes</xpath>
+		<value>
+			  <li>WayofJeub</li>
+		</value>
+	</Operation>				
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]</xpath>
+		<value>
+			<disagreeableTraits>
+			  <li>Buglover</li>
+			</disagreeableTraits>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName = "VME_Vegan"]</xpath>
+		<value>
+			<disagreeableTraits>
+			  <li>Buglover</li>
+			</disagreeableTraits>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName = "VME_InsectoidSupremacy"]</xpath>
+		<value>
+			<agreeableTraits>
+			  <li>Buglover</li>
+			</agreeableTraits>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName = "Tunneler"]/agreeableTraits</xpath>
+		<value>
+			  <li>Buglover</li>
+		</value>
+	</Operation>	
+	
+</Patch>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>RareGeniusThought</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>StoryTime.ThoughtWorker_RareGenius</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Jealous</li>
+    </nullifyingTraits>    
+	<stages>
+      <li>
+        <label>A rare genius!</label>
+        <baseOpinionOffset>50</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>  
+  
+</Defs>

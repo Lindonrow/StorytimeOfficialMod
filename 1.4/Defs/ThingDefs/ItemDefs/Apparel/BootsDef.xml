@@ -4,7 +4,7 @@
     <defName>Cartographer_Boots</defName>
     <label>Boots of the Cartographer</label>
     <description>These boots harness the power of the cartographer herself...</description>
-	<generateCommonality>0.01</generateCommonality>
+	<generateCommonality>0</generateCommonality>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/IdeoStoryPatternDef[defName = "VME_TaoismDescription"]/rules/rulesStrings</xpath>
+		<value>
+		  <rulesStrings>
+			<!-- final fallbacks -->
+			<li>episode(priority=-1)-></li> <!-- allow zero or more episodes -->
+			
+			<!-- typesetting -->
+			<li>r_pattern->"[r_creation] [r_episode]"\n\n  - A Chinese History Book</li>
+
+			<!-- generic creation -->
+			<li>creation->In an empire broken by virtueless [foeSoldiers], [founderName] took [place_name] into [founder_possessive] own hands and received the Mandate of Heaven.</li>
+			<li>creation->From generation to generation the Mandate of the former dynasty had degenerated under the influence of the [foeSoldiers]. [founderName] alone saw the path ordained by heaven.</li>
+			<li>creation->During an era when a cruel [foeLeader] had taken over the [place_powerCenter] of [place_name] with the backing of his ruthless [foeSoldiers], [founderName] gathered together virtuous men and women to restore harmony to the world.</li>
+
+			<!-- generic episode -->
+			<li>episode(uses=1)->Many battles were fought and many clever schemes carried out by [founder_possessive] generals before the [foeLeader] was finally overthrown and order restored.</li>
+			<li>episode(uses=1)->The [foeLeader] amassed a million man army and marched on [founderName]'s lands, but through the clever application of [place_massWeapon], the righteous were able to score a great victory. </li>
+			<li>episode(uses=1)->[founderName]'s sworn brothers were killed in the war against the [foeLeader]. [founder_pronoun] was devastated by the loss and was never quite the same again.</li>
+			<li>episode(uses=1)->Conscription of [place_job]s into the army proved to be a valuable tool in eventually overcoming the enemy and taking back the Empire. Most were equipped with crude [place_personalWeapon]s, but their zeal more than made up for it.</li>
+
+		   
+		  </rulesStrings>
+		</value>
+	</Operation>	
+	
+</Patch>

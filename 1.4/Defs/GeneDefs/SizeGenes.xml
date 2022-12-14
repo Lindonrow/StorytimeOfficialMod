@@ -26,7 +26,7 @@
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<bodyScaleFactor>(1.15,1.15)</bodyScaleFactor>
-				<headScaleFactor>(1.15,1.15)</headScaleFactor>
+				<headScaleFactor>(1.1,1.1)</headScaleFactor>
 			</li>
 		</modExtensions>
 	</GeneDef>	

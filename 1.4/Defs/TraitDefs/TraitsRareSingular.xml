@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Rarity Hexcodes -->
+
+<!-- Common = Light Blue = #9EF2FF -->
+
+<!-- Uncommon = Green = #3DC616 -->
+
+<!-- Rare = Orange = #FF9600 -->
+
+<!-- Very Rare = Magenta = #FA64D2 -->
+
+
+	
+<!-- Semi-Feral -->	
+	<TraitDef>
+		<defName>ST_SemiFeral</defName>
+		<commonality>0.45</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#FF9600&gt;Semi-Feral&lt;/color&gt;</label>
+				<description>Bunga.</description>
+				<skillGains>
+					<li>
+						<key>Intellectual</key>
+						<value>-3</value>
+					</li>
+					<li>
+						<key>Social</key>
+						<value>-5</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<ResearchSpeed>-0.5</ResearchSpeed>
+					<TradePriceImprovement>-0.50</TradePriceImprovement>
+					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+				</statOffsets>
+			<randomMentalState>Berserk</randomMentalState>
+			<randomMentalStateMtbDaysMoodCurve>
+			  <points>
+				<li>(0, 60)</li>
+			  </points>
+			</randomMentalStateMtbDaysMoodCurve>
+			<marketValueFactorOffset>-0.15</marketValueFactorOffset>
+			<allowedMeditationFocusTypes><li>Natural</li></allowedMeditationFocusTypes>				
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>FastLearner</li>
+			<li>ST_Rich</li>
+			<li>TooSmart</li>
+		</conflictingTraits>
+	</TraitDef>	
+	<ThoughtDef>
+		<defName>FeralThought</defName>
+		<workerClass>ThoughtWorker_AlwaysActive</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<requiredTraits>
+			<li>ST_SemiFeral</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>feral</label>
+				<description>Unga bunga</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>	
+	
+<!-- Rock Expert -->		
+	<TraitDef>
+		<defName>ST_RockExpert</defName>
+		<commonality>0.55</commonality>
+		<forcedPassions>
+			<li>Mining</li>
+		</forcedPassions>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#FF9600&gt;Rock Expert&lt;/color&gt;</label>
+				<description>I know everything there is to know about rocks (and minerals too).</description>
+				<skillGains>
+					<li>
+						<key>Mining</key>
+						<value>4</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<MiningYield>0.3</MiningYield>
+				</statOffsets>	
+			</li>
+		</degreeDatas>
+	</TraitDef>						
+
+<!-- Savant -->
+	<TraitDef>
+		<defName>ST_Savant</defName>
+		<commonality>0.4</commonality>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#FF9600&gt;Savant&lt;/color&gt;</label>
+				<description>[PAWN_nameDef] is exceptionally gifted at research, but almost completely incapable of socializing.</description>
+				<skillGains>
+					<li>
+						<key>Intellectual</key>
+						<value>8</value>
+					</li>
+					<li>
+						<key>Social</key>
+						<value>-12</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<ResearchSpeed>2</ResearchSpeed>
+					<TradePriceImprovement>-0.80</TradePriceImprovement>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>ST_Stupid</li>
+			<li>SlowLearner</li>
+		</conflictingTraits>
+		<requiredWorkTags>
+		  <li>Intellectual</li>
+		</requiredWorkTags>
+	</TraitDef>		
+
+<!-- Mad Surgeon -->
+	<TraitDef>
+		<defName>ST_Surgeon</defName>
+		<commonality>0.55</commonality>
+		<forcedPassions>
+			<li>Medicine</li>
+		</forcedPassions>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#FF9600&gt;Mad Doctor&lt;/color&gt;</label>
+				<description>[PAWN_nameDef] has a passion for medical work. Unfortunately, [PAWN_possessive] enthusiasm is not matched by skill. As a result [PAWN_pronoun] can tend wounds quickly, but not effectively.</description>
+				<skillGains>
+					<li>
+						<key>Medicine</key>
+						<value>4</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+			<MedicalTendQuality>-1.5</MedicalTendQuality>
+			<MedicalTendSpeed>1.5</MedicalTendSpeed>
+			<MedicalOperationSpeed>1.5</MedicalOperationSpeed>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+	
+</Defs>

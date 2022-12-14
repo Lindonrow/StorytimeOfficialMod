@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>SwankySocks</defName>
+    <label>swanky socks</label>
+    <description>Look bruv they were supposed to be boots but shit happened okay? Just go with the flow.</description>
+	<generateCommonality>0.08</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/SwankyBoots/SwankyBoots_item</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>60</Cloth>
+    </costList>
+    <apparel>
+	  <careIfWornByCorpse>true</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <tags>
+        <li>Outlander</li>
+      </tags>
+    </apparel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.25</Mass>
+      <WorkToMake>2000</WorkToMake>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.2</SocialImpact>
+	  <MoveSpeed>0.1</MoveSpeed>
+    </equippedStatOffsets>
+	<thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+	<tradeTags>
+	  <li>ExoticMisc</li>
+	</tradeTags> 
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+  </ThingDef>
+
+</Defs>
