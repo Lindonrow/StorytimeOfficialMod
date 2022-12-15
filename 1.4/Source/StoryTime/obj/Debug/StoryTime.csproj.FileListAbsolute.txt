@@ -68,3 +68,5 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StorytimeOfficialMod
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StorytimeOfficialMod\1.4\Source\StoryTime\obj\Debug\StoryTime.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StorytimeOfficialMod\1.4\Source\StoryTime\obj\Debug\StoryTime.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StorytimeOfficialMod\1.4\Source\StoryTime\obj\Debug\StoryTime.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StorytimeOfficialMod\1.4\Source\StoryTime\bin\Debug\Mono.Posix.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\StorytimeOfficialMod\1.4\Source\StoryTime\bin\Debug\Mono.Security.dll

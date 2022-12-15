@@ -38,9 +38,32 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="ISharpZipLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\ISharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="UnityEngine.CoreModule">
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="VCE-Fishing">
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\1914064942\1.3\Assemblies\VCE-Fishing.dll</HintPath>
@@ -62,6 +85,7 @@
     <Compile Include="JobDefOf.cs" />
     <Compile Include="NightFrogIncidentWorker.cs" />
     <Compile Include="PawnKindDefOf.cs" />
+    <Compile Include="Startup.cs" />
     <Compile Include="ThingDefOf.cs" />
     <Compile Include="IncidentWorker_JeubSwarm.cs" />
     <Compile Include="ThoughtWorker_BugLover.cs" />

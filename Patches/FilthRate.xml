@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName="BadHygiene"]/stages/li[label="moderate"]/statOffsets</xpath>
+    <value>
+		<FilthRate>0.2</FilthRate>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName="BadHygiene"]/stages/li[label="severe"]/statOffsets</xpath>
+    <value>
+		<FilthRate>0.4</FilthRate>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName="BadHygiene"]/stages/li[label="extreme"]/statOffsets</xpath>
+    <value>
+		<FilthRate>0.8</FilthRate>
+    </value>
+  </Operation>
+  
+</Patch>

@@ -15,6 +15,7 @@ namespace StoryTime
     public static ThingDef Cartographer;
     public static ThingDef Silver;
     public static ThingDef Filth_Blood;
+    public static ThingDef GroundWeezer;
     static ThingDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof (ThingDefOf));
   }
 

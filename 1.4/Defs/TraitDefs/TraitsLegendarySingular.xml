@@ -23,6 +23,7 @@ Toiling to the end, body broken, will unbroke.
 				</description>
 				<statFactors>
 					<ResearchSpeed>1.5</ResearchSpeed>
+					<GlobalLearningFactor>2</GlobalLearningFactor>
 					<PawnTrapSpringChance>0</PawnTrapSpringChance>
 				    <AimingDelayFactor>0.33</AimingDelayFactor>
 				</statFactors>
@@ -39,6 +40,12 @@ Toiling to the end, body broken, will unbroke.
 		<forcedPassions>
 		  <li>Intellectual</li>
 		</forcedPassions>
+    <conflictingTraits>
+      <li>ST_Stupid</li>
+      <li>ST_Savant</li>
+      <li>ST_SemiFeral</li>	  
+      <li>SlowLearner</li>
+    </conflictingTraits>
 	</TraitDef>		
 	
 	
