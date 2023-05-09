@@ -200,7 +200,7 @@
           <texPath>Things/Pawn/Animal/Frog_Types/FireBellied_Toad/FireBelliedToad</texPath>
           <drawSize>0.9</drawSize>
           <shadowData>
-            <volume>(0.35, 0.35, 0.35)</volume>
+            <volume>(0.2, 0.2, 0.2)</volume>
             <offset>(0,0,0)</offset>
           </shadowData>
         </bodyGraphicData>

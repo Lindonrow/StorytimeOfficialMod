@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!---->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="MealSurvivalPack"]/ingestible</xpath>
+    <value>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>LoreLoss</hediffDef>
+          <severity>0.075</severity>
+        </li>
+      </outcomeDoers>
+    </value>
+  </Operation>
+
+<!---->  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="MealNutrientPaste"]/ingestible</xpath>
+    <value>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>LoreLoss</hediffDef>
+          <severity>0.025</severity>
+        </li>
+      </outcomeDoers>
+    </value>
+  </Operation>
+
+<!---->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="MealSimple"]/ingestible</xpath>
+    <value>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>LoreLoss</hediffDef>
+          <severity>0.1</severity>
+        </li>
+      </outcomeDoers>
+    </value>
+  </Operation>
+
+<!---->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="MealFineBase"]/ingestible</xpath>
+    <value>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>LoreLoss</hediffDef>
+          <severity>0.075</severity>
+        </li>
+      </outcomeDoers>
+    </value>
+  </Operation>  
+
+<!---->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="MealLavishBase"]/ingestible</xpath>
+    <value>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>LoreLoss</hediffDef>
+          <severity>0.05</severity>
+        </li>
+      </outcomeDoers>
+    </value>
+  </Operation>  
+
+<!---->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Pemmican"]/ingestible</xpath>
+    <value>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>LoreLoss</hediffDef>
+          <severity>0.005</severity>
+        </li>
+      </outcomeDoers>
+    </value>
+  </Operation>  
+
+
+  
+</Patch>
