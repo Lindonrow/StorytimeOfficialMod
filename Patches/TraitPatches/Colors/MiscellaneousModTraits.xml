@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-  <Operation Class="PatchOperationReplace">
+<!--  <Operation Class="PatchOperationReplace">
     <xpath>/Defs/TraitDef[defName="ESCP_Mage"]/degreeDatas/li[label="Mage Acolyte"]/label</xpath>
     <value>
         <label>&lt;color=#FF9600&gt;Tamrielic Mage Acolyte&lt;/color&gt;</label>
@@ -17,7 +17,7 @@
     <value>
         <label>&lt;color=#FF9600&gt;Tamrielic Mage&lt;/color&gt;</label>
     </value>
-  </Operation>
+  </Operation> -->
  
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/TraitDef[defName="ESCP_Slaver"]/degreeDatas/li/label</xpath>

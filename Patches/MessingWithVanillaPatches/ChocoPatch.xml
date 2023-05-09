@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Chocolate"]/label</xpath>
+		<value>
+		      <label>choco</label>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Chocolate"]/description</xpath>
+		<value>
+		      <description>The rare and valuable substance known by the sages of ancient China as '巧克力' or Choco. It is the core ingredient of many powerful foods such as Choco Rolls and Choco Puffs.</description>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeCocoa"]/label</xpath>
+		<value>
+		      <label>choco tree</label>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeCocoa"]/description</xpath>
+		<value>
+		      <description>A tree from which grows pure CHOCO.</description>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Cocoa"]/label</xpath>
+		<value>
+		      <label>choco cultivation</label>
+		</value>
+	</Operation>		
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "Cocoa"]/description</xpath>
+		<value>
+		      <description>Sow choco trees to cultivate your own precious, precious choco.</description>
+		</value>
+	</Operation>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</Patch>
