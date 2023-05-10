@@ -42,6 +42,12 @@
 		<minRefireDays>10</minRefireDays>
 		<earliestDay>10</earliestDay>
 		<durationDays>0.75~1</durationDays>
+		<modExtensions>
+            <li Class="MusicExpanded.ModExtension.PlayCue">
+                <cue>Custom</cue>
+                <cueData>GibbonousMoon</cueData>
+            </li>
+		</modExtensions>
 	  </IncidentDef>
 
 	  <IncidentDef>

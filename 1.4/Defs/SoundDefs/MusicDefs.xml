@@ -166,8 +166,40 @@
         <cueData>Gil-Galad</cueData>
     </MusicExpanded.TrackDef>	
 	
+<!-- Gibbonous Moon Theme -->	
 	
-	
+    <MusicExpanded.TrackDef>
+        <label>Moon Theme- Fate of the Frogs</label>
+        <defName>GibbonousMoon</defName>
+        <clipPath>Music/GibbonousMoon</clipPath>
+        <cue>Custom</cue>
+        <cueData>GibbonousMoon</cueData>
+    </MusicExpanded.TrackDef>		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 </Defs>

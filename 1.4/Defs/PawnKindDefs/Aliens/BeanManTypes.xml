@@ -15,10 +15,6 @@
     <combatPower>30</combatPower>
     <defaultFactionType>PlayerColony</defaultFactionType>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>150~400</apparelMoney>
 	<backstoryFiltersOverride>
 	  <li>
 		<categories>
@@ -39,11 +35,6 @@
     <defaultFactionType>BeanManFaction</defaultFactionType>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>150~400</apparelMoney>
 	<backstoryFiltersOverride>
 	  <li>
 		<categories>
@@ -74,11 +65,6 @@
 	<trader>true</trader>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>150~400</apparelMoney>
 	<backstoryFiltersOverride>
 	  <li>
 		<categories>
@@ -109,11 +95,6 @@
     <factionLeader>true</factionLeader>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>150~400</apparelMoney>
 	<backstoryFiltersOverride>
 	  <li>
 		<categories>
@@ -148,11 +129,6 @@
     <defaultFactionType>BeanGuardians</defaultFactionType>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>150~400</apparelMoney>
 	<backstoryFiltersOverride>
 	  <li>
 		<categories>
@@ -191,11 +167,6 @@
     <defaultFactionType>BeanGuardians</defaultFactionType>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>150~400</apparelMoney>
 	<backstoryFiltersOverride>
 	  <li>
 		<categories>
@@ -235,11 +206,6 @@
 	<trader>true</trader>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>150~400</apparelMoney>
 	<backstoryFiltersOverride>
 	  <li>
 		<categories>
@@ -278,11 +244,6 @@
     <factionLeader>true</factionLeader>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>150~400</apparelMoney>
 	<backstoryFiltersOverride>
 	  <li>
 		<categories>

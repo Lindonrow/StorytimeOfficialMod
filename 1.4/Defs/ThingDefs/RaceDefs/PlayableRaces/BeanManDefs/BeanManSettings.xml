@@ -6,11 +6,7 @@
     <description>What a strange creature.</description>
     <alienRace>
 	  <raceRestriction>
-		<blackGeneTags>
-		  <li>BodyType</li>
-		  <li>HairColor</li>
-		  <li>SkinColorOverride</li>
-		</blackGeneTags>
+		<onlyHaveRaceRestrictedGenes>true</onlyHaveRaceRestrictedGenes>
         <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
             <whiteApparelList>
 				<li>Apparel_Parka</li>

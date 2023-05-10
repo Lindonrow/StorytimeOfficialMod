@@ -83,6 +83,8 @@
     <Compile Include="FrogWood.cs" />
     <Compile Include="BloodExplosion.cs" />
     <Compile Include="JobDefOf.cs" />
+    <Compile Include="MainMenuPatch.cs" />
+    <Compile Include="MenuPatchOther.cs" />
     <Compile Include="NightFrogIncidentWorker.cs" />
     <Compile Include="PawnKindDefOf.cs" />
     <Compile Include="Startup.cs" />
