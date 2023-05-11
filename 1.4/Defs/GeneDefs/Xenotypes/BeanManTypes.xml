@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--RedX-->
+  <XenotypeIconDef>
+    <defName>RedBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Red_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>RedBeanMan</defName>
+    <label>red bean man</label>
+    <description>Red bean men are the most standard bean man color. They tend to be friendly and they have an affinity towards plants, but are not generally good workers otherwise.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Red_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>0.9</combatPowerFactor>
+    <genes>
+      <li>RedBeanMan</li>
+      <li>StandardBeanMan</li>
+	  <li>HappyBeanMan</li>
+    </genes>
+  </XenotypeDef>
+ 
+<!--OrangeX-->
+  <XenotypeIconDef>
+    <defName>OrangeBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Orange_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>OrangeBeanMan</defName>
+    <label>orange bean man</label>
+    <description>Orange bean men are the primary close-quarters fighters among the bean men. While their abilities are valued in bean man society, their bloodlust and unpleasant demeanor cause others to hold them at arm's length.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Orange_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.1</combatPowerFactor>
+    <genes>
+      <li>OrangeBeanMan</li>
+      <li>BloodyBeanMan</li>
+	  <li>MeanBeanMan</li>
+    </genes>
+  </XenotypeDef>
+  
+<!--BlackX-->
+  <XenotypeIconDef>
+    <defName>BlackBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Black_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>BlackBeanMan</defName>
+    <label>black bean man</label>
+    <description>Black bean man are the primary scientists and researchers in bean man society, but most consider them unpleasant to be around.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Black_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>BlackBeanMan</li>
+	  <li>MeanBeanMan</li>
+	  <li>BrainyBeanMan</li>
+    </genes>
+  </XenotypeDef>  
+  
+<!--BlueX-->
+  <XenotypeIconDef>
+    <defName>BlueBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Blue_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>BlueBeanMan</defName>
+    <label>blue bean man</label>
+    <description>Blue bean men are the laziest type of bean man, preferring to spend their days lounging around rather than do hard labor. Nevertheless, most people appreciate them for their friendly and calm demeanor.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Blue_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>BlueBeanMan</li>
+      <li>LazyBeanMan</li>
+	  <li>FriendlyBeanMan</li>
+	  <li>SteadyBeanMan</li>
+	  </genes>
+  </XenotypeDef>    
+  
+<!--BottX-->
+  <XenotypeIconDef>
+    <defName>BottBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Bott_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>BottBeanMan</defName>
+    <label>Bertie Bott's every flavor bean man</label>
+    <description>Bertie Bott's every flavor bean men are a strange type of bean man who have been born with a genetic mutation that causes Bertie Bott's Every Flavor Beans to grow in their stomachs. These bean men generally consider themselves to be the guardians of the Every Flavor Beans and can be quite arrogant about that fact.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Bott_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>BottBeanMan</li>
+      <li>MeanBeanMan</li>
+	  <li>EveryFlavorBeanMan</li>
+    </genes>
+  </XenotypeDef>      
+  
+<!--CaveX-->
+  <XenotypeIconDef>
+    <defName>CaveBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Cave_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>CaveBeanMan</defName>
+    <label>cave bean man</label>
+    <description>Cave bean men are bean men that have, for some reason, been born with genetic mutations similar to those found in cave-dwelling creatures. They are completely blind, but very good at digging in the earth.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Cave_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>CaveBeanMan</li>
+	  <li>BurrowerBeanMan</li>
+	  <li>BlindBeanMan</li>
+    </genes>
+  </XenotypeDef>        
+  
+<!--ChiliX-->
+  <XenotypeIconDef>
+    <defName>ChiliBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Chili_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>ChiliBeanMan</defName>
+    <label>chili bean man</label>
+    <description>Chili bean men prefer warm environments and are known for their fiery personalities which often get them into fights.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Chili_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>ChiliBeanMan</li>
+	  <li>SpicyBeanMan</li>
+	  <li>WarmBeanMan</li>
+    </genes>
+  </XenotypeDef>          
+  
+<!--CoffeeX-->
+  <XenotypeIconDef>
+    <defName>CoffeeBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Coffee_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>CoffeeBeanMan</defName>
+    <label>coffee bean man</label>
+    <description>Coffee bean men are born with a special attunement towards coffee beans, resulting in a generally manic and unstable personality.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Coffee_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>CoffeeBeanMan</li>
+	  <li>UnstableBeanMan</li>
+	  <li>WorkerBeanMan</li>
+	  <li>SpeedyBeanMan</li>
+    </genes>
+  </XenotypeDef>            
+  
+<!--GreenX-->
+  <XenotypeIconDef>
+    <defName>GreenBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Green_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>GreenBeanMan</defName>
+    <label>green bean man</label>
+    <description>Green bean men are the primary agricultural workers in bean man society, an important role in a society which revolves around beans. They are extremely pacifistic and refuse to participate in violence.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Green_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>GreenBeanMan</li>
+	  <li>GreenBeanMan_trait</li>
+	  <li>PeacefulBeanMan</li>
+    </genes>
+  </XenotypeDef>        
+  
+<!--PurpleX-->
+  <XenotypeIconDef>
+    <defName>PurpleBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Purple_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>PurpleBeanMan</defName>
+    <label>purple bean man</label>
+    <description>Purple bean men are the most mystical and strange of all bean men. They have a natural attunement to magical and psychic phenomena and are often trained as mages.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Purple_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>PurpleBeanMan</li>
+	  <li>MagicBeanMan</li>
+	  <li>PsychicBeanMan</li>
+    </genes>
+  </XenotypeDef>          
+  
+<!--Shiny-->
+  <XenotypeIconDef>
+    <defName>ShinyBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Shiny_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>ShinyBeanMan</defName>
+    <label>shiny bean man</label>
+    <description>Shiny bean men are the rarest and most treasured bean man variety. They possess many of the positive qualities of their brethren with none of the negatives and can mostly be found in positions of high leadership within bean man society.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Shiny_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>2</combatPowerFactor>
+    <genes>
+      <li>ShinyBeanMan</li>
+      <li>HappyBeanMan</li>
+      <li>FriendlyBeanMan</li>
+      <li>WorkerBeanMan</li>
+      <li>GreenBeanMan_trait</li>	  
+      <li>BrainyBeanMan</li>	  
+      <li>BurrowerBeanMan</li>	  
+      <li>BracingBeanMan</li>	  
+      <li>HealingBeanMan</li>	  
+      <li>SteadyBeanMan</li>	 
+      <li>SpeedyBeanMan</li>	 
+      <li>DeadeyeBeanMan</li>	 	  
+    </genes>
+  </XenotypeDef>         
+  
+<!--SilverX-->
+  <XenotypeIconDef>
+    <defName>SilverBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Silver_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>SilverBeanMan</defName>
+    <label>silver bean man</label>
+    <description>Silver bean men have a predisposition towards healing and medical work, but generally avoid violence and are not very good fighters.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Silver_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>SilverBeanMan</li>
+	  <li>BenignBeanMan</li>
+	  <li>HealingBeanMan</li>
+    </genes>
+  </XenotypeDef>           
+  
+<!--StinkyX-->
+  <XenotypeIconDef>
+    <defName>StinkyBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Stinky_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>StinkyBeanMan</defName>
+    <label>stinky bean man</label>
+    <description>Stinky bean men are the lowest caste in bean man society. They are constantly followed by a seemingly sourceless stench which drives others away from them. They are, however, quite resistant to poison and pollution.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Stinky_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>StinkyBeanMan</li>
+	  <li>StinkyBeanMan_trait</li>
+	  <li>BracingBeanMan</li>
+    </genes>
+  </XenotypeDef>           
+    
+<!--WhiptongueX-->
+  <XenotypeIconDef>
+    <defName>WhiptongueBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Whiptongue_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>WhiptongueBeanMan</defName>
+    <label>whiptongue bean man</label>
+    <description>Whiptongue bean men are one of the more peculiar looking types of bean men, possessing long snouts and even longer tongues which they use in devastating lick attacks against their foes.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Whiptongue_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>WhiptongueBeanMan</li>
+	  <li>LickyBeanMan</li>
+	  <li>DeadeyeBeanMan</li>
+    </genes>
+  </XenotypeDef>            
+  
+<!--PolarX-->
+  <XenotypeIconDef>
+    <defName>PolarBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Polar_east</texPath>
+  </XenotypeIconDef>  
+  
+  <XenotypeDef>
+    <defName>PolarBeanMan</defName>
+    <label>polar bean man</label>
+    <description>Polar bean men possess a lower body temperature than other bean men, causing them to be slower and more cool-headed. They also prefer colder environments</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Polar_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>PolarBeanMan</li>
+	  <li>ColdBeanMan</li>
+	  <li>SteadyBeanMan</li>
+	  <li>SlowBeanMan</li>
+    </genes>
+  </XenotypeDef>     
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</Defs>

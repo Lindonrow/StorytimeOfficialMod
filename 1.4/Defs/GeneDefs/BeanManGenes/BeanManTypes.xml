@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<GeneCategoryDef>
+	<defName>BeanManTypes</defName>
+	<label>bean man colors</label>
+	<displayPriorityInXenotype>512</displayPriorityInXenotype>
+</GeneCategoryDef>	
+	
+  <GeneDef Name="GeneBeanBase" Abstract="True">
+    <displayCategory>BeanManTypes</displayCategory>
+    <randomChosen>true</randomChosen>
+    <exclusionTags>
+      <li>GeneBean</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>RedBeanMan</defName>
+    <label>red</label>
+    <description>This bean man is red.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Red_east</iconPath>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>OrangeBeanMan</defName>
+    <label>orange</label>
+    <description>This bean man is orange.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Orange_east</iconPath>
+    <displayOrderInCategory>999</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>BlackBeanMan</defName>
+    <label>black</label>
+    <description>This bean man is black.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Black_east</iconPath>
+    <displayOrderInCategory>998</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>BlueBeanMan</defName>
+    <label>blue</label>
+    <description>This bean man is blue.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Blue_east</iconPath>
+    <displayOrderInCategory>997</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>BottBeanMan</defName>
+    <label>bott</label>
+    <description>This bean man is a bertie bott bean.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Bott_east</iconPath>
+    <displayOrderInCategory>996</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>CaveBeanMan</defName>
+    <label>cave adapted</label>
+    <description>This bean man is cave adapted.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Cave_east</iconPath>
+    <displayOrderInCategory>995</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>ChiliBeanMan</defName>
+    <label>chili colored</label>
+    <description>This bean man is chili colored.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Chili_east</iconPath>
+    <displayOrderInCategory>994</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>CoffeeBeanMan</defName>
+    <label>coffee colored</label>
+    <description>This bean man is coffee colored.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Coffee_east</iconPath>
+    <displayOrderInCategory>993</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>GreenBeanMan</defName>
+    <label>green</label>
+    <description>This bean man is green.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Green_east</iconPath>
+    <displayOrderInCategory>992</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>PurpleBeanMan</defName>
+    <label>purple</label>
+    <description>This bean man is purple.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Purple_east</iconPath>
+    <displayOrderInCategory>991</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>ShinyBeanMan</defName>
+    <label>shiny</label>
+    <description>This bean man is shiny.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Shiny_east</iconPath>
+    <displayOrderInCategory>990</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>SilverBeanMan</defName>
+    <label>silver</label>
+    <description>This bean man is silver.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Silver_east</iconPath>
+    <displayOrderInCategory>989</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>StinkyBeanMan</defName>
+    <label>stinky looking</label>
+    <description>This bean man is stinky looking.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Stinky_east</iconPath>
+    <displayOrderInCategory>988</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>WhiptongueBeanMan</defName>
+    <label>whiptongue</label>
+    <description>This bean man has a whiptongue.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Whiptongue_east</iconPath>
+    <displayOrderInCategory>987</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>PolarBeanMan</defName>
+    <label>polar adapted</label>
+    <description>This bean man looks like it belongs in a cold climate.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Polar_east</iconPath>
+    <displayOrderInCategory>987</displayOrderInCategory>
+  </GeneDef>
+
+
+
+
+
+
+
+
+</Defs>

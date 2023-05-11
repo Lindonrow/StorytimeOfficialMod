@@ -4,14 +4,13 @@
     <defName>BeanManAdult_Bott_Guardian</defName>
     <title>Bertie Bott's every flavor bean man</title>
 	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Bott</bodyTypeGlobal>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
 	<spawnCategories>
       <li>BeanGuardian</li>
     </spawnCategories>
     <baseDesc>Born with a close affinity to the rare and powerful beans of Bertie Bott, this bean man variety possesses a biological quirk that causes them to produce Every Flavor Beans inside their stomach. Practically speaking, this means that they periodically suffer (or benefit) from the random effects of Bertie Bott's Every Flavor Beans.</baseDesc>
     <slot>Adulthood</slot>
     <forcedHediffs>
-      <li>HedBottBeanMan</li>
       <li>Hediff_BertieBottBeanManBuildup</li>
     </forcedHediffs>
   </AlienRace.AlienBackstoryDef>

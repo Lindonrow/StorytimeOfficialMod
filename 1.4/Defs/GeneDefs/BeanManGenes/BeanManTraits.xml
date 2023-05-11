@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<GeneCategoryDef>
+	<defName>BeanManTraits</defName>
+	<label>bean man traits</label>
+	<displayPriorityInXenotype>511</displayPriorityInXenotype>
+</GeneCategoryDef>	
+
+  <GeneDef Name="GeneBeanTraitBase" Abstract="True">
+    <displayCategory>BeanManTraits</displayCategory>
+    <randomChosen>true</randomChosen>
+  </GeneDef>
+  
+  
+<!--Standard Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>StandardBeanMan</defName>
+    <label>standard bean</label>
+    <description>This bean man is slightly more disposed towards friendliness and plant work. A common trait among bean men.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Red_east</iconPath>
+    <displayOrderInCategory>2000</displayOrderInCategory>
+	<statOffsets>
+		  <PlantWorkSpeed>0.15</PlantWorkSpeed>
+		  <SocialImpact>0.10</SocialImpact>
+		  <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+	</statOffsets>		
+  </GeneDef>
+  
+<!--Happy Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>HappyBeanMan</defName>
+    <label>happy bean</label>
+    <labelShortAdj>kind</labelShortAdj>
+    <description>This bean man is genetically predisposed to be kind and happy.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Red_east</iconPath>
+    <displayCategory>Violence</displayCategory>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Kind</def>
+      </li>
+    </forcedTraits>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>kind</symbol>
+          <weight>3</weight>
+        </li>
+        <li><symbol>nice</symbol></li>
+        <li><symbol>gentle</symbol></li>
+        <li><symbol>ami</symbol></li>
+        <li><symbol>cool</symbol></li>
+        <li><symbol>mellow</symbol></li>
+        <li><symbol>soft</symbol></li>
+        <li><symbol>tame</symbol></li>
+        <li><symbol>pleas</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <ThoughtDef>
+    <defName>BeanManHappy</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <requiredGenes>
+      <li>HappyBeanMan</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>happy bean</label>
+        <description>What could be better than being a bean man?</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!--Mean Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>MeanBeanMan</defName>
+    <label>mean bean</label>
+    <description>This bean man is not particularly friendly.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Orange_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			  <SocialImpact>-0.2</SocialImpact>
+	</statOffsets>		
+    <exclusionTags>
+      <li>BeanFriendliness</li>
+    </exclusionTags>
+  </GeneDef>
+  
+<!--Friendly Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>FriendlyBeanMan</defName>
+    <label>friendly bean</label>
+    <description>This bean man is very friendly.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Blue_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			  <SocialImpact>0.25</SocialImpact>
+	</statOffsets>		
+    <exclusionTags>
+      <li>BeanFriendliness</li>
+    </exclusionTags>
+  </GeneDef>
+  
+<!--Lazy Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>LazyBeanMan</defName>
+    <label>lazy bean</label>
+    <description>This bean man is very lazy.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Blue_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+		<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+	</statOffsets>		
+    <exclusionTags>
+      <li>BeanLaziness</li>
+    </exclusionTags>
+  </GeneDef>
+  
+<!--Worker Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>WorkerBeanMan</defName>
+    <label>worker bean</label>
+    <description>This bean man is a very hard worker!</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Coffee_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+		<WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+	</statOffsets>	
+    <exclusionTags>
+      <li>BeanLaziness</li>
+    </exclusionTags>	
+  </GeneDef>
+  
+<!--Green Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>GreenBeanMan_trait</defName>
+    <label>green bean</label>
+    <description>This bean man has a green thumb.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Green_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+		  <PlantHarvestYield>0.3</PlantHarvestYield>
+		  <PlantWorkSpeed>0.35</PlantWorkSpeed>	
+	</statOffsets>		
+  </GeneDef>
+
+<!--Peaceful Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>PeacefulBeanMan</defName>
+    <label>peaceful bean</label>
+    <description>This bean man is a a committed pacifist.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Green_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+    <disabledWorkTags>
+      <li>Violent</li>
+    </disabledWorkTags>
+    <suppressedTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+    </suppressedTraits>
+    <exclusionTags>
+      <li>BeanPacifism</li>
+    </exclusionTags>	
+  </GeneDef>
+
+<!--Bloody Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>BloodyBeanMan</defName>
+    <label>bloody bean</label>
+    <description>This bean man savors the kill.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Orange_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+    <causesNeed>KillThirst</causesNeed>
+	<statOffsets>	
+		<MeleeHitChance>4</MeleeHitChance>
+		<MeleeDodgeChance>12</MeleeDodgeChance>
+	</statOffsets>		
+    <forcedTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+    </forcedTraits>
+    <exclusionTags>
+      <li>BeanPacifism</li>
+    </exclusionTags>	
+  </GeneDef>
+  
+<!--Benign Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>BenignBeanMan</defName>
+    <label>benign bean</label>
+    <description>This bean man prefers not to fight, and their skills have suffered as a result.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Orange_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			<AimingDelayFactor>0.50</AimingDelayFactor>
+			<MeleeHitChance>-15</MeleeHitChance>
+			<ShootingAccuracyPawn>-15.0</ShootingAccuracyPawn>
+	</statOffsets>		
+    <suppressedTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+    </suppressedTraits>
+    <exclusionTags>
+      <li>BeanPacifism</li>
+    </exclusionTags>	
+  </GeneDef>  
+
+<!--Brainy Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>BrainyBeanMan</defName>
+    <label>brainy bean</label>
+    <description>This bean man has a talent for research.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Black_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			  <ResearchSpeed>0.5</ResearchSpeed> 	
+	</statOffsets>		
+  </GeneDef>
+
+<!--Every Flavor Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>EveryFlavorBeanMan</defName>
+    <label>every flavor bean</label>
+    <description>This bean man randomly deals with the effects of Bertie Bott's Every Flavor Beans.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Bott_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<modExtensions>
+		<li Class="VanillaGenesExpanded.GeneExtension">
+			<hediffToWholeBody>HedBottBeanMan</hediffToWholeBody>
+		</li>
+	</modExtensions>
+  </GeneDef>
+
+ <HediffDef>
+    <defName>HedBottBeanMan</defName>
+    <label>Secret Bertie Bott Bean Buff</label>
+	<description>This bean man randomly deals with the effects of Bertie Bott's Every Flavor Beans.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>Hediff_BertieBottBeanManBuildup</hediff>
+            <mtbDays>15</mtbDays>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>    
+
+<!--Blind Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>BlindBeanMan</defName>
+    <label>blind bean</label>
+    <description>This bean man is completely blind.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Cave_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+    <capMods>
+      <li>
+        <capacity>Sight</capacity>
+		<setMax>0</setMax>
+      </li>
+    </capMods>
+  </GeneDef>
+
+<!--Burrower Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>BurrowerBeanMan</defName>
+    <label>burrower bean</label>
+    <description>This bean man loves to dig.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Cave_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			<MiningSpeed>0.30</MiningSpeed>
+			<MiningYield>0.15</MiningYield>	
+	</statOffsets>		
+  </GeneDef>
+
+<!--Stinky Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>StinkyBeanMan_trait</defName>
+    <label>stinky bean</label>
+    <description>This bean man seems to be constantly surrounded by a cloud of unpleasant odor. Most do not appreciate it.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Stinky_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			  <SocialImpact>-0.5</SocialImpact>
+			  
+	</statOffsets>		
+	<modExtensions>
+		<li Class="VanillaGenesExpanded.GeneExtension">
+			<hediffToWholeBody>HedStinkyBeanMan</hediffToWholeBody>
+		</li>
+	</modExtensions>
+  </GeneDef>
+
+ <HediffDef>
+    <defName>HedStinkyBeanMan</defName>
+    <label>Secret Stinky Bean Man Debuff</label>
+	<description>Nobody likes a stinky bean.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+	  <li Class="VFECore.HediffCompProperties_Spreadable">
+		<radiusToSpread>0</radiusToSpread>
+		<severityToInfect>0</severityToInfect>
+		<baseDiseaseContractChance>0</baseDiseaseContractChance>
+		<spreadingTickInterval>300000~600000</spreadingTickInterval>
+		<socialInteractionTransmissionChance>0</socialInteractionTransmissionChance>
+		<requiresLineOfSightToSpread>true</requiresLineOfSightToSpread>
+		<speciesCanCatch>
+			<li>Humanlike</li>
+		</speciesCanCatch>
+		<fleckDefOnPawn>StinkyMote</fleckDefOnPawn>
+		<fleckSpawnInterval>25~50</fleckSpawnInterval>
+		<fleckColor>(255,255,255)</fleckColor>
+		<fleckScale>1.0</fleckScale>
+		<spreadingMessageWarningKey>VFEM.BlackPlagueSpreadedFurther</spreadingMessageWarningKey>
+	  </li>
+		<li Class="AnimalBehaviours.HediffCompProperties_ThoughtEffecter">
+			<radius>8</radius>
+			<tickInterval>1000</tickInterval>
+			<thoughtDef>StinkyBeanThought</thoughtDef>
+		</li>
+    </comps>
+    <stages>
+      <li>
+		<becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>   
+
+<!--Bracing Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>BracingBeanMan</defName>
+    <label>bracing bean</label>
+    <description>This bean man is highly resistant to the effects of pollution and other toxins.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Black_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			  <ToxicResistance>0.6</ToxicResistance>
+			  <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+	</statOffsets>		
+  </GeneDef>
+
+<!--Spicy Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>SpicyBeanMan</defName>
+    <label>spicy bean</label>
+    <description>This bean man has a fiery personality. People don't necessarily dislike him... but he does get into a lot of fights.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Chili_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+    <socialFightChanceFactor>3</socialFightChanceFactor>
+  </GeneDef>
+
+<!--Warm Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>WarmBeanMan</defName>
+    <label>warm bean</label>
+    <description>This bean man likes warm temperatures.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Chili_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			<ComfyTemperatureMin>15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>25</ComfyTemperatureMax>
+	</statOffsets>		
+    <forcedTraits>
+      <li>
+        <def>HeatLover</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+
+<!--Cold Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>ColdBeanMan</defName>
+    <label>cold bean</label>
+    <description>This bean man likes cold temperatures.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Chili_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>-15</ComfyTemperatureMax>
+	</statOffsets>		
+    <forcedTraits>
+      <li>
+        <def>ColdLover</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+
+<!--Healing Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>HealingBeanMan</defName>
+    <label>healing bean</label>
+    <description>This bean man has great skills in healing.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Silver_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			<MedicalTendQuality>0.33</MedicalTendQuality>
+			<MedicalTendSpeed>0.67</MedicalTendSpeed>
+			<MedicalOperationSpeed>0.67</MedicalOperationSpeed>
+	</statOffsets>		
+  </GeneDef>
+
+<!--Unstable Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>UnstableBeanMan</defName>
+    <label>unstable bean</label>
+    <description>This bean man is mentally unstable.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Coffee_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			  <MentalBreakThreshold>0.2</MentalBreakThreshold>	
+	</statOffsets>		
+    <exclusionTags>
+      <li>BeanSteadiness</li>
+    </exclusionTags>	
+  </GeneDef>
+  
+<!--Steady Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>SteadyBeanMan</defName>
+    <label>steady bean</label>
+    <description>This bean man is mentally steadfast.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Coffee_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			  <MentalBreakThreshold>-0.2</MentalBreakThreshold>	
+	</statOffsets>		
+    <exclusionTags>
+      <li>BeanSteadiness</li>
+    </exclusionTags>	
+  </GeneDef>
+
+<!--Speedy Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>SpeedyBeanMan</defName>
+    <label>speedy bean</label>
+    <description>This bean man is blindingly fast.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Coffee_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+    <capMods>
+      <li>
+		<capacity>Moving</capacity>
+		<offset>0.3</offset>
+      </li>
+    </capMods>
+    <exclusionTags>
+      <li>BeanSpeed</li>
+    </exclusionTags>	
+  </GeneDef>
+
+<!--Slow Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>SlowBeanMan</defName>
+    <label>slow bean</label>
+    <description>This bean man walks pretty slowly.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Coffee_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+    <capMods>
+      <li>
+		<capacity>Moving</capacity>
+		<offset>-0.2</offset>
+      </li>
+    </capMods>
+    <exclusionTags>
+      <li>BeanSpeed</li>
+    </exclusionTags>
+  </GeneDef>
+  
+<!--Psychic Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>MundaneBeanMan</defName>
+    <label>mundane bean</label>
+    <description>This bean man has great difficulty sensing any psychic phenomena.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Purple_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statFactors>	
+          <PsychicSensitivity>0.2</PsychicSensitivity>
+	</statFactors>	
+    <exclusionTags>
+      <li>BeanAttunement</li>
+    </exclusionTags>	
+  </GeneDef>
+
+<!--Psychic Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>PsychicBeanMan</defName>
+    <label>psychic bean</label>
+    <description>This bean man is attuned to the flow of psychic energy in the universe.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Purple_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statFactors>	
+          <PsychicSensitivity>1.5</PsychicSensitivity>
+	</statFactors>	
+    <exclusionTags>
+      <li>BeanAttunement</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--Magic Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>MagicBeanMan</defName>
+    <label>magic bean</label>
+    <description>This bean man is attuned to the flow of magic in the universe.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Purple_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<modExtensions>
+		<li Class="VanillaGenesExpanded.GeneExtension">
+			<hediffToWholeBody>HedPurpleBeanMan</hediffToWholeBody>
+		</li>
+	</modExtensions>
+  </GeneDef>
+
+ <HediffDef>
+    <defName>HedPurpleBeanMan</defName>
+    <label>Secret Magic Bean Man Hediff</label>
+	<description>Purple bean men are significantly more attuned to the flow of magic around them.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+		<li>
+			<becomeVisible>false</becomeVisible>
+		</li>
+    </stages>
+	<modExtensions>
+		<li Class="TorannMagic.TMDefs.DefModExtension_HediffEnchantments">
+			<stages>
+				<li>
+					<minSeverity>0</minSeverity>
+					<maxSeverity>100</maxSeverity>
+					<enchantments>
+						<mpRegenRate>0.5</mpRegenRate>
+						<arcaneDmg>0.1</arcaneDmg>
+						<maxMP>0.25</maxMP>
+					</enchantments>
+				</li>
+			</stages>
+		</li>
+	</modExtensions>
+  </HediffDef>  
+
+<!--Licky Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>LickyBeanMan</defName>
+    <label>licky bean</label>
+    <description>This bean man's tongue is unusually long and licky.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Whiptongue_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<modExtensions>
+		<li Class="VanillaGenesExpanded.GeneExtension">
+			<hediffToWholeBody>HedWhiptongueBeanMan</hediffToWholeBody>
+		</li>
+	</modExtensions>
+  </GeneDef>
+
+ <HediffDef>
+    <defName>HedWhiptongueBeanMan</defName>
+    <label>Secret Licky</label>
+	<description>Whiptongue Bean Men have unusually long tongues which they can use in combat.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+		<comps>
+		  <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<accuracyTouch>0.95</accuracyTouch>
+								<accuracyShort>0.75</accuracyShort>
+								<accuracyMedium>0.65</accuracyMedium>
+								<accuracyLong>0.55</accuracyLong>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Lick</defaultProjectile>
+								<warmupTime>1.1</warmupTime>
+								<range>9</range>				
+								<soundCast>Lick</soundCast>
+								<muzzleFlashScale>0</muzzleFlashScale>
+								<label>whiptongue lick</label>
+								<commonality>1</commonality>
+							</li>
+						</verbs>
+						<verbProps>
+							<li>
+								<label>whiptongue lick</label>
+								<draw>false</draw>
+								<canBeToggled>true</canBeToggled>
+							</li>
+						</verbProps>
+					</li>
+		</comps>
+    <stages>
+		<li>
+			<becomeVisible>false</becomeVisible>
+		</li>
+    </stages>
+  </HediffDef>  
+
+<!--Deadeye Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>DeadeyeBeanMan</defName>
+    <label>deadeye bean</label>
+    <description>This bean man has a natural talent for hitting things at long distances.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Whiptongue_east</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statFactors>	
+          <ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
+		  <ShootingAccuracyFactor_Long>2</ShootingAccuracyFactor_Long>
+		  <ShootingAccuracyFactor_Medium>1.2</ShootingAccuracyFactor_Medium>
+	</statFactors>	
+  </GeneDef>
+
+
+
+
+
+
+
+</Defs>

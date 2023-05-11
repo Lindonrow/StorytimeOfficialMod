@@ -14,530 +14,153 @@
     <slot>Childhood</slot>
 	<spawnCategories>
       <li>BeanGuardian</li>
+      <li>BeanManNonColonistBackstory</li>
     </spawnCategories>
-    <skillGains>
-      <li>
-        <key>Social</key>
-        <value>-4</value>
-	  </li>
-
-	  <li>
-		<key>Plants</key>
-        <value>2</value>
-      </li>
-    </skillGains>
   </AlienRace.AlienBackstoryDef>
   
   <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Red</defName>
-    <title>red bean man</title>
+    <defName>BeanMan_Adult</defName>
+    <title>bean man</title>
 	<titleShort>bean man</titleShort>
 	<bodyTypeGlobal>Red</bodyTypeGlobal>
-    <baseDesc>[PAWN_nameDef] is a red bean man, the most common type of bean man. Red Bean men are generally considered nice, if rather boring.</baseDesc>
+    <baseDesc>[PAWN_nameDef] is a freshly birthed bean man. His story has just begun.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>100</maleCommonality>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef Name="BeanNonColonistBackstories" Abstract="True">
+	<spawnCategories>
+      <li>BeanManNonColonistBackstory</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+<!--Adult Backstories-->
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Society</defName>
+    <title>bean town dweller</title>
+	<titleShort>bean dweller</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed into a supportive community of fellow bean men. There he cultivated his unique skills to serve his people.</baseDesc>
     <slot>Adulthood</slot>
     <maleCommonality>100</maleCommonality>
     <skillGains>
       <li>
+        <key>Social</key>
+        <value>5</value>
+	  </li>  
+    </skillGains>	
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Slave</defName>
+    <title>slave</title>
+	<titleShort>slave</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed into a society which considered bean men inferior creatures and used them as slaves. He worked for many years on a plantation before eventually escaping.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>50</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Plants</key>
+        <value>5</value>
+	  </li>  
+      <li>
+        <key>Melee</key>
+        <value>2</value>
+	  </li>  
+    </skillGains>	
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_DrugDealer</defName>
+    <title>drug dealer</title>
+	<titleShort>dealer</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed in a backwater bean pit by a gang of violent criminals who used him to make and sell drugs on the street. </baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>30</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>5</value>
+	  </li>  
+    </skillGains>
+	<forcedTraitsChance>
+	  <li>
+		<defName>DrugDesire</defName>
+		<degree>2</degree>
+		<chance>33</chance>
+	  </li>
+	  <li>
+		<defName>DrugDesire</defName>
+		<degree>1</degree>
+	  </li>
+	</forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Rebel</defName>
+    <title>rebel</title>
+	<titleShort>rebel</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was created by a band of rebels fighting against a horrible tyrant. He fought alongside them for many years.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>30</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>5</value>
+	  </li>  
+      <li>
+        <key>Shooting</key>
+        <value>5</value>
+	  </li>  
+    </skillGains>
+	<requiredWorkTags>Violent</requiredWorkTags>	
+	<forcedTraits>
+	  <Tough>0</Tough>
+	</forcedTraits>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Gnome</defName>
+    <title>gnome stronghold bean man</title>
+	<titleShort>gnomeophile</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by gnomes. He spent years learning the arts of cooking and farming from them.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>20</maleCommonality>
+    <skillGains>
+      <li>
         <key>Plants</key>
         <value>3</value>
-	  </li>
-      <li>
-        <key>Social</key>
-        <value>1</value>
-	  </li>
-    </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>Kind</defName>
-            <chance>33</chance>
-		</li>
-    </forcedTraitsChance>
-    <forcedHediffs>
-      <li>HedRedBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Bulborb</defName>
-    <title>bulborb bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Red</bodyTypeGlobal>
-    <baseDesc>[PAWN_nameDef] visually indistinguishable from a standard Red Bean Man, in actuality the Bulborb Bean Men are a special rare type. While most bean men are attuned to beans, Bulborb Bean Men are actually- due to a genetic quirk- quite closely related to the Bean Man's closest genetic neighbor- the Bulborb. Bulborb Bean Men are quite good with animals in general..</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>12</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Plants</key>
-        <value>-4</value>
-	  </li>
-      <li>
-        <key>Animals</key>
-        <value>6</value>
-	  </li>
-    </skillGains>
-    <forcedHediffs>
-      <li>HedBulborbBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Orange</defName>
-    <title>orange bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Orange</bodyTypeGlobal>
-    <baseDesc>[PAWN_nameDef] is an orange bean man. Orange bean men are the most quick to anger and violence of all varieties. They are generally kept at arm's length by other bean men, although many still manage to function within bean man society. Also of note, Orange Bean Men tend to require less rest than other varieties.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>20</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Melee</key>
-        <value>6</value>
-	  </li>
-      <li>
-        <key>Social</key>
-        <value>-2</value>
-	  </li>
-    </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>Bloodlust</defName>
-            <chance>50</chance>
-		</li>
-        <li>
-            <defName>Brawler</defName>
-            <chance>8</chance>
-		</li>
-        <li>
-            <defName>Psychopath</defName>
-            <chance>22</chance>
-		</li>
-        <li>
-            <defName>QuickSleeper</defName>
-            <chance>100</chance>
-		</li>
-    </forcedTraitsChance>
-    <forcedHediffs>
-      <li>HedOrangeBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Blue</defName>
-    <title>blue bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Blue</bodyTypeGlobal>
-    <baseDesc>[PAWN_nameDef] is a blue bean man. Blue bean men tend to be chill, and not bothered by events going on around them. Unfortunately, this means they also tend to be lazy workers.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>20</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Social</key>
-        <value>4</value>
-	  </li>
-    </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>SpeedOffset</defName>
-			<degree>-1</degree>
-            <chance>15</chance>
-		</li>
-        <li>
-            <defName>NaturalMood</defName>
-			<degree>2</degree>
-            <chance>20</chance>
-		</li>
-        <li>
-            <defName>NaturalMood</defName>
-			<degree>1</degree>
-            <chance>20</chance>
-		</li>
-        <li>
-            <defName>Industriousness</defName>
-			<degree>-2</degree>
-            <chance>15</chance>
-		</li>
-        <li>
-            <defName>Industriousness</defName>
-			<degree>-1</degree>
-            <chance>20</chance>
-		</li>
-    </forcedTraitsChance>
-    <forcedHediffs>
-      <li>HedBlueBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Green</defName>
-    <title>green bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Green</bodyTypeGlobal>
-    <baseDesc>[PAWN_nameDef] is a green bean man. While all bean men have a natural affinity towards plants and farming, green bean men are generally considered to be the most talented in this regard. Green bean men have, by nature, a deep respect for life and will never use violence willingly.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>20</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Plants</key>
-        <value>6</value>
-	  </li>
-    </skillGains>
-    <disallowedTraitsChance>
-        <li>
-            <defName>Psychopath</defName>
-        </li>
-        <li>
-            <defName>Bloodlust</defName>
-        </li>
-    </disallowedTraitsChance>
-    <workDisables>
-        <li>Violent</li>
-    </workDisables>
-    <forcedHediffs>
-      <li>HedGreenBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Coffee</defName>
-    <title>coffee bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Coffee</bodyTypeGlobal>
-    <baseDesc>For some reason or another, [PAWN_nameDef] was birthed with a greater alignment towards coffee beans than most bean men. Coffee bean men generally have a higher energy level than other bean men, making them good workers. However, they also have a tendency towards mental instability that can be concerning.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>20</maleCommonality>
-    <skillGains>
+	  </li>  
       <li>
         <key>Cooking</key>
-        <value>2</value>
-	  </li>
-      <li>
-        <key>Social</key>
-        <value>-2</value>
-	  </li>
+        <value>5</value>
+	  </li>  
     </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>SpeedOffset</defName>
-			<degree>1</degree>
-            <chance>20</chance>
-		</li>
-        <li>
-            <defName>SpeedOffset</defName>
-			<degree>2</degree>
-            <chance>30</chance>
-		</li>
-        <li>
-            <defName>Industriousness</defName>
-			<degree>2</degree>
-            <chance>20</chance>
-		</li>
-        <li>
-            <defName>Industriousness</defName>
-			<degree>1</degree>
-            <chance>30</chance>
-		</li>
-        <li>
-            <defName>Nerves</defName>
-			<degree>-2</degree>
-            <chance>10</chance>
-		</li>
-        <li>
-            <defName>Neurotic</defName>
-			<degree>1</degree>
-            <chance>25</chance>
-		</li>
-        <li>
-            <defName>Neurotic</defName>
-			<degree>2</degree>
-            <chance>15</chance>
-		</li>
-    </forcedTraitsChance>
-    <forcedHediffs>
-      <li>HedCoffeeBeanMan</li>
-    </forcedHediffs>
+	<requiredWorkTags>Cooking</requiredWorkTags>	
   </AlienRace.AlienBackstoryDef>
 
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Purple</defName>
-    <title>purple bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Purple</bodyTypeGlobal>
-    <baseDesc>Among the bean men, those of a purple coloration are considered to be touched by the gods. [PAWN_nameDef] is one of these. In practical terms, purple bean men tend to be more aligned to the psychic and magical flow of the universe than other bean men. This gives them the ability to foster powerful abilities that most other bean men lack.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>12</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Intellectual</key>
-        <value>2</value>
-	  </li>
-    </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>PsychicSensitivity</defName>
-			<degree>2</degree>
-			<chance>15</chance>
-        </li>
-        <li>
-            <defName>PsychicSensitivity</defName>
-			<degree>1</degree>
-			<chance>25</chance>
-        </li>
-        <li>
-            <defName>TM_EnlightenedTD</defName>
-			<chance>10</chance>
-        </li>
-        <li>
-            <defName>TM_Gifted</defName>
-			<chance>80</chance>
-        </li>
-        <li>
-            <defName>TM_ArcaneConduitTD</defName>
-			<chance>10</chance>
-        </li>
-        <li>
-            <defName>TM_ManaWellTD</defName>
-			<chance>10</chance>
-        </li>
-    </forcedTraitsChance>
-    <disallowedTraitsChance>
-        <li>
-            <defName>PsychicSensitivity</defName>
-			<degree>-2</degree>
-        </li>
-        <li>
-            <defName>PsychicSensitivity</defName>
-			<degree>-1</degree>
-        </li>
-    </disallowedTraitsChance>
-    <forcedHediffs>
-      <li>HedPurpleBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Black</defName>
-    <title>black bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Black</bodyTypeGlobal>
-    <baseDesc>[PAWN_nameDef] is a black bean man. Black bean men are considered the most intelligent of all bean man colorations, but this comes at the price of a tendency towards social ineptitude and contempt for those they consider beneath them. Black bean men are tolerated by other bean men for their intelligence, but rarely make friends with other types.</baseDesc>
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Jeub</defName>
+    <title>jeub city bean man</title>
+	<titleShort>jeubophile</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by jeubs. He spent years 'learning' from them before eventually making the wise choice to leave.</baseDesc>
     <slot>Adulthood</slot>
     <maleCommonality>20</maleCommonality>
     <skillGains>
       <li>
-        <key>Intellectual</key>
-        <value>6</value>
-	  </li>
-      <li>
         <key>Social</key>
-        <value>-4</value>
-	  </li>	
-    </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>Abrasive</defName>
-			<chance>15</chance>
-        </li>
-        <li>
-            <defName>TooSmart</defName>
-			<chance>15</chance>
-        </li>
-        <li>
-            <defName>FastLearner</defName>
-			<chance>20</chance>
-        </li>
-        <li>
-            <defName>ST_Savant</defName>
-			<chance>10</chance>
-        </li>
-    </forcedTraitsChance>
-    <disallowedTraitsChance>
-        <li>
-            <defName>SlowLearner</defName>
-        </li>
-    </disallowedTraitsChance>
-    <forcedHediffs>
-      <li>HedBlackBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Shiny</defName>
-    <title>shiny bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Shiny</bodyTypeGlobal>
-    <baseDesc>Of all bean man types, Shiny Bean Men are the rarest. Other bean men consider them to be chosen by the universe to lead and guide their people to glory. They are in all ways far superior to the rest of their species.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>2</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Social</key>
-        <value>15</value>
-	  </li>
-    </skillGains>
-    <forcedHediffs>
-      <li>HedShinyBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Silver</defName>
-    <title>silver bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Silver</bodyTypeGlobal>
-    <baseDesc>[PAWN_nameDef] is a silver bean man. Silver bean men have a natural talent for medical work, and among the bean men most doctors are silver colored. They rarely fight and aren't particularly skilled at it.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>20</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Medicine</key>
-        <value>6</value>
-	  </li>
-      <li>
-        <key>Melee</key>
         <value>-3</value>
-	  </li>	
+	  </li>  
       <li>
-        <key>Shooting</key>
-        <value>-3</value>
-	  </li>	
+        <key>Animals</key>
+        <value>3</value>
+	  </li>  
     </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>FastLearner</defName>
-			<chance>25</chance>
-        </li>
-        <li>
-            <defName>ST_Surgeon</defName>
-			<chance>25</chance>
-        </li>
-    </forcedTraitsChance>
-
-    <forcedHediffs>
-      <li>HedSilverBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Whiptongue</defName>
-    <title>whiptongue bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Whiptongue</bodyTypeGlobal>
-    <baseDesc>Perhaps the most physically unique form of bean man, Whiptongues are notable for their pointy snouts and extremely long tongues. Whiptongues can use their tongues for many different task, but they are most commonly known for using them in combat to lick their enemies.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>20</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Shooting</key>
-        <value>4</value>
-	  </li>
-      <li>
-        <key>Melee</key>
-        <value>-3</value>
-	  </li>	
-    </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>ShootingAccuracy</defName>
-			<degree>1</degree>
-			<chance>25</chance>
-        </li>
-        <li>
-            <defName>ShootingAccuracy</defName>
-			<degree>-1</degree>
-			<chance>25</chance>
-        </li>
-    </forcedTraitsChance>
-
-    <forcedHediffs>
-      <li>HedWhiptongueBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Stinky</defName>
-    <title>stinky bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Stinky</bodyTypeGlobal>
-    <baseDesc>In the hierarchy of bean man society, there are none lower than the Stinky Bean Men. Born with some unfortunate genetic anomaly causing them to emit a constant horrible stench, most people prefer not to be around them if possibile. The only upshot of their horrible curse is that their constant exposure to horrible smells renders them highly resilient to poison.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>16</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Social</key>
-        <value>-6</value>
-	  </li>
-    </skillGains>
-    <forcedHediffs>
-      <li>HedStinkyBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Bott</defName>
-    <title>Bertie Bott's every flavor bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Bott</bodyTypeGlobal>
-    <baseDesc>Born with a close affinity to the rare and powerful beans of Bertie Bott, this bean man variety possesses a biological quirk that causes them to produce Every Flavor Beans inside their stomach. Practically speaking, this means that they periodically suffer (or benefit) from the random effects of Bertie Bott's Every Flavor Beans.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>3</maleCommonality>
-    <forcedHediffs>
-      <li>HedBottBeanMan</li>
-      <li>Hediff_BertieBottBeanManBuildup</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Cave</defName>
-    <title>cave bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Cave</bodyTypeGlobal>
-    <baseDesc>[PAWN_nameDef] is a Cave Bean Man. For reasons unknown, Cave Bean Men suffer from a strange mutation causing them to express traits similar to species adapted to living solely underground. Most notably, they are completely blind. Despite this, they are well adapted to this lifestyle and are skilled diggers who can easily navigate their way through total darkness.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>15</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Mining</key>
-        <value>4</value>
-	  </li>
-      <li>
-        <key>Social</key>
-        <value>-2</value>
-	  </li>
-    </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>Undergrounder</defName>
-            <chance>100</chance>
-		</li>
-    </forcedTraitsChance>
-    <forcedHediffs>
-      <li>HedCaveBeanMan</li>
-    </forcedHediffs>
-  </AlienRace.AlienBackstoryDef>
-
-  <AlienRace.AlienBackstoryDef ParentName="BeanBackstories">
-    <defName>BeanManAdult_Chili</defName>
-    <title>chili bean man</title>
-	<titleShort>bean man</titleShort>
-	<bodyTypeGlobal>Chili</bodyTypeGlobal>
-    <baseDesc>Born with an affinity for the more spicy types of bean, Chili Bean Men are notably more comfortable in warm environments compared to their brethren, but dislike the cold. They're known for their fiery personalities which result in frequent social fighting.</baseDesc>
-    <slot>Adulthood</slot>
-    <maleCommonality>20</maleCommonality>
-    <skillGains>
-      <li>
-        <key>Social</key>
-        <value>-1</value>
-	  </li>
-    </skillGains>
-    <forcedTraitsChance>
-        <li>
-            <defName>Abrasive</defName>
-            <chance>50</chance>
-		</li>
-    </forcedTraitsChance>
-    <forcedHediffs>
-      <li>HedChiliBeanMan</li>
-    </forcedHediffs>
   </AlienRace.AlienBackstoryDef>
 
 

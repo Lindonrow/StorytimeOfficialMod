@@ -6,7 +6,72 @@
     <description>What a strange creature.</description>
     <alienRace>
 	  <raceRestriction>
+		<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>	  
+		<xenotypeList>
+		  <li>OrangeBeanMan</li>
+		  <li>RedBeanMan</li>
+		  <li>BlueBeanMan</li>
+		  <li>BlackBeanMan</li>
+		  <li>BottBeanMan</li>
+		  <li>CaveBeanMan</li>
+		  <li>ChiliBeanMan</li>
+		  <li>CoffeeBeanMan</li>
+		  <li>GreenBeanMan</li>
+		  <li>PurpleBeanMan</li>
+		  <li>ShinyBeanMan</li>
+		  <li>SilverBeanMan</li>
+		  <li>StinkyBeanMan</li>
+		  <li>WhiptongueBeanMan</li>	
+		  <li>PolarBeanMan</li>
+		</xenotypeList>
 		<onlyHaveRaceRestrictedGenes>true</onlyHaveRaceRestrictedGenes>
+		<geneList>
+		  <li>RedBeanMan</li>
+		  <li>OrangeBeanMan</li>
+		  <li>BlueBeanMan</li>
+		  <li>BlackBeanMan</li>
+		  <li>BottBeanMan</li>
+		  <li>CaveBeanMan</li>
+		  <li>ChiliBeanMan</li>
+		  <li>CoffeeBeanMan</li>
+		  <li>GreenBeanMan</li>
+		  <li>PurpleBeanMan</li>
+		  <li>ShinyBeanMan</li>
+		  <li>SilverBeanMan</li>
+		  <li>StinkyBeanMan</li>
+		  <li>WhiptongueBeanMan</li>	
+		  <li>PolarBeanMan</li>
+		  
+		  <li>StandardBeanMan</li>
+		  <li>HappyBeanMan</li>
+		  <li>MeanBeanMan</li>		  
+		  <li>FriendlyBeanMan</li>		  
+		  <li>LazyBeanMan</li>		  
+		  <li>GreenBeanMan_trait</li>		  
+		  <li>PeacefulBeanMan</li>		  
+		  <li>BloodyBeanMan</li>		  
+		  <li>BenignBeanMan</li>		  
+		  <li>BrainyBeanMan</li>		  
+		  <li>EveryFlavorBeanMan</li>		  
+		  <li>BlindBeanMan</li>		  
+		  <li>BurrowerBeanMan</li>		  
+		  <li>StinkyBeanMan_trait</li>		 
+		  <li>BracingBeanMan</li>		  
+		  <li>SpicyBeanMan</li>		  		  
+		  <li>WarmBeanMan</li>	
+		  <li>ColdBeanMan</li>	
+		  <li>HealingBeanMan</li>	
+		  <li>UnstableBeanMan</li>	
+		  <li>SteadyBeanMan</li>	
+		  <li>SpeedyBeanMan</li>	
+		  <li>SlowBeanMan</li>
+		  <li>MundaneBeanMan</li>		  
+		  <li>PsychicBeanMan</li>
+		  <li>MagicBeanMan</li>
+		  <li>LickyBeanMan</li>
+		  <li>DeadeyeBeanMan</li>
+		  
+		</geneList>
         <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
             <whiteApparelList>
 				<li>Apparel_Parka</li>
@@ -34,6 +99,20 @@
 			</li>
 		</styleSettings>
       <generalSettings>
+		<forcedRaceTraitEntries>
+		  <li>
+			<defName>Gay</defName>
+			<chance>60</chance>
+		  </li>
+		  <li>
+			<defName>Asexual</defName>
+			<chance>20</chance>
+		  </li>
+		  <li>
+			<defName>Bisexual</defName>
+			<chance>30</chance>
+		  </li>
+		</forcedRaceTraitEntries>
         <humanRecipeImport>true</humanRecipeImport>
         <maleGenderProbability>1</maleGenderProbability>	
         <immuneToXenophobia>true</immuneToXenophobia>
@@ -47,25 +126,120 @@
           </headTypes>
           <bodyTypes Inherit="False">
             <li>Red</li>
-			<li>Orange</li>
-			<li>Blue</li>
-			<li>Green</li>
-            <li>Coffee</li>
-			<li>Shiny</li>
-			<li>Silver</li>
-			<li>Black</li>
-			<li>Purple</li>
-			<li>Whiptongue</li>
-			<li>Stinky</li>
-			<li>Chili</li>
-			<li>Cave</li>
-			<li>Bott</li>
           </bodyTypes>
 		  <customDrawSize>(0.9, 0.9)</customDrawSize>
           <customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
           <customPortraitDrawSize>(0.7, 0.605)</customPortraitDrawSize>
           <customPortraitHeadDrawSize>(0.8, 0.8)</customPortraitHeadDrawSize>
           <headOffset>(0.0, -0.077)</headOffset>
+		  
+			<bodyAddons>
+			  <li>
+			  <geneRequirement>RedBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Red</path>
+			  <layerInvert>false</layerInvert>
+			  </li>
+			  
+			  <li>
+			  <geneRequirement>OrangeBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Orange</path>
+			  <layerInvert>false</layerInvert>
+			  </li>
+			  
+			  <li>
+			  <geneRequirement>BlueBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Blue</path>
+			  <layerInvert>false</layerInvert>
+			  </li>
+			  
+			  <li>
+			  <geneRequirement>BlackBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Black</path>
+			  <layerInvert>false</layerInvert>
+			  </li>			  		  
+			  
+			  <li>
+			  <geneRequirement>BottBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Bott</path>
+			  <layerInvert>false</layerInvert>
+			  </li>
+			  
+			  <li>
+			  <geneRequirement>CaveBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Cave</path>
+			  <layerInvert>false</layerInvert>
+			  </li>	
+			  
+			  <li>
+			  <geneRequirement>ChiliBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Chili</path>
+			  <layerInvert>false</layerInvert>
+			  </li>
+			  
+			  <li>
+			  <geneRequirement>CoffeeBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Coffee</path>
+			  <layerInvert>false</layerInvert>
+			  </li>				  
+			  
+			  <li>
+			  <geneRequirement>GreenBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Green</path>
+			  <layerInvert>false</layerInvert>
+			  </li>
+			  
+			  <li>
+			  <geneRequirement>PurpleBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Purple</path>
+			  <layerInvert>false</layerInvert>
+			  </li>	
+			  			  
+			  <li>
+			  <geneRequirement>ShinyBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Shiny</path>
+			  <layerInvert>false</layerInvert>
+			  </li>
+			  
+			  <li>
+			  <geneRequirement>SilverBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Silver</path>
+			  <layerInvert>false</layerInvert>
+			  </li>	
+			  			  
+			  <li>
+			  <geneRequirement>StinkyBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Stinky</path>
+			  <layerInvert>false</layerInvert>
+			  </li>
+			  
+			  <li>
+			  <geneRequirement>WhiptongueBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Whiptongue</path>
+			  <layerInvert>false</layerInvert>
+			  </li>	  
+			  
+			  <li>
+			  <geneRequirement>PolarBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Polar</path>
+			  <layerInvert>false</layerInvert>
+			  </li>	  
+			</bodyAddons>
+			
           <colorChannels>
             <li>
               <name>skin</name>
@@ -124,7 +298,14 @@
       <thoughtSettings>
         <cannotReceiveThoughts>
           <li>Naked</li>
-          <li>ApparelDamaged</li>
+          <li>GroinUncovered_Disapproved_Male</li>
+          <li>GroinUncovered_Disapproved_Social_Male</li>
+          <li>GroinOrChestUncovered_Disapproved_Male</li>
+          <li>GroinOrChestUncovered_Disapproved_Social_Male</li>		  
+          <li>GroinChestOrHairUncovered_Disapproved_Male</li>
+          <li>GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+          <li>GroinChestHairOrFaceUncovered_Disapproved_Male</li>
+          <li>GroinChestHairOrFaceUncovered_Disapproved_Social_Male</li>
         </cannotReceiveThoughts>
       </thoughtSettings>
     </alienRace>
