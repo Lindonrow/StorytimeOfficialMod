@@ -21,6 +21,9 @@
             <offset>-0.1</offset>
           </li>
         </capMods>
+		<statOffsets>
+			  <BeanAffinity>-0.15</BeanAffinity>
+		</statOffsets>	
       </li>
       <li>
         <minSeverity>0.30</minSeverity>
@@ -31,6 +34,9 @@
             <offset>-0.2</offset>
           </li>
         </capMods>
+		<statOffsets>
+			  <BeanAffinity>-0.3</BeanAffinity>
+		</statOffsets>	
       </li>
       <li>
         <minSeverity>0.45</minSeverity>
@@ -41,6 +47,9 @@
             <offset>-0.4</offset>
           </li>
         </capMods>
+		<statOffsets>
+			  <BeanAffinity>-0.6</BeanAffinity>
+		</statOffsets>	
       </li>
       <li>
         <minSeverity>0.60</minSeverity>
@@ -56,6 +65,9 @@
             <setMax>0.1</setMax>
           </li>
         </capMods>
+		<statOffsets>
+			  <BeanAffinity>-0.9</BeanAffinity>
+		</statOffsets>	
       </li>
     </stages>
   </HediffDef>

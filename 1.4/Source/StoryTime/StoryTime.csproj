@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BananaScytheUtility.cs" />
+    <Compile Include="BeanManAgeFix.cs" />
     <Compile Include="Coconut.cs" />
     <Compile Include="GemDropping\CompDeepDrill_TryProducePortion_Patch.cs" />
     <Compile Include="GemDropping\CompGemDropper.cs" />

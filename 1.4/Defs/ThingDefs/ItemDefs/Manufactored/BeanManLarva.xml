@@ -129,9 +129,9 @@
     <defName>MakeBeanManLarva</defName>
     <label>Grow Bean Man Larva</label>
     <description>Throw a SBM and a bunch of beans into the pit.</description>    
-	<jobString>Assemble a Sapient Bean Matrix.</jobString>
+	<jobString>Assemble a bean man larvae.</jobString>
     <workAmount>2000</workAmount>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSpeedStat>BeanAffinity</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
     <workSkill>Crafting</workSkill>

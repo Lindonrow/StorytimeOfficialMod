@@ -23,7 +23,7 @@
    <HediffDef>
     	<defName>HedSTUndead</defName>
     	<label>Undead</label>
-		<description>Filled with a spiritual energy.</description>		
+		<description>An undead creature.</description>		
     	<initialSeverity>1</initialSeverity>
   	<defaultLabelColor>(127,255,212)</defaultLabelColor>      	<hediffClass>HediffWithComps</hediffClass>
     <isBad>false</isBad>

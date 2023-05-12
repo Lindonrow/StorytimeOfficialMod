@@ -7,7 +7,7 @@
     <description>Extract bean poison from a bean.</description>    
 	<jobString>Extracting poison.</jobString>
     <workAmount>1000</workAmount>
-    <workSpeedStat>PotionSynthesisSpeed</workSpeedStat>
+    <workSpeedStat>BeanAffinity</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
 	<recipeUsers>

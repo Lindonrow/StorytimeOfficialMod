@@ -10,9 +10,9 @@
 			<li>
 				<label>&lt;color=#FA64D2&gt;Squib&lt;/color&gt;</label>
 				<description>[PAWN_nameDef] is completely devoid of magical or psionic abilities.</description>
-				<statOffsets>
-					<PsychicSensitivity>-1</PsychicSensitivity>
-				</statOffsets>
+				<statFactors>
+					<PsychicSensitivity>0</PsychicSensitivity>
+				</statFactors>
 			</li>
 		</degreeDatas>
 		<conflictingTraits>

@@ -261,7 +261,14 @@
           <head>Things/Pawn/Humanlike/BeanMan/Head/</head>
       </graphicPaths>
       <relationSettings>
-        <relationChanceModifierSibling>0.3</relationChanceModifierSibling>
+		<relationChanceModifierChild>0.1</relationChanceModifierChild>
+		<relationChanceModifierExLover>0.3</relationChanceModifierExLover>
+		<relationChanceModifierExSpouse>0.3</relationChanceModifierExSpouse>
+		<relationChanceModifierFiance>0.3</relationChanceModifierFiance>
+		<relationChanceModifierLover>0.3</relationChanceModifierLover>
+		<relationChanceModifierParent>0.1</relationChanceModifierParent>
+		<relationChanceModifierSibling>0.05</relationChanceModifierSibling>
+		<relationChanceModifierSpouse>0.3</relationChanceModifierSpouse>
         <renamer>
           <li>
             <relation>Parent</relation>
@@ -316,7 +323,7 @@
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
       <PsychicSensitivity>0.9</PsychicSensitivity>
-	  <Fertility>0</Fertility>
+	  <Fertility>0.5</Fertility>
       <Mass>40</Mass>
     </statBases>
     <tools>
@@ -422,7 +429,7 @@
           <li>(8,50)</li>
           <li>(30,70)</li>
           <li>(80,30)</li>
-		  <li>(130,0)</li>
+		  <li>(135,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>
@@ -464,7 +471,10 @@
 		<li Class="AnimalBehaviours.CompProperties_FixedGender">
 			<gender>Male</gender>
 		</li>
-	</comps>
+		<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+			<hediffname>HedBeanMan</hediffname>
+		</li>
+		</comps>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
 				<showImageInInfoCard>true</showImageInInfoCard>

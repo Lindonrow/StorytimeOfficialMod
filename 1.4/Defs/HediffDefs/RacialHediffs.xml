@@ -117,4 +117,30 @@
     </stages>
   </HediffDef>  
 
+ <HediffDef>
+    <defName>HedBeanMan</defName>
+    <label>Racial Trait: Bean Affinity</label>
+	<description>All bean men have a strange affinity for beans.</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0.47,0.87,0.47)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<statOffsets>
+			  <BeanAffinity>1</BeanAffinity>
+		</statOffsets>		
+      </li>
+    </stages>
+  </HediffDef>
+
+
+
+
+
+
+
+
+
+
 </Defs>
