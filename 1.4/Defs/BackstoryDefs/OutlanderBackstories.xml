@@ -46,7 +46,74 @@
 		</forcedTraitsChance>
 	</AlienRace.AlienBackstoryDef>	
 	
+	<AlienRace.AlienBackstoryDef ParentName="STOutlanderBackstories">
+		<defName>ST_BeanThreadingApprentice</defName>
+		<title>bean threading apprentice</title>
+		<titleShort>bean threader</titleShort>
+		<baseDesc>[PAWN_nameDef] joined the local bean threading academy at a young age. There [PAWN_pronoun] learned the ancient art of bean threading from a wise master.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<linkedBackstory>ST_BeanThreadShop</linkedBackstory>
+		<skillGains>
+			  <li>
+				<key>Plants</key>
+				<value>4</value>
+			  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>		
 	
+	<AlienRace.AlienBackstoryDef ParentName="STOutlanderBackstories">
+		<defName>ST_BeanThreadingDropout</defName>
+		<title>bean threading apprentice</title>
+		<titleShort>bean threader</titleShort>
+		<baseDesc>[PAWN_nameDef] joined the local bean threading academy at a young age. There [PAWN_pronoun] learned the ancient art of bean threading from a wise master, but [PAWN_pronoun] simply did not have the necessary temperament to become a true master and quickly dropped out to pursue other activities.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			  <li>
+				<key>Plants</key>
+				<value>2</value>
+			  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+			  <defName>ST_BeanThreaderJourneyman</defName>
+			  <chance>0.2</chance>
+			</li>
+			<li>
+			  <defName>ST_BeanThreaderNovice</defName>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>			
+
+	<AlienRace.AlienBackstoryDef ParentName="STOutlanderBackstories">
+		<defName>ST_BeanFucker</defName>
+		<title>bean threading apprentice</title>
+		<titleShort>bean threader</titleShort>
+		<baseDesc>[PAWN_nameDef] joined the local bean threading academy at a young age. There [PAWN_pronoun] learned the ancient art of bean threading from a wise master. Unfortunately [PAWN_nameDef] became a bit too close to the beans and was kicked out of the school for [PAWN_possessive] degeneracy.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<skillGains>
+			  <li>
+				<key>Plants</key>
+				<value>6</value>
+			  </li>
+			  <li>
+				<key>Social</key>
+				<value>-4</value>
+			  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+			  <defName>ST_BeanFucker</defName>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>	
 	
 	
 <!-- Adulthood -->	
@@ -152,4 +219,43 @@
 			  </li>
 		</skillGains>
 	</AlienRace.AlienBackstoryDef>	
+	
+	<AlienRace.AlienBackstoryDef ParentName="STOutlanderBackstories">
+		<defName>ST_BeanThreadShop</defName>
+		<title>bean thread shop owner</title>
+		<titleShort>bean threader</titleShort>
+		<baseDesc>After years of training, [PAWN_nameDef] become good enough at bean threading to open [PAWN_possessive] own bean thread shop. [PAWN_pronoun] became an extremely important member of [PAWN_possessive] community for providing this critical service.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<linkedBackstory>ST_BeanThreadingApprentice</linkedBackstory>
+		<skillGains>
+			  <li>
+				<key>Social</key>
+				<value>4</value>
+			  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+			  <defName>ST_BeanThreaderMaster</defName>
+			  <chance>0.4</chance>
+			</li>
+			<li>
+			  <defName>ST_BeanThreaderVeteran</defName>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </Defs>

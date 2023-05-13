@@ -15,6 +15,11 @@
     </statFactors>
     <skillNeedFactors>
       <li Class="SkillNeed_BaseBonus">
+        <skill>Alchemy</skill>
+        <baseValue>1</baseValue>
+        <bonusPerLevel>0.01</bonusPerLevel>
+      </li>
+      <li Class="SkillNeed_BaseBonus">
         <skill>Cooking</skill>
         <baseValue>0.9</baseValue>
         <bonusPerLevel>0.02</bonusPerLevel>

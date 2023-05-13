@@ -130,7 +130,7 @@
     <label>Grow Bean Man Larva</label>
     <description>Throw a SBM and a bunch of beans into the pit.</description>    
 	<jobString>Assemble a bean man larvae.</jobString>
-    <workAmount>2000</workAmount>
+    <workAmount>4000</workAmount>
     <workSpeedStat>BeanAffinity</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>

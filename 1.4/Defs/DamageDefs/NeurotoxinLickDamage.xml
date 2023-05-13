@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>ParalyzingLick</defName>
+    <label>paralyzing neurotoxin</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <additionalHediffs>
+      <li>
+        <hediff>NeurotoxinBuildup</hediff>
+        <severityPerDamageDealt>0.015</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+		<inverseStatScaling>true</inverseStatScaling>
+      </li>
+    </additionalHediffs>
+    <deathMessage>{0} has been licked to death.</deathMessage>
+    <hediff>Licked</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Lick</impactSoundType>
+    <armorCategory>Lick</armorCategory>
+  </DamageDef>  
+  
+</Defs>

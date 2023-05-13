@@ -28,6 +28,12 @@
     <maleCommonality>100</maleCommonality>
   </AlienRace.AlienBackstoryDef>
 
+  <AlienRace.AlienBackstoryDef Name="BeanNonColonistBackstoriesViolent" Abstract="True">
+	<spawnCategories>
+      <li>BeanManNonColonistBackstoryViolent</li>
+    </spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
   <AlienRace.AlienBackstoryDef Name="BeanNonColonistBackstories" Abstract="True">
 	<spawnCategories>
       <li>BeanManNonColonistBackstory</li>
@@ -69,9 +75,10 @@
         <value>2</value>
 	  </li>  
     </skillGains>	
+	<bioAgeRange>8~120</bioAgeRange>
   </AlienRace.AlienBackstoryDef>
 
-  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstoriesViolent">
     <defName>BeanMan_DrugDealer</defName>
     <title>drug dealer</title>
 	<titleShort>dealer</titleShort>
@@ -98,7 +105,7 @@
 	</forcedTraitsChance>
   </AlienRace.AlienBackstoryDef>
 
-  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstoriesViolent">
     <defName>BeanMan_Rebel</defName>
     <title>rebel</title>
 	<titleShort>rebel</titleShort>
@@ -120,6 +127,7 @@
 	<forcedTraits>
 	  <Tough>0</Tough>
 	</forcedTraits>
+	<bioAgeRange>8~120</bioAgeRange>
   </AlienRace.AlienBackstoryDef>
 
   <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
@@ -141,6 +149,7 @@
 	  </li>  
     </skillGains>
 	<requiredWorkTags>Cooking</requiredWorkTags>	
+	<bioAgeRange>8~120</bioAgeRange>
   </AlienRace.AlienBackstoryDef>
 
   <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
@@ -161,20 +170,170 @@
         <value>3</value>
 	  </li>  
     </skillGains>
+	<bioAgeRange>8~120</bioAgeRange>
   </AlienRace.AlienBackstoryDef>
 
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstoriesViolent">
+    <defName>BeanMan_Pirate</defName>
+    <title>pirate</title>
+	<titleShort>pirate</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a crew of pirates on the high seas. While he was initially forced to do the most menial of tasks on the ships, through hard work he earned the respect of the crew.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>20</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>3</value>
+	  </li>  
+      <li>
+        <key>Melee</key>
+        <value>1</value>
+	  </li>  
+      <li>
+        <key>Shooting</key>
+        <value>6</value>
+	  </li>  
+    </skillGains>
+	<possessions>
+	  <li>
+		<key>PiratePistol</key>
+		<value>1</value>
+	  </li>
+	</possessions>
+	<bioAgeRange>2~120</bioAgeRange>
+  </AlienRace.AlienBackstoryDef>
 
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Chinese</defName>
+    <title>chinese</title>
+	<titleShort>chinese</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a village in China who needed help in their fields. Somehow, he became known as the best calligrapher and scholar in the region despite not having hands. When word of his prowess reached the Emperor, he was allowed to take the Imperial Civil Service Examinations, which he passed with flying colors. He eventually became one of the Emperor's high ministers before being driven to exile in a factional struggle.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>10</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>4</value>
+	  </li>  
+      <li>
+        <key>Intellectual</key>
+        <value>8</value>
+	  </li>  
+    </skillGains>
+	<forcedTraitsChance>
+	  <li>
+		<defName>RareGenius</defName>
+		<chance>25</chance>
+	  </li>
+	</forcedTraitsChance>
+	<workDisables>ManualDumb</workDisables>
+	<bioAgeRange>8~120</bioAgeRange>
+  </AlienRace.AlienBackstoryDef>
 
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_BeanThreader</defName>
+    <title>bean threader</title>
+	<titleShort>bean threader</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by an eccentric bean threading master in search of a worthy apprentice. He learned many of the man's fascinating bean threading techniques during their time together.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>20</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Cooking</key>
+        <value>6</value>
+	  </li>  
+    </skillGains>
+	<forcedTraitsChance>
+	  <li>
+		<defName>ST_BeanThreaderJourneyman</defName>
+	  </li>
+	</forcedTraitsChance>
+	<bioAgeRange>12~120</bioAgeRange>
+  </AlienRace.AlienBackstoryDef>
 
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Craftsman</defName>
+    <title>craftsman</title>
+	<titleShort>craftsman</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] worked in a manufactory crafting all sorts of little objects.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>50</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Crafting</key>
+        <value>6</value>
+	  </li>  
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
 
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Tribal</defName>
+    <title>tribesman</title>
+	<titleShort>tribesman</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a primitive tribe who must have found a Sapient Bean Matrix lying around or something. He helped the tribe in many ways over the years that he lived with them.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>50</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Animals</key>
+        <value>3</value>
+	  </li>  
+      <li>
+        <key>Plants</key>
+        <value>3</value>
+	  </li>  
+      <li>
+        <key>Cooking</key>
+        <value>3</value>
+	  </li>  
+    </skillGains>
+	<bioAgeRange>6~120</bioAgeRange>
+  </AlienRace.AlienBackstoryDef>
 
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstoriesViolent">
+    <defName>BeanMan_CannonFodder</defName>
+    <title>cannon fodder</title>
+	<titleShort>fodder</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by one of the belligerents in a seemingly eternal war of attrition. His superiors viewed him as expendable and threw him into the thick of all the most brutal battles. Somehow, however, he survived and eventually escaped.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>33</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>3</value>
+	  </li>  
+      <li>
+        <key>Shooting</key>
+        <value>3</value>
+	  </li>  
+    </skillGains>
+	<forcedTraits>
+	  <Nerves>-2</Nerves>
+	</forcedTraits>
+	<bioAgeRange>3~120</bioAgeRange>
+  </AlienRace.AlienBackstoryDef>
 
-
-
-
-
-
-
+  <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Chef</defName>
+    <title>secret chef</title>
+	<titleShort>chef</titleShort>
+	<bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a novice chef desperate for help with his job. [PAWN_nameDef] came up with the genius idea of hiding under the chef's hat and pulling his hair to secretly control him. This was surprisingly effective, all things considered.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>20</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Cooking</key>
+        <value>8</value>
+	  </li>  
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
 
 
 

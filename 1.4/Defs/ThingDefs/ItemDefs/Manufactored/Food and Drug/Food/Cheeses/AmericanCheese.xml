@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="OrganicProductBase">
     <defName>Cheese</defName>
-    <label>cheese</label>
+    <label>american cheese</label>
     <description>Ah, American Cheese. The highest form of cheese, you know.</description>
     <graphicData>
       <texPath>Things/Items/Resources/Cheeses/Cheese</texPath>

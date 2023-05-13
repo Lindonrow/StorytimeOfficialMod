@@ -372,6 +372,18 @@
       </li>
     </stages>
   </HediffDef>   
+  
+  <ThoughtDef>
+    <defName>StinkyBeanThought</defName>
+    <durationDays>0.5</durationDays>
+    <stages>
+      <li>
+        <label>horrible smell</label>
+        <description>Why did we let that horrible smelling bean man in here?</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>  
 
 <!--Bracing Bean-->
   <GeneDef ParentName="GeneBeanTraitBase">
@@ -737,16 +749,270 @@
     <description>This bean man is one of the undead.</description>
     <iconPath>UI/Icons/Genes/BeanGenes/DeadBean</iconPath>
     <displayOrderInCategory>1999</displayOrderInCategory>
-	<statOffsets>	
-			  <SocialImpact>-0.95</SocialImpact>		  
-	</statOffsets>	
 	<modExtensions>
 		<li Class="VanillaGenesExpanded.GeneExtension">
 			<hediffToWholeBody>HedSTUndead</hediffToWholeBody>
 		</li>
 	</modExtensions>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(1, 0)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
   </GeneDef>
 
+<!--Slurp Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>SlurpBeanMan</defName>
+    <label>slurp bean</label>
+    <description>This bean man bears many similarities to the common vampire, although there are some notable differences.</description>
+    <geneClass>Gene_Hemogen</geneClass>
+    <resourceGizmoType>GeneGizmo_ResourceHemogen</resourceGizmoType>
+    <resourceLabel>hemogen</resourceLabel>
+    <resourceGizmoThresholds>
+      <li>0.25</li>
+      <li>0.5</li>
+      <li>0.75</li>
+    </resourceGizmoThresholds>
+    <showGizmoOnWorldView>true</showGizmoOnWorldView>
+    <showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+    <resourceDescription>A reserve of biological strength which can be gained and spent in a variety of ways.\n\nHemogen can be increased by bloodfeeding from a human or consuming hemogen packs. You can obtain hemogen packs using the 'extract hemogen pack' medical operation on a non-hemogenic human.\n\nIf hemogen reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
+    <iconPath>UI/Icons/Genes/BeanGenes/SlurpBean</iconPath>
+    <selectionWeight>0</selectionWeight>
+    <displayCategory>Hemogen</displayCategory>
+    <displayOrderInCategory>-2</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>Gives hemogen supply.</li>
+    </customEffectDescriptions>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>hemo</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <minAgeActive>0</minAgeActive>
+    <resourceLossPerDay>0.08</resourceLossPerDay>
+    <biostatCpx>1</biostatCpx>
+    <damageFactors>
+      <Flame>5</Flame>
+    </damageFactors>
+    <mentalBreakMtbDays>0.1</mentalBreakMtbDays>
+    <mentalBreakDef>FireTerror</mentalBreakDef>
+    <abilities>
+      <li>Coagulate</li>
+      <li>Bloodfeed</li>
+	  <li>Resurrect</li>
+	  <li>BloodBlast</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>Coagulate</AbilityDef>
+	  <AbilityDef>Bloodfeed</AbilityDef>
+	  <AbilityDef>Resurrect</AbilityDef>	
+	  <AbilityDef>BloodBlast</AbilityDef>		  
+    </descriptionHyperlinks>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statFactors>
+          <MoveSpeed>0.65</MoveSpeed>
+        </statFactors>
+      </li>
+	<li Class="VanillaGenesExpanded.ConditionalStatAffecter_NoSunlight">
+		<statFactors>
+			<MoveSpeed>1.5</MoveSpeed>				
+		</statFactors>
+	</li>
+    </conditionalStatAffecters>
+    <dislikesSunlight>true</dislikesSunlight>
+  </GeneDef>
+
+  <AbilityDef>
+    <defName>BloodBlast</defName>
+    <label>blood spray</label>
+    <description>Use hemogen to launch a spray of blood at an enemy, inexplicably causing them to lose blood.</description>
+    <iconPath>Spells/blooddrop</iconPath>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <category>Sanguophage</category>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>12</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>TM_WindLowSD</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <hemogenCost>0.3</hemogenCost>
+      </li>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>BloodBlast_Projectile</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BloodBlast_Projectile</defName>
+    <label>blood spray</label>
+    <graphicData>
+      <texPath>Spells/blooddrop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Slurp</damageDef>
+      <damageAmountBase>36</damageAmountBase>
+      <stoppingPower>0.2</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+<!--Spooky Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>SpookyBeanMan</defName>
+    <label>spooky bean</label>
+    <description>This bean man is rather spooky to behold.</description>
+    <iconPath>UI/Icons/Genes/BeanGenes/SpookyBean</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			  <SocialImpact>-0.8</SocialImpact>		  
+	</statOffsets>	
+    <abilities>
+      <li>ST_Spook</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>ST_Spook</AbilityDef>	  
+    </descriptionHyperlinks>
+  </GeneDef>
+
+  <AbilityDef>
+    <defName>ST_Spook</defName>
+    <label>spook</label>
+    <description>Focus your malicious aura onto a target, causing them to lose control of themselves temporarily.</description>
+    <iconPath>UI/Icons/Spook</iconPath>
+    <cooldownTicksRange>100000</cooldownTicksRange><!-- 15 days --> <!--lol nope-->
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+    <groupAbility>true</groupAbility>
+    <aiCanUse>true</aiCanUse>
+    <statBases>
+      <Ability_Duration>500</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>spook</label>
+      <warmupTime>2</warmupTime>
+      <range>20</range>
+      <drawAimPie>true</drawAimPie>      
+      <requireLineOfSight>true</requireLineOfSight>
+      <warmupEffecter>AnimalWarcall_Warmup</warmupEffecter>
+      <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetSelf>false</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveMentalState">
+        <compClass>CompAbilityEffect_GiveMentalState</compClass>
+        <stateDef>Wander_Psychotic</stateDef>
+        <goodwillImpact>-75</goodwillImpact>
+        <casterEffect>AnimalWarcall_Cast</casterEffect>
+        <targetEffect>AnimalWarcall_CastOnTarget</targetEffect>
+      </li>
+    </comps>
+  </AbilityDef>
+
+<!--Holy Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>HolyBeanMan</defName>
+    <label>holy bean</label>
+    <description>This bean man is pulses with holy power.</description>
+    <iconPath>UI/Icons/Genes/BeanGenes/HolyBean</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+    <abilities>
+      <li>BeanHeal</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BeanHeal</AbilityDef>	  
+    </descriptionHyperlinks>
+  </GeneDef>
+
+  <AbilityDef>
+    <defName>BeanHeal</defName>
+    <label>heal</label>
+    <description>Channel holy power to heal an ally.</description>
+    <iconPath>UI/Abilities/Painblock</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+    <hostile>false</hostile>
+    <aiCanUse>true</aiCanUse>
+    <statBases>
+      <Ability_Duration>200</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>heal</label>
+      <warmupTime>0.5</warmupTime>
+      <range>10</range>
+      <drawAimPie>true</drawAimPie>      
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>BeanHealHoly</hediffDef>
+        <applicableToMechs>False</applicableToMechs>
+      </li>
+    </comps>
+  </AbilityDef>
+
+ <HediffDef>
+    <defName>BeanHealHoly</defName>
+    <label>Healing</label>
+	<description>Being healed by holy power!</description>		
+    <initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(254,246,91)</defaultLabelColor>      	
+	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1500</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+		  <naturalHealingFactor>100</naturalHealingFactor>
+        </li>
+      </stages>
+  </HediffDef>	
+
+<!--Valiant Bean-->
+  <GeneDef ParentName="GeneBeanTraitBase">
+    <defName>ValiantBeanMan</defName>
+    <label>valiant bean</label>
+    <description>This bean man is a valiant warrior.</description>
+    <iconPath>UI/Icons/Genes/BeanGenes/ValiantBean</iconPath>
+    <displayOrderInCategory>1999</displayOrderInCategory>
+	<statOffsets>	
+			  <PainShockThreshold>0.2</PainShockThreshold>		  
+	</statOffsets>	
+	<statFactors>
+	          <IncomingDamageFactor>0.8</IncomingDamageFactor>
+	</statFactors>
+  </GeneDef>
 
 
 

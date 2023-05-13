@@ -138,7 +138,32 @@
     </degreeDatas>
   </TraitDef>
 
-
+<!-- Bean Threading Novice -->
+	<TraitDef>
+		<defName>ST_BeanThreaderNovice</defName>
+		<commonality>0.7</commonality>
+		<forcedPassions>
+			<li>Cooking</li>
+		</forcedPassions>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#3DC616&gt;Bean Threading Novice&lt;/color&gt;</label>
+				<description>I've spend years training amongst the bean threaders, and yet even now I feel as if I have only scratched the surface.</description>
+				<skillGains>
+					<li>
+						<key>Cooking</key>
+						<value>4</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<BeanAffinity>0.50</BeanAffinity>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
 
 
 

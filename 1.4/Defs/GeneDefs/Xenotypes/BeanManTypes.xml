@@ -228,7 +228,8 @@
       <li>HealingBeanMan</li>	  
       <li>SteadyBeanMan</li>	 
       <li>SpeedyBeanMan</li>	 
-      <li>DeadeyeBeanMan</li>	 	  
+      <li>DeadeyeBeanMan</li>	 
+	  <li>ValiantBeanMan</li>
     </genes>
   </XenotypeDef>         
   
@@ -301,7 +302,7 @@
   <XenotypeDef>
     <defName>PolarBeanMan</defName>
     <label>polar bean man</label>
-    <description>Polar bean men possess a lower body temperature than other bean men, causing them to be slower and more cool-headed. They also prefer colder environments</description>
+    <description>Polar bean men possess a lower body temperature than other bean men, causing them to be slower and more cool-headed. They also prefer colder environments.</description>
     <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Polar_east</iconPath>
     <inheritable>true</inheritable>
     <combatPowerFactor>1</combatPowerFactor>
@@ -313,11 +314,67 @@
     </genes>
   </XenotypeDef>     
   
+<!--Skeletal-->
+  <XenotypeIconDef>
+    <defName>SkeletalBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Skeletal_east</texPath>
+  </XenotypeIconDef>  
   
+  <XenotypeDef>
+    <defName>SkeletalBeanMan</defName>
+    <label>skeletal bean man</label>
+    <description>Skeletal bean men are exactly what their names imply, bean men who have- either through some magic or the occasional misfire of the bean vat- come out without skin and bones. They are truly frightening.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Skeletal_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.1</combatPowerFactor>
+    <genes>
+      <li>SkeletalBeanMan</li>
+	  <li>DeadBeanMan</li>
+	  <li>SpookyBeanMan</li>
+    </genes>
+  </XenotypeDef>       
   
+<!--Vampiric-->
+  <XenotypeIconDef>
+    <defName>VampiricBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Skeletal_east</texPath>
+  </XenotypeIconDef>  
   
+  <XenotypeDef>
+    <defName>VampiricBeanMan</defName>
+    <label>vampiric bean man</label>
+    <description>Vampiric bean men are a rare type of undead bean man with the ability to drain the blood of the living and use it in powerful spells, similar to human vampires.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Vampiric_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.1</combatPowerFactor>
+    <genes>
+      <li>VampiricBeanMan</li>
+	  <li>DeadBeanMan</li>
+	  <li>SlurpBeanMan</li>
+	  <li>BloodyBeanMan</li>
+    </genes>
+  </XenotypeDef>    
   
+<!--Radiant-->
+  <XenotypeIconDef>
+    <defName>RadiantBeanManIcon</defName>
+    <texPath>Things/Pawn/Humanlike/BeanMan/RealBody/Radiant_east</texPath>
+  </XenotypeIconDef>  
   
+  <XenotypeDef>
+    <defName>RadiantBeanMan</defName>
+    <label>radiant bean man</label>
+    <description>Radiant bean men have a connection to the divine whose source is unknown. They are valiant warriors and stalwart friends, and their holy powers of healing are legendary amongst the bean men.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Radiant_east</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.1</combatPowerFactor>
+    <genes>
+      <li>RadiantBeanMan</li>
+	  <li>FriendlyBeanMan</li>
+	  <li>HolyBeanMan</li>
+	  <li>ValiantBeanMan</li>
+    </genes>
+  </XenotypeDef>      
   
   
   

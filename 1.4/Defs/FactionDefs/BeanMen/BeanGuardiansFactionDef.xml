@@ -35,6 +35,7 @@
     <disallowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
     </disallowedMemes>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophobia</li>

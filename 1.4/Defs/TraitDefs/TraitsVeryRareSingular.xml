@@ -51,5 +51,73 @@
 		  <li>TM_Golemancer</li>
 		</conflictingTraits>
 	</TraitDef>		
+
+<!--Bean Threading Veteran-->
+	<TraitDef>
+		<defName>ST_BeanThreaderVeteran</defName>
+		<commonality>0.2</commonality>
+		<forcedPassions>
+			<li>Cooking</li>
+		</forcedPassions>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#FA64D2&gt;Bean Threading Veteran&lt;/color&gt;</label>
+				<description>I graduated top of my class from the bean threading school, after 12 years of training. I've been working on my own for a few years since then, so I'm considered a bit of a veteran. And yet... the true masters can do such wonders!</description>
+				<skillGains>
+					<li>
+						<key>Cooking</key>
+						<value>8</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<BeanAffinity>1.1</BeanAffinity>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>	
+
+<!--Bean Fucker-->
+	<TraitDef>
+		<defName>ST_BeanFucker</defName>
+		<commonality>0.15</commonality>
+		<forcedPassions>
+			<li>Cooking</li>
+		</forcedPassions>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#FA64D2&gt;Bean Fucker&lt;/color&gt;</label>
+				<description>I can't believe you would do this to me, master bean man! I've been your loyal bean threading apprentice for the last twelve years! I don't care if you disappove of me fucking the beans, I can still stretch them into threads better than all my peers. I haven't ruined a batch of bean threads for over 9 years, and this is the thanks I get from you?! I'm going to open my own bean threading shop and run you out of town old man!</description>
+				<skillGains>
+					<li>
+						<key>Cooking</key>
+						<value>10</value>
+					</li>
+					<li>
+						<key>Social</key>
+						<value>-5</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<BeanAffinity>1.3</BeanAffinity>
+					<Fertility>0.3</Fertility>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>	
+
+
+
+
+
+
+
+
+
 	
 </Defs>

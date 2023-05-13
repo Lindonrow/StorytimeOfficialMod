@@ -21,6 +21,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
     </disallowedMemes>
     <allowedCultures><li>STBeanMan</li></allowedCultures>
     <structureMemeWeights>
@@ -98,6 +99,15 @@
         </options>
       </li>
       <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <BeanManGuard>40</BeanManGuard>
+          <BeanManGuardElite>15</BeanManGuardElite>
+          <BeanManUndead>25</BeanManUndead>
+		  <BeanManLeader>1</BeanManLeader>
+        </options>
+      </li>
+      <li>
         <kindDef>Trader</kindDef>
         <traders>
           <BeanManTrader>1</BeanManTrader>
@@ -112,6 +122,7 @@
           <BeanManGuardElite>5</BeanManGuardElite>
           <BeanManWhiptongueDeadeye>5</BeanManWhiptongueDeadeye>
           <BeanManBrawler>5</BeanManBrawler>
+          <BeanManUndead>5</BeanManUndead>	  
         </guards>
       </li>
       <li>
@@ -121,6 +132,7 @@
           <BeanManGuard>20</BeanManGuard>
           <BeanManGuardElite>5</BeanManGuardElite>
           <BeanManWhiptongueDeadeye>5</BeanManWhiptongueDeadeye>
+          <BeanManUndead>5</BeanManUndead>
           <BeanManBrawler>5</BeanManBrawler>
 		  <BeanManLeader>1</BeanManLeader>
         </options>

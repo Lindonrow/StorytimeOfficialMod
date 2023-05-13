@@ -23,6 +23,9 @@
 		  <li>StinkyBeanMan</li>
 		  <li>WhiptongueBeanMan</li>	
 		  <li>PolarBeanMan</li>
+		  <li>SkeletalBeanMan</li>
+		  <li>VampiricBeanMan</li>	
+	      <li>RadiantBeanMan</li>
 		</xenotypeList>
 		<onlyHaveRaceRestrictedGenes>true</onlyHaveRaceRestrictedGenes>
 		<geneList>
@@ -41,6 +44,10 @@
 		  <li>StinkyBeanMan</li>
 		  <li>WhiptongueBeanMan</li>	
 		  <li>PolarBeanMan</li>
+		  <li>SkeletalBeanMan</li>
+		  <li>VampiricBeanMan</li>	
+		  <li>RadiantBeanMan</li>
+
 		  
 		  <li>StandardBeanMan</li>
 		  <li>HappyBeanMan</li>
@@ -70,6 +77,11 @@
 		  <li>MagicBeanMan</li>
 		  <li>LickyBeanMan</li>
 		  <li>DeadeyeBeanMan</li>
+		  <li>DeadBeanMan</li>
+		  <li>SlurpBeanMan</li>
+		  <li>SpookyBeanMan</li>
+		  <li>HolyBeanMan</li>
+		  <li>ValiantBeanMan</li>
 		  
 		</geneList>
         <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
@@ -102,15 +114,7 @@
 		<forcedRaceTraitEntries>
 		  <li>
 			<defName>Gay</defName>
-			<chance>60</chance>
-		  </li>
-		  <li>
-			<defName>Asexual</defName>
-			<chance>20</chance>
-		  </li>
-		  <li>
-			<defName>Bisexual</defName>
-			<chance>30</chance>
+			<chance>50</chance>
 		  </li>
 		</forcedRaceTraitEntries>
         <humanRecipeImport>true</humanRecipeImport>
@@ -238,6 +242,37 @@
 			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Polar</path>
 			  <layerInvert>false</layerInvert>
 			  </li>	  
+			  
+			  <li>
+			  <geneRequirement>SkeletalBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Skeletal</path>
+			  <layerInvert>false</layerInvert>
+			  </li>	  
+			  
+			  <li>
+			  <geneRequirement>VampiricBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Vampiric</path>
+			  <layerInvert>false</layerInvert>
+			  </li>	  			  
+			  
+			  <li>
+			  <geneRequirement>RadiantBeanMan</geneRequirement>
+			  <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			  <path>Things/Pawn/Humanlike/BeanMan/RealBody/Radiant</path>
+			  <layerInvert>false</layerInvert>
+			  </li>	  					  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
 			</bodyAddons>
 			
           <colorChannels>

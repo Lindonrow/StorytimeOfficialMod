@@ -27,7 +27,7 @@
     <initialResistanceRange>5~10</initialResistanceRange>
     <xenotypeSet>
       <xenotypeChances>
-        <RedBeanMan>35</RedBeanMan>
+        <RedBeanMan>40</RedBeanMan>
         <OrangeBeanMan>7</OrangeBeanMan>
         <BlueBeanMan>10</BlueBeanMan>
         <BlackBeanMan>5</BlackBeanMan>
@@ -42,6 +42,9 @@
         <StinkyBeanMan>2</StinkyBeanMan>
         <WhiptongueBeanMan>7</WhiptongueBeanMan>
 		<PolarBeanMan>3</PolarBeanMan>
+		<VampiricBeanMan>1</VampiricBeanMan>
+		<SkeletalBeanMan>2</SkeletalBeanMan>
+		<RadiantBeanMan>3</RadiantBeanMan>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -88,6 +91,8 @@
         <StinkyBeanMan>5</StinkyBeanMan>
         <WhiptongueBeanMan>2</WhiptongueBeanMan>
 		<PolarBeanMan>5</PolarBeanMan>
+        <VampiricBeanMan>1</VampiricBeanMan>
+        <SkeletalBeanMan>1</SkeletalBeanMan>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -105,6 +110,7 @@
 	  <li>
 		<categories>
 		  <li>BeanManNonColonistBackstory</li>
+		  <li>BeanManNonColonistBackstoryViolent</li>
 		</categories>
 	  </li>
 	</backstoryFiltersOverride>
@@ -136,6 +142,7 @@
         <StinkyBeanMan>2</StinkyBeanMan>
         <WhiptongueBeanMan>1</WhiptongueBeanMan>
 		<PolarBeanMan>3</PolarBeanMan>
+		<RadiantBeanMan>3</RadiantBeanMan>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -152,6 +159,7 @@
 	  <li>
 		<categories>
 		  <li>BeanManNonColonistBackstory</li>
+		  <li>BeanManNonColonistBackstoryViolent</li>
 		</categories>
 	  </li>
 	</backstoryFiltersOverride>
@@ -183,6 +191,7 @@
         <StinkyBeanMan>2</StinkyBeanMan>
         <WhiptongueBeanMan>1</WhiptongueBeanMan>
 		<PolarBeanMan>3</PolarBeanMan>
+		<RadiantBeanMan>5</RadiantBeanMan>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>  
@@ -190,7 +199,7 @@
 <!--Whiptongue Deadeye-->
   <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
     <defName>BeanManWhiptongueDeadeye</defName>
-    <label>lick</label>
+    <label>whiptongue</label>
     <combatPower>60</combatPower>
     <defaultFactionType>BeanManFaction</defaultFactionType>
     <isFighter>true</isFighter>
@@ -199,6 +208,7 @@
 	  <li>
 		<categories>
 		  <li>BeanManNonColonistBackstory</li>
+		  <li>BeanManNonColonistBackstoryViolent</li>
 		</categories>
 	  </li>
 	</backstoryFiltersOverride>
@@ -236,6 +246,7 @@
 	  <li>
 		<categories>
 		  <li>BeanManNonColonistBackstory</li>
+		  <li>BeanManNonColonistBackstoryViolent</li>
 		</categories>
 	  </li>
 	</backstoryFiltersOverride>
@@ -264,6 +275,7 @@
         <CoffeeBeanMan>5</CoffeeBeanMan>
         <ShinyBeanMan>1</ShinyBeanMan>
 		<PolarBeanMan>5</PolarBeanMan>
+		<RadiantBeanMan>10</RadiantBeanMan>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>  
@@ -279,7 +291,8 @@
 	<backstoryFiltersOverride>
 	  <li>
 		<categories>
-		  <li>BeanGuardian</li>
+		  <li>BeanManNonColonistBackstory</li>
+		  <li>BeanManNonColonistBackstoryViolent</li>
 		</categories>
 	  </li>
 	</backstoryFiltersOverride>
@@ -312,7 +325,39 @@
     </xenotypeSet>
   </PawnKindDef>
   
-  
+<!--Undead Bean Man-->   
+  <PawnKindDef ParentName="BasePlayerBeanManPawnKind">
+    <defName>BeanManUndead</defName>
+    <label>undead bean man</label>
+    <combatPower>65</combatPower>
+    <defaultFactionType>BeanManFaction</defaultFactionType>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+	<backstoryFiltersOverride>
+	  <li>
+		<categories>
+		  <li>BeanManNonColonistBackstory</li>
+		  <li>BeanManNonColonistBackstoryViolent</li>
+		</categories>
+	  </li>
+	</backstoryFiltersOverride>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+	  <li>NeolithicRangedBasic</li>
+	  <li>NeolithicRangedDecent</li>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <weaponMoney>150~400</weaponMoney>
+    <techHediffsChance>0</techHediffsChance>
+    <initialWillRange>1~4</initialWillRange>
+    <initialResistanceRange>5~20</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <VampiricBeanMan>5</VampiricBeanMan>
+        <SkeletalBeanMan>30</SkeletalBeanMan>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>    
   
 
 
@@ -375,6 +420,7 @@
         <StinkyBeanMan>2</StinkyBeanMan>
         <WhiptongueBeanMan>7</WhiptongueBeanMan>
 		<PolarBeanMan>3</PolarBeanMan>
+		<RadiantBeanMan>3</RadiantBeanMan>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -410,15 +456,16 @@
       <xenotypeChances>
         <RedBeanMan>20</RedBeanMan>
         <OrangeBeanMan>5</OrangeBeanMan>
-        <BlackBeanMan>10</BlackBeanMan>
+        <BlackBeanMan>5</BlackBeanMan>
         <BottBeanMan>5</BottBeanMan>
-        <ChiliBeanMan>10</ChiliBeanMan>
+        <ChiliBeanMan>5</ChiliBeanMan>
         <CoffeeBeanMan>10</CoffeeBeanMan>
-        <PurpleBeanMan>10</PurpleBeanMan>
+        <PurpleBeanMan>5</PurpleBeanMan>
         <ShinyBeanMan>5</ShinyBeanMan>
         <SilverBeanMan>10</SilverBeanMan>
-        <WhiptongueBeanMan>10</WhiptongueBeanMan>
-		<PolarBeanMan>10</PolarBeanMan>
+        <WhiptongueBeanMan>5</WhiptongueBeanMan>
+		<PolarBeanMan>5</PolarBeanMan>
+		<RadiantBeanMan>10</RadiantBeanMan>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>

@@ -132,12 +132,32 @@
     <label>polar adapted</label>
     <description>This bean man looks like it belongs in a cold climate.</description>
     <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Polar_east</iconPath>
-    <displayOrderInCategory>987</displayOrderInCategory>
+    <displayOrderInCategory>986</displayOrderInCategory>
   </GeneDef>
 
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>SkeletalBeanMan</defName>
+    <label>skeletal</label>
+    <description>This bean man is nothing but bones.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Skeletal_east</iconPath>
+    <displayOrderInCategory>985</displayOrderInCategory>
+  </GeneDef>
 
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>VampiricBeanMan</defName>
+    <label>sickly pale</label>
+    <description>This bean man's face looks completely bloodless.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Vampiric_east</iconPath>
+    <displayOrderInCategory>984</displayOrderInCategory>
+  </GeneDef>
 
-
+  <GeneDef ParentName="GeneBeanBase">
+    <defName>RadiantBeanMan</defName>
+    <label>radiant</label>
+    <description>This bean man's visage glows with holy energy.</description>
+    <iconPath>Things/Pawn/Humanlike/BeanMan/RealBody/Radiant_east</iconPath>
+    <displayOrderInCategory>983</displayOrderInCategory>
+  </GeneDef>
 
 
 

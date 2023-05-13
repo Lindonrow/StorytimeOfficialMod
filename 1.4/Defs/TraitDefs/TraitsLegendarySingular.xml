@@ -47,6 +47,44 @@ Toiling to the end, body broken, will unbroke.
       <li>SlowLearner</li>
     </conflictingTraits>
 	</TraitDef>		
+
+<!--Bean Threading Master-->
+	<TraitDef>
+		<defName>ST_BeanThreaderMaster</defName>
+		<commonality>0.05</commonality>
+		<forcedPassions>
+			<li>Cooking</li>
+		</forcedPassions>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<degreeDatas>
+			<li>
+				<label>&lt;color=#FFDD43&gt;Bean Threading Master&lt;/color&gt;</label>
+				<description>To a true master, bean threading is more than a job. More than an art, even. It's a way of communing with the fundamental forces of the universe, a path to enlightenment. That is what separates the master bean threader from the rest.</description>
+				<skillGains>
+					<li>
+						<key>Cooking</key>
+						<value>12</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<BeanAffinity>2.5</BeanAffinity>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+		  <li>ST_BeanThreaderNovice</li>
+		  <li>ST_BeanThreaderJourneyman</li>	  
+		  <li>ST_BeanThreaderVeteran</li>
+		</conflictingTraits>
+	</TraitDef>	
+
+
+
+
+
+
 	
 	
 </Defs>
