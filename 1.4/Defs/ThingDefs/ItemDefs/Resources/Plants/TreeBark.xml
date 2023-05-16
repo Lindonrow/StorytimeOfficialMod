@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>TreeBark</defName>
+    <label>tree bark</label>
+    <description>That weird crusty stuff that comes from trees. Has many medical and culinary applications, and can also be eaten raw in a pinch (yuck).</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/Bark</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.7</MarketValue>
+      <Flammability>1.7</Flammability>
+      <Nutrition>0.025</Nutrition>
+    </statBases>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+      <tasteThought>AteBark</tasteThought>
+    </ingestible>
+    <stuffProps>
+      <stuffAdjective>bark</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>0.40</commonality>
+      <color>(100, 67, 33)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.30</MaxHitPoints>
+        <Beauty>0</Beauty>
+        <Flammability>2</Flammability>
+        <WorkToMake>0.35</WorkToMake>
+        <WorkToBuild>0.35</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThoughtDef>
+    <defName>AteBark</defName>
+    <thoughtClass>Thought_FoodEaten</thoughtClass>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingGenes>
+      <li MayRequire="Ludeon.RimWorld.Biotech">RobustDigestion</li>
+    </nullifyingGenes>
+    <stages>
+      <li>
+        <label>ate raw tree bark</label>
+        <description>Are we really so desperate?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

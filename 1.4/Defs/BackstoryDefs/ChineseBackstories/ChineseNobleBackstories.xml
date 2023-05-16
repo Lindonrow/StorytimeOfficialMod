@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AlienRace.AlienBackstoryDef Name="STNobleChinaBackstories" Abstract="True">
+	    <spawnCategories>
+			<li>ChinaNoble</li>
+	    </spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+  <AlienRace.AlienBackstoryDef Name="STNobleChinaBackstoriesAdult" Abstract="True" ParentName="STNobleChinaBackstories"> 
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+  </AlienRace.AlienBackstoryDef>
+
+<!--Childhood-->  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_ConfucianScholarChild</defName>
+		<title>Confucian scholar child</title>
+		<titleShort>scholar child</titleShort>
+		<baseDesc>[PAWN_nameDef] was born into a noble family and spent [PAWN_possessive] childhood studying Confucian classics under the guidance of a private tutor.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Intellectual</key>
+			<value>6</value>
+		  </li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>  
+  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_ImperialScion</defName>
+		<title>imperial scion</title>
+		<titleShort>imperial scion</titleShort>
+		<baseDesc>[PAWN_nameDef] was a descendant of the imperial lineage. [PAWN_pronoun] was groomed from a young age to uphold the family's prestige and power.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>4</value>
+		  </li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_EunuchsSon</defName>
+		<title>eunuch's son</title>
+		<titleShort>eunuch's son</titleShort>
+		<baseDesc>[PAWN_nameDef] was the child of a eunuch serving in the imperial court. [PAWN_pronoun] had a unique childhood, learning the intricacies of palace intrigue and bureaucracy.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>3</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>2</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>  
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_TyrantsPawn</defName>
+		<title>tyrant's pawn</title>
+		<titleShort>tyrant's pawn</titleShort>
+		<baseDesc>[PAWN_nameDef] was used as a pawn in the power games of a tyrannical ruler. [PAWN_pronoun] had little control in [PAWN_possessive] own life and grew very depressed.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>2</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>2</value>
+		  </li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	  <forcedTraitsChance>
+		<li>
+		  <defName>NaturalMood</defName>
+		  <degree>-2</degree>
+		  <chance>50</chance>
+		</li>
+		<li>
+		  <defName>NaturalMood</defName>
+		  <degree>-1</degree>
+		</li>
+	  </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_AdoptedChild</defName>
+		<title>adopted child</title>
+		<titleShort>adopted child</titleShort>
+		<baseDesc>[PAWN_nameDef] was adopted into a noble family. Despite not being of their blood, [PAWN_pronoun] was educated and raised to uphold the family's reputation and power.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>3</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>2</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>  
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_DroppedOnHead</defName>
+		<title>dropped on head</title>
+		<titleShort>dropped</titleShort>
+		<baseDesc>As a child, [PAWN_nameDef] was drop kicked by [PAWN_possessive] insane father. The incident didn't impede [PAWN_possessive] royal upbringing, but it did make [PAWN_objective] a bit slow on the uptake.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Intellectual</key>
+			<value>-4</value>
+		  </li>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+			  <defName>SlowLearner</defName>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>  
+		  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_BigEars</defName>
+		<title>big ears</title>
+		<titleShort>big ears</titleShort>
+		<baseDesc>[PAWN_nameDef] was born with unusually large ears, a sign that was considered to be an omen of a great destiny. [PAWN_pronoun] was treated with great respect from an early age.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>6</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>  
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_InauspiciousChild</defName>
+		<title>inauspicious child</title>
+		<titleShort>inauspicious</titleShort>
+		<baseDesc>[PAWN_nameDef] was born under what was considered an inauspicious sign. Despite [PAWN_possessive] noble birth, [PAWN_pronoun] was often overlooked and underestimated.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>-4</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>  
+  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_SteppeChild</defName>
+		<title>steppe scion</title>
+		<titleShort>stepperider</titleShort>
+		<baseDesc>[PAWN_nameDef] was born into a family of northern nomads and was trained in the art of the bow from a young age. [PAWN_pronoun] quickly became a skilled marksman and rider.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Shooting</key>
+			<value>4</value>
+		  </li>
+		  <li>
+			<key>Animals</key>
+			<value>4</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>  
+  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_DragonHeartedChild</defName>
+		<title>dragon-hearted child</title>
+		<titleShort>dragon-hearted</titleShort>
+		<baseDesc>[PAWN_nameDef], born into nobility, was as fierce and fearless as a dragon from a young age. Trained by the realm's finest warriors, [PAWN_pronoun] grew into a formidable combatant.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>4</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>  
+  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_TigerBalmHeir</defName>
+		<title>tiger balm heir</title>
+		<titleShort>tiger balm heir</titleShort>
+		<baseDesc>[PAWN_nameDef] was born into a noble family known for their mastery of medicinal balms and potions, especially their signature 'Tiger Balm' which was said to cure any illness. [PAWN_pronoun] showed a natural aptitude for this craft and was personally trained by the most skilled alchemists.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Alchemy</key>
+			<value>4</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef> 
+  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_JadeSettingApprentice</defName>
+		<title>jade setting apprentice</title>
+		<titleShort>jade setter</titleShort>
+		<baseDesc>[PAWN_nameDef] was born into a noble family renowned for their exquisite jade jewelry. Under the tutelage of [PAWN_possessive] family, [PAWN_pronoun] quickly developed a keen eye for detail and steady hands perfect for the craft.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Crafting</key>
+			<value>4</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_BambooFlutePlayer</defName>
+		<title>bamboo flute player</title>
+		<titleShort>flute player</titleShort>
+		<baseDesc>[PAWN_nameDef] was taught by [PAWN_possessive] tutors to play the bamboo flute from a young age. [PAWN_pronoun] spent many hours practicing and became quite skilled.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Artistic</key>
+			<value>4</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>  
+  
+<!--Adulthood-->  
+  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_BastardThreeFathers</defName>
+		<title>bastard of three fathers</title>
+		<titleShort>bastard</titleShort>
+		<baseDesc>[PAWN_nameDef], known as the "Bastard of Three Fathers," had a habit of stabbing [PAWN_possessive] adopted fathers in the back- literally. This did not endear [PAWN_objective] to the other leading figures of the realm.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>-3</value>
+		  </li>
+		  <li>
+			<key>Melee</key>
+			<value>3</value>
+		  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+			  <defName>Abrasive</defName>
+			  <chance>50</chance>
+			</li>
+			<li>
+			  <defName>Psychopath</defName>
+			  <chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>  
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_YoungHegemon</defName>
+		<title>young hegemon</title>
+		<titleShort>hegemon</titleShort>
+		<baseDesc>[PAWN_nameDef], a prodigious noble, rose to prominence at a young age in a time of chaos in the empire. Through charisma, strategic brilliance, and unyielding ambition, [PAWN_pronoun] carved out a domain of [PAWN_possessive] own amongst the warring factions.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>3</value>
+		  </li>
+		  <li>
+			<key>Melee</key>
+			<value>2</value>
+		  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+			  <defName>Industriousness</defName>
+			  <degree>2</degree>
+			  <chance>50</chance>
+			</li>
+			<li>
+			  <defName>Industriousness</defName>
+			  <degree>1</degree>
+			  <chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>  
+	  
+
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_RareGenius</defName>
+		<title>rare genius</title>
+		<titleShort>genius</titleShort>
+		<baseDesc>[PAWN_nameDef] rose to prominence as as a strategist in one of the warring states of [PAWN_possessive] homeland. [PAWN_possessive] tricky schemes and clever strategies won many battles for [PAWN_possessive] lord's noble cause and [PAWN_pronoun] became a legendary figure.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+			  <key>Intellectual</key>
+			  <value>10</value>
+			</li>
+			<li>
+			  <key>Social</key>
+			  <value>10</value>
+			</li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+			  <defName>RareGenius</defName>
+			</li>
+		</forcedTraitsChance>
+		<femaleCommonality>5</femaleCommonality>
+		<maleCommonality>5</maleCommonality>
+	</AlienRace.AlienBackstoryDef>  
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_BigEaredVillain</defName>
+		<title>big-eared villain</title>
+		<titleShort>villain</titleShort>
+		<baseDesc>[PAWN_nameDef] was a warlord fighting for dominance in a war-torn empire. [PAWN_possessive] ridiculously large ears earned [PAWN_objective] the nickname "Big-Eared Villain" from [PAWN_possessive] enemies.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>3</value>
+		  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+			  <defName>Psychopath</defName>
+			  <chance>33</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>  
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_RenownedWarrior</defName>
+		<title>god of war</title>
+		<titleShort>war-god</titleShort>
+		<baseDesc>[PAWN_nameDef], a gentleman of exceptional martial prowess, was revered as a legendary warrior. [PAWN_pronoun] became known for [PAWN_possessive] unparalleled combat skills, unyielding loyalty, and unbreakable code of honor. [PAWN_pronoun] carved a path of glory on the battlefield, inspiring awe and respect among allies and enemies alike.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>8</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_FierceWarrior</defName>
+		<title>fierce warrior</title>
+		<titleShort>warrior</titleShort>
+		<baseDesc>[PAWN_nameDef] was a force to be reckoned with on the battlefield. Notorious for [PAWN_possessive] love for combat, [PAWN_pronoun] reveled in the chaos and carnage of war, embracing [PAWN_possessive] wild and untamed spirit. Alongside [PAWN_possessive] unrivaled combat skills, [PAWN_pronoun] also carried a reputation for [PAWN_possessive] deep fondness for alcohol, consuming it in copious amounts to fuel [PAWN_possessive] fighting spirit.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>7</value>
+		  </li>
+		</skillGains>
+		<forcedTraitsChance>
+		  <li>
+			<defName>Brawler</defName>
+		  </li>
+		  <li>
+			<defName>DrugDesire</defName>
+			<degree>1</degree>
+			<chance>33</chance>
+		  </li>
+		  <li>
+			<defName>DrugDesire</defName>
+			<degree>2</degree>
+			<chance>50</chance>
+		  </li>
+		</forcedTraitsChance>
+		<forcedItems>
+		  <Beer>5</Beer>
+		</forcedItems>
+	</AlienRace.AlienBackstoryDef>  
+  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_WarriorWithoutEqual</defName>
+		<title>warrior without equal</title>
+		<titleShort>warrior</titleShort>
+		<baseDesc>[PAWN_nameDef] was hailed as a living legend on the battlefield, feared by foes and revered by allies. With [PAWN_possessive] unrivaled strength, lightning-fast reflexes, and unmatched combat skills, [PAWN_pronoun] struck fear into the hearts of [PAWN_possessive] enemies. However, [PAWN_pronoun] was also notorious for [PAWN_possessive] treachery and impulsiveness. Few trusted [PAWN_objective] and [PAWN_pronoun] alienated many potential allies with [PAWN_possessive] actions, preventing [PAWN_objective] from achieving [PAWN_possessive] empire-spanning ambitions.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>10</value>
+		  </li>
+		  <li>
+			<key>Shooting</key>
+			<value>6</value>
+		  </li>
+		  <li>
+			<key>Social</key>
+			<value>-8</value>
+		  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+			  <defName>Tough</defName>
+			</li>
+			<li>
+			  <defName>Bloodlust</defName>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</Defs>

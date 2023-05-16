@@ -154,32 +154,6 @@
 		</degreeDatas>
 	</TraitDef>
 	
-<!--Bean Threading Journeyman-->
-	<TraitDef>
-		<defName>ST_BeanThreaderJourneyman</defName>
-		<commonality>0.4</commonality>
-		<forcedPassions>
-			<li>Cooking</li>
-		</forcedPassions>
-		<requiredWorkTags>
-			<li>Cooking</li>
-		</requiredWorkTags>
-		<degreeDatas>
-			<li>
-				<label>&lt;color=#FF9600&gt;Bean Threading Journeyman&lt;/color&gt;</label>
-				<description>The master gives me the beans, and I thread them. I think I've finally started to get the hang of it, and it's only been 10 years!</description>
-				<skillGains>
-					<li>
-						<key>Cooking</key>
-						<value>6</value>
-					</li>
-				</skillGains>
-				<statOffsets>
-					<BeanAffinity>0.80</BeanAffinity>
-				</statOffsets>
-			</li>
-		</degreeDatas>
-	</TraitDef>	
 	
 	
 	

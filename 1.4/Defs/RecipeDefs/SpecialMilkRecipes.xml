@@ -54,4 +54,120 @@
 	</products>
   </RecipeDef>
   
+  <RecipeDef>
+    <defName>MakeOrangeMilk</defName>
+    <label>Make orange milk</label>
+    <description>Make orange milk.</description>
+    <jobString>Mixing.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>Orange</li>
+					</thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>ST_Milk</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>Orange</li>
+					</thingDefs>
+					<categories>
+					  <li>ST_Milk</li>
+					</categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+					<thingDefs>
+						<li>Orange</li>
+					</thingDefs>
+					<categories>
+					  <li>ST_Milk</li>
+					</categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<researchPrerequisite>advancedCooking</researchPrerequisite>
+	<products>
+		<Orange_Milk>1</Orange_Milk>
+	</products>
+  </RecipeDef>  
+  
+  <RecipeDef>
+    <defName>MakeRootBeerMilk</defName>
+    <label>Make root beer milk</label>
+    <description>Make root beer milk.</description>
+    <jobString>Mixing.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+					<thingDefs>
+						<li>RootBeer</li>
+					</thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>ST_Milk</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<thingDefs>
+						<li>Orange</li>
+					</thingDefs>
+					<categories>
+					  <li>ST_Milk</li>
+					</categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+					<thingDefs>
+						<li>Orange</li>
+					</thingDefs>
+					<categories>
+					  <li>ST_Milk</li>
+					</categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<researchPrerequisite>advancedCooking</researchPrerequisite>
+	<products>
+		<Orange_Milk>1</Orange_Milk>
+	</products>
+  </RecipeDef>    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </Defs>

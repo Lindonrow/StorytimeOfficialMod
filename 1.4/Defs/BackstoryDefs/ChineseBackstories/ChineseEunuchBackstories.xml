@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- remember this exists for pawnkinds: 
+	<fixedGender>Male</fixedGender>
+	
+-->
+	<AlienRace.AlienBackstoryDef Name="STEunuchChinaBackstories" Abstract="True">
+		<spawnCategories>
+			<li>ChinaEunuch</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef Name="STEunuchChinaBackstoriesAdult" Abstract="True" ParentName="STEunuchChinaBackstories"> 
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<femaleCommonality>0</femaleCommonality>
+	</AlienRace.AlienBackstoryDef>
+  
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstories">
+		<defName>ST_CourtGiftEunuch</defName>
+		<title>court gift</title>
+		<titleShort>eunuch</titleShort>
+		<baseDesc>In hopes of a better life, [PAWN_nameDef]'s parents gave [PAWN_objective] up to the imperial court. [PAWN_pronoun] was made a eunuch and spent [PAWN_possessive] days navigating the complexities of palace life.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>3</value>
+		  </li>
+		  <li>
+			<key>Melee</key>
+			<value>-4</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstories">
+		<defName>ST_WarCaptiveEunuch</defName>
+		<title>war captive</title>
+		<titleShort>eunuch</titleShort>
+		<baseDesc>[PAWN_nameDef] was a captive of war and taken to the enemy's court. To ensure [PAWN_possessive] loyalty, [PAWN_pronoun] was made a eunuch and served in the inner palace.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-3</value>
+		  </li>
+		  <li>
+			<key>Social</key>
+			<value>3</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstories">
+		<defName>ST_OrphanEunuch</defName>
+		<title>temple orphan</title>
+		<titleShort>eunuch</titleShort>
+		<baseDesc>[PAWN_nameDef] was abandoned at a Buddhist temple as a baby. The monks raised [PAWN_objective] and instilled in [PAWN_objective] a strong sense of discipline and a basic understanding of the world. Eventually, they gave [PAWN_objective] over to the eunuch bureau to find employment.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-4</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>3</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstories">
+		<defName>ST_HereditaryEunuch</defName>
+		<title>hereditary eunuch</title>
+		<titleShort>eunuch</titleShort>
+		<baseDesc>[PAWN_nameDef] was adopted into a family of hereditary eunuchs. From an early age, [PAWN_pronoun] was groomed to serve in the palace, learning etiquette, history, and politics.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-4</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>3</value>
+		  </li>
+		  <li>
+			<key>Social</key>
+			<value>3</value>
+		  </li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<maleCommonality>33</maleCommonality>
+	</AlienRace.AlienBackstoryDef>
+
+
+
+	<!-- Adulthood -->
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstoriesAdult">
+		<defName>ST_SchemingEunuch</defName>
+		<title>scheming eunuch</title>
+		<titleShort>schemer</titleShort>
+		<baseDesc>[PAWN_nameDef] became known in the imperial court for [PAWN_possessive] cunning and manipulative abilities. [PAWN_pronoun] was an expert at navigating the court's complex politics and managed to influence many key decisions.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-4</value>
+		  </li>
+		  <li>
+			<key>Social</key>
+			<value>5</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>3</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstoriesAdult">
+		<defName>ST_CorruptEunuch</defName>
+		<title>corrupt eunuch</title>
+		<titleShort>corrupt</titleShort>
+		<baseDesc>[PAWN_nameDef] used [PAWN_possessive] position in the imperial court for personal gain, accepting bribes and manipulating the emperor's orders. [PAWN_pronoun] lived a life of luxury at the expense of the people.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-4</value>
+		  </li>
+		  <li>
+			<key>Social</key>
+			<value>5</value>
+		  </li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		  <forcedTraitsChance>
+			<li>
+			  <defName>Greedy</defName>
+			</li>
+		  </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstoriesAdult">
+		<defName>ST_VirtuousEunuch</defName>
+		<title>virtuous eunuch</title>
+		<titleShort>virtuous</titleShort>
+		<baseDesc>Despite the corruption and intrigue of the court, [PAWN_nameDef] maintained a reputation for honesty and integrity. [PAWN_pronoun] served the emperor faithfully, putting the needs of the realm above all else.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-4</value>
+		  </li>
+		  <li>
+			<key>Social</key>
+			<value>6</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>2</value>
+		  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Kind</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<maleCommonality>5</maleCommonality>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstoriesAdult">
+		<defName>ST_ExplorerEunuch</defName>
+		<title>explorer eunuch</title>
+		<titleShort>explorer</titleShort>
+		<baseDesc>[PAWN_nameDef] was entrusted with the mission of exploring and mapping uncharted lands for the empire. Despite the hardships [PAWN_pronoun] faced, [PAWN_pronoun] successfully established new trade routes and diplomatic relations. By eunuch standars, [PAWN_pronoun] was kinda badass.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-2</value>
+		  </li>
+		  <li>
+			<key>Shooting</key>
+			<value>3</value>
+		  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Tough</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstoriesAdult">
+		<defName>ST_EunuchAlchemist</defName>
+		<title>eunuch alchemist</title>
+		<titleShort>alchemist</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] years in the imperial court, serving the emperor by creating elixirs of life. Working with perilous substances like mercury and arsenic, [PAWN_pronoun] delved into the arcane arts of alchemy, aiming to unlock the secrets of immortality.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-4</value>
+		  </li>
+		  <li>
+			<key>Medicine</key>
+			<value>-2</value>
+		  </li>
+		  <li>
+			<key>Alchemy</key>
+			<value>6</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstoriesAdult">
+		<defName>ST_VengefulEunuch</defName>
+		<title>vengeful eunuch</title>
+		<titleShort>vengeful</titleShort>
+		<baseDesc>Marked by the pain and humiliation of his castration, [PAWN_nameDef] harbored a deep resentment towards the dynasty that imposed this fate upon him. He resolved to use his position within the imperial court to sow discord and incite rebellion, aiming to bring the entire dynasty to its knees.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-4</value>
+		  </li>
+		  <li>
+			<key>Social</key>
+			<value>5</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>3</value>
+		  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<defName>Bloodlust</defName>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="STEunuchChinaBackstoriesAdult">
+		<defName>ST_PapermakingEunuch</defName>
+		<title>papermaking eunuch</title>
+		<titleShort>papermaker</titleShort>
+		<baseDesc>Inspired by Cai Lun, [PAWN_possessive] fellow eunuch and inventor of paper, [PAWN_nameDef] dedicated [PAWN_possessive] life to the art of papermaking. [PAWN_pronoun] invented a new method of producing paper, which revolutionized the imperial court's record-keeping and communication.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>-4</value>
+		  </li>
+		  <li>
+			<key>Crafting</key>
+			<value>5</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>3</value>
+		  </li>
+		</skillGains>
+		<maleCommonality>25</maleCommonality>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

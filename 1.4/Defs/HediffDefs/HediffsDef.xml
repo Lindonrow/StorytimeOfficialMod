@@ -241,9 +241,9 @@
 
  
    <HediffDef>
-    	<defName>HedPepsi</defName>
-    	<label>Drank Pepsi</label>
-		<description>Drank some pepsi!</description>		
+    	<defName>HedSoda</defName>
+    	<label>Drank Soda</label>
+		<description>Drank some soda!</description>		
     	<initialSeverity>1</initialSeverity>
   	<defaultLabelColor>(0,128,128)</defaultLabelColor>      	<hediffClass>HediffWithComps</hediffClass>
     <isBad>false</isBad>
@@ -255,18 +255,18 @@
     </comps>
 	<stages>
 		<li>   
-				<hungerRateFactor>1.1</hungerRateFactor>
+				<hungerRateFactor>1.2</hungerRateFactor>
 		</li>
 	</stages>
   </HediffDef>
   
     <ThoughtDef>
-    <defName>PepsiThought</defName>
+    <defName>SodaThought</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>HedPepsi</hediff>
+    <hediff>HedSoda</hediff>
     <stages>
       <li>
-        <label>Drank Pepsi</label>
+        <label>Drank Soda</label>
         <description>Refreshing!</description>
         <baseMoodEffect>10</baseMoodEffect>
       </li>

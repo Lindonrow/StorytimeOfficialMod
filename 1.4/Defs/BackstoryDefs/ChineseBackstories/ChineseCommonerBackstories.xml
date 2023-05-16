@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AlienRace.AlienBackstoryDef Name="STNonNobleChinaBackstories" Abstract="True">
+	    <spawnCategories>
+			<li>ChinaNonNoble</li>
+	    </spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+  <AlienRace.AlienBackstoryDef Name="STNonNobleChinaBackstoriesAdult" Abstract="True" ParentName="STNonNobleChinaBackstories"> 
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+  </AlienRace.AlienBackstoryDef>
+  
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_RiceFarmerChild</defName>
+    <title>rice farmer child</title>
+    <titleShort>rice farmer child</titleShort>
+    <baseDesc>[PAWN_nameDef] was born to a rice farmer family and spent [PAWN_possessive] childhood laboring in their expansive paddy fields.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Plants</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_ChineseAlchemistsApprentice</defName>
+    <title>alchemist's apprentice</title>
+    <titleShort>alchemist's apprentice</titleShort>
+    <baseDesc>[PAWN_nameDef] was apprenticed to a renowned alchemist at a young age. [PAWN_pronoun] learned the secrets of the five elements and the mysteries of life and death.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>2</value>
+      </li>
+      <li>
+        <key>Alchemy</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_SilkWeaverChild</defName>
+    <title>silk weaver child</title>
+    <titleShort>silk weaver child</titleShort>
+    <baseDesc>[PAWN_nameDef] was born to a family of silk weavers. [PAWN_pronoun] spent [PAWN_possessive] early years assisting them and learning the delicate art of silk weaving.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Crafting</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Animals</key>
+        <value>1</value>
+      </li>
+    </skillGains>
+	<femaleCommonality>67</femaleCommonality>
+	<maleCommonality>33</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_TeaFarmerChild</defName>
+    <title>tea farmer child</title>
+    <titleShort>tea farmer child</titleShort>
+    <baseDesc>[PAWN_nameDef] was raised in a family of tea farmers. [PAWN_pronoun] spent [PAWN_possessive] childhood laboring in the fields and learning about the cultivation and processing of tea leaves.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Plants</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Cooking</key>
+        <value>1</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_ScribeApprentice</defName>
+    <title>scribe apprentice</title>
+    <titleShort>scribe apprentice</titleShort>
+    <baseDesc>[PAWN_nameDef] was apprenticed to a local scribe at a young age. [PAWN_pronoun] learned the delicate art of calligraphy and the profound wisdom in ancient texts.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Artistic</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+    <workDisables>
+        <li>ManualDumb</li>
+    </workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_RedCliffChild</defName>
+    <title>river child</title>
+    <titleShort>river child</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up near a great river, where local storytellers would often recount a legendary battle fought there. The tales sparked [PAWN_possessive] interest in strategy and warfare.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Shooting</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>1</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_PeachGroveChild</defName>
+    <title>grove child</title>
+    <titleShort>grove child</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up near a grove said to grant longevity. The tales of immortality and the grove's beauty inspired [PAWN_possessive] love for nature and healing arts.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Plants</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Medicine</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_WhiteSnakeChild</defName>
+    <title>lake child</title>
+    <titleShort>lake child</titleShort>
+    <baseDesc>[PAWN_nameDef] was raised near a legendary lake said to be the home of a transformed serpent. This sparked [PAWN_possessive] curiosity in transformation and the mysteries of nature.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Animals</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>PolymorphResistance</defName>
+			<degree>-1</degree>
+		</li>
+	</forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_FluteChild</defName>
+    <title>flute child</title>
+    <titleShort>flute child</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up in a village where an ancient flute, said to belong to a legendary figure, was kept. The stories and music inspired [PAWN_possessive] love for arts and culture.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Artistic</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Social</key>
+        <value>1</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_BambooCutter</defName>
+    <title>bamboo cutter</title>
+    <titleShort>cutter</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up in a bamboo forest, where [PAWN_pronoun] helped [PAWN_possessive] family cut and sell bamboo. The hard work and natural surroundings shaped [PAWN_possessive] physical abilities and understanding of plants.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Plants</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_TerracottaMaker</defName>
+    <title>potter</title>
+    <titleShort>potter</titleShort>
+    <baseDesc>[PAWN_nameDef] was an apprentice in a workshop that crafted terracotta figures. The detailed work honed [PAWN_possessive] fine motor skills.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Crafting</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_DrumSignal</defName>
+    <title>drummer</title>
+    <titleShort>drummer</titleShort>
+    <baseDesc>[PAWN_nameDef] was a drummer for a local militia, responsible for conveying commands across the battlefield. The role honed [PAWN_possessive] sense of rhythm and understanding of strategy.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Shooting</key>
+        <value>2</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_TeaServer</defName>
+    <title>tea server</title>
+    <titleShort>server</titleShort>
+    <baseDesc>[PAWN_nameDef] served tea in a renowned teahouse frequented by scholars. Listening to their discussions, [PAWN_pronoun] gained a broad knowledge of the world.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Social</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_JadeCarverApprentice</defName>
+    <title>jade carver's apprentice</title>
+    <titleShort>carver's apprentice</titleShort>
+    <baseDesc>[PAWN_nameDef] was apprenticed to a skilled jade carver. [PAWN_pronoun] learned the craft of transforming raw jade into beautiful objects, developing both physical strength and artistic skill.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>1</value>
+      </li>
+      <li>
+        <key>Crafting</key>
+        <value>5</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_WarriorApprentice</defName>
+    <title>warrior's apprentice</title>
+    <titleShort>warrior's apprentice</titleShort>
+    <baseDesc>[PAWN_nameDef] was apprenticed to a legendary warrior, assisting in daily chores while learning the art of warfare.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+    <forcedTraitsChance>
+        <li>
+            <defName>Tough</defName>
+        </li>
+    </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_ShadowArtStudent</defName>
+    <title>shadow art student</title>
+    <titleShort>shadow student</titleShort>
+    <baseDesc>[PAWN_nameDef] was apprenticed in a secret society dedicated to the art of stealth and intrigue. Here, [PAWN_pronoun] learned the skills required to move unseen and strike from the shadows.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Shooting</key>
+        <value>2</value>
+      </li>
+      <li>
+        <key>Social</key>
+        <value>1</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>1</value>
+      </li>
+    </skillGains>
+    <forcedTraitsChance>
+        <li>
+            <defName>Psychopath</defName>
+            <chance>50</chance>
+        </li>
+        <li>
+            <defName>NightOwl</defName>
+            <chance>25</chance>
+        </li>
+        <li>
+            <defName>Nimble</defName>
+            <chance>50</chance>
+        </li>
+    </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+    <defName>ST_SoapmakerApprentice</defName>
+    <title>soapmaker's apprentice</title>
+    <titleShort>soapmaker's apprentice</titleShort>
+    <baseDesc>[PAWN_nameDef] was apprenticed to a local soapmaker. This laborious work required a strong understanding of basic alchemy.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <key>Crafting</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Alchemy</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstories">
+  <defName>ST_SleepingDragon</defName>
+  <title>sleeping dragon</title>
+  <titleShort>dragon</titleShort>
+  <baseDesc>Known as the "Sleeping Dragon," [PAWN_nameDef] possessed hidden potential that lay dormant for years. [PAWN_pronoun] lived a quiet life, appearing unremarkable to others, but when roused, [PAWN_pronoun] revealed [PAWN_possessive] true power and became an rare genius to be reckoned with.</baseDesc>
+  <slot>Childhood</slot>
+  <skillGains>
+    <li>
+      <key>Intellectual</key>
+      <value>8</value>
+    </li>
+    <li>
+      <key>Social</key>
+      <value>8</value>
+    </li>
+  </skillGains>
+  <forcedTraitsChance>
+    <li>
+      <defName>RareGenius</defName>
+    </li>
+  </forcedTraitsChance>
+  <femaleCommonality>5</femaleCommonality>
+  <maleCommonality>5</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+
+<!--Adulthood-->
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_RiceFarmer</defName>
+  <title>rice farmer</title>
+  <titleShort>farmer</titleShort>
+  <baseDesc>[PAWN_nameDef] spent most of [PAWN_possessive] life working on the family's rice farm. [PAWN_pronoun] learned to cultivate, plant, and harvest rice.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Plants</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_SilkWeaver</defName>
+  <title>silk weaver</title>
+  <titleShort>weaver</titleShort>
+  <baseDesc>[PAWN_nameDef] worked as a silk weaver, a highly respected profession in [PAWN_possessive] village. Although it was a laborious task, [PAWN_pronoun] loved the process of creating beautiful garments from the raw silk.</baseDesc>
+  <slot>Adulthood</slot>
+  <bodyTypeMale>Thin</bodyTypeMale>
+  <bodyTypeFemale>Thin</bodyTypeFemale>
+  <skillGains>
+    <li>
+      <key>Crafting</key>
+      <value>5</value>
+    </li>
+    <li>
+      <key>Plants</key>
+      <value>2</value>
+    </li>
+    <li>
+      <key>Animals</key>
+      <value>1</value>
+    </li>
+  </skillGains>
+  <femaleCommonality>60</femaleCommonality>
+  <maleCommonality>40</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_CanalBuilder</defName>
+  <title>canal builder</title>
+  <titleShort>builder</titleShort>
+  <baseDesc>[PAWN_nameDef] worked on the construction of canals and irrigation systems in [PAWN_possessive] village. [PAWN_pronoun] learned the importance of hard work, planning, and cooperation in these large-scale projects.</baseDesc>
+  <slot>Adulthood</slot>
+  <bodyTypeMale>Hulk</bodyTypeMale>
+  <bodyTypeFemale>Hulk</bodyTypeFemale>
+  <skillGains>
+    <li>
+      <key>Construction</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+  <femaleCommonality>30</femaleCommonality>
+  <maleCommonality>70</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_Herbalist</defName>
+  <title>herbalist</title>
+  <titleShort>herbalist</titleShort>
+  <baseDesc>[PAWN_nameDef] worked as a herbalist in a small village. [PAWN_pronoun] spent [PAWN_possessive] time peacefully foraging for plants and preparing remedies for the villagers.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Medicine</key>
+      <value>6</value>
+    </li>
+    <li>
+      <key>Alchemy</key>
+      <value>3</value>
+    </li> 
+ </skillGains>
+  <workDisables>
+    <li>Violent</li>
+  </workDisables>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_StreetVendor</defName>
+  <title>street vendor</title>
+  <titleShort>vendor</titleShort>
+  <baseDesc>[PAWN_nameDef] was a street vendor, known for [PAWN_possessive] distinct and sometimes irritating voice which [PAWN_pronoun] used to attract customers to [PAWN_possessive] stall.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Social</key>
+      <value>4</value>
+    </li>
+  </skillGains>
+  <forcedTraitsChance>
+    <li>
+      <defName>AnnoyingVoice</defName>
+    </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_Monk</defName>
+  <title>monk</title>
+  <titleShort>monk</titleShort>
+  <baseDesc>[PAWN_nameDef] was a Buddhist monk living in a secluded temple. [PAWN_pronoun] learned to live with the bare minimum, finding solace in the simple life.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Intellectual</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+  <forcedTraitsChance>
+    <li>
+      <defName>Ascetic</defName>
+    </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_Acupuncturist</defName>
+  <title>acupuncturist</title>
+  <titleShort>acupuncturist</titleShort>
+  <baseDesc>[PAWN_nameDef] was an acupuncturist in a small village. [PAWN_pronoun] was fascinated by the idea of improving the human body and often dreamed of integrating technology to further enhance [PAWN_possessive] treatments.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Medicine</key>
+      <value>4</value>
+    </li>
+    <li>
+      <key>Intellectual</key>
+      <value>2</value>
+    </li>
+  </skillGains>
+  <forcedTraitsChance>
+    <li>
+      <defName>Transhumanist</defName>
+    </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_RickshawRunner</defName>
+  <title>rickshaw runner</title>
+  <titleShort>runner</titleShort>
+  <baseDesc>[PAWN_nameDef] was a rickshaw runner in a bustling city. The hard physical work left [PAWN_objective] with little energy or interest for intellectual tasks.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Social</key>
+      <value>4</value>
+    </li>
+  </skillGains>
+  <workDisables>
+    <li>Intellectual</li>
+  </workDisables>
+  <forcedTraitsChance>
+    <li>
+      <defName>SpeedOffset</defName>
+	  <degree>2</degree>
+	  <chance>33</chance>
+    </li>
+    <li>
+      <defName>SpeedOffset</defName>
+	  <degree>1</degree>
+    </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_TerracottaMiner</defName>
+  <title>terracotta miner</title>
+  <titleShort>miner</titleShort>
+  <baseDesc>From dawn till dusk, [PAWN_nameDef] worked in the vast terracotta pits, often finding fragments of ancient warriors. These silent sentinels of the past ignited [PAWN_possessive] imagination, yet they were but whispers of a grand civilization lost to time.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Mining</key>
+      <value>4</value>
+    </li>
+    <li>
+      <key>Intellectual</key>
+      <value>2</value>
+    </li>
+  </skillGains>
+  <femaleCommonality>30</femaleCommonality>
+  <maleCommonality>70</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_JadeProspector</defName>
+  <title>jade prospector</title>
+  <titleShort>prospector</titleShort>
+  <baseDesc>Searching for veins of precious jade, [PAWN_nameDef] explored the deep tunnels of mist-covered mountains. The glimmer of green within the earth's heart was [PAWN_possessive] only companion, a silent promise of wealth and a testament to the relentless spirit of exploration.</baseDesc>
+  <slot>Adulthood</slot>
+  <bodyTypeMale>Thin</bodyTypeMale>
+  <bodyTypeFemale>Thin</bodyTypeFemale>
+  <skillGains>
+    <li>
+      <key>Mining</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+  <forcedTraitsChance>
+    <li>
+      <defName>Undergrounder</defName>
+	  <chance>50</chance>
+    </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_DynastyChef</defName>
+  <title>imperial chef</title>
+  <titleShort>chef</titleShort>
+  <baseDesc>In the heart of the bustling imperial capital, [PAWN_nameDef] honed [PAWN_possessive] culinary skills. Creating elaborate dishes inspired by tales of phoenixes and dragons, [PAWN_pronoun] brought a touch of magic to every banquet.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Cooking</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_YellowTurbans</defName>
+  <title>yellow turban rebel</title>
+  <titleShort>rebel</titleShort>
+  <baseDesc>In a time of turmoil, [PAWN_nameDef] joined the ranks of the Yellow Turbans, fervently believing in their vision of a world free from corruption. The rebellion may have been quelled, but the spirit of dissent lives on in [PAWN_nameDef].</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Melee</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+  <forcedTraitsChance>
+    <li>
+      <defName>Nerves</defName>
+	  <degree>2</degree>
+	  <chance>50</chance>
+    </li>
+    <li>
+      <defName>Nerves</defName>
+	  <degree>1</degree>
+    </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_Bandit</defName>
+  <title>bandit</title>
+  <titleShort>bandit</titleShort>
+  <baseDesc>Outlawed and cast out from society, [PAWN_nameDef] survived by raiding caravans along the ancient Silk Road. Life was harsh, but the tales of legendary outlaws whispered around the campfire filled [PAWN_pronoun] with a sense of camaraderie and purpose.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Shooting</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+  <forcedTraitsChance>
+    <li>
+      <defName>Greedy</defName>
+	  <chance>50</chance>
+    </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_Soldier</defName>
+  <title>soldier</title>
+  <titleShort>soldier</titleShort>
+  <baseDesc>[PAWN_nameDef] served in the grand armies of the empire, a single spear in a sea of banners. Amidst the thunderous drums and the roar of battle, [PAWN_pronoun] found a sense of unity and purpose.</baseDesc>
+  <slot>Adulthood</slot>
+  <bodyTypeMale>Hulk</bodyTypeMale>
+  <bodyTypeFemale>Hulk</bodyTypeFemale>
+  <skillGains>
+    <li>
+      <key>Melee</key>
+      <value>3</value>
+    </li>
+    <li>
+      <key>Shooting</key>
+      <value>3</value>
+    </li>
+  </skillGains>
+  <workDisables/>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_RebelLeader</defName>
+  <title>rebel leader</title>
+  <titleShort>rebel</titleShort>
+  <baseDesc>Driven by a vision of a better world, [PAWN_nameDef] rose against the tyrants of the land. [PAWN_pronoun] became a symbol of resistance, inspiring countless others with tales of [PAWN_possessive] deeds echoing across the realm.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Social</key>
+      <value>6</value>
+    </li>
+    <li>
+      <key>Melee</key>
+      <value>6</value>
+    </li>
+    <li>
+      <key>Shooting</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+  <femaleCommonality>20</femaleCommonality>
+  <maleCommonality>20</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_SwiftMessenger</defName>
+  <title>swift messenger</title>
+  <titleShort>messenger</titleShort>
+  <baseDesc>[PAWN_nameDef] served as a swift messenger, delivering important messages across the vast expanse of the empire. [PAWN_pronoun] honed [PAWN_possessive] skills in navigating various terrains on horseback.</baseDesc>
+  <slot>Adulthood</slot>
+  <bodyTypeMale>Thin</bodyTypeMale>
+  <bodyTypeFemale>Thin</bodyTypeFemale>
+  <skillGains>
+    <li>
+      <key>Animals</key>
+      <value>3</value>
+    </li>
+  </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_MercuryMiner</defName>
+  <title>mercury miner</title>
+  <titleShort>miner</titleShort>
+  <baseDesc>[PAWN_nameDef] worked as a miner, extracting cinnabar—the raw form of mercury—from the depths of the mountains. Over the years [PAWN_pronoun]'s mind was slowly poisoned by the mercury [PAWN_pronoun] sought.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Mining</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+  <forcedTraitsChance>
+    <li>
+      <defName>Nerves</defName>
+	  <degree>-2</degree>
+	  <chance>50</chance>
+    </li>
+    <li>
+      <defName>Nerves</defName>
+	  <degree>-1</degree>
+    </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_ConfucianScholar</defName>
+  <title>Confucian scholar</title>
+  <titleShort>scholar</titleShort>
+  <baseDesc>[PAWN_nameDef] dedicated [PAWN_possessive] life to the pursuit of knowledge and moral teachings. As a Confucian scholar, [PAWN_pronoun] delved into the classics, spreading wisdom and advocating for ethical conduct in both personal and societal realms. As with all good Confucians, [PAWN_pronoun] also just really hated women.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Intellectual</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+  <forcedTraitsChance>
+    <li>
+      <defName>DislikesWomen</defName>
+    </li>
+  </forcedTraitsChance>
+  <femaleCommonality>0</femaleCommonality>
+  <maleCommonality>50</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_TaoistMonk</defName>
+  <title>Taoist monk</title>
+  <titleShort>monk</titleShort>
+  <baseDesc>[PAWN_nameDef] embraced the path of Taoism, seeking harmony and enlightenment. As a Taoist monk, [PAWN_pronoun] meditated in tranquil mountain monasteries, immersing [PAWN_objective]self in the mysteries of the universe and striving to attain balance between yin and yang.</baseDesc>
+  <slot>Adulthood</slot>
+  <bodyTypeMale>Thin</bodyTypeMale>
+  <bodyTypeFemale>Thin</bodyTypeFemale>
+  <skillGains>
+    <li>
+      <key>Social</key>
+      <value>4</value>
+    </li>
+    <li>
+      <key>Intellectual</key>
+      <value>2</value>
+    </li>
+  </skillGains>
+  <workDisables/>
+  <femaleCommonality>50</femaleCommonality>
+  <maleCommonality>50</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_SuspectedSorcerer</defName>
+  <title>suspected sorcerer</title>
+  <titleShort>sorcerer</titleShort>
+  <baseDesc>Whispers and rumors followed [PAWN_nameDef] everywhere, branding [PAWN_objective] as a suspected sorcerer. [PAWN_pronoun] was summoned by a great lord of the land to act as an advisor, but [PAWN_possessive] frankly bat-shit crazy magic shit caused the lord to order [PAWN_possessive] execution. [PAWN_pronoun] only narrowly escaped this fate.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Social</key>
+      <value>-4</value>
+    </li>
+  </skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>TM_Gifted</defName>
+		</li>
+		<li>
+			<defName>TooSmart</defName>
+		</li>
+	</forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_Sandalmaker</defName>
+  <title>sandalmaker</title>
+  <titleShort>sandalmaker</titleShort>
+  <baseDesc>[PAWN_nameDef] dedicated [PAWN_possessive] craft to creating exquisite sandals, weaving artistry into every stitch. With each sandal crafted, [PAWN_pronoun] left a mark of comfort and elegance upon the feet of [PAWN_possessive] people. [PAWN_pronoun] also had really big ears for some reason.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Crafting</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_ChinesePoet</defName>
+  <title>poet</title>
+  <titleShort>poet</titleShort>
+  <baseDesc>[PAWN_nameDef], a master of words, conjured verses that danced upon the minds of listeners. [PAWN_pronoun] breathed life into emotions, capturing the essence of beauty, longing, and the ever-changing world, leaving behind a legacy of enchantment.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Intellectual</key>
+      <value>6</value>
+    </li>
+    <li>
+      <key>Social</key>
+      <value>4</value>
+    </li>
+  </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_ChinesePainter</defName>
+  <title>painter</title>
+  <titleShort>painter</titleShort>
+  <baseDesc>[PAWN_nameDef] wielded a brush like a magician, giving life to colors on the canvas. [PAWN_possessive] artwork transported viewers to realms of beauty and emotion, captivating hearts and minds with each stroke, immortalizing fleeting moments in a tapestry of pigments.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Artistic</key>
+      <value>6</value>
+    </li>
+  </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_GibbonFriend</defName>
+  <title>gibbon friend</title>
+  <titleShort>friend</titleShort>
+  <baseDesc>[PAWN_nameDef] formed an extraordinary bond with the gibbons that inhabited the ancient forests of [PAWN_possessive] home village. Through mutual respect and understanding, [PAWN_pronoun] became a companion to these graceful creatures, sharing in their playful antics and finding solace in the tranquility of nature.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Animals</key>
+      <value>9</value>
+    </li>
+  </skillGains>
+	<forcedTraitsChance>
+		<li>
+			<defName>Kind</defName>
+		</li>
+	</forcedTraitsChance>
+  <femaleCommonality>25</femaleCommonality>
+  <maleCommonality>25</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_WarRefugee</defName>
+  <title>war refugee</title>
+  <titleShort>refugee</titleShort>
+  <baseDesc>[PAWN_nameDef] fled their war-torn homeland, escaping the ravages of conflict. Displaced and burdened with memories of loss, [PAWN_pronoun] sought solace and a fresh start in a new land, yearning to rebuild [PAWN_possessive] life amidst the ashes of the past.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Social</key>
+      <value>2</value>
+    </li>
+  </skillGains>  
+  <workDisables>
+    <li>Violent</li>
+  </workDisables>
+  <forcedTraitsChance>
+    <li>
+      <defName>Nerves</defName>
+	  <degree>-2</degree>
+	  <chance>33</chance>
+    </li>
+    <li>
+      <defName>Nerves</defName>
+	  <degree>-1</degree>
+	  <chance>50</chance>
+    </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_FireshipSurvivor</defName>
+  <title>fireship survivor</title>
+  <titleShort>survivor</titleShort>
+  <baseDesc>[PAWN_nameDef] narrowly escaped a fiery catastrophe, akin to the legendary Battle of Red Cliffs. As a fireship survivor, [PAWN_pronoun] emerged from the chaos and destruction, forever marked by the flames that raged around [PAWN_objective].</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Social</key>
+      <value>-4</value>
+    </li>
+  </skillGains>
+    <workDisables>
+      <li>Firefighting</li>
+    </workDisables>  
+	<disallowedTraits>
+	  <Pyromaniac>0</Pyromaniac>
+	</disallowedTraits>
+  <femaleCommonality>30</femaleCommonality>
+  <maleCommonality>30</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_PoetOfLaterTimes</defName>
+  <title>poet of later times</title>
+  <titleShort>poet</titleShort>
+  <baseDesc>[PAWN_nameDef] captured the essence of bygone eras through [PAWN_possessive] poetic verses. [PAWN_pronoun] weaved intricate words, painting vivid portraits of historical figures and events, breathing life into the pages of antiquity and immortalizing their stories in the hearts of the present generation.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Intellectual</key>
+      <value>2</value>
+    </li>
+    <li>
+      <key>Social</key>
+      <value>2</value>
+    </li>
+    <li>
+      <key>Artistic</key>
+      <value>4</value>
+    </li>
+  </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="STNonNobleChinaBackstoriesAdult">
+  <defName>ST_EunuchMaker</defName>
+  <title>eunuch procurer</title>
+  <titleShort>snipper</titleShort>
+  <baseDesc>[PAWN_nameDef] was a professional eunuch procurer for the imperial government. [PAWN_pronoun] became extremely skilled at the art of creating eunuchs with a single slice, and only very rarely did his patients die of blood loss or other complications from the process.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+      <key>Medicine</key>
+      <value>5</value>
+    </li>
+  </skillGains>
+  <femaleCommonality>5</femaleCommonality>
+  <maleCommonality>40</maleCommonality>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

@@ -712,19 +712,80 @@
     </skillGains>
   </AlienRace.AlienBackstoryDef> 
 
+<AlienRace.AlienBackstoryDef ParentName="GoblinBackstoriesAdult">
+    <defName>Goblin_Shaman</defName>
+    <title>shaman</title>
+    <titleShort>shaman</titleShort>
+    <baseDesc>[PAWN_nameDef] served as a spiritual guide for [PAWN_possessive] tribe. [PAWN_pronoun] used [PAWN_possessive] knowledge of the natural world to heal the sick and communicate with the spirits.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Medicine</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+    <forcedTraitsChance>
+      <li>
+        <defName>PsychicSensitivity</defName>
+		<degree>2</degree>
+		<chance>33</chance>
+      </li>
+      <li>
+        <defName>PsychicSensitivity</defName>
+		<degree>1</degree>
+      </li>
+    </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
 
+<AlienRace.AlienBackstoryDef ParentName="GoblinBackstoriesAdult">
+    <defName>Goblin_Scout</defName>
+    <title>scout</title>
+    <titleShort>scout</titleShort>
+    <baseDesc>[PAWN_nameDef] used [PAWN_possessive] keen senses and knowledge of the wilderness to guide [PAWN_possessive] tribe through dangerous territory and locate sources of food and water.</baseDesc>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <key>Animals</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Shooting</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+    <forcedTraitsChance>
+      <li>
+        <defName>SpeedOffset</defName>
+		<degree>1</degree>
+      </li>
+    </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
 
-
-
-
-
-
-
-
-
-
-
-
-  
+<AlienRace.AlienBackstoryDef ParentName="GoblinBackstoriesAdult">
+  <defName>Goblin_SpacePirate</defName>
+  <title>space pirate</title>
+  <titleShort>space pirate</titleShort>
+  <baseDesc>When [PAWN_pronoun] stumbled upon an abandoned spaceship, [PAWN_nameDef] knew it was [PAWN_possessive] chance to make a name for [PAWN_objective]self. With a ragtag crew, [PAWN_pronoun] became the scourge of the space lanes, plundering unsuspecting freighters and evading the space police.</baseDesc>
+  <slot>Adulthood</slot>
+  <skillGains>
+      <li>
+        <key>Social</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Shooting</key>
+        <value>5</value>
+      </li>
+  </skillGains>
+  <forcedTraitsChance>
+      <li>
+        <defName>Greedy</defName>
+      </li>
+  </forcedTraitsChance>
+</AlienRace.AlienBackstoryDef> 
   
 </Defs>

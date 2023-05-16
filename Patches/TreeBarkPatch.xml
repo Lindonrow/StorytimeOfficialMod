@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!--Pre-Yucky-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreePine"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+	
+<!-- Yucky -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeGrayPine"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>5</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_Witchwood"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>5</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_RatPalm"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>5</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+	
+<!--Post-Yucky-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeTeak"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeCecropia"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreePalm"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+<!--Post-Yucky2-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeDrago"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+<!--Post-Yucky3-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeWillow"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeCypress"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+<!--Post-Yucky3-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreePolux"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeAnima"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeGauranlen"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="VanillaPlantsExpanded.DualCropExtension">
+					<secondaryOutput>TreeBark</secondaryOutput>
+					<outPutAmount>15</outPutAmount>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</Patch>

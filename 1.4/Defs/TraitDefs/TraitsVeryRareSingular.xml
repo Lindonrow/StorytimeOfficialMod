@@ -52,33 +52,6 @@
 		</conflictingTraits>
 	</TraitDef>		
 
-<!--Bean Threading Veteran-->
-	<TraitDef>
-		<defName>ST_BeanThreaderVeteran</defName>
-		<commonality>0.2</commonality>
-		<forcedPassions>
-			<li>Cooking</li>
-		</forcedPassions>
-		<requiredWorkTags>
-			<li>Cooking</li>
-		</requiredWorkTags>
-		<degreeDatas>
-			<li>
-				<label>&lt;color=#FA64D2&gt;Bean Threading Veteran&lt;/color&gt;</label>
-				<description>I graduated top of my class from the bean threading school, after 12 years of training. I've been working on my own for a few years since then, so I'm considered a bit of a veteran. And yet... the true masters can do such wonders!</description>
-				<skillGains>
-					<li>
-						<key>Cooking</key>
-						<value>8</value>
-					</li>
-				</skillGains>
-				<statOffsets>
-					<BeanAffinity>1.1</BeanAffinity>
-				</statOffsets>
-			</li>
-		</degreeDatas>
-	</TraitDef>	
-
 <!--Bean Fucker-->
 	<TraitDef>
 		<defName>ST_BeanFucker</defName>

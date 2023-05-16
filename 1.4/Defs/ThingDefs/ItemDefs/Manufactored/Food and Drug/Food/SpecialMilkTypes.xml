@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="OrganicProductBase">
-    <defName>Banana_Milk</defName>
-    <label>banana milk</label>
-    <description>Nannermilk.</description>
-    <graphicData>
-      <texPath>Things/Items/Resources/MilkTypes/BananaMilk</texPath>
-	  <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
+  <ThingDef Name="SpecialMilkBase" Abstract="True" ParentName="OrganicProductBase">
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MarketValue>4</MarketValue>
@@ -16,13 +9,13 @@
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>0</Flammability>
       <Nutrition>1</Nutrition>
-    </statBases>
+    </statBases>  
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>90</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
-    </comps>
+    </comps>  
     <ingestible>
       <preferability>MealSimple</preferability>
       <foodType>AnimalProduct, Fluid</foodType>
@@ -36,7 +29,54 @@
     <thingCategories>
       <li>ST_Milk_Processed</li>
     </thingCategories>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
+    <allowedArchonexusCount>80</allowedArchonexusCount>  
   </ThingDef>
+
+
+
+  <ThingDef ParentName="SpecialMilkBase">
+    <defName>Banana_Milk</defName>
+    <label>banana milk</label>
+    <description>Nannermilk.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/MilkTypes/BananaMilk</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="SpecialMilkBase">
+    <defName>Orange_Milk</defName>
+    <label>orange milk</label>
+    <description>Aktually it's orange cream milk.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/MilkTypes/OrangeMilk</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>  
+  
+  <ThingDef ParentName="SpecialMilkBase">
+    <defName>RootBeer_Milk</defName>
+    <label>root beer milk</label>
+    <description>The pinnacle of milk, let no one tell you otherwise.</description>
+    <graphicData>
+      <texPath>Things/Items/Resources/MilkTypes/RootBeerMilk</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 </Defs>

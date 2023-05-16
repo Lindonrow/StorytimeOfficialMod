@@ -942,7 +942,7 @@
     <defName>BeanHeal</defName>
     <label>heal</label>
     <description>Channel holy power to heal an ally.</description>
-    <iconPath>UI/Abilities/Painblock</iconPath>
+    <iconPath>UI/Icons/BeanHeal</iconPath>
     <cooldownTicksRange>60000</cooldownTicksRange>
     <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
     <jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>

@@ -132,7 +132,7 @@
 
   <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
     <defName>BeanMan_Gnome</defName>
-    <title>gnome stronghold bean man</title>
+    <title>dweller among gnomes</title>
 	<titleShort>gnomeophile</titleShort>
 	<bodyTypeGlobal>Red</bodyTypeGlobal>
     <baseDesc>[PAWN_nameDef] was birthed by gnomes. He spent years learning the arts of cooking and farming from them.</baseDesc>
@@ -154,7 +154,7 @@
 
   <AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
     <defName>BeanMan_Jeub</defName>
-    <title>jeub city bean man</title>
+    <title>dweller among jeub</title>
 	<titleShort>jeubophile</titleShort>
 	<bodyTypeGlobal>Red</bodyTypeGlobal>
     <baseDesc>[PAWN_nameDef] was birthed by jeubs. He spent years 'learning' from them before eventually making the wise choice to leave.</baseDesc>
@@ -248,7 +248,13 @@
     </skillGains>
 	<forcedTraitsChance>
 	  <li>
-		<defName>ST_BeanThreaderJourneyman</defName>
+		<defName>BeanThreading</defName>
+		<degree>2</degree>
+		<chance>0.33</chance> 
+	  </li>
+	  <li>
+		<defName>BeanThreading</defName>
+		<degree>1</degree> 
 	  </li>
 	</forcedTraitsChance>
 	<bioAgeRange>12~120</bioAgeRange>
@@ -334,6 +340,229 @@
 	  </li>  
     </skillGains>
   </AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Gardener</defName>
+    <title>gardener</title>
+    <titleShort>gardener</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a botanical enthusiast, who used his high bean affinity to help in their garden. He quickly developed an understanding of plants and nature beyond that of his owner, becoming an indispensable asset to the local community.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>30</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Plants</key>
+        <value>6</value>
+      </li>
+    </skillGains>
+    <bioAgeRange>2~120</bioAgeRange>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstoriesViolent">
+    <defName>BeanMan_Gladiator</defName>
+    <title>gladiator</title>
+    <titleShort>gladiator</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a cruel arena owner who forced him to fight for the amusement of others. Despite the harsh conditions, he became a formidable combatant, using his small size to his advantage.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>35</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Melee</key>
+        <value>5</value>
+      </li>  
+    </skillGains>
+	<forcedTraits>
+	  <Nimble>0</Nimble>
+	</forcedTraits>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Astrobiologist</defName>
+    <title>astrobiologist</title>
+    <titleShort>astrobiologist</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a space-faring biologist who used him as a portable lab assistant. Over time, he developed a keen interest in extraterrestrial life and its origins.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>15</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>6</value>
+      </li>
+    </skillGains>
+    <forcedTraitsChance>
+      <li>
+        <defName>Xenophobia</defName>
+		<degree>-1</degree>
+      </li>
+    </forcedTraitsChance>
+    <bioAgeRange>4~120</bioAgeRange>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Timetraveler</defName>
+    <title>time traveler</title>
+    <titleShort>time traveler</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a time traveler who lost his way in the time stream. This unique upbringing gave him a deep understanding of different eras and their technology.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>10</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>5</value>
+      </li>
+      <li>
+        <key>Crafting</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstoriesViolent">
+    <defName>BeanMan_CosmicHorror</defName>
+    <title>cosmic horror</title>
+    <titleShort>horror</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed in a ritual by a cultist who worshipped ancient cosmic horrors. Although unfortunately not a horror himself, [PAWN_nameDef] absorbed much of the cult's dark knowledge and rituals.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>15</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Social</key>
+        <value>5</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>3</value>
+      </li>
+    </skillGains>
+    <forcedTraits>
+      <Bloodlust>0</Bloodlust>
+    </forcedTraits>
+    <bioAgeRange>3~120</bioAgeRange>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_ParanormalInvestigator</defName>
+    <title>paranormal investigator</title>
+    <titleShort>investigator</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a dedicated paranormal investigator. He learned to be observant and intuitive in order to catch every detail in the most cryptic situations.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>20</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Intellectual</key>
+        <value>3</value>
+      </li>
+      <li>
+        <key>Social</key>
+        <value>1</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Herbalist</defName>
+    <title>herbalist</title>
+    <titleShort>herbalist</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a village herbalist who used local plants to create remedies. He helped the herbalist gather and prepare the herbs, learning the basics of alchemy in the process.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>30</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>6</value>
+      </li>
+      <li>
+        <key>Plants</key>
+        <value>4</value>
+      </li>
+      <li>
+        <key>Cooking</key>
+        <value>2</value>
+      </li>
+    </skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstories">
+    <defName>BeanMan_Alchemist</defName>
+    <title>alchemist</title>
+    <titleShort>alchemist</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a renowned alchemist. Under the alchemist's tutelage, he learned how to create potent potions and elixirs.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>20</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>8</value>
+      </li>
+      <li>
+        <key>Intellectual</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+    <bioAgeRange>4~120</bioAgeRange>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstoriesViolent">
+    <defName>BeanMan_PoisonMaker</defName>
+    <title>poison maker</title>
+    <titleShort>poisoner</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by an infamous poison maker. He learned to create deadly toxins and apply them to weapons, making him a dangerous opponent.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>25</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>6</value>
+      </li>
+      <li>
+        <key>Melee</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+    <bioAgeRange>2~120</bioAgeRange>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="BeanNonColonistBackstoriesViolent">
+    <defName>BeanMan_WarAlchemist</defName>
+    <title>war alchemist</title>
+    <titleShort>war alchemist</titleShort>
+    <bodyTypeGlobal>Red</bodyTypeGlobal>
+    <baseDesc>[PAWN_nameDef] was birthed by a military faction that employed alchemy in warfare. He created destructive potions and learned to use them in combat situations.</baseDesc>
+    <slot>Adulthood</slot>
+    <maleCommonality>25</maleCommonality>
+    <skillGains>
+      <li>
+        <key>Alchemy</key>
+        <value>6</value>
+      </li>
+      <li>
+        <key>Shooting</key>
+        <value>4</value>
+      </li>
+    </skillGains>
+    <bioAgeRange>2~120</bioAgeRange>
+</AlienRace.AlienBackstoryDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

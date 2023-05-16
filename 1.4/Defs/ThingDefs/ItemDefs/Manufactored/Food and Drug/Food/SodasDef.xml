@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MealBase">
+		<defName>ST_Pepsi</defName>
+		<label>Pepsi</label>
+		<description>Just remember, it's milk.</description>
+		<graphicData>
+		<texPath>Things/Items/Resources/Pepsi</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>5</MarketValue>
+		<Mass>0.3</Mass>
+		<Nutrition>0.5</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>HedSoda</hediffDef>
+			<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBase">
+		<defName>RootBeer</defName>
+		<label>root beer</label>
+		<description>A soda made from the bark of a tree or something. Actually now that I think about it, what even IS root beer? Does anyone even know?</description>
+		<graphicData>
+		<texPath>Things/Items/Resources/RootBeer</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		<DeteriorationRate>0.25</DeteriorationRate>
+		<MarketValue>3</MarketValue>
+		<Mass>0.3</Mass>
+		<Nutrition>0.8</Nutrition>
+		</statBases>
+		<ingestible>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>HedSoda</hediffDef>
+			<severity>1</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	
+</Defs>

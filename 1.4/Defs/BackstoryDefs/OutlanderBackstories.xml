@@ -79,11 +79,13 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-			  <defName>ST_BeanThreaderJourneyman</defName>
+			  <defName>BeanThreading</defName>
 			  <chance>0.2</chance>
+			  <degree>1</degree>
 			</li>
 			<li>
-			  <defName>ST_BeanThreaderNovice</defName>
+			  <defName>BeanThreading</defName>
+			  <degree>2</degree>
 			</li>
 		</forcedTraitsChance>
 	</AlienRace.AlienBackstoryDef>			
@@ -237,11 +239,13 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-			  <defName>ST_BeanThreaderMaster</defName>
+			  <defName>BeanThreading</defName>
 			  <chance>0.4</chance>
+			  <degree>4</degree>
 			</li>
 			<li>
-			  <defName>ST_BeanThreaderVeteran</defName>
+			  <defName>BeanThreading</defName>
+			  <degree>3</degree>
 			</li>
 		</forcedTraitsChance>
 	</AlienRace.AlienBackstoryDef>		

@@ -65,6 +65,7 @@
 		  <li>Butterbeer</li>
 		  <li>MikesHardLemonade</li>
 		  <li>MikesHardStrawberry</li>
+		  <li>RootBeer</li>
 		</processes>
 	  </li>
 	</comps>
@@ -296,7 +297,42 @@
   </bonusOutputs>
 </ProcessorFramework.ProcessDef>
 
-
+<!-- Root Beer -->
+<ProcessorFramework.ProcessDef>
+  <defName>RootBeer</defName>
+  <thingDef>RootBeer</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>TreeBark</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>2</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>0.25</capacityFactor>
+  <efficiency>0.1</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-1.0~32.0</temperatureSafe>
+  <temperatureIdeal>7.0~32.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(41, 14, 5)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <Rat>(0.1, 1)</Rat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
 
 
 </Defs>

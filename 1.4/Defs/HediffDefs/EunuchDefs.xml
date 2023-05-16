@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Look I get it's weird to be adding castration to the game but you gotta understand it's a reference to Chinese history-->
+<!--I will die on this hill-->
+
+ <RecipeDef ParentName="SterilizeHuman">
+    <defName>Castration</defName>
+    <label>perform castration</label>
+    <description>Snip snip.</description>
+    <jobString>performing a castration on TargetA.</jobString>
+    <successfullyRemovedHediffMessage>{0} has successfully performed a castration on {1}.</successfullyRemovedHediffMessage>
+    <genderPrerequisite>Male</genderPrerequisite>
+    <addsHediff>Eunuch</addsHediff>
+    <addsHediffOnFailure>BotchedEunuch</addsHediffOnFailure>
+  </RecipeDef>
+  
+  <HediffDef Name="EunuchBase" Abstract = "True">
+    <hediffClass>Hediff</hediffClass>
+    <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <preventsPregnancy>true</preventsPregnancy>
+    <tags>
+      <li>Sterilized</li>
+    </tags>
+    <removeWithTags>
+      <li>ReversibleSterilized</li>
+    </removeWithTags>
+  </HediffDef>  
+  
+   <HediffDef ParentName="EunuchBase">
+    <defName>Eunuch</defName>
+    <label>eunuch</label>
+    <description>This man has been snipped. We can only assume that he is already plotting how to best fuck the imperial government over.</description>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeatAmount>-1</MeatAmount>
+		  <PawnBeauty>-1</PawnBeauty>
+        </statOffsets>
+		<statFactors>
+		   <Fertility>0</Fertility>
+		</statFactors>
+      </li>    
+	</stages>
+  </HediffDef>   
+  
+   <HediffDef ParentName="EunuchBase">
+    <defName>BotchedEunuch</defName>
+    <label>botched eunuch</label>
+    <description>I mean... it worked? That's not a pretty sight.</description>
+    <stages>
+      <li>
+        <painOffset>0.2</painOffset>
+        <statOffsets>
+          <MeatAmount>-1</MeatAmount>
+		  <PawnBeauty>-2</PawnBeauty>
+        </statOffsets>
+		<statFactors>
+		   <Fertility>0</Fertility>
+		</statFactors>
+      </li>    
+	</stages>
+  </HediffDef>   
+  
+</Defs>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 

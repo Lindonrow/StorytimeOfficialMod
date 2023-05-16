@@ -50,9 +50,15 @@
     <label>demolish</label>
   </ToolCapacityDef> 
   
+   <ToolCapacityDef>
+    <defName>ST_CQC</defName>
+    <label>CQC</label>
+  </ToolCapacityDef>   
   
-  
-  
+   <ToolCapacityDef>
+    <defName>HorseChopper</defName>
+    <label>horse chopper</label>
+  </ToolCapacityDef>   
   
   
   

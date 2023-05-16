@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
+<!-- Rock Teacher -->
 	<AlienRace.PawnBioDef>
 		<defName>STMosherBio</defName>
 		<childhood>ST_RockChild</childhood>
@@ -15,7 +15,8 @@
 		  <li>Human</li>
 		</validRaces>
 	</AlienRace.PawnBioDef>
-
+	
+<!-- Me -->
 	<AlienRace.PawnBioDef>
 		<defName>STSpencerBio</defName>
 		<childhood>ST_SmartChild</childhood>
@@ -30,4 +31,85 @@
 		  <li>Human</li>
 		</validRaces>
 	</AlienRace.PawnBioDef>
+	
+<!-- Zhuge Liang -->
+	<AlienRace.PawnBioDef>
+		<defName>STZhugeBio</defName>
+		<childhood>ST_SleepingDragon</childhood>
+		<adulthood>ST_RareGenius</adulthood>
+		<gender>Male</gender>
+		<name>
+		  <first>Liang</first>
+		  <last>Zhuge</last>
+		  <nick>Kongming</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+
+<!-- Liu Bei -->
+	<AlienRace.PawnBioDef>
+		<defName>STLiuBeiBio</defName>
+		<childhood>ST_BigEars</childhood>
+		<adulthood>ST_BigEaredVillain</adulthood>
+		<gender>Male</gender>
+		<name>
+		  <first>Bei</first>
+		  <last>Liu</last>
+		  <nick>Xuande</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+
+<!-- Guan Yu -->
+	<AlienRace.PawnBioDef>
+		<defName>STGuanYuBio</defName>
+		<childhood>ST_DragonHeartedChild</childhood>
+		<adulthood>ST_RenownedWarrior</adulthood>
+		<gender>Male</gender>
+		<name>
+		  <first>Yu</first>
+		  <last>Guan</last>
+		  <nick>Lord of the Magnificent Beard</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+	
+<!-- Zhang Fei -->
+	<AlienRace.PawnBioDef>
+		<defName>STZhangFeiBio</defName>
+		<childhood>ST_RiceFarmerChild</childhood>
+		<adulthood>ST_FierceWarrior</adulthood>
+		<gender>Male</gender>
+		<name>
+		  <first>Fei</first>
+		  <last>Zhang</last>
+		  <nick>Yide</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+	
+<!-- Lu Bu -->
+	<AlienRace.PawnBioDef>
+		<defName>STLuBuBio</defName>
+		<childhood>ST_DragonHeartedChild</childhood>
+		<adulthood>ST_WarriorWithoutEqual</adulthood>
+		<gender>Male</gender>
+		<name>
+		  <first>Bu</first>
+		  <last>Lü</last>
+		  <nick>Warrior Without Equal</nick>
+		</name>
+		<validRaces>
+		  <li>Human</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>	
+
 </Defs>

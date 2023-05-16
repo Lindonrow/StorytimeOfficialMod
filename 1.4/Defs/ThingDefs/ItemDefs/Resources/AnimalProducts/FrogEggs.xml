@@ -482,7 +482,35 @@
     </comps>
   </ThingDef>        
   
+    <ThingDef ParentName="EggUnfertBase">
+    <defName>GunFrogEggUnfertilized</defName>
+    <label>gun frog egg (unfert.)</label>
+    <description>An unfertilized gun frog egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(127, 108, 89)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10.0</MarketValue>
+    </statBases>
+  </ThingDef>
   
+  <ThingDef ParentName="EggFertBase">
+    <defName>GunFrogEggFertilized</defName>
+    <label>gun frog egg (fert.)</label>
+    <description>A fertilized gun frog egg. If all goes well, it should hatch into a gun frog. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(127, 108, 89)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>12</hatcherDaystoHatch>
+        <hatcherPawn>GunFrog</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>          
   
   
   
