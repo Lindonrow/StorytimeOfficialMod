@@ -5,6 +5,16 @@
     <label>frog person</label>
     <description>Half frog, half person. Powerful.</description>
     <alienRace>
+		<raceRestriction>
+			<blackEndoCategories>
+			  <li>Melanin</li>
+			</blackEndoCategories>
+			<blackGeneList>
+			  <li>Jaw_Heavy</li>
+			  <li>Head_Gaunt</li>
+			  <li>Furskin</li>			  
+			</blackGeneList>
+		</raceRestriction>
 		<styleSettings>
 			<li>
 				<key>HairDef</key>

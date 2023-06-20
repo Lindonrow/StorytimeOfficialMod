@@ -8,11 +8,19 @@
 	  <raceRestriction>
 		<blackGeneTags>
 		  <li>BodyType</li>
-		  <li>Ears</li>
+		  <li>Ears</li>	  
 		</blackGeneTags>
-            <plantList>
-                <li>Plant_Botox</li>
-            </plantList>
+		<blackEndoCategories>
+		  <li>Melanin</li>
+		</blackEndoCategories>
+		<plantList>
+			<li>Plant_Botox</li>
+		</plantList>
+		<blackGeneList>
+		  <li>Jaw_Heavy</li>
+		  <li>Head_Gaunt</li>
+		  <li>Furskin</li>		  
+		</blackGeneList>
 	  </raceRestriction>
 		<styleSettings>
 			<li>

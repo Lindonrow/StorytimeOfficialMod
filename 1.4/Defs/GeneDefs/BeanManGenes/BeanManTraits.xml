@@ -424,6 +424,9 @@
         <def>HeatLover</def>
       </li>
     </forcedTraits>
+    <exclusionTags>
+      <li>BeanWarmth</li>
+    </exclusionTags>
   </GeneDef>
 
 <!--Cold Bean-->
@@ -442,6 +445,9 @@
         <def>ColdLover</def>
       </li>
     </forcedTraits>
+    <exclusionTags>
+      <li>BeanWarmth</li>
+    </exclusionTags>
   </GeneDef>
 
 <!--Healing Bean-->
@@ -573,7 +579,7 @@
     <defName>MundaneBeanMan</defName>
     <label>mundane bean</label>
     <description>This bean man has great difficulty sensing any psychic phenomena.</description>
-    <iconPath>ThiUI/Icons/Genes/BeanGenes/MundaneBean</iconPath>
+    <iconPath>UI/Icons/Genes/BeanGenes/MundaneBean</iconPath>
     <displayOrderInCategory>1999</displayOrderInCategory>
 	<statFactors>	
           <PsychicSensitivity>0.2</PsychicSensitivity>
@@ -759,6 +765,9 @@
         <li>(1, 0)</li>
       </points>
     </biologicalAgeTickFactorFromAgeCurve>
+    <exclusionTags>
+      <li>BeanHoliness</li>
+    </exclusionTags>
   </GeneDef>
 
 <!--Slurp Bean-->
@@ -822,6 +831,9 @@
 	</li>
     </conditionalStatAffecters>
     <dislikesSunlight>true</dislikesSunlight>
+    <exclusionTags>
+	  <li>BeanSlurp</li>
+    </exclusionTags>
   </GeneDef>
 
   <AbilityDef>
@@ -936,6 +948,10 @@
     <descriptionHyperlinks>
       <AbilityDef>BeanHeal</AbilityDef>	  
     </descriptionHyperlinks>
+    <exclusionTags>
+      <li>BeanHoliness</li>
+	  <li>BeanSlurp</li>
+    </exclusionTags>
   </GeneDef>
 
   <AbilityDef>

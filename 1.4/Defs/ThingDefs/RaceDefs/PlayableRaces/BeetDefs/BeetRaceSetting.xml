@@ -5,6 +5,16 @@
     <label>beet</label>
     <description>A large, green person with tusks. Unclear whether friendly or not.</description>
     <alienRace>
+		<raceRestriction>
+			<blackEndoCategories>
+			  <li>Melanin</li>
+			</blackEndoCategories>
+			<blackGeneList>
+			  <li>Jaw_Heavy</li>
+			  <li>Head_Gaunt</li>
+			  <li>Furskin</li>
+			</blackGeneList>
+		</raceRestriction>
       <generalSettings>
         <humanRecipeImport>true</humanRecipeImport>
         <maleGenderProbability>0.5</maleGenderProbability>

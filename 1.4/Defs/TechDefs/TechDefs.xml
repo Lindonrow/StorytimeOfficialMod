@@ -25,6 +25,34 @@
  		<researchViewX>1</researchViewX>
 		<researchViewY>1.5</researchViewY>
     </ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>STCheesemaking</defName>
+		<label>cheesemaking</label>
+		<description>Acquire the knowledge of basic cheesemaking.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>advancedCooking</li>
+		</prerequisites>
+ 		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>STAdvancedCheesemaking</defName>
+		<label>advanced cheesemaking</label>
+		<description>Acquire the knowledge of advanced cheesemaking.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>STCheesemaking</li>
+		</prerequisites>
+ 		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+    </ResearchProjectDef>
 	
 	<ResearchProjectDef>
 		<defName>cabbageCultivation</defName>
@@ -140,7 +168,7 @@
 		<tab>StoryTime</tab>
 		<baseCost>250</baseCost>
 		<techLevel>Medieval</techLevel>
- 		<researchViewX>0</researchViewX>
+ 		<researchViewX>3</researchViewX>
 		<researchViewY>0</researchViewY>
     </ResearchProjectDef>
 	
@@ -195,7 +223,7 @@
 		<tab>StoryTime</tab>
 		<baseCost>1500</baseCost>
 		<techLevel>Medieval</techLevel>
- 		<researchViewX>1</researchViewX>
+ 		<researchViewX>5</researchViewX>
 		<researchViewY>0</researchViewY>
 		<prerequisites>
 			<li>Smithing</li>
@@ -209,7 +237,7 @@
 		<tab>StoryTime</tab>
 		<baseCost>2000</baseCost>
 		<techLevel>Spacer</techLevel>
- 		<researchViewX>2</researchViewX>
+ 		<researchViewX>5</researchViewX>
 		<researchViewY>0</researchViewY>
 		<prerequisites>
 			<li>Machining</li>

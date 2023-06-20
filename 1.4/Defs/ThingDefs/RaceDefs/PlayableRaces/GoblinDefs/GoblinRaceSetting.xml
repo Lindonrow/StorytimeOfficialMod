@@ -3,12 +3,20 @@
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>Alien_Goblin</defName>
     <label>Goblin</label>
-    <description>the rimworld goblin</description>
+    <description>the rimworld goblin.</description>
     <alienRace>
 	  <raceRestriction>
             <recipeList>
                 <li>MakeGoblinPoison</li>
             </recipeList>
+			<blackEndoCategories>
+			  <li>Melanin</li>
+			</blackEndoCategories>
+			<blackGeneList>
+			  <li>Jaw_Heavy</li>
+			  <li>Head_Gaunt</li>
+			  <li>Furskin</li>			  
+			</blackGeneList>
 	  </raceRestriction>
 		<styleSettings>
 			<li>

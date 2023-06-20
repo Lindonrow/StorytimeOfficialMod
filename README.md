@@ -1,15 +1,7 @@
 # True-Storytime-Official-Mod
 
-This is the REAL and OFFICIAL home of the STORYTIME OFFICIAL MOD, A *GAY* MOD!
-
-UPDATES WILL RESUME AT AN INDISTINCT POINT ON THE HORIZON OF THE FUTURE, OR SOMETHIN LIKE THAT
-
-
-
-
-
-
-
+Official Licensing Agreement of Storytime Mod:
+I don't give a shit, anyone can take whatever the hell they want.
 
 
 Actually, I am in really bad shape financially. I pay money to my ex-wife as part of our divorce settlement, among other bills... I just had no choice but to make you pay for lunch the other day, I'm really sorry.

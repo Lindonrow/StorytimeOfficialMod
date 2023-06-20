@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>CheeseVat_bronze</defName>
+        <label>bronze cheese vat</label>
+		<description>A basic cheese-making vat made from bronze and steel. Making cheese with this is slower and less efficient than more advanced cheese vats. Cannot make certain powerful cheese types.</description>
+		<thingClass>ProcessorFramework.Building_ColorCoded</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/CheeseVats/BronzeCheeseVat/BronzeCheeseVat</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+    	<minifiedDef>MinifiedThing</minifiedDef>
+    	<thingCategories>
+      		<li>BuildingsProduction</li>
+    	</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<rotatable>false</rotatable>
+     	<size>(2,2)</size>
+		<costList>
+			<ST_Bronze>100</ST_Bronze>
+			<Steel>50</Steel>
+		</costList>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Rare</tickerType>
+	    <statBases>
+			<Cleanliness>-5</Cleanliness>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>30</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+    	</statBases>
+		<designationCategory>Production</designationCategory>
+    	<researchPrerequisites>
+			<li>STCheesemaking</li>
+		</researchPrerequisites>
+		<comps>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<shortCircuitInRain>true</shortCircuitInRain>
+			<basePowerConsumption>5</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li Class="ProcessorFramework.CompProperties_Processor">
+			<capacity>100</capacity>
+			<independentProcesses>false</independentProcesses>
+			<parallelProcesses>false</parallelProcesses>
+			<dropIngredients>false</dropIngredients>
+			<showProductIcon>true</showProductIcon>
+			<barOffset>(0.0, 0.25)</barOffset>
+			<barScale>(1.0, 1.0)</barScale>
+			<colorCoded>true</colorCoded>
+			<processes>
+			  <li>Cheese_Bronze</li>
+			</processes>
+		  </li>
+		</comps>
+    </ThingDef>
+	
+    <ThingDef ParentName="BuildingBase">
+        <defName>CheeseVat_mithril</defName>
+        <label>mithril cheese vat</label>
+		<description>A powerful cheese making vat made from mithril and orichalcum. Quicker and more efficient than lesser cheese vats, and it can make powerful cheese types such as goat gouda.</description>
+		<thingClass>ProcessorFramework.Building_ColorCoded</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/CheeseVats/MithrilCheeseVat/MithrilCheeseVat</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+    	<minifiedDef>MinifiedThing</minifiedDef>
+    	<thingCategories>
+      		<li>BuildingsProduction</li>
+    	</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<rotatable>false</rotatable>
+     	<size>(2,2)</size>
+		<costList>
+			<ST_Mithril>100</ST_Mithril>
+			<ST_Orichalcum>50</ST_Orichalcum>
+		</costList>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Rare</tickerType>
+	    <statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>30</Mass>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+    	</statBases>
+		<designationCategory>Production</designationCategory>
+    	<researchPrerequisites>
+			<li>STAdvancedCheesemaking</li>
+		</researchPrerequisites>
+		<comps>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<shortCircuitInRain>true</shortCircuitInRain>
+			<basePowerConsumption>5</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li Class="ProcessorFramework.CompProperties_Processor">
+			<capacity>100</capacity>
+			<independentProcesses>false</independentProcesses>
+			<parallelProcesses>false</parallelProcesses>
+			<dropIngredients>false</dropIngredients>
+			<showProductIcon>true</showProductIcon>
+			<barOffset>(0.0, 0.25)</barOffset>
+			<barScale>(1.0, 1.0)</barScale>
+			<colorCoded>true</colorCoded>
+			<processes>
+			  <li>Cheese_Mithril</li>
+			</processes>
+		  </li>
+		</comps>
+    </ThingDef>	
+	
+    <ThingDef ParentName="BuildingBase">
+        <defName>CheeseVat_dragon</defName>
+        <label>dragon cheese vat</label>
+		<description>An extremely powerful cheese vat made from dragonite and runite. The pinnacle of cheese making technology, highly efficient at making all forms of cheese.</description>
+		<thingClass>ProcessorFramework.Building_ColorCoded</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/CheeseVats/DragonCheeseVat/DragonCheeseVat</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+    	<minifiedDef>MinifiedThing</minifiedDef>
+    	<thingCategories>
+      		<li>BuildingsProduction</li>
+    	</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<rotatable>false</rotatable>
+     	<size>(2,2)</size>
+		<costList>
+			<ST_Dragonite>100</ST_Dragonite>
+			<ST_Runite>50</ST_Runite>
+		</costList>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Rare</tickerType>
+	    <statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>30</Mass>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+    	</statBases>
+		<designationCategory>Production</designationCategory>
+    	<researchPrerequisites>
+			<li>STAdvancedCheesemaking</li>
+		</researchPrerequisites>
+		<comps>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<shortCircuitInRain>true</shortCircuitInRain>
+			<basePowerConsumption>5</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <li Class="ProcessorFramework.CompProperties_Processor">
+			<capacity>100</capacity>
+			<independentProcesses>false</independentProcesses>
+			<parallelProcesses>false</parallelProcesses>
+			<dropIngredients>false</dropIngredients>
+			<showProductIcon>true</showProductIcon>
+			<barOffset>(0.0, 0.25)</barOffset>
+			<barScale>(1.0, 1.0)</barScale>
+			<colorCoded>true</colorCoded>
+			<processes>
+			  <li>Cheese_Dragonite</li>
+			</processes>
+		  </li>
+		</comps>
+    </ThingDef>		
+
+<!--American Cheese (Bronze Tier)-->
+<ProcessorFramework.ProcessDef>
+  <defName>Cheese_Bronze</defName>
+  <thingDef>Cheese</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>Milk</li>
+	  <li>Green_Milk</li>
+	  <li>Goat_Milk</li>
+	  <li>Dromedary_Milk</li>
+	  <li>Deer_Milk</li>
+	  <li>Mare_Milk</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>3</processDays>
+  <capacityFactor>1</capacityFactor>
+  <efficiency>0.5</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>7.0~40.0</temperatureSafe>
+  <temperatureIdeal>10.0~37.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>20.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(252, 197, 101)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <CheeseRat>(0.1, 1)</CheeseRat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+<!--American Cheese (Mithril Tier)-->
+<ProcessorFramework.ProcessDef>
+  <defName>Cheese_Mithril</defName>
+  <thingDef>Cheese</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>Milk</li>
+	  <li>Green_Milk</li>
+	  <li>Goat_Milk</li>
+	  <li>Dromedary_Milk</li>
+	  <li>Deer_Milk</li>
+	  <li>Mare_Milk</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>2.5</processDays>
+  <capacityFactor>1</capacityFactor>
+  <efficiency>0.75</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>4.0~43.0</temperatureSafe>
+  <temperatureIdeal>7.0~40.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>80.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(252, 197, 101)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <CheeseRat>(0.1, 1)</CheeseRat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+<!--American Cheese (Dragonite Tier)-->
+<ProcessorFramework.ProcessDef>
+  <defName>Cheese_Dragonite</defName>
+  <thingDef>Cheese</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>Milk</li>
+	  <li>Green_Milk</li>
+	  <li>Goat_Milk</li>
+	  <li>Dromedary_Milk</li>
+	  <li>Deer_Milk</li>
+	  <li>Mare_Milk</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>2</processDays>
+  <capacityFactor>1</capacityFactor>
+  <efficiency>1</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>1.0~46.0</temperatureSafe>
+  <temperatureIdeal>4.0~43.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>200.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(252, 197, 101)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <CheeseRat>(0.1, 1)</CheeseRat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Goat Gouda (Mithril Tier)-->
+
+<!--Goat Gouda (Dragonite Tier)-->
+
+  
+</Defs>

@@ -4,7 +4,7 @@
   <ThingDef ParentName="OrganicProductBase">
     <defName>Cheese</defName>
     <label>american cheese</label>
-    <description>Ah, American Cheese. The highest form of cheese, you know.</description>
+    <description>Ah, American Cheese. The highest form of cheese, you know (not canon).</description>
     <graphicData>
       <texPath>Things/Items/Resources/Cheeses/Cheese</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
