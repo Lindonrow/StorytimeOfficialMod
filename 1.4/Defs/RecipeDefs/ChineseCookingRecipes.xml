@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_Bao</defName>
+    <label>make bao</label>
+    <description>make a bao.</description>
+    <jobString>cooking.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<researchPrerequisite>STChineseCooking</researchPrerequisite>
+	<products>
+		<Bao>1</Bao>
+	</products>
+  </RecipeDef>
+  
+  
+</Defs>

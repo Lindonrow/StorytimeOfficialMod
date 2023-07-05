@@ -12,6 +12,20 @@
 		<researchViewY>0.75</researchViewY>
     </ResearchProjectDef>
 
+	<ResearchProjectDef> <!--I may replace this with Chinese Culture tech or move it somewhere else... unsure. Or maybe 'East Asian Culture' would be more accurate with some of the stuff I have planned. Bla bla bla... we'll fix it in post. Why am I still writing this... hmmm... gay sex. -->
+		<defName>STChineseCooking</defName>
+		<label>chinese cuisine</label>
+		<description>Acquire the knowledge of cooking Chinese food.</description>
+		<tab>StoryTime</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>advancedCooking</li>
+		</prerequisites>
+ 		<researchViewX>0</researchViewX>
+		<researchViewY>1.5</researchViewY>
+    </ResearchProjectDef>
+	
 	<ResearchProjectDef>
 		<defName>STAlchemy</defName>
 		<label>alchemy</label>
@@ -237,7 +251,7 @@
 		<tab>StoryTime</tab>
 		<baseCost>2000</baseCost>
 		<techLevel>Spacer</techLevel>
- 		<researchViewX>5</researchViewX>
+ 		<researchViewX>4</researchViewX>
 		<researchViewY>0</researchViewY>
 		<prerequisites>
 			<li>Machining</li>

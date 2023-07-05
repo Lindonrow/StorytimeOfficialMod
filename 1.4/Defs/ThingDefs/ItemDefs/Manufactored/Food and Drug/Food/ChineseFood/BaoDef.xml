@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="MealBase">
+    <defName>Bao</defName>
+    <label>Bao</label>
+    <description>A round bun full of meat invented by the legendary genius Zhuge Liang. Common uses for baos are: 1. eating 2. making sacrifices to the river god to apologize for all the barbarians you burned to death in a canyon.</description>
+    <graphicData>
+      <texPath>Things/Items/ChineseFood/Bao</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>32</MarketValue>
+      <Mass>0.5</Mass>
+      <Nutrition>1.1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>HedBao</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>3</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+ <HediffDef>
+    	<defName>HedBao</defName>
+    	<label>Ate Bao</label>
+		<description>Ate a bao!</description>		
+    	<initialSeverity>1</initialSeverity>
+  	<defaultLabelColor>(0,128,128)</defaultLabelColor>      	<hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>60000</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+          <label>Spirit of the Hidden Dragon</label>
+			<statOffsets>
+				<ResearchSpeed>0.5</ResearchSpeed>				
+				<ShootingAccuracyPawn>3</ShootingAccuracyPawn>								
+			</statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+ 
+</Defs>
