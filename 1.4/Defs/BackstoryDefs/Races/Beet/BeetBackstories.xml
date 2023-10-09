@@ -95,10 +95,7 @@
         <degree>2</degree>
       </li>
     </forcedTraitsChance>
-	<workDisables>
-      <li>Intellectual</li>
-	  <li>Caring</li>
-    </workDisables>
+	<workDisables>Intellectual,Caring</workDisables>
   </AlienRace.AlienBackstoryDef>
   
   <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">
@@ -197,12 +194,7 @@
         <defName>Bloodlust</defName>
       </li>
     </forcedTraitsChance>
-	<workDisables>
-      <li>ManualDumb</li>
-	  <li>Caring</li>
-	  <li>Intellectual</li>
-	  <li>ManualSkilled</li>
-    </workDisables>
+	<workDisables>ManualDumb, Caring, Intellectual, ManualSkilled</workDisables>
   </AlienRace.AlienBackstoryDef>
   
   <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">
@@ -227,12 +219,7 @@
         <value>-8</value>
 	  </li>
     </skillGains>
-	<workDisables>
-      <li>ManualDumb</li>
-	  <li>Caring</li>
-	  <li>Intellectual</li>
-	  <li>ManualSkilled</li>
-    </workDisables>
+	<workDisables>ManualDumb, Caring, Intellectual, ManualSkilled</workDisables>
   </AlienRace.AlienBackstoryDef>
   
   <AlienRace.AlienBackstoryDef ParentName="BeetnikhBackstoriesAdult">

@@ -265,6 +265,56 @@
         </pitchRange>
       </li>
     </subSounds>
-  </SoundDef>            
-  
+  </SoundDef>          
+
+<!--Chinese Faction-->
+
+	<SoundDef>
+		<defName>China_Theme_Combat</defName>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Factions/China_Theme_Combat</clipPath>
+				</li>
+				</grains>
+				<volumeRange>
+					<min>60.058827</min>
+					<max>60.058827</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.99</min>
+					<max>1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>          
+
+	<SoundDef>
+		<defName>China_Theme_Peaceful</defName>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Factions/China_Theme_Peace</clipPath>
+				</li>
+				</grains>
+				<volumeRange>
+					<min>60.058827</min>
+					<max>60.058827</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.99</min>
+					<max>1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>            
 </Defs>
+

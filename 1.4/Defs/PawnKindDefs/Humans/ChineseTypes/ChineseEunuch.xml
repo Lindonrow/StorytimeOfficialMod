@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Abstract="True" Name="BasePlayerStorytimeChineseEunuchPawnKind">
+    <race>Human</race>
+	<defaultFactionType>ChineseFriendly</defaultFactionType>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <invNutrition>2.5</invNutrition>
+	  <backstoryFiltersOverride>
+		<li>
+		  <categories>
+			<li>ChinaEunuch</li>
+		  </categories>
+		</li>
+	  </backstoryFiltersOverride>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BasePlayerStorytimeChineseEunuchPawnKind">
+    <defName>ChineseEunuch</defName>
+    <label>eunuch</label>
+    <combatPower>15</combatPower>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+	<fixedGender>Male</fixedGender>
+    <apparelMoney>
+      <min>200</min>
+      <max>800</max>
+    </apparelMoney>
+	<apparelTags>
+        <li>ChineseEunuch</li>
+    </apparelTags>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>20</min>
+      <max>100</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.55</techHediffsChance>
+    <initialWillRange>1~5</initialWillRange>
+    <initialResistanceRange>2~20</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>0~2</range>
+      </li>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~4</range>
+      </li>
+      <li>
+        <skill>Intellectual</skill>
+        <range>4~14</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>5~500</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+</Defs>

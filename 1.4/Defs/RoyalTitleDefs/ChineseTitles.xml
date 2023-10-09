@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============== Chinese Imperial Hierarchy ============================= -->
+
+  <RoyalTitleDef Abstract="True" Name="BaseChineseTitle" >
+    <tags>
+      <li>ChineseTitle</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseChineseTitle">
+    <defName>Clerk</defName>
+    <label>clerk</label>
+    <description>The lowest rank on the totem pole of imperial service, it isn't glamorous- but you've got to start somewhere.</description>
+    <seniority>0</seniority>
+    <favorCost>1</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseChineseTitle">
+    <defName>Magistrate</defName>
+    <label>magistrate</label>
+    <description>County magistrates are some of the lowest ranking managers in the imperial system. Their duties include collecting taxes, overseeing legal cases, and commanding local militias to deal with bandits.</description>
+    <seniority>100</seniority>
+    <favorCost>8</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <commonality>1</commonality>
+  </RoyalTitleDef>
+  
+  <RoyalTitleDef ParentName="BaseChineseTitle">
+    <defName>Prefect</defName>
+    <label>prefect</label>
+    <description>Prefects oversee administrative divisions known as 'Prefectures' which consist of multiple counties. Their job is to manage the lower ranking officials within their jurisdiction and coordinate them with imperial policy.</description>
+    <seniority>200</seniority>
+    <favorCost>6</favorCost>
+    <minExpectation>Moderate</minExpectation>
+    <changeHeirQuestPoints>1200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <disabledWorkTags>
+      <li>Cleaning</li>
+    </disabledWorkTags>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>12</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealSimple</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+		<li>Bao</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>  
+  
+  <RoyalTitleDef ParentName="BaseChineseTitle">
+    <defName>Governor</defName>
+    <label>governor</label>
+    <description>Imperial governors administer to the highest level of subdivision within the empire, the province. Traditionally there were nine imperial provinces, however in the modern day there are far more. Governors have wide-reaching authority within their domain both in civil and military administration.</description>
+    <seniority>300</seniority>
+    <favorCost>8</favorCost>
+    <minExpectation>High</minExpectation>
+    <changeHeirQuestPoints>1600</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+    </disabledWorkTags>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>20</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>40</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+		<li>Bao</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>  
+  
+  <RoyalTitleDef ParentName="BaseChineseTitle">
+    <defName>Censor</defName>
+    <label>censor</label>
+    <description>Finally reaching into the ranks of the central imperial bureaucracy, the censorate is a high-level supervisory agency whose members are tasked with monitoring the behavior of other officials.</description>
+    <seniority>400</seniority>
+    <favorCost>10</favorCost>
+    <minExpectation>High</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>ChineseEunuch</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>26</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>50</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+		<li>Bao</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>EncourageLabor</li></grantedAbilities>
+  </RoyalTitleDef>
+  
+  <RoyalTitleDef ParentName="BaseChineseTitle">
+    <defName>Minister</defName>
+    <label>minister</label>
+    <description>Ministers have a wide ranging set of responsibilities within the empire. Generally speaking, they are charged with overseeing the various departments and ministries of the empire. This is a position of high honor and responsibility.</description>
+    <seniority>500</seniority>
+    <favorCost>10</favorCost>
+    <minExpectation>SkyHigh</minExpectation>
+    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <permitPointsAwarded>2</permitPointsAwarded>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>ChineseEunuch</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>ChineseAdvanced</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>26</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>60</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>1</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+		<li>Bao</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>EncourageLabor</li></grantedAbilities>
+  </RoyalTitleDef>  
+  
+  <RoyalTitleDef ParentName="BaseChineseTitle">
+    <defName>ImperialCounselor</defName>
+    <label>imperial counselor</label>
+    <description>Imperial counselors are the highest tier of the officialdom, leaders of the most important ministries and charged with answering directly to the prime minister and the emperor himself. Only a few of these men and women ever serve at once.</description>
+    <seniority>600</seniority>
+    <favorCost>20</favorCost>
+    <minExpectation>Royal</minExpectation>
+    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>3500</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <permitPointsAwarded>2</permitPointsAwarded>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+      <li>Animals</li>
+    </disabledWorkTags>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>ChineseEunuch</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>ChineseAdvanced</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>80</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+		<li>Bao</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>EncourageLabor</li></grantedAbilities>
+  </RoyalTitleDef>  
+  
+  <RoyalTitleDef ParentName="BaseChineseTitle">
+    <defName>PrimeMinister</defName>
+    <label>prime minister</label>
+    <description>The head of the imperial bureaucracy, the prime minister of the empire answers only to the emperor himself. Or at least, that's the idea...</description>
+    <seniority>700</seniority>
+    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+    <replaceOnRecruited>ImperialCounselor</replaceOnRecruited>
+    <recruitmentResistanceOffset>100</recruitmentResistanceOffset>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>Commoner</li>
+    </disabledWorkTags>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+		<li>Bao</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>EncourageLabor</li></grantedAbilities>
+  </RoyalTitleDef>    
+  
+   <!--
+Important Lore Idea, need to do other stuff first 
+
+
+clerk
+magistrate
+prefect
+commissioner
+governor
+censor
+minister
+imperial counsellor
+
+Unobtainable
+imperial prince
+grand chancellor
+emperor
+-->
+  
+  
+  
+  
+  
+  
+  
+</Defs>
+

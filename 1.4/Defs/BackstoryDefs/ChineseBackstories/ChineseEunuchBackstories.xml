@@ -9,6 +9,10 @@
 		<spawnCategories>
 			<li>ChinaEunuch</li>
 		</spawnCategories>
+		<forcedHediffs>
+		  <li>Eunuch</li>
+		</forcedHediffs>
+		
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef Name="STEunuchChinaBackstoriesAdult" Abstract="True" ParentName="STEunuchChinaBackstories"> 

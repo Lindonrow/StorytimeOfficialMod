@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>Stubbornness</defName>
+    <commonality>1.8</commonality>
+    <degreeDatas>
+      <li>
+        <label>&lt;color=#9EF2FF&gt;Fickle&lt;/color&gt;</label>
+        <description>[PAWN_nameDef] is constantly changing beliefs and loyalties. Most would call [PAWN_objective] unreliable.</description>
+        <degree>-1</degree>
+        <statFactors>
+          <SocialImpact>0.85</SocialImpact>
+		  <CertaintyLossFactor>2</CertaintyLossFactor>
+        </statFactors>
+      </li>
+      <li>
+        <label>&lt;color=#9EF2FF&gt;Stubborn&lt;/color&gt;</label>
+        <description>{PAWN_nameDef} refuses to change [PAWN_possessive] beliefs. It can get a bit annoying.</description>
+        <degree>1</degree>
+        <statFactors>
+          <SocialImpact>0.85</SocialImpact>
+		  <CertaintyLossFactor>0.25</CertaintyLossFactor>
+        </statFactors>
+      </li>   
+    </degreeDatas>
+  </TraitDef>
+  
+</Defs>

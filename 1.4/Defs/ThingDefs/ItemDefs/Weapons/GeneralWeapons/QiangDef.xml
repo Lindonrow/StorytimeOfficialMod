@@ -11,8 +11,8 @@
     </graphicData>
     <techLevel>Neolithic</techLevel>
     <weaponTags>
-      <li>NeolithicMeleeAdvanced</li>
-      <li>MedievalMeleeAdvanced</li>
+	  <li>ChineseMeleeBasic</li>  
+      <li>ChineseMeleeAdvanced</li>
     </weaponTags>
     <weaponClasses>
       <li>Neolithic</li>

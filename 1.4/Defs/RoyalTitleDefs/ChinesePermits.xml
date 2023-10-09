@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================= Faction permits ============================= -->
+
+  <!-- Items -->
+
+  <RoyalTitlePermitDef Name="DropResourcesBaseChina" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>ChineseFriendly</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="DropResourcesBaseChina">
+    <defName>RiceDrop</defName>
+    <label>rice drop</label>
+    <description>Call for a drop of 300 rice.</description>
+    <minTitle>Prefect</minTitle>
+    <uiPosition>(1,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <RawRice>300</RawRice>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="DropResourcesBaseChina">
+    <defName>WageDrop</defName>
+    <label>paycheck</label>
+    <description>Ask the government to finally send that paycheck for all the hard work you've been doing.</description>
+    <minTitle>Magistrate</minTitle>
+    <uiPosition>(0,0)</uiPosition>
+    <cooldownDays>20</cooldownDays>
+    <royalAid>
+      <itemsToDrop>
+        <Silver>250</Silver>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+ 
+  <RoyalTitlePermitDef ParentName="DropResourcesBaseChina">
+    <defName>JadeDrop</defName>
+    <label>jade shipment</label>
+    <description>Ask for some jade from the imperial treasury, haven't you earned it?.</description>
+    <minTitle>Prefect</minTitle>
+    <uiPosition>(2,0)</uiPosition>
+    <cooldownDays>40</cooldownDays>
+    <royalAid>
+      <itemsToDrop>
+        <Jade>100</Jade>
+      </itemsToDrop>
+      <favorCost>6</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="DropResourcesBaseChina">
+    <defName>Bao</defName>
+    <label>summon bao</label>
+    <description>Summon forth a swarm of delicious baos.</description>
+    <minTitle>Prefect</minTitle>
+    <uiPosition>(1,1)</uiPosition>
+    <cooldownDays>60</cooldownDays>
+    <royalAid>
+      <itemsToDrop>
+        <Bao>20</Bao>
+      </itemsToDrop>
+      <favorCost>6</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+<!--Summon-->
+
+  <RoyalTitlePermitDef>
+    <defName>SummonCorveeLabor</defName>
+    <label>demand corvee labor</label>
+    <description>Summon up 4 peasants to for government mandated service and labor for 5 days out of the year.</description>
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <minTitle>Prefect</minTitle>
+    <faction>ChineseFriendly</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,1)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>ChinesePeasant</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <aidDurationDays>5</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef>
+    <defName>CallConscripts</defName>
+    <label>conscript militia</label>
+    <description>Conscript a small local militia of 2 troops to aid in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Magistrate</minTitle>
+    <faction>ChineseFriendly</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,2)</uiPosition>
+    <royalAid>
+      <favorCost>2</favorCost>
+      <pawnKindDef>ChineseConscript</pawnKindDef>
+      <pawnCount>2</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>40</cooldownDays>
+  </RoyalTitlePermitDef>  
+ 
+  <RoyalTitlePermitDef>
+    <defName>CallConscriptsLarge</defName>
+    <label>conscript provincial militia</label>
+    <description>Conscript a large militia of 6 troops to aid in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Governor</minTitle>
+    <faction>ChineseFriendly</faction>
+    <prerequisite>CallConscripts</prerequisite>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,2)</uiPosition>
+    <royalAid>
+      <favorCost>5</favorCost>
+      <pawnKindDef>ChineseConscript</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>50</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>CallInfantry</defName>
+    <label>call up infantry</label>
+    <description>Summon a unit of 4 infantrymen.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Censor</minTitle>
+    <faction>ChineseFriendly</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,3)</uiPosition>
+    <royalAid>
+      <favorCost>5</favorCost>
+      <pawnKindDef>ChineseInfantryman</pawnKindDef>
+      <pawnCount>5</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>50</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>SummonHero</defName>
+    <label>summon hero</label>
+    <description>Summon a great hero of the realm to aid in combat.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Censor</minTitle>
+    <faction>ChineseFriendly</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,5)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>ChineseHero</pawnKindDef>
+      <pawnCount>1</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>50</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>SummonScholar</defName>
+    <label>summon scholar</label>
+    <description>Summon a scholar of the realm to aid in study.</description>
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <minTitle>Censor</minTitle>
+    <faction>ChineseFriendly</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,4)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>ChineseScholar</pawnKindDef>
+      <pawnCount>1</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>50</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>SummonHeroicTrio</defName>
+    <label>summon heroic trio</label>
+    <description>Summon three great warriors to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>ImperialCounselor</minTitle>
+    <faction>ChineseFriendly</faction>
+    <prerequisite>SummonHero</prerequisite>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,5)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>ChineseHero</pawnKindDef>
+      <pawnCount>3</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+ 
+</Defs>

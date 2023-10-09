@@ -13,8 +13,20 @@
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>prime minister</leaderTitle>
     <factionIconPath>UI/Structures/Structure_Taoism</factionIconPath>
+    <melaninRange>0~0.5</melaninRange>
+    <royalTitleTags>
+      <li>ChineseTitle</li>
+    </royalTitleTags>
+    <royalFavorLabel>scholarship</royalFavorLabel>
+    <royalFavorIconPath>UI/Structures/Structure_Taoism</royalFavorIconPath>
+    <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations>
+      <li>Sibling</li>
+      <li>HalfSibling</li>
+      <li>Cousin</li>
+    </royalTitleInheritanceRelations>
 	<backstoryCategories>
-      <li>PirateBackstory</li>
+      <li>ChinaNonNoble</li>
     </backstoryCategories>
     <colorSpectrum>
       <li>(255,198,62)</li>
@@ -34,7 +46,7 @@
     <settlementNameMaker>ChineseSettlementName</settlementNameMaker>
     <techLevel>Medieval</techLevel>
     <caravanTraderKinds>
-      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Storytime_China</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Outlander_Standard</li>
@@ -68,64 +80,56 @@
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <PirateSwabbie>35</PirateSwabbie>
-		  <PirateNormal>40</PirateNormal>
-		  <PirateGrenadier>15</PirateGrenadier>
-		  <PirateCaptain>15</PirateCaptain>
-		  <PirateJuggernaut>5</PirateJuggernaut>
-          <Monkey>5</Monkey>
-		  <ST_Parrot>5</ST_Parrot>
+          <ChineseHero>2</ChineseHero>
+		  <ChinesePeasant>40</ChinesePeasant>
+		  <ChineseConscript>15</ChineseConscript>
+		  <ChineseScholar>5</ChineseScholar>
+		  <ChineseEunuch>15</ChineseEunuch>
         </options>
       </li>
       <li>
         <kindDef>Combat</kindDef>
         <options>
-          <PirateSwabbie>35</PirateSwabbie>
-		  <PirateNormal>40</PirateNormal>
-		  <PirateGrenadier>15</PirateGrenadier>
-		  <PirateCaptain>15</PirateCaptain>
-		  <PirateJuggernaut>5</PirateJuggernaut>
-          <Monkey>5</Monkey>
+          <ChineseArcher>15</ChineseArcher>
+		  <ChinesePeasant>10</ChinesePeasant>
+		  <ChineseConscript>25</ChineseConscript>
+		  <ChineseInfantryman>10</ChineseInfantryman>
         </options>
       </li>
       <li>
         <kindDef>Combat</kindDef>
         <options>
-          <PirateSwabbie>35</PirateSwabbie>
-		  <PirateNormal>40</PirateNormal>
-		  <PirateGrenadier>15</PirateGrenadier>
-		  <PirateCaptain>15</PirateCaptain>
-		  <PirateJuggernaut>5</PirateJuggernaut>
-		  <ST_Parrot>5</ST_Parrot>
+          <ChineseHero>5</ChineseHero>
+		  <ChineseConscript>20</ChineseConscript>
+		  <ChineseInfantryman>10</ChineseInfantryman>
         </options>
       </li>
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <PirateCaptain>1</PirateCaptain>
+          <ChineseTrader>1</ChineseTrader>
         </traders>
         <carriers>
           <Muffalo>100</Muffalo>
         </carriers>
         <guards>
-          <PirateSwabbie>35</PirateSwabbie>
-		  <PirateNormal>40</PirateNormal>
-		  <PirateGrenadier>15</PirateGrenadier>
-		  <PirateJuggernaut>5</PirateJuggernaut>
-          <Monkey>5</Monkey>
-		  <ST_Parrot>5</ST_Parrot>
+		  <ChineseEunuch>15</ChineseEunuch>
+		  <ChineseConscript>20</ChineseConscript>
+		  <ChineseInfantryman>10</ChineseInfantryman>
+		  <ChineseScholar>5</ChineseScholar>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <PirateSwabbie>25</PirateSwabbie>
-		  <PirateNormal>40</PirateNormal>
-		  <PirateGrenadier>15</PirateGrenadier>
-		  <PirateCaptain>15</PirateCaptain>
-		  <PirateJuggernaut>15</PirateJuggernaut>
-          <Monkey>5</Monkey>
-		  <ST_Parrot>5</ST_Parrot>
+          <ChineseHero>5</ChineseHero>
+          <ChineseArcher>10</ChineseArcher>
+		  <ChinesePeasant>40</ChinesePeasant>
+		  <ChineseConscript>10</ChineseConscript>
+		  <ChineseInfantryman>10</ChineseInfantryman>
+		  <ChineseEunuch>15</ChineseEunuch>
+		  <ChineseScholar>5</ChineseScholar>
+		  <ChinesePrimeMinister>1</ChinesePrimeMinister>
         </options>
       </li>
     </pawnGroupMakers>
@@ -139,8 +143,8 @@
 			</allowedBiomes>					
 		</li>
 	<li Class="FactionSounds.FactionSound">
-        <soundDef>Jack_Sparrow</soundDef>
-        <combatSoundDef>Pirate_Theme</combatSoundDef>
+        <soundDef>China_Theme_Peaceful</soundDef>
+        <combatSoundDef>China_Theme_Combat</combatSoundDef>
       </li>
     </modExtensions>
 	

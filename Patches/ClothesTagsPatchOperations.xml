@@ -5,6 +5,8 @@
 		<value>
 			<li>PoorPirateClothing</li>
 			<li>RichPirateClothing</li>
+			<li>ChineseBasic</li>
+			<li>ChineseEunuch</li>
 		</value>
 	</Operation>
 	
@@ -27,6 +29,7 @@
 		<value>
 			<tags>
 				<li>RichPirateClothing</li>
+	     		<li>ChineseAdvanced</li>
 			</tags>
 		</value>
 	</Operation>
@@ -35,7 +38,20 @@
 		<xpath>/Defs/ThingDef[defName = "Apparel_BasicShirt"]/apparel/tags</xpath>
 		<value>
 			<li>PoorPirateClothing</li>
+			<li>ChineseBasic</li>
+			<li>ChineseEunuch</li>
+			<li>ChineseAdvanced</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Apparel_Robe"]/apparel</xpath>
+		<value>
+			<tags>
+				<li>ChineseEunuch</li>
+			</tags>
+		</value>
+	</Operation>	
+	
 
 </Patch>

@@ -14,8 +14,8 @@
     <techLevel>Medieval</techLevel>
     <costStuffCount>100</costStuffCount>
     <weaponTags>
-      <li>MedievalMeleeDecent</li>
-      <li>MedievalMeleeAdvanced</li>	  
+	  <li>ChineseMeleeBasic</li>  
+      <li>ChineseMeleeAdvanced</li>
     </weaponTags>
     <statBases>
       <WorkToMake>16000</WorkToMake>

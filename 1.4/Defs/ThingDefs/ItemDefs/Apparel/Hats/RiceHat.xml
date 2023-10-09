@@ -45,8 +45,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>IndustrialBasic</li>
-        <li>Neolithic</li>
+        <li>ChineseBasic</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -55,6 +54,7 @@
     </apparel>
 	<tradeTags>
 		<li>StorytimeHats</li>
+		<li>AsianHats</li>
 	</tradeTags>
   </ThingDef>
 </Defs>

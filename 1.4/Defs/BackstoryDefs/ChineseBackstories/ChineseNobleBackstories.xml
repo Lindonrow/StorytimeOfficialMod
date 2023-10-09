@@ -242,7 +242,7 @@
 		<title>bastard of three fathers</title>
 		<titleShort>bastard</titleShort>
 		<baseDesc>[PAWN_nameDef], known as the "Bastard of Three Fathers," had a habit of stabbing [PAWN_possessive] adopted fathers in the back- literally. This did not endear [PAWN_objective] to the other leading figures of the realm.</baseDesc>
-		<slot>Childhood</slot>
+		<slot>Adulthood</slot>
 		<skillGains>
 		  <li>
 			<key>Social</key>
@@ -270,7 +270,7 @@
 		<title>young hegemon</title>
 		<titleShort>hegemon</titleShort>
 		<baseDesc>[PAWN_nameDef], a prodigious noble, rose to prominence at a young age in a time of chaos in the empire. Through charisma, strategic brilliance, and unyielding ambition, [PAWN_pronoun] carved out a domain of [PAWN_possessive] own amongst the warring factions.</baseDesc>
-		<slot>Childhood</slot>
+		<slot>Adulthood</slot>
 		<skillGains>
 		  <li>
 			<key>Social</key>
@@ -301,7 +301,7 @@
 		<title>rare genius</title>
 		<titleShort>genius</titleShort>
 		<baseDesc>[PAWN_nameDef] rose to prominence as as a strategist in one of the warring states of [PAWN_possessive] homeland. [PAWN_possessive] tricky schemes and clever strategies won many battles for [PAWN_possessive] lord's noble cause and [PAWN_pronoun] became a legendary figure.</baseDesc>
-		<slot>Childhood</slot>
+		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
 			  <key>Intellectual</key>
@@ -326,7 +326,7 @@
 		<title>big-eared villain</title>
 		<titleShort>villain</titleShort>
 		<baseDesc>[PAWN_nameDef] was a warlord fighting for dominance in a war-torn empire. [PAWN_possessive] ridiculously large ears earned [PAWN_objective] the nickname "Big-Eared Villain" from [PAWN_possessive] enemies.</baseDesc>
-		<slot>Childhood</slot>
+		<slot>Adulthood</slot>
 		<skillGains>
 		  <li>
 			<key>Social</key>
@@ -346,7 +346,7 @@
 		<title>god of war</title>
 		<titleShort>war-god</titleShort>
 		<baseDesc>[PAWN_nameDef], a gentleman of exceptional martial prowess, was revered as a legendary warrior. [PAWN_pronoun] became known for [PAWN_possessive] unparalleled combat skills, unyielding loyalty, and unbreakable code of honor. [PAWN_pronoun] carved a path of glory on the battlefield, inspiring awe and respect among allies and enemies alike.</baseDesc>
-		<slot>Childhood</slot>
+		<slot>Adulthood</slot>
 		<skillGains>
 		  <li>
 			<key>Melee</key>
@@ -360,7 +360,7 @@
 		<title>fierce warrior</title>
 		<titleShort>warrior</titleShort>
 		<baseDesc>[PAWN_nameDef] was a force to be reckoned with on the battlefield. Notorious for [PAWN_possessive] love for combat, [PAWN_pronoun] reveled in the chaos and carnage of war, embracing [PAWN_possessive] wild and untamed spirit. Alongside [PAWN_possessive] unrivaled combat skills, [PAWN_pronoun] also carried a reputation for [PAWN_possessive] deep fondness for alcohol, consuming it in copious amounts to fuel [PAWN_possessive] fighting spirit.</baseDesc>
-		<slot>Childhood</slot>
+		<slot>Adulthood</slot>
 		<skillGains>
 		  <li>
 			<key>Melee</key>
@@ -392,7 +392,7 @@
 		<title>warrior without equal</title>
 		<titleShort>warrior</titleShort>
 		<baseDesc>[PAWN_nameDef] was hailed as a living legend on the battlefield, feared by foes and revered by allies. With [PAWN_possessive] unrivaled strength, lightning-fast reflexes, and unmatched combat skills, [PAWN_pronoun] struck fear into the hearts of [PAWN_possessive] enemies. However, [PAWN_pronoun] was also notorious for [PAWN_possessive] treachery and impulsiveness. Few trusted [PAWN_objective] and [PAWN_pronoun] alienated many potential allies with [PAWN_possessive] actions, preventing [PAWN_objective] from achieving [PAWN_possessive] empire-spanning ambitions.</baseDesc>
-		<slot>Childhood</slot>
+		<slot>Adulthood</slot>
 		<skillGains>
 		  <li>
 			<key>Melee</key>
@@ -417,26 +417,120 @@
 		</forcedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 	
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_SevenTimesCaptured</defName>
+		<title>seven timed captured</title>
+		<titleShort>prisoner</titleShort>
+		<baseDesc>[PAWN_nameDef] was a barbarian chief of the southern lands who rebelled against legitimate imperial authority during a time of strife. The empire's greatest general was sent to quell [PAWN_possessive] uprising and restore order. [PAWN_nameDef] was defeated in battle and captured six times, but always refused to surrender. Curiously, the great general allowed {PAWN_objective] to escape on all six occasions. Finally, after being captured a 7th time, [PAWN_nameDef] accepted [PAWN_possessive] defeat and submitted to the empire once again.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Melee</key>
+			<value>4</value>
+		  </li>
+		  <li>
+			<key>Social</key>
+			<value>-2</value>
+		  </li>
+		</skillGains>
+		<disallowedTraitsChance>
+		  <li>
+			<defName>RareGenius</defName>
+		  </li>
+		</disallowedTraitsChance>
+		<forcedTraitsChance>
+			<li>
+			  <defName>Stubbornness</defName>
+			  <degree>1</degree>
+			</li>
+			<li>
+			  <defName>Tough</defName>
+			  <chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<possessions>
+		  <li>
+			<key>ST_Qiang</key>
+			<value>1</value>
+		  </li>
+		</possessions>
+	</AlienRace.AlienBackstoryDef>  
   
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_NomadLord</defName>
+		<title>border-lord</title>
+		<titleShort>marcher</titleShort>
+		<baseDesc>[PAWN_nameDef] was sent to command the imperial army's border forces against the fierce nomadic raiders of the north. [PAWN_possessive] learned much of their pastoral culture while there.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Animals</key>
+			<value>4</value>
+		  </li>
+		  <li>
+			<key>Shooting</key>
+			<value>4</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>    
   
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_DukeOfZhou</defName>
+		<title>imperial uncle</title>
+		<titleShort>duke</titleShort>
+		<baseDesc>[PAWN_nameDef] was uncle to the reigning emperor and served as regent in the boy's youth. [PAWN_pronoun] showed great wisdom and foresight during [PAWN_possessive] time in the regency, and even greater strength of character by willingly stepping down when the time came.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Intellectual</key>
+			<value>4</value>
+		  </li>
+		  <li>
+			<key>Social</key>
+			<value>4</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>      
   
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_TrickyWarlord</defName>
+		<title>cunning warlord</title>
+		<titleShort>warlord</titleShort>
+		<baseDesc>[PAWN_nameDef] was a cunning warlord known for [PAWN_possessive] strategic brilliance. [PAWN_pronoun] rose to power through political maneuvering and military prowess, using cunning tactics to outwit rivals and expand [PAWN_possessive] influence.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>6</value>
+		  </li>
+		  <li>
+			<key>Intellectual</key>
+			<value>2</value>
+		  </li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>        
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+	<AlienRace.AlienBackstoryDef ParentName="STNobleChinaBackstories">
+		<defName>ST_Tyrant</defName>
+		<title>tyrannical overlord</title>
+		<titleShort>tyrant</titleShort>
+		<baseDesc>[PAWN_nameDef] was a tyrannical overlord who ruled with an iron fist, instilling fear and chaos throughout the land. [PAWN_pronoun] was notorious for [PAWN_possessive] cruelty and lust for power. [PAWN_possessive] actions quickly led to the empire descending into disorder and chaos as warlords rose up across the land to challenge [PAWN_possessive] rule.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <li>
+			<key>Social</key>
+			<value>-6</value>
+		  </li>
+		  <li>
+			<key>Melee</key>
+			<value>4</value>
+		  </li>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+			  <defName>Psychopath</defName>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>          
   
 </Defs>

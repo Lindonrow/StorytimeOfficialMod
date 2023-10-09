@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef>
+    <defName>EncourageLabor</defName>
+    <label>encourage industriousness</label>
+    <description>Using your authority as an official, encourage someone to work harder.</description>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <iconPath>UI/Abilities/WorkDrive</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/WorkDrive</warmupMoteSocialSymbol>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <showWhenDrafted>false</showWhenDrafted>
+    <groupDef>Leader</groupDef>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>2</uiOrder>
+    <warmupStartSound>WorkDrive_Warmup</warmupStartSound>
+    <hostile>false</hostile>
+    <statBases>
+      <Ability_Duration>3000</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>False</drawAimPie>
+      <range>-1</range>
+      <warmupTime>3.0</warmupTime>
+      <targetParams>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <onlyTargetColonists>true</onlyTargetColonists>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>ST_Encouraged</hediffDef>
+        <applicableToMechs>False</applicableToMechs>
+        <canTargetBaby>False</canTargetBaby>
+      </li>
+      <li Class="CompProperties_AbilitySocialInteraction">
+        <interactionDef>WorkDrive</interactionDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+
+  <HediffDef ParentName="RoleStatBuff">
+    <defName>ST_Encouraged</defName>
+    <label>encouraged industriousness</label>
+    <description>The sense of being called upon by an imperial official to work harder.</description>
+    <defaultLabelColor>(255,198,62)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statFactors>
+          <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  
+</Defs>
