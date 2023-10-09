@@ -126,9 +126,6 @@
 			<value>-4</value>
 		  </li>
 		</skillGains>
-		<workDisables>
-			<li>Intellectual</li>
-		</workDisables>
 		<forcedTraitsChance>
 			<li>
 			  <defName>SlowLearner</defName>
