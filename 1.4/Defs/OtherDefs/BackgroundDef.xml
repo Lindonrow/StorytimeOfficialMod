@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <VBE.BackgroundImageDef>
-        <label>Official Storytime Background</label>
-        <description>The only good background on this list, prove me wrong.</description>
-        <defName>OST_Background</defName>
+        <label>Space Gibbon</label>
+        <description>Godspeed gibbons.</description>
+        <defName>OST_SpaceGibbon</defName>
         <path>UI/SpaceGibbon</path>
         <iconPath>UI/SpaceGibbon</iconPath>
+    </VBE.BackgroundImageDef>
+
+    <VBE.BackgroundImageDef>
+        <label>Mooners</label>
+        <description>♫We're bean men on the moon♫</description>
+        <defName>OST_Mooners</defName>
+        <path>UI/Mooners</path>
+        <iconPath>UI/Mooners</iconPath>
+    </VBE.BackgroundImageDef>
+
+    <VBE.BackgroundImageDef>
+        <label>CosmicFrog</label>
+        <description>Frogs, in space?!</description>
+        <defName>OST_CosmicFrog</defName>
+        <path>UI/CosmicFrog</path>
+        <iconPath>UI/CosmicFrog</iconPath>
     </VBE.BackgroundImageDef>
 	
 </Defs>	
