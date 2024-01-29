@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_Fuh</defName>
+    <label>make fuh</label>
+    <description>Make fuh.</description>
+    <jobString>Cooking.</jobString>
+    <workAmount>450</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+		<li>PlantFoodRaw</li>
+      </categories>
+	  
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+		<li>PlantFoodRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<products>
+		<Fuh>1</Fuh>
+	</products>
+  </RecipeDef> 
+  
+  <RecipeDef>
+    <defName>Make_FuhBulk</defName>
+    <label>make fuh x4</label>
+    <description>Make 4 fuh.</description>
+    <jobString>Cooking.</jobString>
+    <workAmount>1800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+	  <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+		<li>PlantFoodRaw</li>
+      </categories>
+	  
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+		<li>PlantFoodRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<products>
+		<Fuh>4</Fuh>
+	</products>
+  </RecipeDef> 
+
+<!--Nugget-->
+
+  <RecipeDef>
+    <defName>Make_MeatNugget</defName>
+    <label>make meat nugget</label>
+    <description>Shape meat into nugget.</description>
+    <jobString>Shaping.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<products>
+		<MeatNugget>1</MeatNugget>
+	</products>
+  </RecipeDef>  
+  
+  <RecipeDef>
+    <defName>Make_MeatNuggetBulk</defName>
+    <label>make meat nugget x4</label>
+    <description>Shape meat into 4 nuggets.</description>
+    <jobString>Shaping.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<products>
+		<MeatNugget>4</MeatNugget>
+	</products>
+  </RecipeDef>    
+
+<!--Bread-->
+
+  <RecipeDef>
+    <defName>Make_Bread</defName>
+    <label>make a bread</label>
+    <description>Cook various plant stuffs into a bread.</description>
+    <jobString>Cooking.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<products>
+		<ST_Bread>1</ST_Bread>
+	</products>
+  </RecipeDef>  
+  
+  <RecipeDef>
+    <defName>Make_BreadBulk</defName>
+    <label>make a bread</label>
+    <description>Cook various plant stuffs into 4 breads.</description>
+    <jobString>Cooking.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+	<recipeUsers>
+    		<li>ElectricStove</li>
+		    <li>FueledStove</li>
+	</recipeUsers>
+	<products>
+		<ST_Bread>4</ST_Bread>
+	</products>
+  </RecipeDef>    
+</Defs>

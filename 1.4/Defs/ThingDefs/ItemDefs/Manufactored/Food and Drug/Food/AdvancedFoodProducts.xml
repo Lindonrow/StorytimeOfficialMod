@@ -1,44 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-
-<ThingDef ParentName="MealBase">
-    <defName>MeatNugget</defName>
-    <label>Meat Nugget</label>
-    <description>A nugget made of meat.</description>
-    <graphicData>
-      <texPath>Things/Items/Resources/MeatNugget</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <DeteriorationRate>0.25</DeteriorationRate>
-      <MarketValue>24</MarketValue>
-      <Mass>0.3</Mass>
-      <WorkToMake>450</WorkToMake>
-      <Nutrition>0.9</Nutrition>
-    </statBases>
-    <ingestible>
-      <preferability>MealSimple</preferability>
-      <ingestEffect>EatVegetarian</ingestEffect>
-      <ingestSound>Meal_Eat</ingestSound>
-	  <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>HedNuggie</hediffDef>
-          <severity>1</severity>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-	<comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>0.75</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-  </ThingDef>
-  
+<Defs>  
   
 <ThingDef ParentName="MealBase">
     <defName>PadCandy</defName>
-    <label>D-Pad Candy</label>
+    <label>d-pad candy</label>
     <description>Why?</description>
     <graphicData>
       <texPath>Things/Items/Resources/PadCandy</texPath>
@@ -58,40 +23,6 @@
 	  <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>HedCandy</hediffDef>
-          <severity>1</severity>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-	<comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>5</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-</ThingDef>
-
-<ThingDef ParentName="MealBase">
-    <defName>Fuh</defName>
-    <label>Fuh</label>
-    <description>Possibly tasty. Wouldn't know</description>
-    <graphicData>
-      <texPath>Things/Items/Resources/Fuh</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <DeteriorationRate>0.25</DeteriorationRate>
-      <MarketValue>30</MarketValue>
-      <Mass>0.3</Mass>
-      <WorkToMake>500</WorkToMake>
-      <Nutrition>1</Nutrition>
-    </statBases>
-    <ingestible>
-      <preferability>MealSimple</preferability>
-      <ingestEffect>EatVegetarian</ingestEffect>
-      <ingestSound>Meal_Eat</ingestSound>
-	  <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>HedFuh</hediffDef>
           <severity>1</severity>
         </li>
       </outcomeDoers>
@@ -147,7 +78,7 @@
   
 <ThingDef ParentName="MealBase">
     <defName>ClamSauce</defName>
-    <label>ClamSauce</label>
+    <label>clam sauce</label>
     <description>Sauce of clam.</description>
     <graphicData>
       <texPath>Things/Items/Resources/ClamSauce</texPath>

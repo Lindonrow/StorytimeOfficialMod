@@ -1,45 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <RecipeDef>
-    <defName>Make_MeatNugget</defName>
-    <label>make meat nugget</label>
-    <description>Shape meat into nugget.</description>
-    <jobString>Shaping.</jobString>
-    <workAmount>300</workAmount>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>MeatRaw</li>
-          </categories>
-        </filter>
-        <count>10</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>MeatRaw</li>
-      </categories>
-    </fixedIngredientFilter>
-    <defaultIngredientFilter>
-      <categories>
-        <li>MeatRaw</li>
-      </categories>
-    </defaultIngredientFilter>
-	<recipeUsers>
-    		<li>ElectricStove</li>
-		    <li>FueledStove</li>
-	</recipeUsers>
-	<researchPrerequisite>advancedCooking</researchPrerequisite>
-	<products>
-		<MeatNugget>1</MeatNugget>
-	</products>
-  </RecipeDef>
-
 <RecipeDef>
     <defName>Make_PadCandy</defName>
     <label>make d-pad candy</label>
@@ -126,56 +87,6 @@
 	<researchPrerequisite>advancedCooking</researchPrerequisite>
 	<products>
 		<BillyClub>1</BillyClub>
-	</products>
-  </RecipeDef>
-
-  <RecipeDef>
-    <defName>Make_Fuh</defName>
-    <label>make fuh</label>
-    <description>Make fuh.</description>
-    <jobString>Cooking.</jobString>
-    <workAmount>500</workAmount>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>MeatRaw</li>
-          </categories>
-        </filter>
-        <count>5</count>
-      </li>
-	  <li>
-        <filter>
-          <categories>
-            <li>PlantFoodRaw</li>
-          </categories>
-        </filter>
-        <count>5</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>MeatRaw</li>
-		<li>PlantFoodRaw</li>
-      </categories>
-	  
-    </fixedIngredientFilter>
-    <defaultIngredientFilter>
-      <categories>
-        <li>MeatRaw</li>
-		<li>PlantFoodRaw</li>
-      </categories>
-    </defaultIngredientFilter>
-	<recipeUsers>
-    		<li>ElectricStove</li>
-		    <li>FueledStove</li>
-	</recipeUsers>
-	<researchPrerequisite>advancedCooking</researchPrerequisite>
-	<products>
-		<Fuh>1</Fuh>
 	</products>
   </RecipeDef>
   
